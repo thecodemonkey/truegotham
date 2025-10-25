@@ -1,0 +1,53 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  max-width: 800px;
+  min-width: 400px;
+  width: max-content;
+  transform: translateX(-50%);
+  background: rgb(27, 46, 47);
+  box-shadow: 8px 8px 25px 0 rgba(0, 0, 0, 1);
+  font-family: "Courier New", serif;
+  color: #ff8787;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+
+/* leaflet */
+
+.custom-tooltip {
+  background: rgb(27, 46, 47);
+  box-shadow: 8px 8px 25px 0 rgba(0, 0, 0, 1);
+  font-family: "Courier New", serif;
+  color: #ffa3a3;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  border: none;
+  white-space: break-spaces;
+
+  max-width: 600px;
+  min-width: 400px;
+  width: max-content;
+}
+
+/* Optional: Pfeil farblich anpassen */
+.custom-tooltip .leaflet-tooltip-tip {
+  background: rgb(27, 46, 47);
+}

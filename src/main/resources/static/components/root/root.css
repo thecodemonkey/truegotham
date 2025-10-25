@@ -1,0 +1,197 @@
+@import url('../../lib/leaflet/leaflet.css');
+@import url('../charts/charts.css');
+@import url('../dashboard/dashboard.css');
+@import url('../dashboard/crime.details.css');
+@import url('../dashboard/district.details.css');
+@import url('../common/errors/errors.css');
+@import url('flipper.css');
+@import url('police.lights.css');
+@import url('tooltip.css');
+@import url('cockpit.nav.css');
+@import url('../statements/statements.css');
+
+
+* {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  }
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #1a1b1e;
+  --bg-secondary: #2c2d32;
+  --bg-card: #222622;
+  --text-primary: rgba(255, 255, 255, 0.55);
+  --text-secondary: rgba(255, 255, 255, 0.60);
+  --text-muted: rgba(255, 255, 255, 0.38);
+  --accent-primary: #000000;
+  --accent-secondary: #fff200;
+  --accent-glow: rgba(255, 215, 0, 0.15);
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow: hidden;
+
+  background-image: url('../../img/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.root-claim {
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Courier New", sans-serif;
+  opacity: 1;
+  transition: all .5s;
+  padding: 50px;
+  background-color: #fdfed957;
+  z-index: 9;
+  box-shadow: 10px -10px 35px 0 #000000de;
+  backdrop-filter: blur(15px);
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &:hover{
+    padding-bottom: 60px;
+    backdrop-filter: blur(15px);
+  }
+
+  &.off {
+    bottom: -500px;
+  }
+
+  a {
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    padding-left: 0;
+    transition: letter-spacing .2s;
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+  }
+
+  button {
+    background-color: #000000;
+    border: none;
+    padding: 20px 50px;
+    color: #bcad6f;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all .3s;
+    z-index: 99;
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+    width: fit-content;
+    margin-left: 20px;
+
+    &:hover {
+      color: var(--accent-primary);
+      box-shadow: 4px 4px 25px 0 #ffcc0024;
+      background-color: #000;
+
+    }
+  }
+
+  .primary-claim {
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #000;
+    border-left: 2px solid rgb(174 16 16 / 80%);
+    padding-left: 20px;
+    font-family: sans-serif;
+  }
+
+  .secondary-claim {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: lighter;
+    padding-left: 20px;
+
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 100;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000000;
+      text-shadow: 2px 2px 12px #000000A0;
+    }
+  }
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2f2e27 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2f2e27;
+  border-radius: 0;
+  border: 0;
+}

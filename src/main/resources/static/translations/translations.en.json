@@ -1,0 +1,37 @@
+{
+
+  "nav_about": "About",
+  "nav_github": "GitHub",
+
+  "title_current_statements": "current statements",
+  "title_total_crimes": "Total number of crimes",
+  "title_types_of_crimes": "types of crimes",
+  "title_dangerous_districts": "most dangerous districts",
+
+  "title_chronology_of_events": "chronology of events",
+  "title_profile_of_suspect": "Profile of the suspect",
+  "title_tools_and_evidence": "tools and evidence",
+  "title_violations": "Offenses",
+
+  "profile_age": "age",
+  "profile_location": "location",
+  "profile_gender": "gender",
+  "profile_hair": "hair",
+  "profile_behaviour": "behaviour",
+  "profile_drugs_and_alcohol": "drug/alcohol testing",
+
+  "start_title": "Crime lurks in the shadows, invisible yet palpable in every street and corner of the city. It leaves traces that only those who look closely can discern.",
+  "start_subtitle": "The project True Gotham brings these hidden acts to light. Using artificial intelligence, statements from the public police online press are analyzed, turning superficial descriptions into clear facts, revealing the dark reality of the city.",
+  "start_btn": "open the file...",
+
+
+  "chart_info_types_of_crimes": "Absolute number of relevant press releases from 2019 to date, broken down by type of crime. PLEASE NOTE: Not every crime is published in a press release, and different crimes may fall under multiple categories. Overall, these figures may differ from the actual figures.",
+  "chart_info_districts": "This chart shows the ten city districts with the highest crime rates. It shows the relative proportions of crimes compared to the total number.",
+  "chart_info_total_crimes": "Absolute number of relevant press releases from 2019 to date, broken down by type of crime and totaled every six months. PLEASE NOTE: Not every crime is published in a press release, and different crimes may fall under multiple categories. Overall, these figures may differ from the actual figures.",
+
+  "gender_male": "male",
+  "gender_female": "female",
+  "gender_unknown": "unknown",
+
+  "link_original_statement": "to the original press release"
+}

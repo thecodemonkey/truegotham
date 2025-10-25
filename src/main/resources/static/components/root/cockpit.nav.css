@@ -1,0 +1,34 @@
+
+.cockpit-navi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-start;
+  gap: 2rem;
+  margin-right: 25px;
+  margin-top: 25px;
+  font-family: "Courier New", serif;
+
+  .navi-item {
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all .25s;
+
+    &:hover{
+      color: #ff6868;
+    }
+  }
+
+  .lang {
+    color: #aaa;
+    font-family: "Arial", serif;
+
+    span {
+      cursor: pointer;
+    }
+
+    .active {
+      color: #ff6868;
+    }
+  }
+}

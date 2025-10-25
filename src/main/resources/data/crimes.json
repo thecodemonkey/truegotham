@@ -1,0 +1,156 @@
+{
+  "Tötungsdelikt": [
+    "Mord",
+    "Totschlag",
+    "Gewaltakt mit Todesfolge"
+  ],
+  "Gewalt-Delikte": [
+    "Ausschreitung",
+    "Körperverletzung",
+    "Messerstiche",
+    "Faustschlag",
+    "Widerstand gegen Vollstreckungsbeamte",
+    "Tätlicher Angriff auf Vollstreckungsbeamte",
+    "Übergriff",
+    "Stalking",
+    "Kindesmisshandlung",
+    "Tierquälerei",
+    "Gefährliche Körperverletzung",
+    "Schwere Körperverletzung",
+    "waffengebrauch",
+    "waffengewalt"
+  ],
+  "Raub": [
+    "Raubüberfall",
+    "Tankstellenüberfall",
+    "Geldautomatensprengung"
+  ],
+  "Sexualdelikte": [
+    "Sexuelle Belästigung",
+    "Vergewaltigung",
+    "Sexuelle Nötigung",
+    "Sexuelle Gewalt",
+    "Sexualdelikte",
+    "Kinderpornografie",
+    "Jugendpornografie",
+    "Sexueller Missbrauch von Kindern",
+    "Sexueller Missbrauch",
+    "Sexuelledelikte",
+    "exhibitionistische Handlung"
+  ],
+  "Diebstahl": [
+    "Diebstahl",
+    "Taschendiebstahl",
+    "Fahrraddiebstahl",
+    "Ladendiebstahl",
+    "Bandendiebstahl",
+    "Trickdiebstahl",
+    "Reifendiebstahl",
+    "Zigarettendiebstahl",
+    "Handtaschendiebstahl",
+    "Einbruchdiebstahl",
+    "Autodiebstahl",
+    "Identitätsdiebstahl",
+    "Wohnungseinbruch",
+    "Einbruch",
+    "Einbrüche",
+    "Tankstelleneinbruch"
+  ],
+  "Betrug": [
+    "Hehlerei",
+    "Korruption",
+    "Betrug",
+    "Unterschlagung",
+    "Betrugsmasche",
+    "Geldwäsche",
+    "Abrechnungsbetrug",
+    "Trickbetrüger",
+    "Enkeltrickbetrüger",
+    "Betrugsmaschen",
+    "Fälschung",
+    "Urkundenfälschung"
+  ],
+  "Unfall": [
+    "Verkehrsunfall",
+    "sonstige Unfälle"
+  ],
+  "Straßenverkehrsdelikte": [
+    "Verkehrsunfallflucht",
+    "Fahren ohne Fahrerlaubnis",
+    "Beschleunigungsrennen",
+    "Raserei",
+    "Straßenrennen",
+    "Unfallflucht",
+    "Geisterfahrer",
+    "Verkehrsrowdy"
+  ],
+  "Informationsmitteilung": [
+    "Mitteilung über anstehende Veranstaltung",
+    "Pressetermin",
+    "Medientermin",
+    "Events",
+    "Statistik" ,
+    "aktuelle Statistiken"
+  ],
+  "Sonstiges": [
+    "Sonstige Mitteilungen",
+    "allgemeine Informelle MItteilungen "
+  ],
+  "Brand-/Sachbeschädigung": [
+    "Brandanschlag",
+    "Brandstiftung",
+    "Laubenbrand",
+    "Graffitis",
+    "Sachbeschädigung",
+    "Vandalismus"
+  ],
+  "Ordnungs-/Hausfriedensdelikte": [
+    "Ruhestörung",
+    "Hausfriedensbruch",
+    "Störung der Totenruhe"
+  ],
+  "Cyberkriminalität": [
+    "Deepfake",
+    "Ransomware",
+    "Cyberattacke",
+    "Cyber-Grooming",
+    "Phishing",
+    "Social Engineering"
+  ],
+  "Politisch motivierte Taten": [
+    "Terroranschlag",
+    "Bombenattentat",
+    "Massaker",
+    "Kriegsverbrechen",
+    "Völkermord",
+    "Reichsbürger",
+    "Rechtsextremismus",
+    "Linksextremismus",
+    "Islamismus",
+    "Antisemitismus",
+    "Hasskriminalität",
+    "Hassverbrechen",
+    "Hassdelikte"
+  ],
+  "Drogen-Delikte": [
+    "Drogenhandel",
+    "Doping",
+    "Drogenkauf"
+  ],
+  "Bedrohung / Einschüchterung": [
+    "Drohbrief",
+    "Erpressung",
+    "Einschüchterung",
+    "Mobbing"
+  ],
+  "Organisiertes Verbrechen": [
+    "Mafia",
+    "Menschenhandel",
+    "Schmuggel",
+    "Schlepper",
+    "Waffenhandel",
+    "Drogenkartell",
+    "Bandenkriminalität",
+    "Clan-Kriminalität"
+  ]
+}

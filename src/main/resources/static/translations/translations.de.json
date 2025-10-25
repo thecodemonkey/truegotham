@@ -1,0 +1,37 @@
+{
+
+  "nav_about": "Über",
+  "nav_github": "GitHub",
+
+  "title_current_statements": "Aktuelle Meldungen",
+  "title_total_crimes": "Gesamtzahl der Straftaten",
+  "title_types_of_crimes": "Arten von Straftaten",
+  "title_dangerous_districts": "Gefährlichste Bezirke",
+
+  "title_chronology_of_events": "Chronologie der Ereignisse",
+  "title_profile_of_suspect": "Profil des Verdächtigen",
+  "title_tools_and_evidence": "Tatwerkzeuge und Beweismittel",
+  "title_violations": "Tatbestand",
+
+  "profile_age": "Alter",
+  "profile_location": "Wohnort",
+  "profile_gender": "Geschlecht",
+  "profile_hair": "Haare",
+  "profile_behaviour": "Verhalten",
+  "profile_drugs_and_alcohol": "Drogen/Alkohol Test",
+
+  "start_title": "Das Verbrechen lauert im Schatten, unsichtbar und doch spürbar in jeder Straße und an jeder Ecke der Stadt. Es hinterlässt Spuren, die nur diejenigen erkennen können, die genau hinschauen.",
+  "start_subtitle": "Das Projekt TRUE GOTHAM bringt diese verborgenen Taten ans Licht. Mithilfe künstlicher Intelligenz werden Aussagen aus der Online-Presse der öffentlichen Polizei analysiert, oberflächliche Beschreibungen in klare Fakten umgewandelt und die dunkle Realität der Stadt offenbart.",
+  "start_btn": "öffne die Akte...",
+
+
+  "chart_info_types_of_crimes": "Absolute Anzahl relevanter Pressemitteilungen von 2019 bis heute, aufgeschlüsselt nach Art der Straftat. BITTE BEACHTEN SIE: Nicht jede Straftat wird in einer Pressemitteilung veröffentlicht, und verschiedene Straftaten können unter mehrere Kategorien fallen. Insgesamt können diese Zahlen von den tatsächlichen Zahlen abweichen.",
+  "chart_info_districts": "In diesem Chart werden Stadtbezirke mit den meisten Verbrechen gezeigt. Dargestellt sind die relativen Anteile der Verbrechen im Vergleich zur Gesamtzahl.",
+  "chart_info_total_crimes": "Absolute Anzahl relevanter Pressemitteilungen von 2019 bis heute, aufgeschlüsselt nach Art der Straftat und halbjährlich summiert. BITTE BEACHTEN SIE: Nicht jede Straftat wird in einer Pressemitteilung veröffentlicht, und verschiedene Straftaten können unter mehrere Kategorien fallen. Insgesamt können diese Zahlen von den tatsächlichen Zahlen abweichen.",
+
+  "gender_male": "männlich",
+  "gender_female": "weiblich",
+  "gender_unknown": "unbekannt",
+
+  "link_original_statement": "zur originalen Pressemitteilung"
+}

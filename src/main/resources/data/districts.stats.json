@@ -1,0 +1,15 @@
+{
+  "data": [23, 12, 10, 8, 6, 5, 3, 2, 1],
+  "labels": [
+    "Innenstadt",
+    "Hörde",
+    "Dorstfeld",
+    "Wickede",
+    "Eving",
+    "Öspel",
+    "Brackel",
+    "Scharnhorst",
+    "Höchsten"
+  ]
+}
+

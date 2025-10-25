@@ -1,0 +1,163 @@
+<div class="dashboard-container">
+  <header class="dashboard-header">
+    <h1 class="glitch" data-text="True Gotham">True Gotham</h1>
+    <div class="cockpit-navi">
+        <span class="navi-item" data-trans="nav_about">About</span>
+        <span class="navi-item" data-trans="nav_github">GitHub</span>
+        <div class="lang"><span class="lng">de</span> | <span class="lng active">en</span></div>
+    </div>
+  </header>
+  <main class="dashboard-grid">
+    <div id="mapCard" class="dashboard-card card-main hidden">
+      <h2 class="card-title" style="width: 0; height: 0; margin:0; opacity: 0">Main Card</h2>
+      <div id="map"
+           class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+           tabindex="0">
+      </div>
+    </div>
+    <div id="typesCard" class="dashboard-card card-top-left flip-container hidden">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="card-title">
+            <span data-trans="title_types_of_crimes">types of crimes</span>
+            <span class="open-info">i</span></h2>
+          <!--<div class="metric">2,547</div>-->
+          <div class="chart-container" style="height: calc(100% - 2rem) !important;">
+            <canvas id="crimesChart"></canvas>
+          </div>
+        </div>
+        <div class="back" style="background-color: rgb(53 64 66 / 63%)!important;">
+          <img class="desc-img" src="/img/mug.shot.front2.jpeg"/>
+          <div class="info-description">
+            <span class="close-info">x</span>
+            <span data-trans="chart_info_types_of_crimes"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="districtsCard" class="dashboard-card card-top-right flip-container hidden">
+      <div class="flipper">
+        <div class="front" style="justify-content: flex-start;">
+          <h2 class="card-title">
+            <span data-trans="title_dangerous_districts">most dangerous districts</span>
+            <span class="open-info">i</span></h2>
+          <div class="metric">Innenstadt</div>
+          <table id="dangerousDistricts"></table>
+        </div>
+        <div class="back" style="justify-content: flex-start; background-color: rgb(53 64 66 / 63%)!important; overflow-y: auto;">
+          <div class="metric" data-trans="title_profile_of_suspect">Profil des Verdächtigen</div>
+          <table id="suspiciousPersonProfile">
+            <tr>
+              <td>Alter</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>Wohnort</td>
+              <td>Dortmund</td>
+            </tr>
+            <tr>
+              <td>Geschlecht</td>
+              <td>männlich</td>
+            </tr>
+            <tr>
+              <td>Haare</td>
+              <td>Glatze, hinten kurze blonde Haare</td>
+            </tr>
+            <tr>
+              <td>Verhalten</td>
+              <td>extrem aggressiv</td>
+            </tr>
+            <tr>
+              <td>Drogen/Alkohol</td>
+              <td>Test war negativ</td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3>Tatwerkzeuge/Beweismittel</h3></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <ul class="table-ul">
+                  <li>Mercedes-Fahrzeug (für das verbotene Kraftfahrzeugrennen)</li>
+                  <li>Pfefferspray (in der Hosentasche)</li>
+                  <li>Pfefferspray-Abschussgeräte (im Handschuhfach/Kofferraum, waffennahes Aussehen)</li>
+                  <li>Dashcam-Speicherkarte (wurde verschluckt)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3>Tatbestand</h3></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <ul class="table-ul">
+                  <li>Verbotenes Kraftfahrzeugrennen (§ 315d StGB)</li>
+                  <li>Tätlicher Angriff auf Vollstreckungsbeamte (§ 114 StGB)</li>
+                  <li>Widerstand gegen Polizeibeamte (teilweise im Zusammenhang mit dem Angriff und Festnahme)</li>
+                  <li>Verstoß gegen Verkehrsregeln / riskantes Fahrverhalten (Ordnungswidrigkeit, z. B. Rotlichtverstoß, zu schnelles Fahren)</li>
+                  <li>Gefährdung des Straßenverkehrs (durch riskantes Fahrverhalten, Schlangenlinienfahrt)</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+
+          <div class="info-description">
+            <span class="close-info">x</span>
+            <span data-trans="chart_info_districts">
+            In diesem Chart werden die zehn Stadtbezirke mit den meisten Verbrechen gezeigt. Dargestellt sind die relativen Anteile der Verbrechen im Vergleich zur Gesamtzahl.
+              </span>
+          </div>
+
+          <div id="districtDescription">
+            <h2 class="card-title"></h2>
+            <div class="district-description">
+              helllo ich bin die beschreibung!!!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="crimesListCard" class="dashboard-card card-bottom-left flip-container hidden">
+      <div class="flipper">
+        <div class="front">[STATEMETS_LIST]</div>
+        <div class="back">
+          <div class="details-head">
+            <img src="/img/sample5.jpeg"/>
+            <span id="closeDetails">x</span>
+          </div>
+          <div class="card-description" style="height: 65%">
+            <span class="text-time" id="statementTime">26.09.2025 – 13:59</span>
+            <h3 id="statementTitle">Fahrer verschluckt SD-Karte nach verbotenem Kraftfahrzeugrennen und leistet Widerstand - Pfefferspray und Gaspistole sichergestellt</h3>
+            <div id="statementContent"></div>
+            <a id="statementURL" href="https://www.presseportal.de/blaulicht/pm/4971/6126212" target="_blank">❯ <span data-trans="link_original_statement">zur originalen Pressemitteilung</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="totalCard" class="dashboard-card card-bottom-full flip-container vertical hidden">
+      <div class="flipper">
+        <div class="front">
+          <h2 class="card-title">
+            <span>
+              <span data-trans="title_total_crimes">total crimes</span>
+              <span class="titleTotalDistrict metric"></span>
+            </span>
+            <span class="open-info">i</span></h2>
+          <div class="chart-container">
+            <canvas id="crimesTimelineChart"></canvas>
+          </div>
+        </div>
+        <div class="back" style="background-color: rgb(53 64 66 / 63%)!important;">
+          <div class="metric" data-trans="title_chronology_of_events">Chronologie des Geschehens</div>
+          <!--<h2 class="card-title">Chronologie des Geschehens</h2>-->
+          <div class="chart-container">
+            <canvas id="crimeDetailsTimelineChart"></canvas>
+          </div>
+          <div class="info-description">
+            <span class="close-info">x</span>
+            <span class="slim" data-trans="chart_info_total_crimes">In diesem Chart sind alle Verbrechen der vergangenen fünf Jahre nach ihrer Art aufgeschlüsselt. Dargestellt werden die relativen Anteile im Vergleich zur Gesamtzahl. Seltenere Verbrechen sind unter „Sonstiges“ zusammengefasst.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

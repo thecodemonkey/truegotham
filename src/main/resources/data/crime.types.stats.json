@@ -1,0 +1,4 @@
+{
+  "data": [12, 19, 8, 14, 22],
+  "labels" : ["Raub", "Diebstahl", "Verkehrsdelikt", "Gewaltdelikt", "Sonstiges"]
+}

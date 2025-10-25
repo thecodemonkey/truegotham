@@ -1,0 +1,49 @@
+.police-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /*mix-blend-mode: screen;*/
+  z-index: 9999;
+  overflow: hidden;
+  opacity: .7;
+  transform: rotate(43deg);
+  left: -1500px;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.police-overlay .light {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  transform-origin: center;
+}
+
+.police-overlay .light.left {
+  left: -20%;
+  top: 20%;
+  background: radial-gradient(circle, rgba(255,0,30,0.8), rgba(255,0,30,0));
+  animation: glow-red 1.5s infinite ease-in-out;
+}
+
+.police-overlay .light.right {
+  right: -20%;
+  top: 20%;
+  background: radial-gradient(circle, rgba(30,120,255,0.8), rgba(30,120,255,0));
+  animation: glow-blue 1.5s infinite ease-in-out 0.75s;
+}
+
+@keyframes glow-red {
+  0%,100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}
+
+@keyframes glow-blue {
+  0%,100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}

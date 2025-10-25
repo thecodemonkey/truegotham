@@ -1,0 +1,67 @@
+{
+  "id": "08badf0e-4e50-4bcb-999b-cdfaa2777e7e",
+  "statementID": "08badf0e-4e50-4bcb-999b-cdfaa2777e7e",
+  "suspicious": [
+    {
+      "age": 42,
+      "location": "Dortmund",
+      "gender": "MALE",
+      "hair": "Glatze, hinten kurze blonde Haare",
+      "behaviour": "extrem aggressiv",
+      "drugTest": false,
+      "alcoholTest": false
+    }
+  ],
+  "events": [
+    {
+      "unixts": 1758891540,
+      "address": "Dortmund Hiltropwall",
+      "coordinates": {
+        "lat": 51.5109466,
+        "lon": 7.4605286
+      },
+      "main": true,
+      "title": "Zeuge beobachtet einen Mercedes",
+      "description": "Gegen 00:20 Uhr fuhr ein Zeuge auf dem Hiltropwall (Außenwall). Dabei fiel ihm ein Mercedes auf, der sich nicht an die Verkehrsregeln hielt. Während zwei andere Autos bei Rotlicht anhielten, fuhr der Mercedes weiter und löste damit die stationär eingerichtete Geschwindigkeitsmessanlage aus."
+    },
+    {
+      "unixts": 1758891540,
+      "address": "Dortmund Burgwall/Burgtor",
+      "coordinates": {
+        "lat": 51.5174438,
+        "lon": 7.4677950
+      },
+      "main": false,
+      "title": "Polizei hält den Wagen an",
+      "description": "Eine Streifenwagenbesatzung konnte den Mercedes-Fahrer am Burgwall/Burgtor einholen und anhalten."
+    }
+  ],
+  "tools": [
+    "Mercedes-Fahrzeug (für das verbotene Kraftfahrzeugrennen)"
+  ],
+  "evidence": [
+    "Pfefferspray (in der Hosentasche)",
+    "Pfefferspray-Abschussgeräte (im Handschuhfach/Kofferraum, waffennahes Aussehen)",
+    "Dashcam-Speicherkarte (wurde verschluckt)"
+  ],
+  "violations": [
+    {
+      "text": "Verbotenes Kraftfahrzeugrennen",
+      "paragraph": "315d StGB"
+    },
+    {
+      "text": "Verbotenes Kraftfahrzeugrennen",
+      "paragraph": "315d StGB"
+    },
+    {
+      "text": "Tätlicher Angriff auf Vollstreckungsbeamte",
+      "paragraph": "114 StGB"
+    },
+    {
+      "text": "Verstoß gegen Verkehrsregeln / riskantes Fahrverhalten (Ordnungswidrigkeit, z. B. Rotlichtverstoß, zu schnelles Fahren)"
+    },
+    {
+      "text": "Gefährdung des Straßenverkehrs (durch riskantes Fahrverhalten, Schlangenlinienfahrt)"
+    }
+  ]
+}

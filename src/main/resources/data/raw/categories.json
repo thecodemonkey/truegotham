@@ -1,0 +1,12086 @@
+[
+  {
+    "tag": "Autofahren",
+    "crime": false
+  },
+  {
+    "tag": "Schusswaffe",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsteilnehmer",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitskräfte",
+    "crime": false
+  },
+  {
+    "tag": "Kriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Gesetz",
+    "crime": false
+  },
+  {
+    "tag": "Mord",
+    "crime": true
+  },
+  {
+    "tag": "Justiz, Kriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Anklage",
+    "crime": false
+  },
+  {
+    "tag": "Zeuge",
+    "crime": false
+  },
+  {
+    "tag": "Prozess",
+    "crime": false
+  },
+  {
+    "tag": "Polizei",
+    "crime": false
+  },
+  {
+    "tag": "Polizei Nordrhein-Westfalen",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunfall",
+    "crime": false
+  },
+  {
+    "tag": "Transport",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunglück",
+    "crime": false
+  },
+  {
+    "tag": "Radsport",
+    "crime": false
+  },
+  {
+    "tag": "Falschfahrer",
+    "crime": true
+  },
+  {
+    "tag": "Führerschein",
+    "crime": false
+  },
+  {
+    "tag": "Fahrerlaubnis",
+    "crime": false
+  },
+  {
+    "tag": "Fahrer",
+    "crime": false
+  },
+  {
+    "tag": "Notruf",
+    "crime": false
+  },
+  {
+    "tag": "Ermittlungsverfahren",
+    "crime": false
+  },
+  {
+    "tag": "Transportnotfall",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsnotfall",
+    "crime": false
+  },
+  {
+    "tag": "Volkswagen",
+    "crime": false
+  },
+  {
+    "tag": "Automobil",
+    "crime": false
+  },
+  {
+    "tag": "VW Golf",
+    "crime": false
+  },
+  {
+    "tag": "Porsche",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeug",
+    "crime": false
+  },
+  {
+    "tag": "Zeugen",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 448",
+    "crime": false
+  },
+  {
+    "tag": "Porsche Macan",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunfallflucht",
+    "crime": true
+  },
+  {
+    "tag": "Motorsport",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsbericht",
+    "crime": false
+  },
+  {
+    "tag": "Sport",
+    "crime": false
+  },
+  {
+    "tag": "Tatverdächtiger",
+    "crime": false
+  },
+  {
+    "tag": "Fotos",
+    "crime": false
+  },
+  {
+    "tag": "Bank",
+    "crime": false
+  },
+  {
+    "tag": "E-Mail",
+    "crime": false
+  },
+  {
+    "tag": "Öffentlichkeitsfahndung",
+    "crime": false
+  },
+  {
+    "tag": "Pressemitteilung",
+    "crime": false
+  },
+  {
+    "tag": "Fahranfänger",
+    "crime": false
+  },
+  {
+    "tag": "Handy",
+    "crime": false
+  },
+  {
+    "tag": "BMW",
+    "crime": false
+  },
+  {
+    "tag": "Regierung",
+    "crime": false
+  },
+  {
+    "tag": "Innere Sicherheit",
+    "crime": false
+  },
+  {
+    "tag": "Tötungsdelikt",
+    "crime": true
+  },
+  {
+    "tag": "Staatsanwaltschaft",
+    "crime": false
+  },
+  {
+    "tag": "Einladung",
+    "crime": false
+  },
+  {
+    "tag": "Politik",
+    "crime": false
+  },
+  {
+    "tag": "Justiz",
+    "crime": false
+  },
+  {
+    "tag": "Ampel",
+    "crime": false
+  },
+  {
+    "tag": "Auffahrunfall",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunfallaufnahme",
+    "crime": false
+  },
+  {
+    "tag": "Personenkraftwagen",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes-Benz",
+    "crime": false
+  },
+  {
+    "tag": "Bahnunglück",
+    "crime": false
+  },
+  {
+    "tag": "Bahn",
+    "crime": false
+  },
+  {
+    "tag": "Invalidität",
+    "crime": false
+  },
+  {
+    "tag": "Debitkarte",
+    "crime": false
+  },
+  {
+    "tag": "Girokonto",
+    "crime": false
+  },
+  {
+    "tag": "Betrüger",
+    "crime": true
+  },
+  {
+    "tag": "Computer und Informationstechnologie",
+    "crime": false
+  },
+  {
+    "tag": "Wirtschaft",
+    "crime": false
+  },
+  {
+    "tag": "Dienstleistung",
+    "crime": false
+  },
+  {
+    "tag": "Einzelhandel",
+    "crime": false
+  },
+  {
+    "tag": "Computerkriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Korso",
+    "crime": false
+  },
+  {
+    "tag": "Dortmunder Innenstadt",
+    "crime": false
+  },
+  {
+    "tag": "Frankreich",
+    "crime": false
+  },
+  {
+    "tag": "Ford",
+    "crime": false
+  },
+  {
+    "tag": "Cold Case",
+    "crime": false
+  },
+  {
+    "tag": "Fahndung",
+    "crime": false
+  },
+  {
+    "tag": "Erste Hilfe",
+    "crime": false
+  },
+  {
+    "tag": "Krankenhaus",
+    "crime": false
+  },
+  {
+    "tag": "Radfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Sturz",
+    "crime": false
+  },
+  {
+    "tag": "Medizin, Gesundheit",
+    "crime": false
+  },
+  {
+    "tag": "Medikament",
+    "crime": false
+  },
+  {
+    "tag": "Pfefferspray",
+    "crime": false
+  },
+  {
+    "tag": "Strafanzeige",
+    "crime": false
+  },
+  {
+    "tag": "Flughafen",
+    "crime": false
+  },
+  {
+    "tag": "Parkplatz",
+    "crime": false
+  },
+  {
+    "tag": "Reizgas",
+    "crime": false
+  },
+  {
+    "tag": "Streit",
+    "crime": false
+  },
+  {
+    "tag": "Ausschreitung",
+    "crime": true
+  },
+  {
+    "tag": "Autokorso",
+    "crime": false
+  },
+  {
+    "tag": "Flucht",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnpolizei",
+    "crime": false
+  },
+  {
+    "tag": "A40",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrskontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Versicherung",
+    "crime": false
+  },
+  {
+    "tag": "Hehlerei",
+    "crime": true
+  },
+  {
+    "tag": "Verstöße",
+    "crime": true
+  },
+  {
+    "tag": "Opel",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugschein",
+    "crime": false
+  },
+  {
+    "tag": "Georgien",
+    "crime": false
+  },
+  {
+    "tag": "Fahren ohne Fahrerlaubnis",
+    "crime": true
+  },
+  {
+    "tag": "Droge",
+    "crime": false
+  },
+  {
+    "tag": "Zigaretten",
+    "crime": false
+  },
+  {
+    "tag": "Kriminalpolizei",
+    "crime": false
+  },
+  {
+    "tag": "Westenhellweg",
+    "crime": false
+  },
+  {
+    "tag": "Elektrische Zigarette",
+    "crime": false
+  },
+  {
+    "tag": "Fahrraddiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Jahreswechsel",
+    "crime": false
+  },
+  {
+    "tag": "Bereitschaftspolizei",
+    "crime": false
+  },
+  {
+    "tag": "Mountainbike",
+    "crime": false
+  },
+  {
+    "tag": "Ethik",
+    "crime": false
+  },
+  {
+    "tag": "Korruption",
+    "crime": true
+  },
+  {
+    "tag": "Verteidigung",
+    "crime": false
+  },
+  {
+    "tag": "Polizisten",
+    "crime": false
+  },
+  {
+    "tag": "Kopfhörer",
+    "crime": false
+  },
+  {
+    "tag": "Erkennungsdienstliche Behandlung",
+    "crime": false
+  },
+  {
+    "tag": "Mobiltelefon",
+    "crime": false
+  },
+  {
+    "tag": "Polizeibeamte",
+    "crime": false
+  },
+  {
+    "tag": "Betrug",
+    "crime": true
+  },
+  {
+    "tag": "Unterschlagung",
+    "crime": true
+  },
+  {
+    "tag": "Taschendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Gehhilfe",
+    "crime": false
+  },
+  {
+    "tag": "Flasche",
+    "crime": false
+  },
+  {
+    "tag": "Raub",
+    "crime": true
+  },
+  {
+    "tag": "Telefon",
+    "crime": false
+  },
+  {
+    "tag": "Dortmunder",
+    "crime": false
+  },
+  {
+    "tag": "Täter",
+    "crime": true
+  },
+  {
+    "tag": "Lebensmittel",
+    "crime": false
+  },
+  {
+    "tag": "Essen und Trinken",
+    "crime": false
+  },
+  {
+    "tag": "Konsumgüter",
+    "crime": false
+  },
+  {
+    "tag": "Getränke",
+    "crime": false
+  },
+  {
+    "tag": "Diensthund",
+    "crime": false
+  },
+  {
+    "tag": "Schlagstock",
+    "crime": false
+  },
+  {
+    "tag": "Personen",
+    "crime": false
+  },
+  {
+    "tag": "Haus",
+    "crime": false
+  },
+  {
+    "tag": "Kriminaldauerdienst",
+    "crime": false
+  },
+  {
+    "tag": "Terroranschlag",
+    "crime": true
+  },
+  {
+    "tag": "Untersuchungsshaft",
+    "crime": false
+  },
+  {
+    "tag": "Ermittlungsrichter",
+    "crime": false
+  },
+  {
+    "tag": "Nachtrag",
+    "crime": false
+  },
+  {
+    "tag": "Oberstaatsanwalt",
+    "crime": false
+  },
+  {
+    "tag": "Strafgesetzbuch",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwehr",
+    "crime": false
+  },
+  {
+    "tag": "Polizeigewahrsam",
+    "crime": false
+  },
+  {
+    "tag": "Bilanz",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitskonzept",
+    "crime": false
+  },
+  {
+    "tag": "Stadt",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 2",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsstau",
+    "crime": false
+  },
+  {
+    "tag": "Autobahn",
+    "crime": false
+  },
+  {
+    "tag": "Alleinunfall",
+    "crime": false
+  },
+  {
+    "tag": "Autos",
+    "crime": false
+  },
+  {
+    "tag": "Unfällen",
+    "crime": false
+  },
+  {
+    "tag": "Fahrtrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Krieg",
+    "crime": false
+  },
+  {
+    "tag": "Tatverdächtige",
+    "crime": false
+  },
+  {
+    "tag": "Deutschland",
+    "crime": false
+  },
+  {
+    "tag": "Männer",
+    "crime": false
+  },
+  {
+    "tag": "Taschenlampe",
+    "crime": false
+  },
+  {
+    "tag": "Peugeot",
+    "crime": false
+  },
+  {
+    "tag": "Diebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Kokain",
+    "crime": true
+  },
+  {
+    "tag": "Auto",
+    "crime": false
+  },
+  {
+    "tag": "Ethanol",
+    "crime": false
+  },
+  {
+    "tag": "Bier",
+    "crime": false
+  },
+  {
+    "tag": "Navigationssystem",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwehr Dortmund",
+    "crime": false
+  },
+  {
+    "tag": "Citroën",
+    "crime": false
+  },
+  {
+    "tag": "Unfall",
+    "crime": false
+  },
+  {
+    "tag": "Rettungswagen",
+    "crime": false
+  },
+  {
+    "tag": "Geldautomat",
+    "crime": false
+  },
+  {
+    "tag": "Überwachungskamera",
+    "crime": false
+  },
+  {
+    "tag": "Geld",
+    "crime": false
+  },
+  {
+    "tag": "Finder",
+    "crime": false
+  },
+  {
+    "tag": "Konto",
+    "crime": false
+  },
+  {
+    "tag": "Fotografie",
+    "crime": false
+  },
+  {
+    "tag": "Motorrad",
+    "crime": false
+  },
+  {
+    "tag": "Sauerland",
+    "crime": false
+  },
+  {
+    "tag": "Stress",
+    "crime": false
+  },
+  {
+    "tag": "Alpen",
+    "crime": false
+  },
+  {
+    "tag": "Motorradsaison",
+    "crime": false
+  },
+  {
+    "tag": "Polizeihauptkommissar",
+    "crime": false
+  },
+  {
+    "tag": "Quiz",
+    "crime": false
+  },
+  {
+    "tag": "BMX",
+    "crime": false
+  },
+  {
+    "tag": "Einsatzleitstelle",
+    "crime": false
+  },
+  {
+    "tag": "Brille",
+    "crime": false
+  },
+  {
+    "tag": "Freunde",
+    "crime": false
+  },
+  {
+    "tag": "Seniorin",
+    "crime": false
+  },
+  {
+    "tag": "Katastrophe",
+    "crime": false
+  },
+  {
+    "tag": "Frauen",
+    "crime": false
+  },
+  {
+    "tag": "Nachtragsmeldung",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 1",
+    "crime": false
+  },
+  {
+    "tag": "Beifahrer",
+    "crime": false
+  },
+  {
+    "tag": "A 1",
+    "crime": false
+  },
+  {
+    "tag": "Bahnhof Dortmund-Scharnhorst",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Beschleunigungsrennen",
+    "crime": true
+  },
+  {
+    "tag": "Korso",
+    "crime": false
+  },
+  {
+    "tag": "Rassismus",
+    "crime": false
+  },
+  {
+    "tag": "Betriebserlaubnis",
+    "crime": false
+  },
+  {
+    "tag": "Kraftfahrzeug",
+    "crime": false
+  },
+  {
+    "tag": "Straßenverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Sachbeschädigung",
+    "crime": true
+  },
+  {
+    "tag": "Raser",
+    "crime": true
+  },
+  {
+    "tag": "Bundesautobahn 45",
+    "crime": false
+  },
+  {
+    "tag": "Lkw",
+    "crime": false
+  },
+  {
+    "tag": "Lastkraftwagen",
+    "crime": false
+  },
+  {
+    "tag": "Pressegespräch",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheit",
+    "crime": false
+  },
+  {
+    "tag": "Stahl",
+    "crime": false
+  },
+  {
+    "tag": "Serbien",
+    "crime": false
+  },
+  {
+    "tag": "Durchsuchungen",
+    "crime": false
+  },
+  {
+    "tag": "Ermittlungskommission",
+    "crime": false
+  },
+  {
+    "tag": "Gericht",
+    "crime": false
+  },
+  {
+    "tag": "Richter",
+    "crime": false
+  },
+  {
+    "tag": "Spielhalle",
+    "crime": false
+  },
+  {
+    "tag": "Rechtspopulismus",
+    "crime": false
+  },
+  {
+    "tag": "Extremismus",
+    "crime": false
+  },
+  {
+    "tag": "Gewalt",
+    "crime": false
+  },
+  {
+    "tag": "Islam",
+    "crime": false
+  },
+  {
+    "tag": "Moschee",
+    "crime": false
+  },
+  {
+    "tag": "Brandanschlag",
+    "crime": true
+  },
+  {
+    "tag": "Polizeipräsident",
+    "crime": false
+  },
+  {
+    "tag": "Religion, Weltanschauung",
+    "crime": false
+  },
+  {
+    "tag": "Kleinwagen",
+    "crime": false
+  },
+  {
+    "tag": "VW Fox",
+    "crime": false
+  },
+  {
+    "tag": "Straßensperrung",
+    "crime": false
+  },
+  {
+    "tag": "Senioren",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungseinbruch",
+    "crime": true
+  },
+  {
+    "tag": "Verschwörungstheorie",
+    "crime": false
+  },
+  {
+    "tag": "Sexuelle Belästigung",
+    "crime": true
+  },
+  {
+    "tag": "Kriminalstatistik",
+    "crime": false
+  },
+  {
+    "tag": "Amtsbezeichnungen der deutschen Polizei",
+    "crime": false
+  },
+  {
+    "tag": "Ordnungsamt",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsstaat",
+    "crime": false
+  },
+  {
+    "tag": "Streifendienst",
+    "crime": false
+  },
+  {
+    "tag": "Straftaten",
+    "crime": true
+  },
+  {
+    "tag": "Polizeiliche Kriminalstatistik",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsextremismus",
+    "crime": false
+  },
+  {
+    "tag": "Lebensqualität",
+    "crime": false
+  },
+  {
+    "tag": "Aufklärungsquote",
+    "crime": false
+  },
+  {
+    "tag": "Nord",
+    "crime": false
+  },
+  {
+    "tag": "Hausbank",
+    "crime": false
+  },
+  {
+    "tag": "Messer",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 40",
+    "crime": false
+  },
+  {
+    "tag": "Kontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Beton",
+    "crime": false
+  },
+  {
+    "tag": "Kreuzung",
+    "crime": false
+  },
+  {
+    "tag": "Straßenbeleuchtung",
+    "crime": false
+  },
+  {
+    "tag": "Schutzplanke",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnraststätte",
+    "crime": false
+  },
+  {
+    "tag": "Rumänien",
+    "crime": false
+  },
+  {
+    "tag": "Mitsubishi",
+    "crime": false
+  },
+  {
+    "tag": "Branchen",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 445",
+    "crime": false
+  },
+  {
+    "tag": "Audi",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnkreuz Werl",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunfälle",
+    "crime": false
+  },
+  {
+    "tag": "Sattelzug",
+    "crime": false
+  },
+  {
+    "tag": "Sattelauflieger",
+    "crime": false
+  },
+  {
+    "tag": "Kleintransporter",
+    "crime": false
+  },
+  {
+    "tag": "Richtung",
+    "crime": false
+  },
+  {
+    "tag": "VW Polo IV",
+    "crime": false
+  },
+  {
+    "tag": "Belarus",
+    "crime": false
+  },
+  {
+    "tag": "Brand",
+    "crime": false
+  },
+  {
+    "tag": "Grundschule",
+    "crime": false
+  },
+  {
+    "tag": "Brandstiftung",
+    "crime": true
+  },
+  {
+    "tag": "Feuer",
+    "crime": false
+  },
+  {
+    "tag": "Zeugenaufruf",
+    "crime": false
+  },
+  {
+    "tag": "Presseerklärung",
+    "crime": false
+  },
+  {
+    "tag": "Haftbefehl",
+    "crime": false
+  },
+  {
+    "tag": "Drogenhandel",
+    "crime": true
+  },
+  {
+    "tag": "Durchsuchung",
+    "crime": false
+  },
+  {
+    "tag": "Cannabis als Rauschmittel",
+    "crime": true
+  },
+  {
+    "tag": "Amphetamin",
+    "crime": true
+  },
+  {
+    "tag": "Smartphone",
+    "crime": false
+  },
+  {
+    "tag": "Amtsgericht",
+    "crime": false
+  },
+  {
+    "tag": "Drogenhändler",
+    "crime": true
+  },
+  {
+    "tag": "Justizvollzugsanstalt",
+    "crime": false
+  },
+  {
+    "tag": "Berlin Ostbahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Drogenkriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Strafvollzug",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 44",
+    "crime": false
+  },
+  {
+    "tag": "Beschleunigungsstreifen",
+    "crime": false
+  },
+  {
+    "tag": "Tierheim",
+    "crime": false
+  },
+  {
+    "tag": "Verletzten",
+    "crime": false
+  },
+  {
+    "tag": "Unfälle",
+    "crime": false
+  },
+  {
+    "tag": "Brücke",
+    "crime": false
+  },
+  {
+    "tag": "Fernfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Adidas",
+    "crime": false
+  },
+  {
+    "tag": "Parfüm",
+    "crime": false
+  },
+  {
+    "tag": "Bekleidung",
+    "crime": false
+  },
+  {
+    "tag": "Ladendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Waffengesetz",
+    "crime": false
+  },
+  {
+    "tag": "Schreckschusswaffe",
+    "crime": false
+  },
+  {
+    "tag": "Supermarkt",
+    "crime": false
+  },
+  {
+    "tag": "Körperverletzung",
+    "crime": true
+  },
+  {
+    "tag": "Erpressung",
+    "crime": true
+  },
+  {
+    "tag": "Kiosk",
+    "crime": false
+  },
+  {
+    "tag": "Geschwindigkeitsüberwachung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrverbot",
+    "crime": false
+  },
+  {
+    "tag": "Bargeld",
+    "crime": false
+  },
+  {
+    "tag": "Geschwindigkeitskontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Renault",
+    "crime": false
+  },
+  {
+    "tag": "Widerstand",
+    "crime": false
+  },
+  {
+    "tag": "England",
+    "crime": false
+  },
+  {
+    "tag": "Übersetzer",
+    "crime": false
+  },
+  {
+    "tag": "Marihuana",
+    "crime": true
+  },
+  {
+    "tag": "Betäubungsmittelgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Haschisch",
+    "crime": true
+  },
+  {
+    "tag": "Drogen",
+    "crime": true
+  },
+  {
+    "tag": "Wohnung",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Nette",
+    "crime": false
+  },
+  {
+    "tag": "Sucht",
+    "crime": false
+  },
+  {
+    "tag": "E-Tretroller",
+    "crime": false
+  },
+  {
+    "tag": "Tretroller",
+    "crime": false
+  },
+  {
+    "tag": "Festnahme",
+    "crime": false
+  },
+  {
+    "tag": "Kleinkraftrad",
+    "crime": false
+  },
+  {
+    "tag": "Beamte",
+    "crime": false
+  },
+  {
+    "tag": "Frau",
+    "crime": false
+  },
+  {
+    "tag": "Raubüberfall",
+    "crime": true
+  },
+  {
+    "tag": "Jogginghose",
+    "crime": false
+  },
+  {
+    "tag": "Puma",
+    "crime": false
+  },
+  {
+    "tag": "Hardware",
+    "crime": false
+  },
+  {
+    "tag": "Schutzkleidung",
+    "crime": false
+  },
+  {
+    "tag": "Fußgänger",
+    "crime": false
+  },
+  {
+    "tag": "Suzuki",
+    "crime": false
+  },
+  {
+    "tag": "Sprinter",
+    "crime": false
+  },
+  {
+    "tag": "Kamener Kreuz",
+    "crime": false
+  },
+  {
+    "tag": "Motorradfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Bereich",
+    "crime": false
+  },
+  {
+    "tag": "Lkw-Fahrer",
+    "crime": false
+  },
+  {
+    "tag": "Wehr",
+    "crime": false
+  },
+  {
+    "tag": "Polen",
+    "crime": false
+  },
+  {
+    "tag": "Kleidung",
+    "crime": false
+  },
+  {
+    "tag": "A45",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwehrhaus",
+    "crime": false
+  },
+  {
+    "tag": "Folgetonhorn",
+    "crime": false
+  },
+  {
+    "tag": "Freiwillige Feuerwehr",
+    "crime": false
+  },
+  {
+    "tag": "Blutentnahme",
+    "crime": false
+  },
+  {
+    "tag": "Hubschrauber",
+    "crime": false
+  },
+  {
+    "tag": "Berufsfeuerwehr",
+    "crime": false
+  },
+  {
+    "tag": "Hilfsorganisation",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsgurt",
+    "crime": false
+  },
+  {
+    "tag": "Bremsweg",
+    "crime": false
+  },
+  {
+    "tag": "Fahrrad",
+    "crime": false
+  },
+  {
+    "tag": "Deutscher Verkehrssicherheitsrat",
+    "crime": false
+  },
+  {
+    "tag": "Phoenix-See",
+    "crime": false
+  },
+  {
+    "tag": "E-Bike",
+    "crime": false
+  },
+  {
+    "tag": "Berufskraftfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Verkehrswacht",
+    "crime": false
+  },
+  {
+    "tag": "Berufsgenossenschaft",
+    "crime": false
+  },
+  {
+    "tag": "Promille",
+    "crime": false
+  },
+  {
+    "tag": "Kontrolltag",
+    "crime": false
+  },
+  {
+    "tag": "Chemie",
+    "crime": false
+  },
+  {
+    "tag": "Empathie",
+    "crime": false
+  },
+  {
+    "tag": "Gerechtigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Toleranz",
+    "crime": false
+  },
+  {
+    "tag": "Bundeswehr",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Bahn",
+    "crime": false
+  },
+  {
+    "tag": "Ausstellung",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsüberwachung",
+    "crime": false
+  },
+  {
+    "tag": "Fototermin",
+    "crime": false
+  },
+  {
+    "tag": "Rettungskräfte",
+    "crime": false
+  },
+  {
+    "tag": "Philosophie",
+    "crime": false
+  },
+  {
+    "tag": "Zulassungsbescheinigung",
+    "crime": false
+  },
+  {
+    "tag": "Scharnhorst",
+    "crime": false
+  },
+  {
+    "tag": "Internet",
+    "crime": false
+  },
+  {
+    "tag": "Tempolimit",
+    "crime": false
+  },
+  {
+    "tag": "Kaiser-Wilhelm-Denkmal an der Porta Westfalica",
+    "crime": false
+  },
+  {
+    "tag": "Graffiti",
+    "crime": false
+  },
+  {
+    "tag": "Denkmal",
+    "crime": false
+  },
+  {
+    "tag": "Staatsschutz",
+    "crime": false
+  },
+  {
+    "tag": "Hauptuntersuchung",
+    "crime": false
+  },
+  {
+    "tag": "Drogeneinfluss",
+    "crime": true
+  },
+  {
+    "tag": "Fesseln",
+    "crime": false
+  },
+  {
+    "tag": "Haut",
+    "crime": false
+  },
+  {
+    "tag": "Bundesamt für Güterverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Schwertransport",
+    "crime": false
+  },
+  {
+    "tag": "Ladungssicherung",
+    "crime": false
+  },
+  {
+    "tag": "Polizeiinspektion",
+    "crime": false
+  },
+  {
+    "tag": "Niederlande",
+    "crime": false
+  },
+  {
+    "tag": "Veterinäramt",
+    "crime": false
+  },
+  {
+    "tag": "Zoll",
+    "crime": false
+  },
+  {
+    "tag": "Pandemie",
+    "crime": false
+  },
+  {
+    "tag": "Medien",
+    "crime": false
+  },
+  {
+    "tag": "Fernsehen",
+    "crime": false
+  },
+  {
+    "tag": "Massenmedien",
+    "crime": false
+  },
+  {
+    "tag": "Bandendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Bulgarien",
+    "crime": false
+  },
+  {
+    "tag": "U-Bahn",
+    "crime": false
+  },
+  {
+    "tag": "Motorradfahrerin",
+    "crime": false
+  },
+  {
+    "tag": "Einbruch",
+    "crime": true
+  },
+  {
+    "tag": "Cappenberg",
+    "crime": false
+  },
+  {
+    "tag": "Heavy Metal",
+    "crime": false
+  },
+  {
+    "tag": "Bus",
+    "crime": false
+  },
+  {
+    "tag": "Gleis",
+    "crime": false
+  },
+  {
+    "tag": "Bahnübergang",
+    "crime": false
+  },
+  {
+    "tag": "Radfahrerin",
+    "crime": false
+  },
+  {
+    "tag": "Autofahrer",
+    "crime": false
+  },
+  {
+    "tag": "Fiat",
+    "crime": false
+  },
+  {
+    "tag": "Westhofener Kreuz",
+    "crime": false
+  },
+  {
+    "tag": "Frankfurt",
+    "crime": false
+  },
+  {
+    "tag": "Reise",
+    "crime": false
+  },
+  {
+    "tag": "Rettungsgasse",
+    "crime": false
+  },
+  {
+    "tag": "Erstmeldung",
+    "crime": false
+  },
+  {
+    "tag": "Lkw-Brand",
+    "crime": false
+  },
+  {
+    "tag": "Lenne",
+    "crime": false
+  },
+  {
+    "tag": "Gefahrgut",
+    "crime": false
+  },
+  {
+    "tag": "Ausstellungseröffnung",
+    "crime": false
+  },
+  {
+    "tag": "Gewerkschaft der Polizei",
+    "crime": false
+  },
+  {
+    "tag": "Kindergarten",
+    "crime": false
+  },
+  {
+    "tag": "COVID-19-Pandemie",
+    "crime": false
+  },
+  {
+    "tag": "Vorschule",
+    "crime": false
+  },
+  {
+    "tag": "Puppentheater",
+    "crime": false
+  },
+  {
+    "tag": "Bundeskongress",
+    "crime": false
+  },
+  {
+    "tag": "Kindertagesstätten",
+    "crime": false
+  },
+  {
+    "tag": "Weiterbildung",
+    "crime": false
+  },
+  {
+    "tag": "Kreisverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Rettungshubschrauber",
+    "crime": false
+  },
+  {
+    "tag": "Person",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 46",
+    "crime": false
+  },
+  {
+    "tag": "Westpark",
+    "crime": false
+  },
+  {
+    "tag": "Versammlungsgeschehen",
+    "crime": false
+  },
+  {
+    "tag": "Partei",
+    "crime": false
+  },
+  {
+    "tag": "Überholvorgang",
+    "crime": false
+  },
+  {
+    "tag": "Airbag",
+    "crime": false
+  },
+  {
+    "tag": "Ordnungswidrigkeit",
+    "crime": true
+  },
+  {
+    "tag": "Pkw",
+    "crime": false
+  },
+  {
+    "tag": "Tankstelle - Polizei",
+    "crime": false
+  },
+  {
+    "tag": "Überfall",
+    "crime": true
+  },
+  {
+    "tag": "Wohnungsdurchsuchung",
+    "crime": false
+  },
+  {
+    "tag": "Innenstadt",
+    "crime": false
+  },
+  {
+    "tag": "Tätowierung",
+    "crime": false
+  },
+  {
+    "tag": "Kleingarten",
+    "crime": false
+  },
+  {
+    "tag": "FC Barcelona",
+    "crime": false
+  },
+  {
+    "tag": "Spanien",
+    "crime": false
+  },
+  {
+    "tag": "Hellweg",
+    "crime": false
+  },
+  {
+    "tag": "Trikot",
+    "crime": false
+  },
+  {
+    "tag": "Agrar",
+    "crime": false
+  },
+  {
+    "tag": "Fahrtrichtungsanzeiger",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugführer",
+    "crime": false
+  },
+  {
+    "tag": "Alkoholkonsum",
+    "crime": false
+  },
+  {
+    "tag": "Gemeinde",
+    "crime": false
+  },
+  {
+    "tag": "Schüsse",
+    "crime": false
+  },
+  {
+    "tag": "Verkauf",
+    "crime": false
+  },
+  {
+    "tag": "Waffen",
+    "crime": false
+  },
+  {
+    "tag": "Jeans",
+    "crime": false
+  },
+  {
+    "tag": "Tunnel Wambel",
+    "crime": false
+  },
+  {
+    "tag": "Streifenwagen",
+    "crime": false
+  },
+  {
+    "tag": "Tunnel",
+    "crime": false
+  },
+  {
+    "tag": "Porsche Panamera",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes",
+    "crime": false
+  },
+  {
+    "tag": "Kindersitz",
+    "crime": false
+  },
+  {
+    "tag": "Kontrollstelle",
+    "crime": false
+  },
+  {
+    "tag": "Steuer",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnen",
+    "crime": false
+  },
+  {
+    "tag": "Kontrollen",
+    "crime": false
+  },
+  {
+    "tag": "Reiseverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Pressemeldung",
+    "crime": false
+  },
+  {
+    "tag": "Korrektur",
+    "crime": false
+  },
+  {
+    "tag": "Unfallflucht",
+    "crime": true
+  },
+  {
+    "tag": "Gehweg",
+    "crime": false
+  },
+  {
+    "tag": "Demonstration",
+    "crime": false
+  },
+  {
+    "tag": "Pressefreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Versammlungsfreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Nachrichtensender",
+    "crime": false
+  },
+  {
+    "tag": "Bäume",
+    "crime": false
+  },
+  {
+    "tag": "Journalist",
+    "crime": false
+  },
+  {
+    "tag": "Demokratie",
+    "crime": false
+  },
+  {
+    "tag": "Zeitung",
+    "crime": false
+  },
+  {
+    "tag": "Dealer",
+    "crime": true
+  },
+  {
+    "tag": "Drogendealer",
+    "crime": true
+  },
+  {
+    "tag": "Wohnwagen",
+    "crime": false
+  },
+  {
+    "tag": "Notbremse",
+    "crime": false
+  },
+  {
+    "tag": "Litauen",
+    "crime": false
+  },
+  {
+    "tag": "Umzug",
+    "crime": false
+  },
+  {
+    "tag": "Team",
+    "crime": false
+  },
+  {
+    "tag": "Freiheit",
+    "crime": false
+  },
+  {
+    "tag": "Schutz",
+    "crime": false
+  },
+  {
+    "tag": "Menschenrechte",
+    "crime": false
+  },
+  {
+    "tag": "Fußgängerin",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnkreuz Wuppertal-Nord",
+    "crime": false
+  },
+  {
+    "tag": "Führerhaus",
+    "crime": false
+  },
+  {
+    "tag": "Reh",
+    "crime": false
+  },
+  {
+    "tag": "COVID-19",
+    "crime": false
+  },
+  {
+    "tag": "Trickdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Delta-Variante",
+    "crime": false
+  },
+  {
+    "tag": "Lunge",
+    "crime": false
+  },
+  {
+    "tag": "Krankheit",
+    "crime": false
+  },
+  {
+    "tag": "Arbeit, Soziales",
+    "crime": false
+  },
+  {
+    "tag": "Baum",
+    "crime": false
+  },
+  {
+    "tag": "Reifen",
+    "crime": false
+  },
+  {
+    "tag": "Kaution",
+    "crime": false
+  },
+  {
+    "tag": "Geldbuße",
+    "crime": false
+  },
+  {
+    "tag": "Stilllegung",
+    "crime": false
+  },
+  {
+    "tag": "Rad",
+    "crime": false
+  },
+  {
+    "tag": "Sprengstoffgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Marokko",
+    "crime": false
+  },
+  {
+    "tag": "Menschen",
+    "crime": false
+  },
+  {
+    "tag": "Betäubungsmittel",
+    "crime": true
+  },
+  {
+    "tag": "Kamera",
+    "crime": false
+  },
+  {
+    "tag": "Nissan",
+    "crime": false
+  },
+  {
+    "tag": "Gold",
+    "crime": false
+  },
+  {
+    "tag": "Rolex",
+    "crime": false
+  },
+  {
+    "tag": "Audemars Piguet",
+    "crime": false
+  },
+  {
+    "tag": "Nike",
+    "crime": false
+  },
+  {
+    "tag": "Gruppe",
+    "crime": false
+  },
+  {
+    "tag": "Sperrmüll",
+    "crime": false
+  },
+  {
+    "tag": "Abfallentsorgung",
+    "crime": false
+  },
+  {
+    "tag": "Betrugsmasche",
+    "crime": true
+  },
+  {
+    "tag": "Webseite",
+    "crime": false
+  },
+  {
+    "tag": "Winterdienst",
+    "crime": false
+  },
+  {
+    "tag": "Fußball-Bundesliga",
+    "crime": false
+  },
+  {
+    "tag": "Marathonlauf",
+    "crime": false
+  },
+  {
+    "tag": "Einsatz",
+    "crime": false
+  },
+  {
+    "tag": "Ostern",
+    "crime": false
+  },
+  {
+    "tag": "Schweiz",
+    "crime": false
+  },
+  {
+    "tag": "Fußball",
+    "crime": false
+  },
+  {
+    "tag": "Lkw-Unfall",
+    "crime": false
+  },
+  {
+    "tag": "Berufsverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Wickede",
+    "crime": false
+  },
+  {
+    "tag": "Seat",
+    "crime": false
+  },
+  {
+    "tag": "Rücknahme",
+    "crime": false
+  },
+  {
+    "tag": "Zusammenstoß",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeuge",
+    "crime": false
+  },
+  {
+    "tag": "Polizeiwache",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Eving",
+    "crime": false
+  },
+  {
+    "tag": "Kopftuch",
+    "crime": false
+  },
+  {
+    "tag": "Polizeidienststelle",
+    "crime": false
+  },
+  {
+    "tag": "Fahndungsaufruf",
+    "crime": false
+  },
+  {
+    "tag": "Schulranzen",
+    "crime": false
+  },
+  {
+    "tag": "Mode",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachtsmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Flughafen Düsseldorf",
+    "crime": false
+  },
+  {
+    "tag": "Europa",
+    "crime": false
+  },
+  {
+    "tag": "Dirigent",
+    "crime": false
+  },
+  {
+    "tag": "Benefizkonzert",
+    "crime": false
+  },
+  {
+    "tag": "Sprachförderung",
+    "crime": false
+  },
+  {
+    "tag": "Spenden",
+    "crime": false
+  },
+  {
+    "tag": "Landespolizeiorchester",
+    "crime": false
+  },
+  {
+    "tag": "Musik",
+    "crime": false
+  },
+  {
+    "tag": "Klassik",
+    "crime": false
+  },
+  {
+    "tag": "Borussia Dortmund",
+    "crime": false
+  },
+  {
+    "tag": "UEFA Champions League",
+    "crime": false
+  },
+  {
+    "tag": "Pyrotechnik",
+    "crime": false
+  },
+  {
+    "tag": "BVB",
+    "crime": false
+  },
+  {
+    "tag": "Verein",
+    "crime": false
+  },
+  {
+    "tag": "Spiel",
+    "crime": false
+  },
+  {
+    "tag": "Plastiktüte",
+    "crime": false
+  },
+  {
+    "tag": "Hanf",
+    "crime": false
+  },
+  {
+    "tag": "Baseballschläger",
+    "crime": false
+  },
+  {
+    "tag": "Notaufnahme",
+    "crime": false
+  },
+  {
+    "tag": "Einbrecher",
+    "crime": true
+  },
+  {
+    "tag": "Pedelec",
+    "crime": false
+  },
+  {
+    "tag": "Advent",
+    "crime": false
+  },
+  {
+    "tag": "Tafel",
+    "crime": false
+  },
+  {
+    "tag": "Kinder",
+    "crime": false
+  },
+  {
+    "tag": "Gesang",
+    "crime": false
+  },
+  {
+    "tag": "Urlaub",
+    "crime": false
+  },
+  {
+    "tag": "Christentum",
+    "crime": false
+  },
+  {
+    "tag": "Feiertag",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachten",
+    "crime": false
+  },
+  {
+    "tag": "Kirche",
+    "crime": false
+  },
+  {
+    "tag": "Evangelische Kirche",
+    "crime": false
+  },
+  {
+    "tag": "Anschlussstelle",
+    "crime": false
+  },
+  {
+    "tag": "B236",
+    "crime": false
+  },
+  {
+    "tag": "Wetter",
+    "crime": false
+  },
+  {
+    "tag": "Explosion",
+    "crime": false
+  },
+  {
+    "tag": "Parkhaus",
+    "crime": false
+  },
+  {
+    "tag": "Öffentlichkeitsarbeit",
+    "crime": false
+  },
+  {
+    "tag": "Handtasche",
+    "crime": false
+  },
+  {
+    "tag": "Diebesgut",
+    "crime": true
+  },
+  {
+    "tag": "Bankfiliale",
+    "crime": false
+  },
+  {
+    "tag": "Kennzeichen",
+    "crime": false
+  },
+  {
+    "tag": "Südtirol",
+    "crime": false
+  },
+  {
+    "tag": "Italien",
+    "crime": false
+  },
+  {
+    "tag": "Vorgarten",
+    "crime": false
+  },
+  {
+    "tag": "Gefängnis",
+    "crime": false
+  },
+  {
+    "tag": "Kohlenmonoxidvergiftung",
+    "crime": false
+  },
+  {
+    "tag": "Schornsteinfeger",
+    "crime": false
+  },
+  {
+    "tag": "Krankenhäuser",
+    "crime": false
+  },
+  {
+    "tag": "Ursache",
+    "crime": false
+  },
+  {
+    "tag": "Kopfschmerz",
+    "crime": false
+  },
+  {
+    "tag": "S-Bahn",
+    "crime": false
+  },
+  {
+    "tag": "Café",
+    "crime": false
+  },
+  {
+    "tag": "Käse",
+    "crime": false
+  },
+  {
+    "tag": "Weichkäse",
+    "crime": false
+  },
+  {
+    "tag": "Bremsen",
+    "crime": false
+  },
+  {
+    "tag": "Autofahrt",
+    "crime": false
+  },
+  {
+    "tag": "Erreichbarkeit",
+    "crime": false
+  },
+  {
+    "tag": "Journalisten",
+    "crime": false
+  },
+  {
+    "tag": "Müdigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Pkw-Fahrer",
+    "crime": false
+  },
+  {
+    "tag": "Fußballvereine",
+    "crime": false
+  },
+  {
+    "tag": "Algerien",
+    "crime": false
+  },
+  {
+    "tag": "Jugendlicher",
+    "crime": false
+  },
+  {
+    "tag": "Gasleitung",
+    "crime": false
+  },
+  {
+    "tag": "Manipulation",
+    "crime": false
+  },
+  {
+    "tag": "Fahrerkarte",
+    "crime": false
+  },
+  {
+    "tag": "Getriebe",
+    "crime": false
+  },
+  {
+    "tag": "Motor",
+    "crime": false
+  },
+  {
+    "tag": "Computerspiel",
+    "crime": false
+  },
+  {
+    "tag": "Snapchat",
+    "crime": false
+  },
+  {
+    "tag": "Eltern",
+    "crime": false
+  },
+  {
+    "tag": "Schule",
+    "crime": false
+  },
+  {
+    "tag": "Netzwerk",
+    "crime": false
+  },
+  {
+    "tag": "Straßenbahn",
+    "crime": false
+  },
+  {
+    "tag": "Bahnnotfall",
+    "crime": false
+  },
+  {
+    "tag": "Volksverhetzung",
+    "crime": false
+  },
+  {
+    "tag": "Kunstaktion",
+    "crime": false
+  },
+  {
+    "tag": "Steine",
+    "crime": false
+  },
+  {
+    "tag": "Unbekannte",
+    "crime": false
+  },
+  {
+    "tag": "Ford Kuga",
+    "crime": false
+  },
+  {
+    "tag": "Identität",
+    "crime": false
+  },
+  {
+    "tag": "Handwerker",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes-Benz Sprinter",
+    "crime": false
+  },
+  {
+    "tag": "Kran",
+    "crime": false
+  },
+  {
+    "tag": "Unfallfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Horstmar",
+    "crime": false
+  },
+  {
+    "tag": "Genetik",
+    "crime": false
+  },
+  {
+    "tag": "Kellerbrand",
+    "crime": false
+  },
+  {
+    "tag": "Roller",
+    "crime": false
+  },
+  {
+    "tag": "Knochenbruch",
+    "crime": false
+  },
+  {
+    "tag": "Messerstiche",
+    "crime": true
+  },
+  {
+    "tag": "Messerstichen",
+    "crime": true
+  },
+  {
+    "tag": "Baby",
+    "crime": false
+  },
+  {
+    "tag": "Schmuck",
+    "crime": false
+  },
+  {
+    "tag": "Kosovo",
+    "crime": false
+  },
+  {
+    "tag": "Strukturen",
+    "crime": false
+  },
+  {
+    "tag": "Freizeit",
+    "crime": false
+  },
+  {
+    "tag": "Ukraine",
+    "crime": false
+  },
+  {
+    "tag": "Vermisste",
+    "crime": false
+  },
+  {
+    "tag": "Bewegung",
+    "crime": false
+  },
+  {
+    "tag": "Impfgegner",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsunfallstatistik",
+    "crime": false
+  },
+  {
+    "tag": "Pressekonferenz",
+    "crime": false
+  },
+  {
+    "tag": "Kfz-Kennzeichen",
+    "crime": false
+  },
+  {
+    "tag": "Plakette",
+    "crime": false
+  },
+  {
+    "tag": "Dichtung",
+    "crime": false
+  },
+  {
+    "tag": "Mängel",
+    "crime": false
+  },
+  {
+    "tag": "HU",
+    "crime": false
+  },
+  {
+    "tag": "Handel",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Wickede",
+    "crime": false
+  },
+  {
+    "tag": "Kriegsverbrechen",
+    "crime": true
+  },
+  {
+    "tag": "Rollladen",
+    "crime": false
+  },
+  {
+    "tag": "Epidemie",
+    "crime": false
+  },
+  {
+    "tag": "Bandbreite",
+    "crime": false
+  },
+  {
+    "tag": "Senior",
+    "crime": false
+  },
+  {
+    "tag": "Kriminalitätsstatistik",
+    "crime": false
+  },
+  {
+    "tag": "Vermisste Person",
+    "crime": false
+  },
+  {
+    "tag": "Pelz",
+    "crime": false
+  },
+  {
+    "tag": "Mädchen",
+    "crime": false
+  },
+  {
+    "tag": "Skateboardfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Polizeieinsatz",
+    "crime": false
+  },
+  {
+    "tag": "Demonstrationen",
+    "crime": false
+  },
+  {
+    "tag": "Antifaschismus",
+    "crime": false
+  },
+  {
+    "tag": "Fazit",
+    "crime": false
+  },
+  {
+    "tag": "Obdachlosigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Obdachlose",
+    "crime": false
+  },
+  {
+    "tag": "Rheinland",
+    "crime": false
+  },
+  {
+    "tag": "Polizist",
+    "crime": false
+  },
+  {
+    "tag": "Geldautomaten",
+    "crime": false
+  },
+  {
+    "tag": "Discounter",
+    "crime": false
+  },
+  {
+    "tag": "Doping",
+    "crime": true
+  },
+  {
+    "tag": "Punktesystem",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradhelm",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsmittel",
+    "crime": false
+  },
+  {
+    "tag": "Unfallzeit",
+    "crime": false
+  },
+  {
+    "tag": "Lagerhalle",
+    "crime": false
+  },
+  {
+    "tag": "Sonne",
+    "crime": false
+  },
+  {
+    "tag": "Adrenalin",
+    "crime": false
+  },
+  {
+    "tag": "Stoßstange",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsdienst",
+    "crime": false
+  },
+  {
+    "tag": "Ruhestörung",
+    "crime": true
+  },
+  {
+    "tag": "Anzeige",
+    "crime": false
+  },
+  {
+    "tag": "Wissen",
+    "crime": false
+  },
+  {
+    "tag": "Bürger",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsextremisten",
+    "crime": false
+  },
+  {
+    "tag": "Mülltonne",
+    "crime": false
+  },
+  {
+    "tag": "Totalschaden",
+    "crime": false
+  },
+  {
+    "tag": "Verletzte",
+    "crime": false
+  },
+  {
+    "tag": "Baustelle",
+    "crime": false
+  },
+  {
+    "tag": "Spielplatz",
+    "crime": false
+  },
+  {
+    "tag": "Schmerz",
+    "crime": false
+  },
+  {
+    "tag": "Ehrenamt",
+    "crime": false
+  },
+  {
+    "tag": "Kommunikation",
+    "crime": false
+  },
+  {
+    "tag": "Magie",
+    "crime": false
+  },
+  {
+    "tag": "Hubschraubereinsatz",
+    "crime": false
+  },
+  {
+    "tag": "Westen",
+    "crime": false
+  },
+  {
+    "tag": "A44",
+    "crime": false
+  },
+  {
+    "tag": "Zigarettenautomaten",
+    "crime": false
+  },
+  {
+    "tag": "Sprengung",
+    "crime": true
+  },
+  {
+    "tag": "Bombenattentat",
+    "crime": true
+  },
+  {
+    "tag": "Pfingsten",
+    "crime": false
+  },
+  {
+    "tag": "Verwarnungsgeld",
+    "crime": false
+  },
+  {
+    "tag": "IKEA",
+    "crime": false
+  },
+  {
+    "tag": "Energie",
+    "crime": false
+  },
+  {
+    "tag": "UEFA Euro 2024",
+    "crime": false
+  },
+  {
+    "tag": "Albanien",
+    "crime": false
+  },
+  {
+    "tag": "Türkei",
+    "crime": false
+  },
+  {
+    "tag": "Portugal",
+    "crime": false
+  },
+  {
+    "tag": "Sportpolitik",
+    "crime": false
+  },
+  {
+    "tag": "Linienbus",
+    "crime": false
+  },
+  {
+    "tag": "Brandbekämpfung",
+    "crime": false
+  },
+  {
+    "tag": "Hausfriedensbruch",
+    "crime": true
+  },
+  {
+    "tag": "Versorgungsamt",
+    "crime": false
+  },
+  {
+    "tag": "Schaufenster",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnkreuz Dortmund-Nordwest",
+    "crime": false
+  },
+  {
+    "tag": "Sekundenschlaf",
+    "crime": false
+  },
+  {
+    "tag": "Reisebus",
+    "crime": false
+  },
+  {
+    "tag": "Transporter",
+    "crime": false
+  },
+  {
+    "tag": "Hansaplatz",
+    "crime": false
+  },
+  {
+    "tag": "Sparkasse",
+    "crime": false
+  },
+  {
+    "tag": "Fahrraddieb",
+    "crime": true
+  },
+  {
+    "tag": "Beweissicherung",
+    "crime": false
+  },
+  {
+    "tag": "E-Bikes",
+    "crime": false
+  },
+  {
+    "tag": "Zivilgesellschaft",
+    "crime": false
+  },
+  {
+    "tag": "Unternehmen",
+    "crime": false
+  },
+  {
+    "tag": "Menschenwürde",
+    "crime": false
+  },
+  {
+    "tag": "Religion",
+    "crime": false
+  },
+  {
+    "tag": "Nichtregierungsorganisation",
+    "crime": false
+  },
+  {
+    "tag": "Dialog",
+    "crime": false
+  },
+  {
+    "tag": "Kamerun",
+    "crime": false
+  },
+  {
+    "tag": "Migrationshintergrund",
+    "crime": false
+  },
+  {
+    "tag": "Arbeitsgruppe",
+    "crime": false
+  },
+  {
+    "tag": "Einrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Gesellschaft",
+    "crime": false
+  },
+  {
+    "tag": "Haftrichter",
+    "crime": false
+  },
+  {
+    "tag": "Motorroller",
+    "crime": false
+  },
+  {
+    "tag": "Zustellung",
+    "crime": false
+  },
+  {
+    "tag": "Verordnung",
+    "crime": false
+  },
+  {
+    "tag": "Kampagne",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwehren",
+    "crime": false
+  },
+  {
+    "tag": "Kultur",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungsbrand",
+    "crime": false
+  },
+  {
+    "tag": "Reanimation",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungseinrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Kraftfahrzeugrennens",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugbeleuchtung",
+    "crime": false
+  },
+  {
+    "tag": "Videoüberwachung",
+    "crime": false
+  },
+  {
+    "tag": "Dachdecker",
+    "crime": false
+  },
+  {
+    "tag": "Widerstand gegen Vollstreckungsbeamte",
+    "crime": true
+  },
+  {
+    "tag": "Fans",
+    "crime": false
+  },
+  {
+    "tag": "Public Viewing",
+    "crime": false
+  },
+  {
+    "tag": "Vollbeschäftigung",
+    "crime": false
+  },
+  {
+    "tag": "Individualverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Halbfinale",
+    "crime": false
+  },
+  {
+    "tag": "Ehepaar",
+    "crime": false
+  },
+  {
+    "tag": "Straßen",
+    "crime": false
+  },
+  {
+    "tag": "Hund",
+    "crime": false
+  },
+  {
+    "tag": "Sauna",
+    "crime": false
+  },
+  {
+    "tag": "Streitigkeiten",
+    "crime": false
+  },
+  {
+    "tag": "Jugendkriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Gelenkbus",
+    "crime": false
+  },
+  {
+    "tag": "MDMA",
+    "crime": true
+  },
+  {
+    "tag": "Friedrichstraße",
+    "crime": false
+  },
+  {
+    "tag": "Nationalsozialismus",
+    "crime": false
+  },
+  {
+    "tag": "Bundesverfassungsgericht",
+    "crime": false
+  },
+  {
+    "tag": "Verfassungsbeschwerde",
+    "crime": false
+  },
+  {
+    "tag": "Ideologie",
+    "crime": false
+  },
+  {
+    "tag": "Frieden",
+    "crime": false
+  },
+  {
+    "tag": "Propaganda",
+    "crime": false
+  },
+  {
+    "tag": "Verwaltungsgericht",
+    "crime": false
+  },
+  {
+    "tag": "Tradition",
+    "crime": false
+  },
+  {
+    "tag": "Rücken",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsstreit",
+    "crime": false
+  },
+  {
+    "tag": "Bachelor",
+    "crime": false
+  },
+  {
+    "tag": "Mittlerer Schulabschluss",
+    "crime": false
+  },
+  {
+    "tag": "Hochschule",
+    "crime": false
+  },
+  {
+    "tag": "Schulleitung",
+    "crime": false
+  },
+  {
+    "tag": "Fachhochschule",
+    "crime": false
+  },
+  {
+    "tag": "Österreich",
+    "crime": false
+  },
+  {
+    "tag": "Vorsatz",
+    "crime": false
+  },
+  {
+    "tag": "Verpackung",
+    "crime": false
+  },
+  {
+    "tag": "Parfümerie",
+    "crime": false
+  },
+  {
+    "tag": "Kastenwagen",
+    "crime": false
+  },
+  {
+    "tag": "Stadtfest",
+    "crime": false
+  },
+  {
+    "tag": "Küchenmesser",
+    "crime": false
+  },
+  {
+    "tag": "Blutalkoholkonzentration",
+    "crime": false
+  },
+  {
+    "tag": "Kraftfahrzeugrennen",
+    "crime": false
+  },
+  {
+    "tag": "Alkoholeinfluss",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradschloss",
+    "crime": false
+  },
+  {
+    "tag": "Schüler",
+    "crime": false
+  },
+  {
+    "tag": "Gymnasium",
+    "crime": false
+  },
+  {
+    "tag": "Augenbraue",
+    "crime": false
+  },
+  {
+    "tag": "Hauptbahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Bahnsteig",
+    "crime": false
+  },
+  {
+    "tag": "Trickdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Einkaufszentrum",
+    "crime": false
+  },
+  {
+    "tag": "Arzneimittel",
+    "crime": false
+  },
+  {
+    "tag": "Potenzmittel",
+    "crime": false
+  },
+  {
+    "tag": "Haarausfall",
+    "crime": false
+  },
+  {
+    "tag": "Batterie",
+    "crime": false
+  },
+  {
+    "tag": "Lakritz",
+    "crime": false
+  },
+  {
+    "tag": "Tüte",
+    "crime": false
+  },
+  {
+    "tag": "Pharmakologie",
+    "crime": false
+  },
+  {
+    "tag": "Folgemeldung",
+    "crime": false
+  },
+  {
+    "tag": "Überwachung",
+    "crime": false
+  },
+  {
+    "tag": "Dänemark",
+    "crime": false
+  },
+  {
+    "tag": "Streckenauffahrung",
+    "crime": false
+  },
+  {
+    "tag": "Spezialeinsatzkommandos",
+    "crime": false
+  },
+  {
+    "tag": "Whistleblower",
+    "crime": false
+  },
+  {
+    "tag": "Garagentor",
+    "crime": false
+  },
+  {
+    "tag": "Elberfeld",
+    "crime": false
+  },
+  {
+    "tag": "Gastronomiebetriebe",
+    "crime": false
+  },
+  {
+    "tag": "Whisky",
+    "crime": false
+  },
+  {
+    "tag": "Frist",
+    "crime": false
+  },
+  {
+    "tag": "Timing",
+    "crime": false
+  },
+  {
+    "tag": "Halskette",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes-Benz E-Klasse",
+    "crime": false
+  },
+  {
+    "tag": "Spedition",
+    "crime": false
+  },
+  {
+    "tag": "Wickeder Hellweg",
+    "crime": false
+  },
+  {
+    "tag": "Tatverdächtigem",
+    "crime": false
+  },
+  {
+    "tag": "Anwohner",
+    "crime": false
+  },
+  {
+    "tag": "Videos",
+    "crime": false
+  },
+  {
+    "tag": "Nordmazedonien",
+    "crime": false
+  },
+  {
+    "tag": "Familienstreit",
+    "crime": false
+  },
+  {
+    "tag": "Joggerin",
+    "crime": false
+  },
+  {
+    "tag": "Fortuna Düsseldorf",
+    "crime": false
+  },
+  {
+    "tag": "Kofferraum",
+    "crime": false
+  },
+  {
+    "tag": "Bodycams",
+    "crime": false
+  },
+  {
+    "tag": "Syrien",
+    "crime": false
+  },
+  {
+    "tag": "Drogerie",
+    "crime": false
+  },
+  {
+    "tag": "Therapie",
+    "crime": false
+  },
+  {
+    "tag": "Notebook",
+    "crime": false
+  },
+  {
+    "tag": "Antisemitismus",
+    "crime": false
+  },
+  {
+    "tag": "Urteil",
+    "crime": false
+  },
+  {
+    "tag": "Präsenz",
+    "crime": false
+  },
+  {
+    "tag": "Strafverfahren",
+    "crime": false
+  },
+  {
+    "tag": "Islamismus",
+    "crime": false
+  },
+  {
+    "tag": "Kopftuchstreit",
+    "crime": false
+  },
+  {
+    "tag": "Serap Güler",
+    "crime": false
+  },
+  {
+    "tag": "Rechtswissenschaft",
+    "crime": false
+  },
+  {
+    "tag": "Podiumsdiskussion",
+    "crime": false
+  },
+  {
+    "tag": "Nationalität",
+    "crime": false
+  },
+  {
+    "tag": "Vielfalt",
+    "crime": false
+  },
+  {
+    "tag": "Glaube",
+    "crime": false
+  },
+  {
+    "tag": "Ergänzung",
+    "crime": false
+  },
+  {
+    "tag": "Schach",
+    "crime": false
+  },
+  {
+    "tag": "Haftstrafen",
+    "crime": false
+  },
+  {
+    "tag": "Landgericht",
+    "crime": false
+  },
+  {
+    "tag": "Landgericht Dortmund",
+    "crime": false
+  },
+  {
+    "tag": "Autoreifen",
+    "crime": false
+  },
+  {
+    "tag": "Eis",
+    "crime": false
+  },
+  {
+    "tag": "Schnee",
+    "crime": false
+  },
+  {
+    "tag": "Bußgeldkatalog",
+    "crime": false
+  },
+  {
+    "tag": "Winterreifen",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 4",
+    "crime": false
+  },
+  {
+    "tag": "Toyota",
+    "crime": false
+  },
+  {
+    "tag": "Pokémon",
+    "crime": false
+  },
+  {
+    "tag": "Haft",
+    "crime": false
+  },
+  {
+    "tag": "Strafverfolgungsbehörde",
+    "crime": false
+  },
+  {
+    "tag": "Plantage",
+    "crime": false
+  },
+  {
+    "tag": "Betrug",
+    "crime": true
+  },
+  {
+    "tag": "Tastatur",
+    "crime": false
+  },
+  {
+    "tag": "Ford Mustang",
+    "crime": false
+  },
+  {
+    "tag": "Schaden",
+    "crime": false
+  },
+  {
+    "tag": "Fahndungserfolg",
+    "crime": false
+  },
+  {
+    "tag": "Realschule",
+    "crime": false
+  },
+  {
+    "tag": "Lichtendorf",
+    "crime": false
+  },
+  {
+    "tag": "Jugendverkehrsschule",
+    "crime": false
+  },
+  {
+    "tag": "Tankstellen",
+    "crime": false
+  },
+  {
+    "tag": "Serie",
+    "crime": false
+  },
+  {
+    "tag": "Coesfeld",
+    "crime": false
+  },
+  {
+    "tag": "Hecke",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwerksbatterie",
+    "crime": false
+  },
+  {
+    "tag": "Drogentest",
+    "crime": false
+  },
+  {
+    "tag": "Brandmeldeanlage",
+    "crime": false
+  },
+  {
+    "tag": "Land Rover",
+    "crime": false
+  },
+  {
+    "tag": "Foto",
+    "crime": false
+  },
+  {
+    "tag": "Wohngemeinschaft",
+    "crime": false
+  },
+  {
+    "tag": "Handschellen",
+    "crime": false
+  },
+  {
+    "tag": "Energie Cottbus",
+    "crime": false
+  },
+  {
+    "tag": "Tierschutzgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Vögel",
+    "crime": false
+  },
+  {
+    "tag": "Tier",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Asseln",
+    "crime": false
+  },
+  {
+    "tag": "Sterbehilfe",
+    "crime": true
+  },
+  {
+    "tag": "Selbstmord",
+    "crime": false
+  },
+  {
+    "tag": "Cannabispflanzen",
+    "crime": true
+  },
+  {
+    "tag": "Balkonkraftwerk",
+    "crime": false
+  },
+  {
+    "tag": "Keller",
+    "crime": false
+  },
+  {
+    "tag": "Geschwindigkeitskontrollen",
+    "crime": false
+  },
+  {
+    "tag": "Spezialeinsatzkommando",
+    "crime": false
+  },
+  {
+    "tag": "Hybride",
+    "crime": false
+  },
+  {
+    "tag": "Online",
+    "crime": false
+  },
+  {
+    "tag": "Internat",
+    "crime": false
+  },
+  {
+    "tag": "Irrtum",
+    "crime": false
+  },
+  {
+    "tag": "Optische Täuschung",
+    "crime": false
+  },
+  {
+    "tag": "Hilfeleistung",
+    "crime": false
+  },
+  {
+    "tag": "Livestreaming",
+    "crime": false
+  },
+  {
+    "tag": "Verpackungsmaterial",
+    "crime": false
+  },
+  {
+    "tag": "Derby",
+    "crime": false
+  },
+  {
+    "tag": "Beschädigung",
+    "crime": false
+  },
+  {
+    "tag": "Untersuchungshaft",
+    "crime": false
+  },
+  {
+    "tag": "Auseinandersetzung",
+    "crime": false
+  },
+  {
+    "tag": "Fahren unter Einfluss psychoaktiver Substanzen",
+    "crime": true
+  },
+  {
+    "tag": "Abblendlicht",
+    "crime": false
+  },
+  {
+    "tag": "Pharmaindustrie",
+    "crime": false
+  },
+  {
+    "tag": "Sneaker",
+    "crime": false
+  },
+  {
+    "tag": "Trolley",
+    "crime": false
+  },
+  {
+    "tag": "Mazda",
+    "crime": false
+  },
+  {
+    "tag": "Tatverdacht",
+    "crime": false
+  },
+  {
+    "tag": "Notarzt",
+    "crime": false
+  },
+  {
+    "tag": "Strafprozessrecht",
+    "crime": false
+  },
+  {
+    "tag": "Tabak",
+    "crime": false
+  },
+  {
+    "tag": "Bundespolizei",
+    "crime": false
+  },
+  {
+    "tag": "Flohmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Munition",
+    "crime": false
+  },
+  {
+    "tag": "Machete",
+    "crime": false
+  },
+  {
+    "tag": "Girocard",
+    "crime": false
+  },
+  {
+    "tag": "Hose",
+    "crime": false
+  },
+  {
+    "tag": "Jugendliche",
+    "crime": false
+  },
+  {
+    "tag": "Basketball",
+    "crime": false
+  },
+  {
+    "tag": "Verfolgungsfahrt",
+    "crime": false
+  },
+  {
+    "tag": "Urkundenfälschung",
+    "crime": true
+  },
+  {
+    "tag": "Waffe",
+    "crime": false
+  },
+  {
+    "tag": "Einsatzlagen",
+    "crime": false
+  },
+  {
+    "tag": "Rosenmontag",
+    "crime": false
+  },
+  {
+    "tag": "Straßenverkehrs-Ordnung",
+    "crime": false
+  },
+  {
+    "tag": "Taxi",
+    "crime": false
+  },
+  {
+    "tag": "Windschutzscheibe",
+    "crime": false
+  },
+  {
+    "tag": "Scooter",
+    "crime": false
+  },
+  {
+    "tag": "E-Scooter",
+    "crime": false
+  },
+  {
+    "tag": "Beziehungstat",
+    "crime": false
+  },
+  {
+    "tag": "Mordkommission",
+    "crime": false
+  },
+  {
+    "tag": "Feuerlöscher",
+    "crime": false
+  },
+  {
+    "tag": "Ärztehaus",
+    "crime": false
+  },
+  {
+    "tag": "Medikamente",
+    "crime": false
+  },
+  {
+    "tag": "Kasse",
+    "crime": false
+  },
+  {
+    "tag": "Rucksack",
+    "crime": false
+  },
+  {
+    "tag": "Taschendiebe",
+    "crime": false
+  },
+  {
+    "tag": "Fußgängerüberweg",
+    "crime": false
+  },
+  {
+    "tag": "Verfolgungsjagd",
+    "crime": false
+  },
+  {
+    "tag": "Rollerfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Helm",
+    "crime": false
+  },
+  {
+    "tag": "Rombergpark",
+    "crime": false
+  },
+  {
+    "tag": "Cyber-Grooming",
+    "crime": true
+  },
+  {
+    "tag": "Instagram",
+    "crime": false
+  },
+  {
+    "tag": "Jugendpornografie",
+    "crime": true
+  },
+  {
+    "tag": "Kinderpornografie",
+    "crime": true
+  },
+  {
+    "tag": "Cyber-Mobbing",
+    "crime": true
+  },
+  {
+    "tag": "Sexueller Missbrauch von Kindern",
+    "crime": true
+  },
+  {
+    "tag": "Sexueller Missbrauch",
+    "crime": true
+  },
+  {
+    "tag": "Mobile App",
+    "crime": false
+  },
+  {
+    "tag": "Instant Messaging",
+    "crime": false
+  },
+  {
+    "tag": "Mediennutzung",
+    "crime": false
+  },
+  {
+    "tag": "Pornofilm",
+    "crime": false
+  },
+  {
+    "tag": "Anonymität",
+    "crime": false
+  },
+  {
+    "tag": "Internetkriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Onlinespiel",
+    "crime": false
+  },
+  {
+    "tag": "WhatsApp",
+    "crime": false
+  },
+  {
+    "tag": "Bundeskriminalamt",
+    "crime": false
+  },
+  {
+    "tag": "Chat",
+    "crime": false
+  },
+  {
+    "tag": "Safer Internet Day",
+    "crime": false
+  },
+  {
+    "tag": "Onlinemedien",
+    "crime": false
+  },
+  {
+    "tag": "Medienkompetenz",
+    "crime": false
+  },
+  {
+    "tag": "Straftat",
+    "crime": true
+  },
+  {
+    "tag": "Messengerdienste",
+    "crime": false
+  },
+  {
+    "tag": "Pornografie",
+    "crime": false
+  },
+  {
+    "tag": "Software",
+    "crime": false
+  },
+  {
+    "tag": "Einfamilienhaus",
+    "crime": false
+  },
+  {
+    "tag": "Haustür",
+    "crime": false
+  },
+  {
+    "tag": "Container",
+    "crime": false
+  },
+  {
+    "tag": "Opel Corsa",
+    "crime": false
+  },
+  {
+    "tag": "Betrunken",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Scharnhorst",
+    "crime": false
+  },
+  {
+    "tag": "Tankstelle",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund Hauptbahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Jugendamt",
+    "crime": false
+  },
+  {
+    "tag": "Juwelier",
+    "crime": false
+  },
+  {
+    "tag": "Signal Iduna Park",
+    "crime": false
+  },
+  {
+    "tag": "Dynamo Dresden",
+    "crime": false
+  },
+  {
+    "tag": "Signal Iduna",
+    "crime": false
+  },
+  {
+    "tag": "Fußballspiel",
+    "crime": false
+  },
+  {
+    "tag": "Vereine",
+    "crime": false
+  },
+  {
+    "tag": "Vorfahrt",
+    "crime": false
+  },
+  {
+    "tag": "Ford Focus",
+    "crime": false
+  },
+  {
+    "tag": "Alter",
+    "crime": false
+  },
+  {
+    "tag": "Alkohol",
+    "crime": false
+  },
+  {
+    "tag": "Rennen",
+    "crime": false
+  },
+  {
+    "tag": "Link",
+    "crime": false
+  },
+  {
+    "tag": "Rahmen",
+    "crime": false
+  },
+  {
+    "tag": "Bundesagentur für Arbeit",
+    "crime": false
+  },
+  {
+    "tag": "Beamten",
+    "crime": false
+  },
+  {
+    "tag": "Ford Transit",
+    "crime": false
+  },
+  {
+    "tag": "Containerbrand",
+    "crime": false
+  },
+  {
+    "tag": "Polizeibeamten",
+    "crime": false
+  },
+  {
+    "tag": "Einsatzhundertschaft",
+    "crime": false
+  },
+  {
+    "tag": "Gedenktag",
+    "crime": false
+  },
+  {
+    "tag": "Lebensmitteleinzelhandel",
+    "crime": false
+  },
+  {
+    "tag": "Mehrfamilienhaus",
+    "crime": false
+  },
+  {
+    "tag": "Arbeit",
+    "crime": false
+  },
+  {
+    "tag": "Sprengsatz",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Marten",
+    "crime": false
+  },
+  {
+    "tag": "Ford Fiesta",
+    "crime": false
+  },
+  {
+    "tag": "Waffenfund",
+    "crime": false
+  },
+  {
+    "tag": "Licht",
+    "crime": false
+  },
+  {
+    "tag": "Festnahmen",
+    "crime": false
+  },
+  {
+    "tag": "Probleme",
+    "crime": false
+  },
+  {
+    "tag": "Heimspiel",
+    "crime": false
+  },
+  {
+    "tag": "Nahverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Streik",
+    "crime": false
+  },
+  {
+    "tag": "Gebäude",
+    "crime": false
+  },
+  {
+    "tag": "RB Leipzig",
+    "crime": false
+  },
+  {
+    "tag": "Öffentlicher Personennahverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Bochum Hauptbahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Omnibus",
+    "crime": false
+  },
+  {
+    "tag": "Stadion",
+    "crime": false
+  },
+  {
+    "tag": "Fuß",
+    "crime": false
+  },
+  {
+    "tag": "Protestaktion",
+    "crime": false
+  },
+  {
+    "tag": "Architektur",
+    "crime": false
+  },
+  {
+    "tag": "Personenschaden",
+    "crime": false
+  },
+  {
+    "tag": "Toter Winkel",
+    "crime": false
+  },
+  {
+    "tag": "Stau",
+    "crime": false
+  },
+  {
+    "tag": "Kasachstan",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Hörde",
+    "crime": false
+  },
+  {
+    "tag": "Abendstunden",
+    "crime": false
+  },
+  {
+    "tag": "Marten",
+    "crime": false
+  },
+  {
+    "tag": "A1",
+    "crime": false
+  },
+  {
+    "tag": "Geschwindigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Obduktion",
+    "crime": false
+  },
+  {
+    "tag": "Pressemitteilungen",
+    "crime": false
+  },
+  {
+    "tag": "Verletzungen",
+    "crime": false
+  },
+  {
+    "tag": "Zahlungsmittel",
+    "crime": false
+  },
+  {
+    "tag": "Balkon",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungen",
+    "crime": false
+  },
+  {
+    "tag": "Fenster",
+    "crime": false
+  },
+  {
+    "tag": "Golf",
+    "crime": false
+  },
+  {
+    "tag": "Adler",
+    "crime": false
+  },
+  {
+    "tag": "VW",
+    "crime": false
+  },
+  {
+    "tag": "Sperrung",
+    "crime": false
+  },
+  {
+    "tag": "Tankwagen",
+    "crime": false
+  },
+  {
+    "tag": "Dashcam",
+    "crime": false
+  },
+  {
+    "tag": "Leitpfosten",
+    "crime": false
+  },
+  {
+    "tag": "Formel 1",
+    "crime": false
+  },
+  {
+    "tag": "Armbanduhr",
+    "crime": false
+  },
+  {
+    "tag": "Clan-Kriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Herbert Reul",
+    "crime": false
+  },
+  {
+    "tag": "Razzia",
+    "crime": false
+  },
+  {
+    "tag": "UEFA",
+    "crime": false
+  },
+  {
+    "tag": "Parlament",
+    "crime": false
+  },
+  {
+    "tag": "Bart",
+    "crime": false
+  },
+  {
+    "tag": "SUV",
+    "crime": false
+  },
+  {
+    "tag": "Veranstalter",
+    "crime": false
+  },
+  {
+    "tag": "Schulweg",
+    "crime": false
+  },
+  {
+    "tag": "Kind",
+    "crime": false
+  },
+  {
+    "tag": "Psychologie",
+    "crime": false
+  },
+  {
+    "tag": "Schwarzarbeit",
+    "crime": true
+  },
+  {
+    "tag": "Arbeitsverhältnis",
+    "crime": false
+  },
+  {
+    "tag": "Beschäftigung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradanhänger",
+    "crime": false
+  },
+  {
+    "tag": "Unfallursache",
+    "crime": false
+  },
+  {
+    "tag": "Ermittlungen",
+    "crime": false
+  },
+  {
+    "tag": "Asseln",
+    "crime": false
+  },
+  {
+    "tag": "Corsa",
+    "crime": false
+  },
+  {
+    "tag": "Schlägerei",
+    "crime": true
+  },
+  {
+    "tag": "Schlager",
+    "crime": false
+  },
+  {
+    "tag": "FC Bayern München",
+    "crime": false
+  },
+  {
+    "tag": "Bayern München",
+    "crime": false
+  },
+  {
+    "tag": "Wohnmobil",
+    "crime": false
+  },
+  {
+    "tag": "Immobilien",
+    "crime": false
+  },
+  {
+    "tag": "Kleinkind",
+    "crime": false
+  },
+  {
+    "tag": "Tätergruppen",
+    "crime": false
+  },
+  {
+    "tag": "Sicherungskasten",
+    "crime": false
+  },
+  {
+    "tag": "Kollision",
+    "crime": false
+  },
+  {
+    "tag": "Enkeltrick",
+    "crime": true
+  },
+  {
+    "tag": "Stadtgebiet",
+    "crime": false
+  },
+  {
+    "tag": "Nordmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Schuh",
+    "crime": false
+  },
+  {
+    "tag": "Willy-Brandt-Platz",
+    "crime": false
+  },
+  {
+    "tag": "Verbraucherzentrale",
+    "crime": false
+  },
+  {
+    "tag": "Bewerber",
+    "crime": false
+  },
+  {
+    "tag": "Hotline",
+    "crime": false
+  },
+  {
+    "tag": "Messerstich",
+    "crime": true
+  },
+  {
+    "tag": "Methamphetamin",
+    "crime": false
+  },
+  {
+    "tag": "Medizinische Behandlung",
+    "crime": false
+  },
+  {
+    "tag": "Vermisstenfahndung",
+    "crime": false
+  },
+  {
+    "tag": "B1",
+    "crime": false
+  },
+  {
+    "tag": "Fußballfans",
+    "crime": false
+  },
+  {
+    "tag": "Personalien",
+    "crime": false
+  },
+  {
+    "tag": "Fußballverein",
+    "crime": false
+  },
+  {
+    "tag": "Polizeihubschrauber",
+    "crime": false
+  },
+  {
+    "tag": "A 45",
+    "crime": false
+  },
+  {
+    "tag": "Tuning",
+    "crime": false
+  },
+  {
+    "tag": "Benzin",
+    "crime": false
+  },
+  {
+    "tag": "Diesel",
+    "crime": false
+  },
+  {
+    "tag": "Bodelschwingh",
+    "crime": false
+  },
+  {
+    "tag": "Verkehr",
+    "crime": false
+  },
+  {
+    "tag": "Filiale",
+    "crime": false
+  },
+  {
+    "tag": "Kreispolizeibehörde",
+    "crime": false
+  },
+  {
+    "tag": "Organisierte Kriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Schlag",
+    "crime": true
+  },
+  {
+    "tag": "Region",
+    "crime": false
+  },
+  {
+    "tag": "Parken",
+    "crime": false
+  },
+  {
+    "tag": "Parkverbot",
+    "crime": false
+  },
+  {
+    "tag": "Personenkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Eigentümer",
+    "crime": false
+  },
+  {
+    "tag": "Mund-Nasen-Schutz",
+    "crime": false
+  },
+  {
+    "tag": "Falschgeld",
+    "crime": true
+  },
+  {
+    "tag": "Barrierefreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Sanierung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrweise",
+    "crime": false
+  },
+  {
+    "tag": "Ost",
+    "crime": false
+  },
+  {
+    "tag": "Rot",
+    "crime": false
+  },
+  {
+    "tag": "Junge",
+    "crime": false
+  },
+  {
+    "tag": "Belästigung",
+    "crime": true
+  },
+  {
+    "tag": "Warnung",
+    "crime": false
+  },
+  {
+    "tag": "Schiffsunglück",
+    "crime": false
+  },
+  {
+    "tag": "Geldautomatensprengung",
+    "crime": true
+  },
+  {
+    "tag": "Opfer",
+    "crime": false
+  },
+  {
+    "tag": "Werbung",
+    "crime": false
+  },
+  {
+    "tag": "Trickdiebe",
+    "crime": true
+  },
+  {
+    "tag": "Fehler",
+    "crime": false
+  },
+  {
+    "tag": "Betrieb",
+    "crime": false
+  },
+  {
+    "tag": "Heroin",
+    "crime": false
+  },
+  {
+    "tag": "Räuber",
+    "crime": false
+  },
+  {
+    "tag": "Vertrauen",
+    "crime": false
+  },
+  {
+    "tag": "Racial Profiling",
+    "crime": true
+  },
+  {
+    "tag": "Diversität",
+    "crime": false
+  },
+  {
+    "tag": "Organisationen",
+    "crime": false
+  },
+  {
+    "tag": "Geldkassette",
+    "crime": false
+  },
+  {
+    "tag": "Trickbetrüger",
+    "crime": true
+  },
+  {
+    "tag": "Waschmittel",
+    "crime": false
+  },
+  {
+    "tag": "Handelsmarke",
+    "crime": false
+  },
+  {
+    "tag": "Hauptzollamt",
+    "crime": false
+  },
+  {
+    "tag": "Mundspülung",
+    "crime": false
+  },
+  {
+    "tag": "Großhandel",
+    "crime": false
+  },
+  {
+    "tag": "Passat",
+    "crime": false
+  },
+  {
+    "tag": "Leiter",
+    "crime": false
+  },
+  {
+    "tag": "Verwenden von Kennzeichen verfassungswidriger Organisationen",
+    "crime": true
+  },
+  {
+    "tag": "Mittelfinger",
+    "crime": false
+  },
+  {
+    "tag": "Diskriminierung",
+    "crime": true
+  },
+  {
+    "tag": "Mofa",
+    "crime": false
+  },
+  {
+    "tag": "Grünfläche",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrssünder",
+    "crime": true
+  },
+  {
+    "tag": "Hochhaus",
+    "crime": false
+  },
+  {
+    "tag": "Möbel",
+    "crime": false
+  },
+  {
+    "tag": "Alter Markt",
+    "crime": false
+  },
+  {
+    "tag": "Verfassungsschutz",
+    "crime": false
+  },
+  {
+    "tag": "Fahrlässigkeit",
+    "crime": true
+  },
+  {
+    "tag": "Verfassung",
+    "crime": false
+  },
+  {
+    "tag": "Grundrechte",
+    "crime": false
+  },
+  {
+    "tag": "Tätergruppe",
+    "crime": false
+  },
+  {
+    "tag": "Pferd",
+    "crime": false
+  },
+  {
+    "tag": "Pizza",
+    "crime": false
+  },
+  {
+    "tag": "Tumult",
+    "crime": true
+  },
+  {
+    "tag": "Infektionsschutz",
+    "crime": false
+  },
+  {
+    "tag": "Solidarität",
+    "crime": false
+  },
+  {
+    "tag": "Schutzmaßnahmen",
+    "crime": false
+  },
+  {
+    "tag": "Aquaplaning",
+    "crime": false
+  },
+  {
+    "tag": "Aktionstag",
+    "crime": false
+  },
+  {
+    "tag": "Behörden",
+    "crime": false
+  },
+  {
+    "tag": "Maßnahmen",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Körne",
+    "crime": false
+  },
+  {
+    "tag": "Garage",
+    "crime": false
+  },
+  {
+    "tag": "Strafverfolgung",
+    "crime": true
+  },
+  {
+    "tag": "Körpersprache",
+    "crime": false
+  },
+  {
+    "tag": "Linguistik",
+    "crime": false
+  },
+  {
+    "tag": "Rollstuhlfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Angriff",
+    "crime": true
+  },
+  {
+    "tag": "Einbrecherinnen",
+    "crime": true
+  },
+  {
+    "tag": "Videotechnik",
+    "crime": false
+  },
+  {
+    "tag": "Mieter",
+    "crime": false
+  },
+  {
+    "tag": "Bordcomputer",
+    "crime": false
+  },
+  {
+    "tag": "Einbruchschutz",
+    "crime": false
+  },
+  {
+    "tag": "Einbruchsschutz",
+    "crime": false
+  },
+  {
+    "tag": "Berater",
+    "crime": false
+  },
+  {
+    "tag": "Spezialeinheit",
+    "crime": false
+  },
+  {
+    "tag": "Fitnessstudio",
+    "crime": false
+  },
+  {
+    "tag": "Fahrkartenautomaten",
+    "crime": false
+  },
+  {
+    "tag": "Nachbarschaftsstreit",
+    "crime": true
+  },
+  {
+    "tag": "Lastenfahrrad",
+    "crime": false
+  },
+  {
+    "tag": "Aufklärung",
+    "crime": false
+  },
+  {
+    "tag": "Pendler",
+    "crime": false
+  },
+  {
+    "tag": "Achtung",
+    "crime": false
+  },
+  {
+    "tag": "Entwicklung",
+    "crime": false
+  },
+  {
+    "tag": "Nürburgring",
+    "crime": false
+  },
+  {
+    "tag": "Leichen",
+    "crime": true
+  },
+  {
+    "tag": "Suizid",
+    "crime": true
+  },
+  {
+    "tag": "Bestattungsinstitut",
+    "crime": false
+  },
+  {
+    "tag": "Personalausweis",
+    "crime": false
+  },
+  {
+    "tag": "Achtsamkeit",
+    "crime": false
+  },
+  {
+    "tag": "Leben",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrskontrollen",
+    "crime": false
+  },
+  {
+    "tag": "Telefonbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Lamborghini",
+    "crime": false
+  },
+  {
+    "tag": "Facebook",
+    "crime": false
+  },
+  {
+    "tag": "Limousine",
+    "crime": false
+  },
+  {
+    "tag": "Anhängerkupplung",
+    "crime": false
+  },
+  {
+    "tag": "Tiere",
+    "crime": false
+  },
+  {
+    "tag": "Schulwegsicherheit",
+    "crime": false
+  },
+  {
+    "tag": "Ganztagsschule",
+    "crime": false
+  },
+  {
+    "tag": "Kinderschutz",
+    "crime": false
+  },
+  {
+    "tag": "Social Media",
+    "crime": false
+  },
+  {
+    "tag": "Schulwegunfall",
+    "crime": false
+  },
+  {
+    "tag": "Herzenssache",
+    "crime": false
+  },
+  {
+    "tag": "Ferienende",
+    "crime": false
+  },
+  {
+    "tag": "Sommerferien",
+    "crime": false
+  },
+  {
+    "tag": "Müll",
+    "crime": false
+  },
+  {
+    "tag": "Lärm",
+    "crime": false
+  },
+  {
+    "tag": "Ruhestörungen",
+    "crime": false
+  },
+  {
+    "tag": "Augen",
+    "crime": false
+  },
+  {
+    "tag": "Sekt",
+    "crime": false
+  },
+  {
+    "tag": "Hygiene",
+    "crime": false
+  },
+  {
+    "tag": "Infektionsschutzgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Antibiotikaresistenz",
+    "crime": false
+  },
+  {
+    "tag": "Gesundheitsförderung",
+    "crime": false
+  },
+  {
+    "tag": "Robert Koch-Institut",
+    "crime": false
+  },
+  {
+    "tag": "Viren",
+    "crime": false
+  },
+  {
+    "tag": "Organisation",
+    "crime": false
+  },
+  {
+    "tag": "Kinderwagen",
+    "crime": false
+  },
+  {
+    "tag": "Hausflur",
+    "crime": false
+  },
+  {
+    "tag": "Schreckschusspistole",
+    "crime": false
+  },
+  {
+    "tag": "Einsamkeit",
+    "crime": false
+  },
+  {
+    "tag": "Tierschutzorganisation",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsabstand",
+    "crime": false
+  },
+  {
+    "tag": "Rennfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Roadster",
+    "crime": false
+  },
+  {
+    "tag": "Ferrari",
+    "crime": false
+  },
+  {
+    "tag": "Sportwagen",
+    "crime": false
+  },
+  {
+    "tag": "Ford Mondeo",
+    "crime": false
+  },
+  {
+    "tag": "Fernlicht",
+    "crime": false
+  },
+  {
+    "tag": "Standort",
+    "crime": false
+  },
+  {
+    "tag": "Täterbeschreibung",
+    "crime": false
+  },
+  {
+    "tag": "Vandalismus",
+    "crime": true
+  },
+  {
+    "tag": "Patient",
+    "crime": false
+  },
+  {
+    "tag": "Autowerkstatt",
+    "crime": false
+  },
+  {
+    "tag": "Inter Mailand",
+    "crime": false
+  },
+  {
+    "tag": "Champions League",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 43",
+    "crime": false
+  },
+  {
+    "tag": "A 43",
+    "crime": false
+  },
+  {
+    "tag": "Polizeidirektor",
+    "crime": false
+  },
+  {
+    "tag": "Niederlanden",
+    "crime": false
+  },
+  {
+    "tag": "Gruppen",
+    "crime": false
+  },
+  {
+    "tag": "Lack",
+    "crime": false
+  },
+  {
+    "tag": "Nachtruhe",
+    "crime": false
+  },
+  {
+    "tag": "Sanktionen",
+    "crime": false
+  },
+  {
+    "tag": "Ersthelfer",
+    "crime": false
+  },
+  {
+    "tag": "Gefahrstoff",
+    "crime": false
+  },
+  {
+    "tag": "Zigarettenpackung",
+    "crime": false
+  },
+  {
+    "tag": "Tiefgarage",
+    "crime": false
+  },
+  {
+    "tag": "Busbahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Mitarbeiter",
+    "crime": false
+  },
+  {
+    "tag": "Datenschutz",
+    "crime": false
+  },
+  {
+    "tag": "Meinungsfreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Persönlichkeitsrecht",
+    "crime": false
+  },
+  {
+    "tag": "Friedhof",
+    "crime": false
+  },
+  {
+    "tag": "Tierschutz",
+    "crime": false
+  },
+  {
+    "tag": "Berghofen",
+    "crime": false
+  },
+  {
+    "tag": "Tresor",
+    "crime": false
+  },
+  {
+    "tag": "Tipps",
+    "crime": false
+  },
+  {
+    "tag": "Schüren",
+    "crime": false
+  },
+  {
+    "tag": "Schokolade",
+    "crime": false
+  },
+  {
+    "tag": "Schnitzeljagd",
+    "crime": false
+  },
+  {
+    "tag": "Rollstuhl",
+    "crime": false
+  },
+  {
+    "tag": "Impfzentren",
+    "crime": false
+  },
+  {
+    "tag": "Unfallrisiko",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungslosigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Obdachlosen",
+    "crime": false
+  },
+  {
+    "tag": "Polizei-Notruf",
+    "crime": false
+  },
+  {
+    "tag": "Diakonie",
+    "crime": false
+  },
+  {
+    "tag": "Situation",
+    "crime": false
+  },
+  {
+    "tag": "Geografie",
+    "crime": false
+  },
+  {
+    "tag": "Schneefall",
+    "crime": false
+  },
+  {
+    "tag": "Übergewicht",
+    "crime": false
+  },
+  {
+    "tag": "Diebesbande",
+    "crime": true
+  },
+  {
+    "tag": "Verkehrsrecht",
+    "crime": false
+  },
+  {
+    "tag": "Gemeinwohl",
+    "crime": false
+  },
+  {
+    "tag": "Cannabis",
+    "crime": false
+  },
+  {
+    "tag": "Schifffahrt",
+    "crime": false
+  },
+  {
+    "tag": "Brauerei",
+    "crime": false
+  },
+  {
+    "tag": "Aldi",
+    "crime": false
+  },
+  {
+    "tag": "Soziale Arbeit",
+    "crime": false
+  },
+  {
+    "tag": "Jugendarbeit",
+    "crime": false
+  },
+  {
+    "tag": "Jugendhilfeeinrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Familie",
+    "crime": false
+  },
+  {
+    "tag": "Ostpark Frankfurt am Main",
+    "crime": false
+  },
+  {
+    "tag": "Priorisierung",
+    "crime": false
+  },
+  {
+    "tag": "Commerzbank-Arena",
+    "crime": false
+  },
+  {
+    "tag": "Einkauf",
+    "crime": false
+  },
+  {
+    "tag": "Hochzeitskorso",
+    "crime": false
+  },
+  {
+    "tag": "Verkäufer",
+    "crime": false
+  },
+  {
+    "tag": "FC Schalke 04",
+    "crime": false
+  },
+  {
+    "tag": "Leergut",
+    "crime": false
+  },
+  {
+    "tag": "Dachboden",
+    "crime": false
+  },
+  {
+    "tag": "Ladendiebe",
+    "crime": false
+  },
+  {
+    "tag": "Sprache",
+    "crime": false
+  },
+  {
+    "tag": "Tour",
+    "crime": false
+  },
+  {
+    "tag": "Stromzähler",
+    "crime": false
+  },
+  {
+    "tag": "Datteln-Hamm-Kanal",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsgefühl",
+    "crime": false
+  },
+  {
+    "tag": "Tageslicht",
+    "crime": false
+  },
+  {
+    "tag": "Sonnenschutzmittel",
+    "crime": false
+  },
+  {
+    "tag": "Grünen",
+    "crime": false
+  },
+  {
+    "tag": "Ferien",
+    "crime": false
+  },
+  {
+    "tag": "Fahrerflucht",
+    "crime": true
+  },
+  {
+    "tag": "Wohlbefinden",
+    "crime": false
+  },
+  {
+    "tag": "Hyundai",
+    "crime": false
+  },
+  {
+    "tag": "Bauhaus",
+    "crime": false
+  },
+  {
+    "tag": "Getränkedose",
+    "crime": false
+  },
+  {
+    "tag": "Computerbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Tommy Hilfiger",
+    "crime": false
+  },
+  {
+    "tag": "Citroën C3",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwerk",
+    "crime": false
+  },
+  {
+    "tag": "Feuerwerkskörper",
+    "crime": false
+  },
+  {
+    "tag": "Feedback",
+    "crime": false
+  },
+  {
+    "tag": "Videokonferenz",
+    "crime": false
+  },
+  {
+    "tag": "Beratungsangebot",
+    "crime": false
+  },
+  {
+    "tag": "Moderator",
+    "crime": false
+  },
+  {
+    "tag": "Stadtwerke",
+    "crime": false
+  },
+  {
+    "tag": "Terrassen",
+    "crime": false
+  },
+  {
+    "tag": "Aufruf",
+    "crime": false
+  },
+  {
+    "tag": "Hochzeitsfeier",
+    "crime": false
+  },
+  {
+    "tag": "Laser",
+    "crime": false
+  },
+  {
+    "tag": "Ente",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugscheinwerfer",
+    "crime": false
+  },
+  {
+    "tag": "Müllwagen",
+    "crime": false
+  },
+  {
+    "tag": "Knallkörper",
+    "crime": false
+  },
+  {
+    "tag": "Böller",
+    "crime": false
+  },
+  {
+    "tag": "Ladung",
+    "crime": false
+  },
+  {
+    "tag": "Forensik",
+    "crime": false
+  },
+  {
+    "tag": "Türsteher",
+    "crime": false
+  },
+  {
+    "tag": "Fälschung",
+    "crime": true
+  },
+  {
+    "tag": "Zahlungsverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Theater",
+    "crime": false
+  },
+  {
+    "tag": "BMW 5er",
+    "crime": false
+  },
+  {
+    "tag": "Nachbar",
+    "crime": false
+  },
+  {
+    "tag": "Kirgisistan",
+    "crime": false
+  },
+  {
+    "tag": "Paketboten",
+    "crime": false
+  },
+  {
+    "tag": "U-Haft",
+    "crime": false
+  },
+  {
+    "tag": "Operation",
+    "crime": false
+  },
+  {
+    "tag": "Drogeriemarkt",
+    "crime": false
+  },
+  {
+    "tag": "Rauchmelder",
+    "crime": false
+  },
+  {
+    "tag": "Ballenpresse",
+    "crime": false
+  },
+  {
+    "tag": "Gaffer",
+    "crime": false
+  },
+  {
+    "tag": "Gebühren",
+    "crime": false
+  },
+  {
+    "tag": "Störung",
+    "crime": false
+  },
+  {
+    "tag": "Schottland",
+    "crime": false
+  },
+  {
+    "tag": "Jahrmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Notfallsanitäter",
+    "crime": false
+  },
+  {
+    "tag": "Brandursachenermittlung",
+    "crime": false
+  },
+  {
+    "tag": "Übelkeit",
+    "crime": false
+  },
+  {
+    "tag": "B54",
+    "crime": false
+  },
+  {
+    "tag": "Videobeweis",
+    "crime": false
+  },
+  {
+    "tag": "Kunden",
+    "crime": false
+  },
+  {
+    "tag": "Chrom",
+    "crime": false
+  },
+  {
+    "tag": "Halluzination",
+    "crime": false
+  },
+  {
+    "tag": "Gas",
+    "crime": false
+  },
+  {
+    "tag": "Inhalation",
+    "crime": false
+  },
+  {
+    "tag": "Nervensystem",
+    "crime": false
+  },
+  {
+    "tag": "Orientierung",
+    "crime": false
+  },
+  {
+    "tag": "Schwindel",
+    "crime": false
+  },
+  {
+    "tag": "Gefahr",
+    "crime": false
+  },
+  {
+    "tag": "Waschanlage",
+    "crime": false
+  },
+  {
+    "tag": "Datenanalyse",
+    "crime": false
+  },
+  {
+    "tag": "Wilhelmstraße",
+    "crime": false
+  },
+  {
+    "tag": "Schussverletzung",
+    "crime": true
+  },
+  {
+    "tag": "Eving",
+    "crime": false
+  },
+  {
+    "tag": "Respekt",
+    "crime": false
+  },
+  {
+    "tag": "Abschied",
+    "crime": false
+  },
+  {
+    "tag": "Eigensicherung",
+    "crime": false
+  },
+  {
+    "tag": "Europol",
+    "crime": false
+  },
+  {
+    "tag": "Homosexualität",
+    "crime": false
+  },
+  {
+    "tag": "Adolf Hitler",
+    "crime": false
+  },
+  {
+    "tag": "Videoclip",
+    "crime": false
+  },
+  {
+    "tag": "Callcenter",
+    "crime": false
+  },
+  {
+    "tag": "Brandursache",
+    "crime": false
+  },
+  {
+    "tag": "Ausgangssperre",
+    "crime": false
+  },
+  {
+    "tag": "Vatertag",
+    "crime": false
+  },
+  {
+    "tag": "DFB-Pokal",
+    "crime": false
+  },
+  {
+    "tag": "Mülltonnenbrand",
+    "crime": true
+  },
+  {
+    "tag": "Baseball",
+    "crime": false
+  },
+  {
+    "tag": "Schusswaffengebrauch",
+    "crime": true
+  },
+  {
+    "tag": "Flüssigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Corona-Schnelltestzentrum",
+    "crime": false
+  },
+  {
+    "tag": "Interview",
+    "crime": false
+  },
+  {
+    "tag": "Interviewangebot",
+    "crime": false
+  },
+  {
+    "tag": "Berichterstattung",
+    "crime": false
+  },
+  {
+    "tag": "Hunde",
+    "crime": false
+  },
+  {
+    "tag": "Clankriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Haftpflichtversicherung",
+    "crime": false
+  },
+  {
+    "tag": "Missbrauchs",
+    "crime": true
+  },
+  {
+    "tag": "Livestream",
+    "crime": false
+  },
+  {
+    "tag": "Nachrichtenagentur",
+    "crime": false
+  },
+  {
+    "tag": "Langeweile",
+    "crime": false
+  },
+  {
+    "tag": "Gesicht",
+    "crime": false
+  },
+  {
+    "tag": "Fax",
+    "crime": false
+  },
+  {
+    "tag": "Bayern",
+    "crime": false
+  },
+  {
+    "tag": "Rennradfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Spielzeug",
+    "crime": false
+  },
+  {
+    "tag": "Urlaubstage",
+    "crime": false
+  },
+  {
+    "tag": "MPU",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachtsmann",
+    "crime": false
+  },
+  {
+    "tag": "Beweismittel",
+    "crime": false
+  },
+  {
+    "tag": "Mahnwache",
+    "crime": false
+  },
+  {
+    "tag": "Vernehmung",
+    "crime": false
+  },
+  {
+    "tag": "Rudi Cerne",
+    "crime": false
+  },
+  {
+    "tag": "Mordfall",
+    "crime": true
+  },
+  {
+    "tag": "Eisplatten",
+    "crime": false
+  },
+  {
+    "tag": "Landeskriminalamt Baden-Württemberg",
+    "crime": false
+  },
+  {
+    "tag": "Genetischer Fingerabdruck",
+    "crime": false
+  },
+  {
+    "tag": "Cold Case – Kein Opfer ist je vergessen",
+    "crime": false
+  },
+  {
+    "tag": "Badezimmer",
+    "crime": false
+  },
+  {
+    "tag": "Kondom",
+    "crime": false
+  },
+  {
+    "tag": "Reihenhaus",
+    "crime": false
+  },
+  {
+    "tag": "Glätte",
+    "crime": false
+  },
+  {
+    "tag": "TikTok",
+    "crime": false
+  },
+  {
+    "tag": "Unruhen",
+    "crime": true
+  },
+  {
+    "tag": "Fahrsicherheitstraining",
+    "crime": false
+  },
+  {
+    "tag": "Märkischer Kreis",
+    "crime": false
+  },
+  {
+    "tag": "Fahrschule",
+    "crime": false
+  },
+  {
+    "tag": "Bergisches Land",
+    "crime": false
+  },
+  {
+    "tag": "Gutschein",
+    "crime": false
+  },
+  {
+    "tag": "Lebensversicherung",
+    "crime": false
+  },
+  {
+    "tag": "Konzentrationslager",
+    "crime": true
+  },
+  {
+    "tag": "Bereitschaftsdienst",
+    "crime": false
+  },
+  {
+    "tag": "Stolpersteine",
+    "crime": false
+  },
+  {
+    "tag": "Massaker",
+    "crime": true
+  },
+  {
+    "tag": "Schiebetür",
+    "crime": false
+  },
+  {
+    "tag": "JVA",
+    "crime": false
+  },
+  {
+    "tag": "Motorradhelm",
+    "crime": false
+  },
+  {
+    "tag": "Kosmetik",
+    "crime": false
+  },
+  {
+    "tag": "Frontalzusammenstoß",
+    "crime": true
+  },
+  {
+    "tag": "Bündnis 90/Die Grünen",
+    "crime": false
+  },
+  {
+    "tag": "Homophobie",
+    "crime": true
+  },
+  {
+    "tag": "Handys",
+    "crime": false
+  },
+  {
+    "tag": "CSD",
+    "crime": false
+  },
+  {
+    "tag": "Regenbogenfahne",
+    "crime": false
+  },
+  {
+    "tag": "Bürgertelefon",
+    "crime": false
+  },
+  {
+    "tag": "Hass",
+    "crime": true
+  },
+  {
+    "tag": "Deponie",
+    "crime": false
+  },
+  {
+    "tag": "Abfall",
+    "crime": false
+  },
+  {
+    "tag": "Abrechnung",
+    "crime": false
+  },
+  {
+    "tag": "Apotheke",
+    "crime": false
+  },
+  {
+    "tag": "Gesundheitsamt",
+    "crime": false
+  },
+  {
+    "tag": "Resistenz",
+    "crime": false
+  },
+  {
+    "tag": "Lanxess Arena",
+    "crime": false
+  },
+  {
+    "tag": "Cinestar",
+    "crime": false
+  },
+  {
+    "tag": "Tarifverhandlung",
+    "crime": false
+  },
+  {
+    "tag": "Film",
+    "crime": false
+  },
+  {
+    "tag": "Vorname",
+    "crime": false
+  },
+  {
+    "tag": "Vereidigung",
+    "crime": false
+  },
+  {
+    "tag": "Halteverbot",
+    "crime": false
+  },
+  {
+    "tag": "1. FSV Mainz 05",
+    "crime": false
+  },
+  {
+    "tag": "FSV Mainz 05",
+    "crime": false
+  },
+  {
+    "tag": "Alfa Romeo",
+    "crime": false
+  },
+  {
+    "tag": "Licht-Test",
+    "crime": false
+  },
+  {
+    "tag": "Sommerzeit",
+    "crime": false
+  },
+  {
+    "tag": "Prüfsiegel",
+    "crime": false
+  },
+  {
+    "tag": "Granit",
+    "crime": false
+  },
+  {
+    "tag": "Sprint",
+    "crime": false
+  },
+  {
+    "tag": "Altenbochum",
+    "crime": false
+  },
+  {
+    "tag": "Naturschutzgebiet",
+    "crime": false
+  },
+  {
+    "tag": "Tattoostudio",
+    "crime": false
+  },
+  {
+    "tag": "Gartenhaus",
+    "crime": false
+  },
+  {
+    "tag": "Katzen",
+    "crime": false
+  },
+  {
+    "tag": "Reflektoren",
+    "crime": false
+  },
+  {
+    "tag": "Emotion",
+    "crime": false
+  },
+  {
+    "tag": "Polizeigewalt",
+    "crime": true
+  },
+  {
+    "tag": "Iran",
+    "crime": false
+  },
+  {
+    "tag": "Palästinenser",
+    "crime": false
+  },
+  {
+    "tag": "Dolmetscher",
+    "crime": false
+  },
+  {
+    "tag": "Polizeieinsätze",
+    "crime": false
+  },
+  {
+    "tag": "Überholmanöver",
+    "crime": false
+  },
+  {
+    "tag": "Schmuggel",
+    "crime": true
+  },
+  {
+    "tag": "Transparent",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitskonferenz",
+    "crime": false
+  },
+  {
+    "tag": "Holocaust",
+    "crime": true
+  },
+  {
+    "tag": "Volkstrauertag",
+    "crime": false
+  },
+  {
+    "tag": "Gedenkveranstaltung",
+    "crime": false
+  },
+  {
+    "tag": "Bäckerei",
+    "crime": false
+  },
+  {
+    "tag": "Vorfall",
+    "crime": false
+  },
+  {
+    "tag": "Lettland",
+    "crime": false
+  },
+  {
+    "tag": "Windeln",
+    "crime": false
+  },
+  {
+    "tag": "Ärzte",
+    "crime": false
+  },
+  {
+    "tag": "Einzelhändler",
+    "crime": false
+  },
+  {
+    "tag": "Daten",
+    "crime": false
+  },
+  {
+    "tag": "Geschäftshaus",
+    "crime": false
+  },
+  {
+    "tag": "Maserati",
+    "crime": false
+  },
+  {
+    "tag": "Mopeds",
+    "crime": false
+  },
+  {
+    "tag": "Kfz-Werkstatt",
+    "crime": false
+  },
+  {
+    "tag": "Dienstfahrzeug",
+    "crime": false
+  },
+  {
+    "tag": "Lebensmitteldiscounter",
+    "crime": false
+  },
+  {
+    "tag": "Lieferwagen",
+    "crime": false
+  },
+  {
+    "tag": "VW Amarak",
+    "crime": false
+  },
+  {
+    "tag": "Schulgebäude",
+    "crime": false
+  },
+  {
+    "tag": "Bibliothek",
+    "crime": false
+  },
+  {
+    "tag": "Wenden",
+    "crime": false
+  },
+  {
+    "tag": "Kaufland",
+    "crime": false
+  },
+  {
+    "tag": "Krippe",
+    "crime": false
+  },
+  {
+    "tag": "Blei",
+    "crime": false
+  },
+  {
+    "tag": "Lebensmittelmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrssicherheit",
+    "crime": false
+  },
+  {
+    "tag": "Hasen",
+    "crime": false
+  },
+  {
+    "tag": "Teilnehmer",
+    "crime": false
+  },
+  {
+    "tag": "Brandstifter",
+    "crime": true
+  },
+  {
+    "tag": "Elektrokleinstfahrzeug",
+    "crime": false
+  },
+  {
+    "tag": "Psychotherapie",
+    "crime": false
+  },
+  {
+    "tag": "Volkshochschule",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrstote",
+    "crime": true
+  },
+  {
+    "tag": "Fahndungsfoto",
+    "crime": false
+  },
+  {
+    "tag": "Fiat 500",
+    "crime": false
+  },
+  {
+    "tag": "Elefant",
+    "crime": false
+  },
+  {
+    "tag": "Cabriolet",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Derne",
+    "crime": false
+  },
+  {
+    "tag": "Rechnung",
+    "crime": false
+  },
+  {
+    "tag": "Lederhose",
+    "crime": false
+  },
+  {
+    "tag": "Update",
+    "crime": false
+  },
+  {
+    "tag": "Warndreieck",
+    "crime": false
+  },
+  {
+    "tag": "Freisprecheinrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Reifendruck",
+    "crime": false
+  },
+  {
+    "tag": "Nothaltebucht",
+    "crime": false
+  },
+  {
+    "tag": "Gesundheit",
+    "crime": false
+  },
+  {
+    "tag": "Europäische Union",
+    "crime": false
+  },
+  {
+    "tag": "Fußballstadion",
+    "crime": false
+  },
+  {
+    "tag": "Sperrstunde",
+    "crime": false
+  },
+  {
+    "tag": "Nichtraucherschutz",
+    "crime": false
+  },
+  {
+    "tag": "Preisauszeichnung",
+    "crime": false
+  },
+  {
+    "tag": "Amtsgericht Hagen",
+    "crime": false
+  },
+  {
+    "tag": "Bußgeldbescheid",
+    "crime": false
+  },
+  {
+    "tag": "Hundebiss",
+    "crime": true
+  },
+  {
+    "tag": "Geländewagen",
+    "crime": false
+  },
+  {
+    "tag": "Moped",
+    "crime": false
+  },
+  {
+    "tag": "Ortung",
+    "crime": false
+  },
+  {
+    "tag": "Königsborn",
+    "crime": false
+  },
+  {
+    "tag": "Ferienverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Zebrastreifen",
+    "crime": false
+  },
+  {
+    "tag": "Häuser",
+    "crime": false
+  },
+  {
+    "tag": "Weißer Ring",
+    "crime": false
+  },
+  {
+    "tag": "Opferschutz",
+    "crime": false
+  },
+  {
+    "tag": "Richtgeschwindigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Trunkenheit",
+    "crime": true
+  },
+  {
+    "tag": "Gesamtschule",
+    "crime": false
+  },
+  {
+    "tag": "Büro",
+    "crime": false
+  },
+  {
+    "tag": "Hengsteysee",
+    "crime": false
+  },
+  {
+    "tag": "Messtechnik",
+    "crime": false
+  },
+  {
+    "tag": "Gespräch",
+    "crime": false
+  },
+  {
+    "tag": "Steuerfahndung",
+    "crime": true
+  },
+  {
+    "tag": "Maisfeld",
+    "crime": false
+  },
+  {
+    "tag": "Maske",
+    "crime": false
+  },
+  {
+    "tag": "Diktatur",
+    "crime": false
+  },
+  {
+    "tag": "Michael Kretschmer",
+    "crime": false
+  },
+  {
+    "tag": "Politiker",
+    "crime": false
+  },
+  {
+    "tag": "Trecker",
+    "crime": false
+  },
+  {
+    "tag": "Karneval, Fastnacht und Fasching",
+    "crime": false
+  },
+  {
+    "tag": "Strumpf",
+    "crime": false
+  },
+  {
+    "tag": "Rückzug",
+    "crime": false
+  },
+  {
+    "tag": "Tourismus",
+    "crime": false
+  },
+  {
+    "tag": "Freizeitpark",
+    "crime": false
+  },
+  {
+    "tag": "Eishockey",
+    "crime": false
+  },
+  {
+    "tag": "Hochzeitsgesellschaft",
+    "crime": false
+  },
+  {
+    "tag": "Rauchentwicklung",
+    "crime": false
+  },
+  {
+    "tag": "Mauer",
+    "crime": false
+  },
+  {
+    "tag": "VfB Stuttgart",
+    "crime": false
+  },
+  {
+    "tag": "Sand",
+    "crime": false
+  },
+  {
+    "tag": "Detektiv",
+    "crime": false
+  },
+  {
+    "tag": "Pflanzen",
+    "crime": false
+  },
+  {
+    "tag": "Cannabisblüten",
+    "crime": true
+  },
+  {
+    "tag": "Roma",
+    "crime": false
+  },
+  {
+    "tag": "Globalisierung",
+    "crime": false
+  },
+  {
+    "tag": "Sinti",
+    "crime": false
+  },
+  {
+    "tag": "Ludwig van Beethoven",
+    "crime": false
+  },
+  {
+    "tag": "Deportation",
+    "crime": true
+  },
+  {
+    "tag": "Globale Erwärmung",
+    "crime": false
+  },
+  {
+    "tag": "Moral",
+    "crime": false
+  },
+  {
+    "tag": "Schauspieler",
+    "crime": false
+  },
+  {
+    "tag": "Bürgermeister",
+    "crime": false
+  },
+  {
+    "tag": "Sinti und Roma",
+    "crime": false
+  },
+  {
+    "tag": "Slowenien",
+    "crime": false
+  },
+  {
+    "tag": "Tür",
+    "crime": false
+  },
+  {
+    "tag": "Erschleichen von Leistungen",
+    "crime": true
+  },
+  {
+    "tag": "Staffel",
+    "crime": false
+  },
+  {
+    "tag": "Aufzug",
+    "crime": false
+  },
+  {
+    "tag": "Mitfahrgelegenheit",
+    "crime": false
+  },
+  {
+    "tag": "Stadtbahn Hannover",
+    "crime": false
+  },
+  {
+    "tag": "Fahrgast",
+    "crime": false
+  },
+  {
+    "tag": "Kino",
+    "crime": false
+  },
+  {
+    "tag": "Todesfolge",
+    "crime": false
+  },
+  {
+    "tag": "Gegenwehr",
+    "crime": false
+  },
+  {
+    "tag": "Smart",
+    "crime": false
+  },
+  {
+    "tag": "Wegerecht",
+    "crime": false
+  },
+  {
+    "tag": "Appell",
+    "crime": false
+  },
+  {
+    "tag": "Feiertage",
+    "crime": false
+  },
+  {
+    "tag": "Wildunfall",
+    "crime": true
+  },
+  {
+    "tag": "Landespolizei",
+    "crime": false
+  },
+  {
+    "tag": "Tiertransporter",
+    "crime": false
+  },
+  {
+    "tag": "Thorsten Hoffmann",
+    "crime": false
+  },
+  {
+    "tag": "Kommissaranwärter",
+    "crime": false
+  },
+  {
+    "tag": "Steuern",
+    "crime": false
+  },
+  {
+    "tag": "Badewanne",
+    "crime": false
+  },
+  {
+    "tag": "Farbschmierereien",
+    "crime": true
+  },
+  {
+    "tag": "Kombi",
+    "crime": false
+  },
+  {
+    "tag": "Abhängigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Anrufbeantworter",
+    "crime": false
+  },
+  {
+    "tag": "Polizeirevier",
+    "crime": false
+  },
+  {
+    "tag": "Staub",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsgefährdungen",
+    "crime": true
+  },
+  {
+    "tag": "Güterverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Unternehmer",
+    "crime": false
+  },
+  {
+    "tag": "Großkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Brackeler Hellweg",
+    "crime": false
+  },
+  {
+    "tag": "Malerei",
+    "crime": false
+  },
+  {
+    "tag": "Sweatshirt",
+    "crime": false
+  },
+  {
+    "tag": "Jeep Grand Cherokee",
+    "crime": false
+  },
+  {
+    "tag": "Fell",
+    "crime": false
+  },
+  {
+    "tag": "1. FC Köln",
+    "crime": false
+  },
+  {
+    "tag": "Bundesliga",
+    "crime": false
+  },
+  {
+    "tag": "Duales Studium",
+    "crime": false
+  },
+  {
+    "tag": "Rossmann",
+    "crime": false
+  },
+  {
+    "tag": "Netzwerken",
+    "crime": false
+  },
+  {
+    "tag": "Schalldämpfer",
+    "crime": false
+  },
+  {
+    "tag": "Revierderby",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsbehörden",
+    "crime": false
+  },
+  {
+    "tag": "Geisterspiel",
+    "crime": false
+  },
+  {
+    "tag": "Paket",
+    "crime": false
+  },
+  {
+    "tag": "Werkzeug",
+    "crime": false
+  },
+  {
+    "tag": "BMW M5",
+    "crime": false
+  },
+  {
+    "tag": "Armin Laschet",
+    "crime": false
+  },
+  {
+    "tag": "Ministerpräsident",
+    "crime": false
+  },
+  {
+    "tag": "Drogenkonsum",
+    "crime": false
+  },
+  {
+    "tag": "Geburt",
+    "crime": false
+  },
+  {
+    "tag": "Blaulicht",
+    "crime": false
+  },
+  {
+    "tag": "Wasserrohrbruch",
+    "crime": false
+  },
+  {
+    "tag": "VW Arteon",
+    "crime": false
+  },
+  {
+    "tag": "Phishing",
+    "crime": true
+  },
+  {
+    "tag": "Glücksspielstaatsvertrag",
+    "crime": false
+  },
+  {
+    "tag": "Verbraucherschutz",
+    "crime": false
+  },
+  {
+    "tag": "Oliver Krischer",
+    "crime": false
+  },
+  {
+    "tag": "Europäische Kommission",
+    "crime": false
+  },
+  {
+    "tag": "Tochter",
+    "crime": false
+  },
+  {
+    "tag": "Auge",
+    "crime": false
+  },
+  {
+    "tag": "Augenheilkunde",
+    "crime": false
+  },
+  {
+    "tag": "Phantombild",
+    "crime": false
+  },
+  {
+    "tag": "SMS",
+    "crime": false
+  },
+  {
+    "tag": "Rehe",
+    "crime": false
+  },
+  {
+    "tag": "Verstoß",
+    "crime": true
+  },
+  {
+    "tag": "Beiwagen",
+    "crime": false
+  },
+  {
+    "tag": "Wachdienst",
+    "crime": false
+  },
+  {
+    "tag": "Land",
+    "crime": false
+  },
+  {
+    "tag": "PP",
+    "crime": false
+  },
+  {
+    "tag": "Volvo",
+    "crime": false
+  },
+  {
+    "tag": "Range Rover",
+    "crime": false
+  },
+  {
+    "tag": "Zwischenbilanz",
+    "crime": false
+  },
+  {
+    "tag": "Fußballfest",
+    "crime": false
+  },
+  {
+    "tag": "EURO 2024",
+    "crime": false
+  },
+  {
+    "tag": "Lebensmittelkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Mülleimer",
+    "crime": false
+  },
+  {
+    "tag": "Beinahe-Unfall",
+    "crime": false
+  },
+  {
+    "tag": "Flugreise",
+    "crime": false
+  },
+  {
+    "tag": "Urlaubsreise",
+    "crime": false
+  },
+  {
+    "tag": "Brackel",
+    "crime": false
+  },
+  {
+    "tag": "Graffiti-Sprayer",
+    "crime": true
+  },
+  {
+    "tag": "Hersteller",
+    "crime": false
+  },
+  {
+    "tag": "Sport Utility Vehicle",
+    "crime": false
+  },
+  {
+    "tag": "Gasflasche",
+    "crime": false
+  },
+  {
+    "tag": "Waage",
+    "crime": false
+  },
+  {
+    "tag": "Trinkwasser",
+    "crime": false
+  },
+  {
+    "tag": "Statistik",
+    "crime": false
+  },
+  {
+    "tag": "Fluchtweg",
+    "crime": false
+  },
+  {
+    "tag": "Airbus",
+    "crime": false
+  },
+  {
+    "tag": "Werder Bremen",
+    "crime": false
+  },
+  {
+    "tag": "Pakete",
+    "crime": false
+  },
+  {
+    "tag": "Spaziergang",
+    "crime": false
+  },
+  {
+    "tag": "Gevelsberg",
+    "crime": false
+  },
+  {
+    "tag": "VW Lupo",
+    "crime": false
+  },
+  {
+    "tag": "Tierquälerei",
+    "crime": true
+  },
+  {
+    "tag": "Beine",
+    "crime": false
+  },
+  {
+    "tag": "Postbank",
+    "crime": false
+  },
+  {
+    "tag": "Kutsche",
+    "crime": false
+  },
+  {
+    "tag": "Pferdekutsche",
+    "crime": false
+  },
+  {
+    "tag": "Gerüst",
+    "crime": false
+  },
+  {
+    "tag": "Verzögerungen",
+    "crime": false
+  },
+  {
+    "tag": "Fallzahlen",
+    "crime": false
+  },
+  {
+    "tag": "Märchen",
+    "crime": false
+  },
+  {
+    "tag": "Gerichtstermin",
+    "crime": false
+  },
+  {
+    "tag": "Gerichtsverhandlung",
+    "crime": false
+  },
+  {
+    "tag": "Zivilpolizisten",
+    "crime": false
+  },
+  {
+    "tag": "Behördliche Lebensmittelüberwachung in Deutschland",
+    "crime": false
+  },
+  {
+    "tag": "Logistik",
+    "crime": false
+  },
+  {
+    "tag": "Newsletter",
+    "crime": false
+  },
+  {
+    "tag": "Privatsphäre",
+    "crime": false
+  },
+  {
+    "tag": "Abonnement",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungseinbruchdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Präventionskampagne",
+    "crime": false
+  },
+  {
+    "tag": "Klinikum",
+    "crime": false
+  },
+  {
+    "tag": "Schädel-Hirn-Trauma",
+    "crime": false
+  },
+  {
+    "tag": "Abbiegeunfall",
+    "crime": true
+  },
+  {
+    "tag": "Diabetes mellitus",
+    "crime": false
+  },
+  {
+    "tag": "Insulin",
+    "crime": false
+  },
+  {
+    "tag": "Armband",
+    "crime": false
+  },
+  {
+    "tag": "Call-Center",
+    "crime": false
+  },
+  {
+    "tag": "Schwerverletzten",
+    "crime": false
+  },
+  {
+    "tag": "Katar",
+    "crime": false
+  },
+  {
+    "tag": "Brocken",
+    "crime": false
+  },
+  {
+    "tag": "Kinderchor",
+    "crime": false
+  },
+  {
+    "tag": "Mecklenburg-Vorpommern",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Huckarde",
+    "crime": false
+  },
+  {
+    "tag": "Automatensprengung",
+    "crime": true
+  },
+  {
+    "tag": "Windkraftanlage",
+    "crime": false
+  },
+  {
+    "tag": "Vermissten",
+    "crime": false
+  },
+  {
+    "tag": "Trekkingrad",
+    "crime": false
+  },
+  {
+    "tag": "Versorgungsunternehmen",
+    "crime": false
+  },
+  {
+    "tag": "Fiat Panda",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsanwalt",
+    "crime": false
+  },
+  {
+    "tag": "Download",
+    "crime": false
+  },
+  {
+    "tag": "Gefahrenmeldeanlage",
+    "crime": false
+  },
+  {
+    "tag": "Reisepass",
+    "crime": false
+  },
+  {
+    "tag": "Kiosk-Einbrecher",
+    "crime": true
+  },
+  {
+    "tag": "Buschmühle",
+    "crime": false
+  },
+  {
+    "tag": "Naturschutz",
+    "crime": false
+  },
+  {
+    "tag": "Croupier",
+    "crime": false
+  },
+  {
+    "tag": "Arztpraxis",
+    "crime": false
+  },
+  {
+    "tag": "Überweisung",
+    "crime": false
+  },
+  {
+    "tag": "Desinfektion",
+    "crime": false
+  },
+  {
+    "tag": "Coronaviridae",
+    "crime": false
+  },
+  {
+    "tag": "Ostermontag",
+    "crime": false
+  },
+  {
+    "tag": "Vater",
+    "crime": false
+  },
+  {
+    "tag": "Fahrlehrer",
+    "crime": false
+  },
+  {
+    "tag": "Prüfung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrkarte",
+    "crime": false
+  },
+  {
+    "tag": "Fahrkartenkontrolleure",
+    "crime": false
+  },
+  {
+    "tag": "Kantine",
+    "crime": false
+  },
+  {
+    "tag": "Internationaler Museumstag",
+    "crime": false
+  },
+  {
+    "tag": "Risiko",
+    "crime": false
+  },
+  {
+    "tag": "Kurse",
+    "crime": false
+  },
+  {
+    "tag": "Kleinanzeigen",
+    "crime": false
+  },
+  {
+    "tag": "Kryptowährung",
+    "crime": false
+  },
+  {
+    "tag": "Verifizierung",
+    "crime": false
+  },
+  {
+    "tag": "Kupferdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Tankbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Klebeband",
+    "crime": false
+  },
+  {
+    "tag": "Diebstähle",
+    "crime": true
+  },
+  {
+    "tag": "Transaktion",
+    "crime": false
+  },
+  {
+    "tag": "Clan",
+    "crime": false
+  },
+  {
+    "tag": "Slowakei",
+    "crime": false
+  },
+  {
+    "tag": "Körner Hellweg",
+    "crime": false
+  },
+  {
+    "tag": "Sauerstoff",
+    "crime": false
+  },
+  {
+    "tag": "Schwerbehindertenausweis",
+    "crime": false
+  },
+  {
+    "tag": "Reservierung",
+    "crime": false
+  },
+  {
+    "tag": "Rückverfolgbarkeit",
+    "crime": false
+  },
+  {
+    "tag": "Überholen",
+    "crime": false
+  },
+  {
+    "tag": "Tiertransport",
+    "crime": false
+  },
+  {
+    "tag": "Pferde",
+    "crime": false
+  },
+  {
+    "tag": "Iveco",
+    "crime": false
+  },
+  {
+    "tag": "Behandlung",
+    "crime": false
+  },
+  {
+    "tag": "Unwetter",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Brackel",
+    "crime": false
+  },
+  {
+    "tag": "Bundesrat",
+    "crime": false
+  },
+  {
+    "tag": "Prohibition",
+    "crime": false
+  },
+  {
+    "tag": "Tetrahydrocannabinol",
+    "crime": false
+  },
+  {
+    "tag": "Deutscher Bundestag",
+    "crime": false
+  },
+  {
+    "tag": "Bundesgesetzblatt",
+    "crime": false
+  },
+  {
+    "tag": "Bild",
+    "crime": false
+  },
+  {
+    "tag": "Die Linke",
+    "crime": false
+  },
+  {
+    "tag": "Critical Mass",
+    "crime": false
+  },
+  {
+    "tag": "Sanktion",
+    "crime": false
+  },
+  {
+    "tag": "Generalstaatsanwaltschaft",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrswende",
+    "crime": false
+  },
+  {
+    "tag": "Passagier",
+    "crime": false
+  },
+  {
+    "tag": "Bundesautobahn 6",
+    "crime": false
+  },
+  {
+    "tag": "Warenkreditbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Dach",
+    "crime": false
+  },
+  {
+    "tag": "Sofa",
+    "crime": false
+  },
+  {
+    "tag": "Teneriffa",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Post",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachtspost",
+    "crime": false
+  },
+  {
+    "tag": "Rettungssanitäter",
+    "crime": false
+  },
+  {
+    "tag": "Technologiezentrum",
+    "crime": false
+  },
+  {
+    "tag": "Folter",
+    "crime": true
+  },
+  {
+    "tag": "Zwangsarbeit",
+    "crime": true
+  },
+  {
+    "tag": "Resilienz",
+    "crime": false
+  },
+  {
+    "tag": "Bisexualität",
+    "crime": false
+  },
+  {
+    "tag": "Ghetto",
+    "crime": false
+  },
+  {
+    "tag": "Gedenkstätte",
+    "crime": false
+  },
+  {
+    "tag": "Zelle",
+    "crime": false
+  },
+  {
+    "tag": "Schlachthof",
+    "crime": false
+  },
+  {
+    "tag": "Arzneimittelgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Unterbringung",
+    "crime": false
+  },
+  {
+    "tag": "Gewaltenteilung",
+    "crime": false
+  },
+  {
+    "tag": "Schlüssel",
+    "crime": false
+  },
+  {
+    "tag": "Nebel",
+    "crime": false
+  },
+  {
+    "tag": "Eritrea",
+    "crime": false
+  },
+  {
+    "tag": "Kies",
+    "crime": false
+  },
+  {
+    "tag": "Schotter",
+    "crime": false
+  },
+  {
+    "tag": "Daimler AG",
+    "crime": false
+  },
+  {
+    "tag": "Silvester",
+    "crime": false
+  },
+  {
+    "tag": "Afghanistan",
+    "crime": false
+  },
+  {
+    "tag": "Bosnien und Herzegowina",
+    "crime": false
+  },
+  {
+    "tag": "Aston Martin",
+    "crime": false
+  },
+  {
+    "tag": "Schritttempo",
+    "crime": false
+  },
+  {
+    "tag": "Polizeikontrollen",
+    "crime": false
+  },
+  {
+    "tag": "Schulhof",
+    "crime": false
+  },
+  {
+    "tag": "Drogenkauf",
+    "crime": true
+  },
+  {
+    "tag": "Rüttelplatte",
+    "crime": false
+  },
+  {
+    "tag": "Hauptschule",
+    "crime": false
+  },
+  {
+    "tag": "Hagel",
+    "crime": false
+  },
+  {
+    "tag": "Tuner",
+    "crime": false
+  },
+  {
+    "tag": "Frillendorf",
+    "crime": false
+  },
+  {
+    "tag": "Investition",
+    "crime": false
+  },
+  {
+    "tag": "Maschen",
+    "crime": true
+  },
+  {
+    "tag": "Australien",
+    "crime": false
+  },
+  {
+    "tag": "Palästina",
+    "crime": false
+  },
+  {
+    "tag": "Flagge",
+    "crime": false
+  },
+  {
+    "tag": "VfL Wolfsburg",
+    "crime": false
+  },
+  {
+    "tag": "Nashorn",
+    "crime": false
+  },
+  {
+    "tag": "Nashörner",
+    "crime": false
+  },
+  {
+    "tag": "Osteuropa",
+    "crime": false
+  },
+  {
+    "tag": "Pädiatrie",
+    "crime": false
+  },
+  {
+    "tag": "Säugling",
+    "crime": false
+  },
+  {
+    "tag": "Terroristische Vereinigung",
+    "crime": true
+  },
+  {
+    "tag": "Naher Osten",
+    "crime": false
+  },
+  {
+    "tag": "App",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes-Benz CLA",
+    "crime": false
+  },
+  {
+    "tag": "Déjà-vu",
+    "crime": false
+  },
+  {
+    "tag": "Piloten",
+    "crime": false
+  },
+  {
+    "tag": "Studentenwohnheim",
+    "crime": false
+  },
+  {
+    "tag": "Passivbewaffnung",
+    "crime": false
+  },
+  {
+    "tag": "Smartwatch",
+    "crime": false
+  },
+  {
+    "tag": "Identitätsdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Datenschutz-Grundverordnung",
+    "crime": false
+  },
+  {
+    "tag": "Telefonaktion",
+    "crime": false
+  },
+  {
+    "tag": "Wellenreiten",
+    "crime": false
+  },
+  {
+    "tag": "Holzen",
+    "crime": false
+  },
+  {
+    "tag": "Fake News",
+    "crime": false
+  },
+  {
+    "tag": "Personenbezogene Daten",
+    "crime": false
+  },
+  {
+    "tag": "Falschnachrichten",
+    "crime": true
+  },
+  {
+    "tag": "Verunsicherung",
+    "crime": false
+  },
+  {
+    "tag": "Freiheitsrechte",
+    "crime": false
+  },
+  {
+    "tag": "SV Darmstadt 98",
+    "crime": false
+  },
+  {
+    "tag": "Date",
+    "crime": false
+  },
+  {
+    "tag": "Gefährder",
+    "crime": true
+  },
+  {
+    "tag": "Weg",
+    "crime": false
+  },
+  {
+    "tag": "Niedersachsen",
+    "crime": false
+  },
+  {
+    "tag": "Ausländerbehörde",
+    "crime": false
+  },
+  {
+    "tag": "Brandbeschleuniger",
+    "crime": true
+  },
+  {
+    "tag": "Deepfake",
+    "crime": true
+  },
+  {
+    "tag": "Internetwache",
+    "crime": false
+  },
+  {
+    "tag": "Crafter",
+    "crime": false
+  },
+  {
+    "tag": "Treffen",
+    "crime": false
+  },
+  {
+    "tag": "VW Touran",
+    "crime": false
+  },
+  {
+    "tag": "Schulstart",
+    "crime": false
+  },
+  {
+    "tag": "Plakataktion",
+    "crime": false
+  },
+  {
+    "tag": "Shisha",
+    "crime": false
+  },
+  {
+    "tag": "Corona-Kontrollen",
+    "crime": false
+  },
+  {
+    "tag": "Kredit",
+    "crime": false
+  },
+  {
+    "tag": "Höntrop",
+    "crime": false
+  },
+  {
+    "tag": "Graffitis",
+    "crime": true
+  },
+  {
+    "tag": "Oberbürgermeister",
+    "crime": false
+  },
+  {
+    "tag": "Infektionszahlen",
+    "crime": false
+  },
+  {
+    "tag": "Video-Appell",
+    "crime": false
+  },
+  {
+    "tag": "Mönchengladbach",
+    "crime": false
+  },
+  {
+    "tag": "Einbrecherin",
+    "crime": true
+  },
+  {
+    "tag": "Nachbarschaft",
+    "crime": false
+  },
+  {
+    "tag": "Schwerlastverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Skoda",
+    "crime": false
+  },
+  {
+    "tag": "Autonomie",
+    "crime": false
+  },
+  {
+    "tag": "UEFA Europa League",
+    "crime": false
+  },
+  {
+    "tag": "Krankheitserreger",
+    "crime": false
+  },
+  {
+    "tag": "Ablenkung",
+    "crime": false
+  },
+  {
+    "tag": "Infektionskette",
+    "crime": false
+  },
+  {
+    "tag": "Infektionskrankheit",
+    "crime": false
+  },
+  {
+    "tag": "Gesundheitssystem",
+    "crime": false
+  },
+  {
+    "tag": "Weltgesundheitsorganisation",
+    "crime": false
+  },
+  {
+    "tag": "Coronavirus",
+    "crime": false
+  },
+  {
+    "tag": "Virus",
+    "crime": false
+  },
+  {
+    "tag": "Bürgerschaft",
+    "crime": false
+  },
+  {
+    "tag": "Feueralarm",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Wambel",
+    "crime": false
+  },
+  {
+    "tag": "Notar",
+    "crime": false
+  },
+  {
+    "tag": "Gewinnspiel",
+    "crime": false
+  },
+  {
+    "tag": "Geldgewinn",
+    "crime": false
+  },
+  {
+    "tag": "Saarland",
+    "crime": false
+  },
+  {
+    "tag": "Motorradunfall",
+    "crime": true
+  },
+  {
+    "tag": "Körperverletzungsdelikt",
+    "crime": true
+  },
+  {
+    "tag": "Schutzausrüstung",
+    "crime": false
+  },
+  {
+    "tag": "Schutzhelm",
+    "crime": false
+  },
+  {
+    "tag": "Betreuung",
+    "crime": false
+  },
+  {
+    "tag": "Ausnahmezustand",
+    "crime": false
+  },
+  {
+    "tag": "Toilette",
+    "crime": false
+  },
+  {
+    "tag": "Zwangshaft",
+    "crime": false
+  },
+  {
+    "tag": "Commerzbank",
+    "crime": false
+  },
+  {
+    "tag": "Raststätte",
+    "crime": false
+  },
+  {
+    "tag": "Tankstellenräuber",
+    "crime": true
+  },
+  {
+    "tag": "Geburtstagsfeier",
+    "crime": false
+  },
+  {
+    "tag": "Autoversicherung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradsturz",
+    "crime": false
+  },
+  {
+    "tag": "Mietvertrag",
+    "crime": false
+  },
+  {
+    "tag": "Bau",
+    "crime": false
+  },
+  {
+    "tag": "Barop",
+    "crime": false
+  },
+  {
+    "tag": "Rettungshund",
+    "crime": false
+  },
+  {
+    "tag": "TUI",
+    "crime": false
+  },
+  {
+    "tag": "Rede",
+    "crime": false
+  },
+  {
+    "tag": "DGB",
+    "crime": false
+  },
+  {
+    "tag": "Energieanbieter",
+    "crime": false
+  },
+  {
+    "tag": "Demonstranten",
+    "crime": false
+  },
+  {
+    "tag": "Hotelzimmer",
+    "crime": false
+  },
+  {
+    "tag": "A4",
+    "crime": false
+  },
+  {
+    "tag": "Vorurteil",
+    "crime": false
+  },
+  {
+    "tag": "Umsetzung",
+    "crime": false
+  },
+  {
+    "tag": "Metalle",
+    "crime": false
+  },
+  {
+    "tag": "Viehtransporter",
+    "crime": false
+  },
+  {
+    "tag": "Skulptur",
+    "crime": false
+  },
+  {
+    "tag": "Plastik",
+    "crime": false
+  },
+  {
+    "tag": "Kunstwerke",
+    "crime": false
+  },
+  {
+    "tag": "Wertvorstellung",
+    "crime": false
+  },
+  {
+    "tag": "B 54",
+    "crime": false
+  },
+  {
+    "tag": "Chefarzt",
+    "crime": false
+  },
+  {
+    "tag": "Straftäter",
+    "crime": true
+  },
+  {
+    "tag": "Verwüstung",
+    "crime": true
+  },
+  {
+    "tag": "Autoposer",
+    "crime": false
+  },
+  {
+    "tag": "Standarddeutsch",
+    "crime": false
+  },
+  {
+    "tag": "Fridays For Future",
+    "crime": false
+  },
+  {
+    "tag": "Sozialismus",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradunfall",
+    "crime": true
+  },
+  {
+    "tag": "Motto",
+    "crime": false
+  },
+  {
+    "tag": "Bühne",
+    "crime": false
+  },
+  {
+    "tag": "Kabarett",
+    "crime": false
+  },
+  {
+    "tag": "Beratungsstelle",
+    "crime": false
+  },
+  {
+    "tag": "Freundschaft",
+    "crime": false
+  },
+  {
+    "tag": "Waffenverbotszone",
+    "crime": true
+  },
+  {
+    "tag": "Arbeitsbelastung",
+    "crime": false
+  },
+  {
+    "tag": "Städtebau",
+    "crime": false
+  },
+  {
+    "tag": "Stiche",
+    "crime": false
+  },
+  {
+    "tag": "Generation",
+    "crime": false
+  },
+  {
+    "tag": "Geduld",
+    "crime": false
+  },
+  {
+    "tag": "Bundesgerichtshof",
+    "crime": false
+  },
+  {
+    "tag": "Rechtsprechung",
+    "crime": false
+  },
+  {
+    "tag": "Nachfrage",
+    "crime": false
+  },
+  {
+    "tag": "Kartoffel",
+    "crime": false
+  },
+  {
+    "tag": "Beerdigung",
+    "crime": false
+  },
+  {
+    "tag": "Union Berlin",
+    "crime": false
+  },
+  {
+    "tag": "Erster Weltkrieg",
+    "crime": false
+  },
+  {
+    "tag": "Teenager",
+    "crime": false
+  },
+  {
+    "tag": "Praxis",
+    "crime": false
+  },
+  {
+    "tag": "Blechschaden",
+    "crime": false
+  },
+  {
+    "tag": "Beschlagnahmung",
+    "crime": false
+  },
+  {
+    "tag": "Zivilfahnder",
+    "crime": false
+  },
+  {
+    "tag": "Elektromobilität",
+    "crime": false
+  },
+  {
+    "tag": "Identitäre Bewegung",
+    "crime": true
+  },
+  {
+    "tag": "Verantwortung",
+    "crime": false
+  },
+  {
+    "tag": "Babyleiche",
+    "crime": true
+  },
+  {
+    "tag": "Audi A5",
+    "crime": false
+  },
+  {
+    "tag": "Buchen",
+    "crime": false
+  },
+  {
+    "tag": "Informationsangebote",
+    "crime": false
+  },
+  {
+    "tag": "Messe",
+    "crime": false
+  },
+  {
+    "tag": "Tombola",
+    "crime": false
+  },
+  {
+    "tag": "Geschwindigkeitsmessungen",
+    "crime": false
+  },
+  {
+    "tag": "Aufenthaltstitel",
+    "crime": false
+  },
+  {
+    "tag": "Nationalismus",
+    "crime": false
+  },
+  {
+    "tag": "Landesparlament",
+    "crime": false
+  },
+  {
+    "tag": "Offline",
+    "crime": false
+  },
+  {
+    "tag": "LGBT",
+    "crime": false
+  },
+  {
+    "tag": "Kompetenzzentrum",
+    "crime": false
+  },
+  {
+    "tag": "Hacker",
+    "crime": true
+  },
+  {
+    "tag": "Religionsfreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Kippa",
+    "crime": false
+  },
+  {
+    "tag": "Konrad Adenauer",
+    "crime": false
+  },
+  {
+    "tag": "Reifenplatzer",
+    "crime": false
+  },
+  {
+    "tag": "Katalysator",
+    "crime": false
+  },
+  {
+    "tag": "Erstversorgung",
+    "crime": false
+  },
+  {
+    "tag": "Namensschild",
+    "crime": false
+  },
+  {
+    "tag": "Kaufentscheidung",
+    "crime": false
+  },
+  {
+    "tag": "Kampfhund",
+    "crime": true
+  },
+  {
+    "tag": "Lebensmittelüberwachung",
+    "crime": false
+  },
+  {
+    "tag": "Hotel",
+    "crime": false
+  },
+  {
+    "tag": "Geschlechtsorgan",
+    "crime": false
+  },
+  {
+    "tag": "Boot",
+    "crime": false
+  },
+  {
+    "tag": "Segeln",
+    "crime": false
+  },
+  {
+    "tag": "Kanu",
+    "crime": false
+  },
+  {
+    "tag": "Kompass",
+    "crime": false
+  },
+  {
+    "tag": "TSG 1899 Hoffenheim",
+    "crime": false
+  },
+  {
+    "tag": "Faktencheck",
+    "crime": false
+  },
+  {
+    "tag": "Sommerfest",
+    "crime": false
+  },
+  {
+    "tag": "Röntgen",
+    "crime": false
+  },
+  {
+    "tag": "Hagen-Hohenlimburg",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Bundesbank",
+    "crime": false
+  },
+  {
+    "tag": "Attentat",
+    "crime": true
+  },
+  {
+    "tag": "Langendreer",
+    "crime": false
+  },
+  {
+    "tag": "Lichterfest",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitsdienste",
+    "crime": false
+  },
+  {
+    "tag": "Anschlag",
+    "crime": true
+  },
+  {
+    "tag": "Kioskeinbruch",
+    "crime": true
+  },
+  {
+    "tag": "Hochfeld",
+    "crime": false
+  },
+  {
+    "tag": "Antifa",
+    "crime": false
+  },
+  {
+    "tag": "Chor",
+    "crime": false
+  },
+  {
+    "tag": "Jurist",
+    "crime": false
+  },
+  {
+    "tag": "Norwegen",
+    "crime": false
+  },
+  {
+    "tag": "Zentralrat Deutscher Sinti und Roma",
+    "crime": false
+  },
+  {
+    "tag": "Gleichberechtigung",
+    "crime": false
+  },
+  {
+    "tag": "Packstation",
+    "crime": false
+  },
+  {
+    "tag": "Flugzeug",
+    "crime": false
+  },
+  {
+    "tag": "Airport",
+    "crime": false
+  },
+  {
+    "tag": "Universität",
+    "crime": false
+  },
+  {
+    "tag": "TU Dortmund",
+    "crime": false
+  },
+  {
+    "tag": "Durchfall",
+    "crime": false
+  },
+  {
+    "tag": "Seilersee",
+    "crime": false
+  },
+  {
+    "tag": "Reporter ohne Grenzen",
+    "crime": false
+  },
+  {
+    "tag": "Island",
+    "crime": false
+  },
+  {
+    "tag": "Costa Rica",
+    "crime": false
+  },
+  {
+    "tag": "Finnland",
+    "crime": false
+  },
+  {
+    "tag": "Estland",
+    "crime": false
+  },
+  {
+    "tag": "Internationaler Tag der Pressefreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Irland",
+    "crime": false
+  },
+  {
+    "tag": "George Orwell",
+    "crime": false
+  },
+  {
+    "tag": "Liechtenstein",
+    "crime": false
+  },
+  {
+    "tag": "Neuseeland",
+    "crime": false
+  },
+  {
+    "tag": "Jamaika",
+    "crime": false
+  },
+  {
+    "tag": "Schriftsteller",
+    "crime": false
+  },
+  {
+    "tag": "Seychellen",
+    "crime": false
+  },
+  {
+    "tag": "Strohballen",
+    "crime": false
+  },
+  {
+    "tag": "Vortrag",
+    "crime": false
+  },
+  {
+    "tag": "Pflegende Angehörige",
+    "crime": false
+  },
+  {
+    "tag": "Fiat Tipo",
+    "crime": false
+  },
+  {
+    "tag": "Seniorenresidenz",
+    "crime": false
+  },
+  {
+    "tag": "Kosten",
+    "crime": false
+  },
+  {
+    "tag": "Personalkosten",
+    "crime": false
+  },
+  {
+    "tag": "Rallye",
+    "crime": false
+  },
+  {
+    "tag": "Vorbeugung",
+    "crime": false
+  },
+  {
+    "tag": "Herstellung",
+    "crime": false
+  },
+  {
+    "tag": "Missbrauch",
+    "crime": true
+  },
+  {
+    "tag": "Nordrhein-Westfalen",
+    "crime": false
+  },
+  {
+    "tag": "Jonglieren",
+    "crime": false
+  },
+  {
+    "tag": "Personalplanung",
+    "crime": false
+  },
+  {
+    "tag": "Schwerter",
+    "crime": false
+  },
+  {
+    "tag": "Vespa",
+    "crime": false
+  },
+  {
+    "tag": "Griechenland",
+    "crime": false
+  },
+  {
+    "tag": "Probefahrt",
+    "crime": false
+  },
+  {
+    "tag": "Ski",
+    "crime": false
+  },
+  {
+    "tag": "Autodach",
+    "crime": false
+  },
+  {
+    "tag": "Maskenpflicht",
+    "crime": false
+  },
+  {
+    "tag": "Tanken",
+    "crime": false
+  },
+  {
+    "tag": "Gefährliche Eingriffe in den Bahn-, Schiffs- und Luftverkehr",
+    "crime": true
+  },
+  {
+    "tag": "Impfungen",
+    "crime": false
+  },
+  {
+    "tag": "Videobotschaft",
+    "crime": false
+  },
+  {
+    "tag": "Wintereinbruch",
+    "crime": false
+  },
+  {
+    "tag": "Glauben",
+    "crime": false
+  },
+  {
+    "tag": "Waldbrand",
+    "crime": true
+  },
+  {
+    "tag": "Dosen",
+    "crime": false
+  },
+  {
+    "tag": "Skandinavien",
+    "crime": false
+  },
+  {
+    "tag": "Haustürgeschäften",
+    "crime": true
+  },
+  {
+    "tag": "Internetbetrüger",
+    "crime": true
+  },
+  {
+    "tag": "Herzinfarkt",
+    "crime": false
+  },
+  {
+    "tag": "Kommunale Selbstverwaltung",
+    "crime": false
+  },
+  {
+    "tag": "Selbstverwaltung",
+    "crime": false
+  },
+  {
+    "tag": "Kritik",
+    "crime": false
+  },
+  {
+    "tag": "Schanze",
+    "crime": false
+  },
+  {
+    "tag": "Klage",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradgarage",
+    "crime": false
+  },
+  {
+    "tag": "Gemeinschaftsgarten",
+    "crime": false
+  },
+  {
+    "tag": "Sperrbezirk",
+    "crime": false
+  },
+  {
+    "tag": "Podcast",
+    "crime": false
+  },
+  {
+    "tag": "Kaiserschnitt",
+    "crime": false
+  },
+  {
+    "tag": "Geldboten",
+    "crime": false
+  },
+  {
+    "tag": "Romantik",
+    "crime": false
+  },
+  {
+    "tag": "Gardasee",
+    "crime": false
+  },
+  {
+    "tag": "Beatmungsgerät",
+    "crime": false
+  },
+  {
+    "tag": "Neubaugebiet",
+    "crime": false
+  },
+  {
+    "tag": "Pick-up",
+    "crime": false
+  },
+  {
+    "tag": "Spareinlage",
+    "crime": false
+  },
+  {
+    "tag": "Ersparnisse",
+    "crime": false
+  },
+  {
+    "tag": "Einschulung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrraddiebstähle",
+    "crime": true
+  },
+  {
+    "tag": "Informationsabend",
+    "crime": false
+  },
+  {
+    "tag": "Quadfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Modernisierung",
+    "crime": false
+  },
+  {
+    "tag": "Ford Galaxy",
+    "crime": false
+  },
+  {
+    "tag": "Mehl",
+    "crime": false
+  },
+  {
+    "tag": "Unfallgefahr",
+    "crime": false
+  },
+  {
+    "tag": "Corona-Pandemie",
+    "crime": false
+  },
+  {
+    "tag": "Eisglätte",
+    "crime": false
+  },
+  {
+    "tag": "Corona-Warn-App",
+    "crime": false
+  },
+  {
+    "tag": "Arztpraxen",
+    "crime": false
+  },
+  {
+    "tag": "Impfung",
+    "crime": false
+  },
+  {
+    "tag": "Nerven",
+    "crime": false
+  },
+  {
+    "tag": "Cola",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Bövinghausen",
+    "crime": false
+  },
+  {
+    "tag": "Impfstatus",
+    "crime": false
+  },
+  {
+    "tag": "Randale",
+    "crime": true
+  },
+  {
+    "tag": "Coffein",
+    "crime": false
+  },
+  {
+    "tag": "Arbeitspause",
+    "crime": false
+  },
+  {
+    "tag": "Handyakku",
+    "crime": false
+  },
+  {
+    "tag": "Dinner for One",
+    "crime": false
+  },
+  {
+    "tag": "Knaller",
+    "crime": false
+  },
+  {
+    "tag": "Leichenteile",
+    "crime": true
+  },
+  {
+    "tag": "KiK",
+    "crime": false
+  },
+  {
+    "tag": "Forensische Psychiatrie",
+    "crime": false
+  },
+  {
+    "tag": "Exhibitionismus",
+    "crime": true
+  },
+  {
+    "tag": "Proteste",
+    "crime": false
+  },
+  {
+    "tag": "Unfallursachen",
+    "crime": false
+  },
+  {
+    "tag": "Remondis",
+    "crime": false
+  },
+  {
+    "tag": "Wasserschaden",
+    "crime": false
+  },
+  {
+    "tag": "Ingenieurwesen",
+    "crime": false
+  },
+  {
+    "tag": "Caddy",
+    "crime": false
+  },
+  {
+    "tag": "Osterfeld",
+    "crime": false
+  },
+  {
+    "tag": "Ausfall",
+    "crime": false
+  },
+  {
+    "tag": "Höchstgeschwindigkeit",
+    "crime": false
+  },
+  {
+    "tag": "Geldtransport",
+    "crime": true
+  },
+  {
+    "tag": "Möbelhaus",
+    "crime": false
+  },
+  {
+    "tag": "Social Engineering",
+    "crime": true
+  },
+  {
+    "tag": "Internet der Dinge",
+    "crime": false
+  },
+  {
+    "tag": "Digitale Medien",
+    "crime": false
+  },
+  {
+    "tag": "Sachbearbeiter",
+    "crime": false
+  },
+  {
+    "tag": "Halloween",
+    "crime": false
+  },
+  {
+    "tag": "Kinder- und Jugendhilfe",
+    "crime": false
+  },
+  {
+    "tag": "Libanon",
+    "crime": false
+  },
+  {
+    "tag": "Interpol",
+    "crime": false
+  },
+  {
+    "tag": "Schweigeminute",
+    "crime": false
+  },
+  {
+    "tag": "Opel Zafira",
+    "crime": false
+  },
+  {
+    "tag": "Netz",
+    "crime": false
+  },
+  {
+    "tag": "Kraftfahrzeugsteuergesetz",
+    "crime": false
+  },
+  {
+    "tag": "Sexualstraftat",
+    "crime": true
+  },
+  {
+    "tag": "Sexualstrafrecht",
+    "crime": false
+  },
+  {
+    "tag": "Münze",
+    "crime": false
+  },
+  {
+    "tag": "Beihilfe",
+    "crime": true
+  },
+  {
+    "tag": "Autovermietung",
+    "crime": false
+  },
+  {
+    "tag": "Geldbetrag",
+    "crime": false
+  },
+  {
+    "tag": "Armenien",
+    "crime": false
+  },
+  {
+    "tag": "Autodiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Renault Mégane",
+    "crime": false
+  },
+  {
+    "tag": "Trickdieb",
+    "crime": true
+  },
+  {
+    "tag": "Gartenlaube",
+    "crime": false
+  },
+  {
+    "tag": "Leichtathletik",
+    "crime": false
+  },
+  {
+    "tag": "Heirat",
+    "crime": false
+  },
+  {
+    "tag": "Hochzeit",
+    "crime": false
+  },
+  {
+    "tag": "Kaffee",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungstür",
+    "crime": false
+  },
+  {
+    "tag": "Einsatzkräfte",
+    "crime": false
+  },
+  {
+    "tag": "Gewässerverschmutzung",
+    "crime": false
+  },
+  {
+    "tag": "Löschmittel",
+    "crime": false
+  },
+  {
+    "tag": "Boden",
+    "crime": false
+  },
+  {
+    "tag": "Entsorgung",
+    "crime": false
+  },
+  {
+    "tag": "Umwelt",
+    "crime": false
+  },
+  {
+    "tag": "Umweltverschmutzung",
+    "crime": false
+  },
+  {
+    "tag": "Wasser",
+    "crime": false
+  },
+  {
+    "tag": "Nachbarn",
+    "crime": false
+  },
+  {
+    "tag": "Rastplatz",
+    "crime": false
+  },
+  {
+    "tag": "Marke",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Aplerbeck",
+    "crime": false
+  },
+  {
+    "tag": "Elterntaxi",
+    "crime": false
+  },
+  {
+    "tag": "Tempo-30-Zone",
+    "crime": false
+  },
+  {
+    "tag": "Reisefreiheit",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungseinbrüche",
+    "crime": true
+  },
+  {
+    "tag": "Prävention",
+    "crime": false
+  },
+  {
+    "tag": "Home Office",
+    "crime": false
+  },
+  {
+    "tag": "Partynacht",
+    "crime": false
+  },
+  {
+    "tag": "Diebe",
+    "crime": true
+  },
+  {
+    "tag": "Wochenmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Parkrempler",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrserziehung",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradfahren",
+    "crime": false
+  },
+  {
+    "tag": "Schulbus",
+    "crime": false
+  },
+  {
+    "tag": "Förderschule",
+    "crime": false
+  },
+  {
+    "tag": "Gegenverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Ministerium",
+    "crime": false
+  },
+  {
+    "tag": "Pilotprojekt",
+    "crime": false
+  },
+  {
+    "tag": "Lünen-Brambauer",
+    "crime": false
+  },
+  {
+    "tag": "Seitenstreifen",
+    "crime": false
+  },
+  {
+    "tag": "Klinik",
+    "crime": false
+  },
+  {
+    "tag": "Medizinische Forschung",
+    "crime": false
+  },
+  {
+    "tag": "Atemschutzmaske",
+    "crime": false
+  },
+  {
+    "tag": "VW Passat",
+    "crime": false
+  },
+  {
+    "tag": "Mutter",
+    "crime": false
+  },
+  {
+    "tag": "Bindemittel",
+    "crime": false
+  },
+  {
+    "tag": "Luftverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Drogenkonsumraum",
+    "crime": false
+  },
+  {
+    "tag": "Zwangsgeld",
+    "crime": false
+  },
+  {
+    "tag": "Frisur",
+    "crime": false
+  },
+  {
+    "tag": "Nachtclub",
+    "crime": false
+  },
+  {
+    "tag": "Autoschlüssel",
+    "crime": false
+  },
+  {
+    "tag": "Aggression",
+    "crime": false
+  },
+  {
+    "tag": "Sicht",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugbrand",
+    "crime": false
+  },
+  {
+    "tag": "Pkw-Brand",
+    "crime": false
+  },
+  {
+    "tag": "Zivilcourage",
+    "crime": false
+  },
+  {
+    "tag": "E-Mail-Adresse",
+    "crime": false
+  },
+  {
+    "tag": "Ungarn",
+    "crime": false
+  },
+  {
+    "tag": "Strafvereitelung",
+    "crime": true
+  },
+  {
+    "tag": "E-Zigaretten",
+    "crime": false
+  },
+  {
+    "tag": "Reisebüro",
+    "crime": false
+  },
+  {
+    "tag": "Gewerbeanmeldung",
+    "crime": false
+  },
+  {
+    "tag": "Sexualdelikt",
+    "crime": true
+  },
+  {
+    "tag": "Miri-Clan",
+    "crime": false
+  },
+  {
+    "tag": "EncroChat",
+    "crime": false
+  },
+  {
+    "tag": "Landeskriminalamt",
+    "crime": false
+  },
+  {
+    "tag": "Clans",
+    "crime": false
+  },
+  {
+    "tag": "Totschlag",
+    "crime": true
+  },
+  {
+    "tag": "Jungen",
+    "crime": false
+  },
+  {
+    "tag": "Häusliche Gewalt",
+    "crime": true
+  },
+  {
+    "tag": "Trunkenheitsfahrt",
+    "crime": true
+  },
+  {
+    "tag": "Hessen",
+    "crime": false
+  },
+  {
+    "tag": "Weißrussland",
+    "crime": false
+  },
+  {
+    "tag": "Leichenfund",
+    "crime": false
+  },
+  {
+    "tag": "Zweiter Weltkrieg",
+    "crime": false
+  },
+  {
+    "tag": "Staat",
+    "crime": false
+  },
+  {
+    "tag": "Fremdenfeindlichkeit",
+    "crime": false
+  },
+  {
+    "tag": "Eltern-Taxis",
+    "crime": false
+  },
+  {
+    "tag": "Lichtbild",
+    "crime": false
+  },
+  {
+    "tag": "Bahnhof",
+    "crime": false
+  },
+  {
+    "tag": "Lichttechnik",
+    "crime": false
+  },
+  {
+    "tag": "Scheinwerfer",
+    "crime": false
+  },
+  {
+    "tag": "Materialkosten",
+    "crime": false
+  },
+  {
+    "tag": "Lichttest",
+    "crime": false
+  },
+  {
+    "tag": "Jahreszeit",
+    "crime": false
+  },
+  {
+    "tag": "Physik",
+    "crime": false
+  },
+  {
+    "tag": "Bauchgefühl",
+    "crime": false
+  },
+  {
+    "tag": "Gepäck",
+    "crime": false
+  },
+  {
+    "tag": "Waffenrecht",
+    "crime": false
+  },
+  {
+    "tag": "Schussabgabe",
+    "crime": true
+  },
+  {
+    "tag": "Handtaschenraub",
+    "crime": true
+  },
+  {
+    "tag": "Brände",
+    "crime": false
+  },
+  {
+    "tag": "Schausteller",
+    "crime": false
+  },
+  {
+    "tag": "Hygienevorschriften",
+    "crime": false
+  },
+  {
+    "tag": "Fuchs",
+    "crime": false
+  },
+  {
+    "tag": "Standstreifen",
+    "crime": false
+  },
+  {
+    "tag": "Autobrand",
+    "crime": false
+  },
+  {
+    "tag": "Lederjacke",
+    "crime": false
+  },
+  {
+    "tag": "Sozialwissenschaften",
+    "crime": false
+  },
+  {
+    "tag": "Detonation",
+    "crime": true
+  },
+  {
+    "tag": "Sprengstoff",
+    "crime": true
+  },
+  {
+    "tag": "Auflagen",
+    "crime": false
+  },
+  {
+    "tag": "Udo Di Fabio",
+    "crime": false
+  },
+  {
+    "tag": "Süddeutsche Zeitung",
+    "crime": false
+  },
+  {
+    "tag": "Barbara Slowik",
+    "crime": false
+  },
+  {
+    "tag": "Autor",
+    "crime": false
+  },
+  {
+    "tag": "Herbsttagung",
+    "crime": false
+  },
+  {
+    "tag": "Beleidigungen",
+    "crime": true
+  },
+  {
+    "tag": "Busfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Porsche 911",
+    "crime": false
+  },
+  {
+    "tag": "Neuwagen",
+    "crime": false
+  },
+  {
+    "tag": "Hamas",
+    "crime": false
+  },
+  {
+    "tag": "Israel",
+    "crime": false
+  },
+  {
+    "tag": "Judentum",
+    "crime": false
+  },
+  {
+    "tag": "Erstaufnahmeeinrichtung",
+    "crime": false
+  },
+  {
+    "tag": "Kreditkarte",
+    "crime": false
+  },
+  {
+    "tag": "Abschiebung",
+    "crime": false
+  },
+  {
+    "tag": "Neubau",
+    "crime": false
+  },
+  {
+    "tag": "Audi Q5",
+    "crime": false
+  },
+  {
+    "tag": "Knalltrauma",
+    "crime": false
+  },
+  {
+    "tag": "Gebet",
+    "crime": false
+  },
+  {
+    "tag": "Matratze",
+    "crime": false
+  },
+  {
+    "tag": "Fiat Ducato",
+    "crime": false
+  },
+  {
+    "tag": "Briefkasten",
+    "crime": false
+  },
+  {
+    "tag": "Greta Thunberg",
+    "crime": false
+  },
+  {
+    "tag": "Schweden",
+    "crime": false
+  },
+  {
+    "tag": "Belgien",
+    "crime": false
+  },
+  {
+    "tag": "Herbizid",
+    "crime": false
+  },
+  {
+    "tag": "Glyphosat",
+    "crime": false
+  },
+  {
+    "tag": "Gras",
+    "crime": false
+  },
+  {
+    "tag": "Chemikalie",
+    "crime": false
+  },
+  {
+    "tag": "Gartenbau",
+    "crime": false
+  },
+  {
+    "tag": "Verbotsverfügung",
+    "crime": false
+  },
+  {
+    "tag": "Sesamstraße",
+    "crime": false
+  },
+  {
+    "tag": "Psychische Störung",
+    "crime": false
+  },
+  {
+    "tag": "Honda Civic",
+    "crime": false
+  },
+  {
+    "tag": "Fingerabdruck",
+    "crime": false
+  },
+  {
+    "tag": "Gedenken",
+    "crime": false
+  },
+  {
+    "tag": "EC-Karte",
+    "crime": false
+  },
+  {
+    "tag": "Abpumpen",
+    "crime": false
+  },
+  {
+    "tag": "Lippe",
+    "crime": false
+  },
+  {
+    "tag": "Wahrnehmung",
+    "crime": false
+  },
+  {
+    "tag": "Gazastreifen",
+    "crime": false
+  },
+  {
+    "tag": "Versammlungsbehörde",
+    "crime": false
+  },
+  {
+    "tag": "Geldabheben",
+    "crime": false
+  },
+  {
+    "tag": "Anreise",
+    "crime": false
+  },
+  {
+    "tag": "Champions-League",
+    "crime": false
+  },
+  {
+    "tag": "Cybercrime",
+    "crime": true
+  },
+  {
+    "tag": "Ransomware",
+    "crime": true
+  },
+  {
+    "tag": "Cyberattacke",
+    "crime": true
+  },
+  {
+    "tag": "Informationssicherheit",
+    "crime": false
+  },
+  {
+    "tag": "IT-Dienstleister",
+    "crime": false
+  },
+  {
+    "tag": "Wasserkraftwerk",
+    "crime": false
+  },
+  {
+    "tag": "Informationstechnik",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitstechnologie",
+    "crime": false
+  },
+  {
+    "tag": "Freiheitsentziehung",
+    "crime": true
+  },
+  {
+    "tag": "Wall",
+    "crime": false
+  },
+  {
+    "tag": "Autorennen",
+    "crime": false
+  },
+  {
+    "tag": "Bochum-Grumme",
+    "crime": false
+  },
+  {
+    "tag": "Tschechien",
+    "crime": false
+  },
+  {
+    "tag": "Kleingärten",
+    "crime": false
+  },
+  {
+    "tag": "Abdruck",
+    "crime": false
+  },
+  {
+    "tag": "Gewalt gegen Frauen",
+    "crime": true
+  },
+  {
+    "tag": "Vergewaltigung",
+    "crime": true
+  },
+  {
+    "tag": "Sexualisierte Gewalt",
+    "crime": true
+  },
+  {
+    "tag": "Stalking",
+    "crime": true
+  },
+  {
+    "tag": "Sexuelle Nötigung",
+    "crime": true
+  },
+  {
+    "tag": "BMW X3",
+    "crime": false
+  },
+  {
+    "tag": "Joachim Herrmann",
+    "crime": false
+  },
+  {
+    "tag": "Staatssekretär",
+    "crime": false
+  },
+  {
+    "tag": "Keyless Go",
+    "crime": false
+  },
+  {
+    "tag": "RFID",
+    "crime": false
+  },
+  {
+    "tag": "Carport",
+    "crime": false
+  },
+  {
+    "tag": "Audi Q8",
+    "crime": false
+  },
+  {
+    "tag": "Mercedes-AMG",
+    "crime": false
+  },
+  {
+    "tag": "Alufolie",
+    "crime": false
+  },
+  {
+    "tag": "Radio",
+    "crime": false
+  },
+  {
+    "tag": "Rollerfahrerin",
+    "crime": false
+  },
+  {
+    "tag": "Norden",
+    "crime": false
+  },
+  {
+    "tag": "B 236",
+    "crime": false
+  },
+  {
+    "tag": "Fahreignung",
+    "crime": false
+  },
+  {
+    "tag": "Anhaltesignalgeber",
+    "crime": false
+  },
+  {
+    "tag": "Herz-Lungen-Wiederbelebung",
+    "crime": false
+  },
+  {
+    "tag": "Restaurants",
+    "crime": false
+  },
+  {
+    "tag": "Standkundgebung",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachtstag",
+    "crime": false
+  },
+  {
+    "tag": "Sonnenbrille",
+    "crime": false
+  },
+  {
+    "tag": "Schnurrbart",
+    "crime": false
+  },
+  {
+    "tag": "Entziehung und Neuerteilung der Fahrerlaubnis",
+    "crime": false
+  },
+  {
+    "tag": "Angebot",
+    "crime": false
+  },
+  {
+    "tag": "Telefon-Sprechstunde",
+    "crime": false
+  },
+  {
+    "tag": "Bußgeld",
+    "crime": false
+  },
+  {
+    "tag": "Punkte",
+    "crime": false
+  },
+  {
+    "tag": "Sommerreifen",
+    "crime": false
+  },
+  {
+    "tag": "Einbrüche",
+    "crime": true
+  },
+  {
+    "tag": "Zulassung",
+    "crime": false
+  },
+  {
+    "tag": "Drogenfund",
+    "crime": false
+  },
+  {
+    "tag": "Untersuchungshaftbefehl",
+    "crime": false
+  },
+  {
+    "tag": "Vermisstenfälle",
+    "crime": false
+  },
+  {
+    "tag": "Kurfürstenstraße",
+    "crime": false
+  },
+  {
+    "tag": "Wartezeiten",
+    "crime": false
+  },
+  {
+    "tag": "Tankstelleneinbruch",
+    "crime": true
+  },
+  {
+    "tag": "Smartphones",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Telekom",
+    "crime": false
+  },
+  {
+    "tag": "Behörde",
+    "crime": false
+  },
+  {
+    "tag": "Glasfaserkabel",
+    "crime": false
+  },
+  {
+    "tag": "Kontaktverbot",
+    "crime": false
+  },
+  {
+    "tag": "Erfolg",
+    "crime": false
+  },
+  {
+    "tag": "Infektion",
+    "crime": false
+  },
+  {
+    "tag": "Verantwortungsbewusstsein",
+    "crime": false
+  },
+  {
+    "tag": "Karfreitag",
+    "crime": false
+  },
+  {
+    "tag": "Gerichtskosten",
+    "crime": false
+  },
+  {
+    "tag": "Passagiere",
+    "crime": false
+  },
+  {
+    "tag": "Gewächshaus",
+    "crime": false
+  },
+  {
+    "tag": "Kohlenmonoxid",
+    "crime": false
+  },
+  {
+    "tag": "NSU 2.0",
+    "crime": false
+  },
+  {
+    "tag": "Drohbrief",
+    "crime": true
+  },
+  {
+    "tag": "Austausch",
+    "crime": false
+  },
+  {
+    "tag": "Rolltreppe",
+    "crime": false
+  },
+  {
+    "tag": "Geruch",
+    "crime": false
+  },
+  {
+    "tag": "Spirituose",
+    "crime": false
+  },
+  {
+    "tag": "Politisch motivierte Kriminalität",
+    "crime": true
+  },
+  {
+    "tag": "Motivation",
+    "crime": false
+  },
+  {
+    "tag": "Juden",
+    "crime": false
+  },
+  {
+    "tag": "Druck",
+    "crime": false
+  },
+  {
+    "tag": "Indien",
+    "crime": false
+  },
+  {
+    "tag": "Impfausweis",
+    "crime": false
+  },
+  {
+    "tag": "Sprechanlage",
+    "crime": false
+  },
+  {
+    "tag": "Entgleisung",
+    "crime": false
+  },
+  {
+    "tag": "Usbekistan",
+    "crime": false
+  },
+  {
+    "tag": "Deutsche Bank",
+    "crime": false
+  },
+  {
+    "tag": "Jacke",
+    "crime": false
+  },
+  {
+    "tag": "Lautsprecher",
+    "crime": false
+  },
+  {
+    "tag": "Privatparty",
+    "crime": false
+  },
+  {
+    "tag": "Diskothek",
+    "crime": false
+  },
+  {
+    "tag": "Kindertagesstätte",
+    "crime": false
+  },
+  {
+    "tag": "KiTa",
+    "crime": false
+  },
+  {
+    "tag": "Pädophilie",
+    "crime": true
+  },
+  {
+    "tag": "Beschlagnahme",
+    "crime": false
+  },
+  {
+    "tag": "Sonderkommission",
+    "crime": false
+  },
+  {
+    "tag": "Psychiatrie",
+    "crime": false
+  },
+  {
+    "tag": "Zigarettenautomat",
+    "crime": false
+  },
+  {
+    "tag": "Allee",
+    "crime": false
+  },
+  {
+    "tag": "Pressetermin",
+    "crime": false
+  },
+  {
+    "tag": "Vermisstenmeldung",
+    "crime": false
+  },
+  {
+    "tag": "Gedenkfeier",
+    "crime": false
+  },
+  {
+    "tag": "Erinnerung",
+    "crime": false
+  },
+  {
+    "tag": "Schreckschusswaffen",
+    "crime": false
+  },
+  {
+    "tag": "Verfassungsschutzbericht",
+    "crime": false
+  },
+  {
+    "tag": "Linksextremismus",
+    "crime": false
+  },
+  {
+    "tag": "Berufung",
+    "crime": false
+  },
+  {
+    "tag": "Rocker",
+    "crime": false
+  },
+  {
+    "tag": "Autoaufbruch",
+    "crime": true
+  },
+  {
+    "tag": "Luftqualität",
+    "crime": false
+  },
+  {
+    "tag": "Verbesserung",
+    "crime": false
+  },
+  {
+    "tag": "Hotels",
+    "crime": false
+  },
+  {
+    "tag": "Freudenberg",
+    "crime": false
+  },
+  {
+    "tag": "Anzeigen",
+    "crime": false
+  },
+  {
+    "tag": "Veranstaltung",
+    "crime": false
+  },
+  {
+    "tag": "Veranstaltungen",
+    "crime": false
+  },
+  {
+    "tag": "Black Lives Matter",
+    "crime": false
+  },
+  {
+    "tag": "QR-Code",
+    "crime": false
+  },
+  {
+    "tag": "Scanner",
+    "crime": false
+  },
+  {
+    "tag": "Christopher Street Day",
+    "crime": false
+  },
+  {
+    "tag": "Community",
+    "crime": false
+  },
+  {
+    "tag": "Zusammenarbeit",
+    "crime": false
+  },
+  {
+    "tag": "Promillegrenze",
+    "crime": false
+  },
+  {
+    "tag": "Wochenende",
+    "crime": false
+  },
+  {
+    "tag": "Sonntag",
+    "crime": false
+  },
+  {
+    "tag": "Prognose",
+    "crime": false
+  },
+  {
+    "tag": "Unterdrückung",
+    "crime": false
+  },
+  {
+    "tag": "Erzwingungshaft",
+    "crime": false
+  },
+  {
+    "tag": "Schnellrestaurant",
+    "crime": false
+  },
+  {
+    "tag": "Jeep",
+    "crime": false
+  },
+  {
+    "tag": "Tunesien",
+    "crime": false
+  },
+  {
+    "tag": "Glück",
+    "crime": false
+  },
+  {
+    "tag": "Straßenverkehrssicherheit",
+    "crime": false
+  },
+  {
+    "tag": "Technisches Hilfswerk",
+    "crime": false
+  },
+  {
+    "tag": "Schwerpunktkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Kawasaki Heavy Industries",
+    "crime": false
+  },
+  {
+    "tag": "Hitlergruß",
+    "crime": true
+  },
+  {
+    "tag": "Kreisparteitag",
+    "crime": false
+  },
+  {
+    "tag": "AfD",
+    "crime": false
+  },
+  {
+    "tag": "Gaststätte",
+    "crime": false
+  },
+  {
+    "tag": "Dialyse",
+    "crime": false
+  },
+  {
+    "tag": "Schicksal",
+    "crime": false
+  },
+  {
+    "tag": "Parklücke",
+    "crime": false
+  },
+  {
+    "tag": "Fahrgeschäft",
+    "crime": false
+  },
+  {
+    "tag": "Konsum",
+    "crime": false
+  },
+  {
+    "tag": "Regenschirm",
+    "crime": false
+  },
+  {
+    "tag": "Ticket",
+    "crime": false
+  },
+  {
+    "tag": "Behinderung",
+    "crime": false
+  },
+  {
+    "tag": "Tee",
+    "crime": false
+  },
+  {
+    "tag": "Abgasreinigung",
+    "crime": false
+  },
+  {
+    "tag": "Motorsteuerung",
+    "crime": false
+  },
+  {
+    "tag": "Kältebus",
+    "crime": false
+  },
+  {
+    "tag": "Neckar",
+    "crime": false
+  },
+  {
+    "tag": "Passanten",
+    "crime": false
+  },
+  {
+    "tag": "Küken",
+    "crime": false
+  },
+  {
+    "tag": "Auswilderung",
+    "crime": false
+  },
+  {
+    "tag": "Hassrede",
+    "crime": true
+  },
+  {
+    "tag": "Allradantrieb",
+    "crime": false
+  },
+  {
+    "tag": "Vereinsverbot",
+    "crime": false
+  },
+  {
+    "tag": "Bandidos",
+    "crime": false
+  },
+  {
+    "tag": "Harley-Davidson",
+    "crime": false
+  },
+  {
+    "tag": "Motorräder",
+    "crime": false
+  },
+  {
+    "tag": "Innenministerium",
+    "crime": false
+  },
+  {
+    "tag": "Bußgeldverfahren",
+    "crime": false
+  },
+  {
+    "tag": "Autotransporter",
+    "crime": false
+  },
+  {
+    "tag": "Haar",
+    "crime": false
+  },
+  {
+    "tag": "Paketzusteller",
+    "crime": false
+  },
+  {
+    "tag": "Beschwerden",
+    "crime": false
+  },
+  {
+    "tag": "Laterne",
+    "crime": false
+  },
+  {
+    "tag": "Messerangriff",
+    "crime": true
+  },
+  {
+    "tag": "Ortschaft",
+    "crime": false
+  },
+  {
+    "tag": "Unfallstelle",
+    "crime": false
+  },
+  {
+    "tag": "A2",
+    "crime": false
+  },
+  {
+    "tag": "Musikvideo",
+    "crime": false
+  },
+  {
+    "tag": "Borussia Mönchengladbach",
+    "crime": false
+  },
+  {
+    "tag": "Lärmschutzwand",
+    "crime": false
+  },
+  {
+    "tag": "A46",
+    "crime": false
+  },
+  {
+    "tag": "Datenbank",
+    "crime": false
+  },
+  {
+    "tag": "Bundesamt",
+    "crime": false
+  },
+  {
+    "tag": "Warnweste",
+    "crime": false
+  },
+  {
+    "tag": "Schiedsrichter",
+    "crime": false
+  },
+  {
+    "tag": "Beteiligung",
+    "crime": false
+  },
+  {
+    "tag": "VW Touareg",
+    "crime": false
+  },
+  {
+    "tag": "Socken",
+    "crime": false
+  },
+  {
+    "tag": "Bob",
+    "crime": false
+  },
+  {
+    "tag": "Manöver",
+    "crime": false
+  },
+  {
+    "tag": "Halbjahr",
+    "crime": false
+  },
+  {
+    "tag": "Bergbau",
+    "crime": false
+  },
+  {
+    "tag": "Drohne",
+    "crime": false
+  },
+  {
+    "tag": "Rettung",
+    "crime": false
+  },
+  {
+    "tag": "Angst",
+    "crime": false
+  },
+  {
+    "tag": "Großmarkt",
+    "crime": false
+  },
+  {
+    "tag": "Autohaus",
+    "crime": false
+  },
+  {
+    "tag": "Sprayer",
+    "crime": false
+  },
+  {
+    "tag": "Farbe",
+    "crime": false
+  },
+  {
+    "tag": "Hafen",
+    "crime": false
+  },
+  {
+    "tag": "Anhänger",
+    "crime": false
+  },
+  {
+    "tag": "Gegenstände",
+    "crime": false
+  },
+  {
+    "tag": "Fiat Punto",
+    "crime": false
+  },
+  {
+    "tag": "Fahrräder",
+    "crime": false
+  },
+  {
+    "tag": "Ford S-MAX",
+    "crime": false
+  },
+  {
+    "tag": "Vollsperrung",
+    "crime": false
+  },
+  {
+    "tag": "Polizei NRW",
+    "crime": false
+  },
+  {
+    "tag": "Gelände",
+    "crime": false
+  },
+  {
+    "tag": "Notbremsassistent",
+    "crime": false
+  },
+  {
+    "tag": "Spurhalteassistent",
+    "crime": false
+  },
+  {
+    "tag": "Fahrerassistenzsystem",
+    "crime": false
+  },
+  {
+    "tag": "Lokalradio",
+    "crime": false
+  },
+  {
+    "tag": "Plakate",
+    "crime": false
+  },
+  {
+    "tag": "Aktion",
+    "crime": false
+  },
+  {
+    "tag": "Schulanfang",
+    "crime": false
+  },
+  {
+    "tag": "Schulkinder",
+    "crime": false
+  },
+  {
+    "tag": "PDF",
+    "crime": false
+  },
+  {
+    "tag": "Basteln",
+    "crime": false
+  },
+  {
+    "tag": "Brettspiel",
+    "crime": false
+  },
+  {
+    "tag": "Einbruchsdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Hausdurchsuchung",
+    "crime": false
+  },
+  {
+    "tag": "Pressesprecher",
+    "crime": false
+  },
+  {
+    "tag": "Medienvertreter",
+    "crime": false
+  },
+  {
+    "tag": "Belohnung",
+    "crime": false
+  },
+  {
+    "tag": "Kurden",
+    "crime": false
+  },
+  {
+    "tag": "Schraubenzieher",
+    "crime": false
+  },
+  {
+    "tag": "Vorschussbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Nigeria",
+    "crime": false
+  },
+  {
+    "tag": "Afrika",
+    "crime": false
+  },
+  {
+    "tag": "Verschwörung",
+    "crime": true
+  },
+  {
+    "tag": "Online-Partnerbörsen",
+    "crime": false
+  },
+  {
+    "tag": "Enkeltrickbetrüger",
+    "crime": true
+  },
+  {
+    "tag": "Sexualstraftäter",
+    "crime": true
+  },
+  {
+    "tag": "Polystyrol",
+    "crime": false
+  },
+  {
+    "tag": "Kreislaufwirtschaftsgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Müllentsorgung",
+    "crime": false
+  },
+  {
+    "tag": "Kunststoff",
+    "crime": false
+  },
+  {
+    "tag": "Einsätzen",
+    "crime": false
+  },
+  {
+    "tag": "Gassigehen",
+    "crime": false
+  },
+  {
+    "tag": "Aktivität",
+    "crime": false
+  },
+  {
+    "tag": "Mazda CX-5",
+    "crime": false
+  },
+  {
+    "tag": "Autodiebe",
+    "crime": false
+  },
+  {
+    "tag": "Transit",
+    "crime": false
+  },
+  {
+    "tag": "Aktenzeichen XY … ungelöst",
+    "crime": false
+  },
+  {
+    "tag": "ZDF",
+    "crime": false
+  },
+  {
+    "tag": "Starkregen",
+    "crime": false
+  },
+  {
+    "tag": "Regen",
+    "crime": false
+  },
+  {
+    "tag": "Deeskalation",
+    "crime": false
+  },
+  {
+    "tag": "Trainer",
+    "crime": false
+  },
+  {
+    "tag": "Fußballtrainer",
+    "crime": false
+  },
+  {
+    "tag": "Spielabbruch",
+    "crime": false
+  },
+  {
+    "tag": "Kripo",
+    "crime": false
+  },
+  {
+    "tag": "Volksbank",
+    "crime": false
+  },
+  {
+    "tag": "Vereinigte Staaten",
+    "crime": false
+  },
+  {
+    "tag": "Chips",
+    "crime": false
+  },
+  {
+    "tag": "Minderjährige",
+    "crime": false
+  },
+  {
+    "tag": "Rauschgift",
+    "crime": true
+  },
+  {
+    "tag": "Schadensregulierung",
+    "crime": false
+  },
+  {
+    "tag": "Polo",
+    "crime": false
+  },
+  {
+    "tag": "Zeche",
+    "crime": false
+  },
+  {
+    "tag": "Spatenstich",
+    "crime": false
+  },
+  {
+    "tag": "Kohle",
+    "crime": false
+  },
+  {
+    "tag": "Umbau",
+    "crime": false
+  },
+  {
+    "tag": "Instrument",
+    "crime": false
+  },
+  {
+    "tag": "Metalldiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Eisenbahnunfall",
+    "crime": false
+  },
+  {
+    "tag": "Unfallgeschehen",
+    "crime": false
+  },
+  {
+    "tag": "Nordhessen",
+    "crime": false
+  },
+  {
+    "tag": "Axt",
+    "crime": false
+  },
+  {
+    "tag": "Armut",
+    "crime": false
+  },
+  {
+    "tag": "Bildungssystem",
+    "crime": false
+  },
+  {
+    "tag": "Bildung",
+    "crime": false
+  },
+  {
+    "tag": "Inflation",
+    "crime": false
+  },
+  {
+    "tag": "Klimakrise",
+    "crime": false
+  },
+  {
+    "tag": "Veröffentlichung",
+    "crime": false
+  },
+  {
+    "tag": "Deutsches Rotes Kreuz",
+    "crime": false
+  },
+  {
+    "tag": "Tod",
+    "crime": false
+  },
+  {
+    "tag": "Universität zu Köln",
+    "crime": false
+  },
+  {
+    "tag": "Panne",
+    "crime": false
+  },
+  {
+    "tag": "Notfallmedizin",
+    "crime": false
+  },
+  {
+    "tag": "Innere Medizin",
+    "crime": false
+  },
+  {
+    "tag": "Kardiologie",
+    "crime": false
+  },
+  {
+    "tag": "FC Chelsea",
+    "crime": false
+  },
+  {
+    "tag": "Angiologie",
+    "crime": false
+  },
+  {
+    "tag": "Fahrkartenkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Spendenaktion",
+    "crime": false
+  },
+  {
+    "tag": "Erdbeben",
+    "crime": false
+  },
+  {
+    "tag": "Altenheim",
+    "crime": false
+  },
+  {
+    "tag": "Wärmebildkamera",
+    "crime": false
+  },
+  {
+    "tag": "Demenz",
+    "crime": false
+  },
+  {
+    "tag": "Ruhestand",
+    "crime": false
+  },
+  {
+    "tag": "Amtseid",
+    "crime": false
+  },
+  {
+    "tag": "Controlling",
+    "crime": false
+  },
+  {
+    "tag": "Wewelsburg",
+    "crime": false
+  },
+  {
+    "tag": "Senegal",
+    "crime": false
+  },
+  {
+    "tag": "Softairwaffe",
+    "crime": false
+  },
+  {
+    "tag": "Juweliergeschäfts",
+    "crime": false
+  },
+  {
+    "tag": "Rollator",
+    "crime": false
+  },
+  {
+    "tag": "Unterwegs",
+    "crime": false
+  },
+  {
+    "tag": "Mobilität",
+    "crime": false
+  },
+  {
+    "tag": "Trauma",
+    "crime": false
+  },
+  {
+    "tag": "Geisterfahrer",
+    "crime": true
+  },
+  {
+    "tag": "Abmahnung",
+    "crime": false
+  },
+  {
+    "tag": "Lagebericht",
+    "crime": false
+  },
+  {
+    "tag": "Fahndungsfotos",
+    "crime": false
+  },
+  {
+    "tag": "Hanfplantage",
+    "crime": true
+  },
+  {
+    "tag": "Digitalisierung",
+    "crime": false
+  },
+  {
+    "tag": "Singlebörse",
+    "crime": false
+  },
+  {
+    "tag": "Frequenz",
+    "crime": false
+  },
+  {
+    "tag": "Raserszene",
+    "crime": false
+  },
+  {
+    "tag": "Gefahrgutunfall",
+    "crime": false
+  },
+  {
+    "tag": "Störung der Totenruhe",
+    "crime": true
+  },
+  {
+    "tag": "Verspätung",
+    "crime": false
+  },
+  {
+    "tag": "Quad",
+    "crime": false
+  },
+  {
+    "tag": "Prostitution",
+    "crime": false
+  },
+  {
+    "tag": "Arbeitszeit",
+    "crime": false
+  },
+  {
+    "tag": "Frustration",
+    "crime": false
+  },
+  {
+    "tag": "Katastrophen",
+    "crime": false
+  },
+  {
+    "tag": "SARS-CoV-2",
+    "crime": false
+  },
+  {
+    "tag": "Vision Zero",
+    "crime": false
+  },
+  {
+    "tag": "Leitplanke",
+    "crime": false
+  },
+  {
+    "tag": "Arminia Bielefeld",
+    "crime": false
+  },
+  {
+    "tag": "DSC Arminia Bielefeld",
+    "crime": false
+  },
+  {
+    "tag": "Glücksspiel",
+    "crime": false
+  },
+  {
+    "tag": "Jugendschutzgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Tankstellenüberfall",
+    "crime": true
+  },
+  {
+    "tag": "Verbrechen",
+    "crime": true
+  },
+  {
+    "tag": "Lebensgefahr",
+    "crime": false
+  },
+  {
+    "tag": "Multitasking",
+    "crime": false
+  },
+  {
+    "tag": "Schließfach",
+    "crime": false
+  },
+  {
+    "tag": "Firmengelände",
+    "crime": false
+  },
+  {
+    "tag": "Kradfahrer",
+    "crime": false
+  },
+  {
+    "tag": "Fan",
+    "crime": false
+  },
+  {
+    "tag": "Expertise",
+    "crime": false
+  },
+  {
+    "tag": "Zielgruppe",
+    "crime": false
+  },
+  {
+    "tag": "Kooperation",
+    "crime": false
+  },
+  {
+    "tag": "Migration",
+    "crime": false
+  },
+  {
+    "tag": "Transparenz",
+    "crime": false
+  },
+  {
+    "tag": "Unterstützung",
+    "crime": false
+  },
+  {
+    "tag": "Luft",
+    "crime": false
+  },
+  {
+    "tag": "Thier-Galerie",
+    "crime": false
+  },
+  {
+    "tag": "Havel",
+    "crime": false
+  },
+  {
+    "tag": "Hertha BSC",
+    "crime": false
+  },
+  {
+    "tag": "Kinderklinik",
+    "crime": false
+  },
+  {
+    "tag": "Zuhause",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugteile",
+    "crime": false
+  },
+  {
+    "tag": "Felgen",
+    "crime": false
+  },
+  {
+    "tag": "Baugerüst",
+    "crime": false
+  },
+  {
+    "tag": "Muldenkipper",
+    "crime": false
+  },
+  {
+    "tag": "Garten",
+    "crime": false
+  },
+  {
+    "tag": "Tierarzt",
+    "crime": false
+  },
+  {
+    "tag": "Gift",
+    "crime": true
+  },
+  {
+    "tag": "Substanz",
+    "crime": false
+  },
+  {
+    "tag": "Tiermedizin",
+    "crime": false
+  },
+  {
+    "tag": "Nationalmannschaft",
+    "crime": false
+  },
+  {
+    "tag": "Namen",
+    "crime": false
+  },
+  {
+    "tag": "Kühlung",
+    "crime": false
+  },
+  {
+    "tag": "Fleisch",
+    "crime": false
+  },
+  {
+    "tag": "Wurst",
+    "crime": false
+  },
+  {
+    "tag": "Maschinenbau",
+    "crime": false
+  },
+  {
+    "tag": "Osten",
+    "crime": false
+  },
+  {
+    "tag": "Verleihung",
+    "crime": false
+  },
+  {
+    "tag": "Appetit",
+    "crime": false
+  },
+  {
+    "tag": "Wunschgewicht",
+    "crime": false
+  },
+  {
+    "tag": "Erklärung",
+    "crime": false
+  },
+  {
+    "tag": "Eilverfahren",
+    "crime": false
+  },
+  {
+    "tag": "Website",
+    "crime": false
+  },
+  {
+    "tag": "Ibiza",
+    "crime": false
+  },
+  {
+    "tag": "Betriebshof",
+    "crime": false
+  },
+  {
+    "tag": "Polizeipräsidentin",
+    "crime": false
+  },
+  {
+    "tag": "Medizin",
+    "crime": false
+  },
+  {
+    "tag": "Argentinien",
+    "crime": false
+  },
+  {
+    "tag": "Enduro",
+    "crime": false
+  },
+  {
+    "tag": "Restaurant",
+    "crime": false
+  },
+  {
+    "tag": "Gastronomie",
+    "crime": false
+  },
+  {
+    "tag": "Zucker",
+    "crime": false
+  },
+  {
+    "tag": "Twitter",
+    "crime": false
+  },
+  {
+    "tag": "Eigentum",
+    "crime": false
+  },
+  {
+    "tag": "Betrugsmaschen",
+    "crime": true
+  },
+  {
+    "tag": "Vergleich",
+    "crime": false
+  },
+  {
+    "tag": "Städte",
+    "crime": false
+  },
+  {
+    "tag": "Standortfaktor",
+    "crime": false
+  },
+  {
+    "tag": "Umweltpolitik",
+    "crime": false
+  },
+  {
+    "tag": "Party",
+    "crime": false
+  },
+  {
+    "tag": "Immobilienkauf",
+    "crime": false
+  },
+  {
+    "tag": "Eintracht Frankfurt",
+    "crime": false
+  },
+  {
+    "tag": "Beschluss",
+    "crime": false
+  },
+  {
+    "tag": "Elektroimpulswaffe",
+    "crime": true
+  },
+  {
+    "tag": "Mobbing",
+    "crime": true
+  },
+  {
+    "tag": "Kettenbrief",
+    "crime": false
+  },
+  {
+    "tag": "Nachmittagsstunden",
+    "crime": false
+  },
+  {
+    "tag": "Glatteis",
+    "crime": false
+  },
+  {
+    "tag": "Nähmaschine",
+    "crime": false
+  },
+  {
+    "tag": "Russland",
+    "crime": false
+  },
+  {
+    "tag": "Bövinghausen",
+    "crime": false
+  },
+  {
+    "tag": "VW Amarok",
+    "crime": false
+  },
+  {
+    "tag": "Mobilitätsmanagement",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrskompetenz",
+    "crime": false
+  },
+  {
+    "tag": "Europäische Mobilitätswoche",
+    "crime": false
+  },
+  {
+    "tag": "Richtfest",
+    "crime": false
+  },
+  {
+    "tag": "Babys",
+    "crime": false
+  },
+  {
+    "tag": "Geldwäsche",
+    "crime": true
+  },
+  {
+    "tag": "Arbeiterwohlfahrt",
+    "crime": false
+  },
+  {
+    "tag": "Demografie",
+    "crime": false
+  },
+  {
+    "tag": "Nordpol",
+    "crime": false
+  },
+  {
+    "tag": "Gastarbeiter",
+    "crime": false
+  },
+  {
+    "tag": "Chancengleichheit",
+    "crime": false
+  },
+  {
+    "tag": "Jobcenter",
+    "crime": false
+  },
+  {
+    "tag": "Diskurs",
+    "crime": false
+  },
+  {
+    "tag": "SC Paderborn 07",
+    "crime": false
+  },
+  {
+    "tag": "Bücher",
+    "crime": false
+  },
+  {
+    "tag": "Turnschuh",
+    "crime": false
+  },
+  {
+    "tag": "Lieferanten",
+    "crime": false
+  },
+  {
+    "tag": "Bundespolizeidirektion",
+    "crime": false
+  },
+  {
+    "tag": "Vorsitzender",
+    "crime": false
+  },
+  {
+    "tag": "Judenfeindlichkeit",
+    "crime": true
+  },
+  {
+    "tag": "Cafés",
+    "crime": false
+  },
+  {
+    "tag": "Lachen",
+    "crime": false
+  },
+  {
+    "tag": "Nutzung",
+    "crime": false
+  },
+  {
+    "tag": "Niederschlag",
+    "crime": false
+  },
+  {
+    "tag": "Meteorologie",
+    "crime": false
+  },
+  {
+    "tag": "Wetterbericht",
+    "crime": false
+  },
+  {
+    "tag": "Helmpflicht",
+    "crime": false
+  },
+  {
+    "tag": "Oberverwaltungsgericht",
+    "crime": false
+  },
+  {
+    "tag": "Heizöl",
+    "crime": false
+  },
+  {
+    "tag": "Blindgänger",
+    "crime": false
+  },
+  {
+    "tag": "Schutzbrille",
+    "crime": false
+  },
+  {
+    "tag": "Baumwolle",
+    "crime": false
+  },
+  {
+    "tag": "Neujahr",
+    "crime": false
+  },
+  {
+    "tag": "Gemüse",
+    "crime": false
+  },
+  {
+    "tag": "Spendenbereitschaft",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradstaffel",
+    "crime": false
+  },
+  {
+    "tag": "Inobhutnahme",
+    "crime": false
+  },
+  {
+    "tag": "Nebenkosten",
+    "crime": false
+  },
+  {
+    "tag": "Hallenbad",
+    "crime": false
+  },
+  {
+    "tag": "Übergriff",
+    "crime": true
+  },
+  {
+    "tag": "Pannenhilfe",
+    "crime": false
+  },
+  {
+    "tag": "Mathematik",
+    "crime": false
+  },
+  {
+    "tag": "Morphin",
+    "crime": true
+  },
+  {
+    "tag": "Maschine",
+    "crime": false
+  },
+  {
+    "tag": "Plakat",
+    "crime": false
+  },
+  {
+    "tag": "Drogenszene",
+    "crime": true
+  },
+  {
+    "tag": "Landwirt",
+    "crime": false
+  },
+  {
+    "tag": "Pressevertreter",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsfluss",
+    "crime": false
+  },
+  {
+    "tag": "Passwort",
+    "crime": false
+  },
+  {
+    "tag": "Webbrowser",
+    "crime": false
+  },
+  {
+    "tag": "Treppenhaus",
+    "crime": false
+  },
+  {
+    "tag": "C&A",
+    "crime": false
+  },
+  {
+    "tag": "Kindesmisshandlung",
+    "crime": true
+  },
+  {
+    "tag": "Leiche",
+    "crime": false
+  },
+  {
+    "tag": "Hashtag",
+    "crime": false
+  },
+  {
+    "tag": "Champagner",
+    "crime": false
+  },
+  {
+    "tag": "Wein",
+    "crime": false
+  },
+  {
+    "tag": "Oestrich",
+    "crime": false
+  },
+  {
+    "tag": "Thermometer",
+    "crime": false
+  },
+  {
+    "tag": "Tempo 30",
+    "crime": false
+  },
+  {
+    "tag": "Betroffene",
+    "crime": false
+  },
+  {
+    "tag": "Belastung",
+    "crime": false
+  },
+  {
+    "tag": "Wildschweine",
+    "crime": false
+  },
+  {
+    "tag": "Installation",
+    "crime": false
+  },
+  {
+    "tag": "Auflösung",
+    "crime": false
+  },
+  {
+    "tag": "Warnstreik",
+    "crime": false
+  },
+  {
+    "tag": "Sparkassen",
+    "crime": false
+  },
+  {
+    "tag": "Phoenix",
+    "crime": false
+  },
+  {
+    "tag": "Manchester City",
+    "crime": false
+  },
+  {
+    "tag": "Webcam",
+    "crime": false
+  },
+  {
+    "tag": "Kunst",
+    "crime": false
+  },
+  {
+    "tag": "Diskobesuch",
+    "crime": false
+  },
+  {
+    "tag": "Telekom",
+    "crime": false
+  },
+  {
+    "tag": "Porsche Cayenne",
+    "crime": false
+  },
+  {
+    "tag": "Fahrradstraße",
+    "crime": false
+  },
+  {
+    "tag": "Kauf",
+    "crime": false
+  },
+  {
+    "tag": "Hundewelpen",
+    "crime": false
+  },
+  {
+    "tag": "Manschette",
+    "crime": false
+  },
+  {
+    "tag": "Währung",
+    "crime": false
+  },
+  {
+    "tag": "Grabstätte",
+    "crime": false
+  },
+  {
+    "tag": "Silvesternacht",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsrowdy",
+    "crime": true
+  },
+  {
+    "tag": "Cannabis-Gesetz",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitspartner",
+    "crime": false
+  },
+  {
+    "tag": "Zigarettendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Kaufhaus",
+    "crime": false
+  },
+  {
+    "tag": "Oldtimer",
+    "crime": false
+  },
+  {
+    "tag": "Fahrkartenkontrolleur",
+    "crime": false
+  },
+  {
+    "tag": "Technik",
+    "crime": false
+  },
+  {
+    "tag": "Computer",
+    "crime": false
+  },
+  {
+    "tag": "Medienschaffende",
+    "crime": false
+  },
+  {
+    "tag": "Wochenendfahrverbot",
+    "crime": false
+  },
+  {
+    "tag": "Nordirland",
+    "crime": false
+  },
+  {
+    "tag": "WG-Zimmer",
+    "crime": false
+  },
+  {
+    "tag": "Louis Vuitton",
+    "crime": false
+  },
+  {
+    "tag": "Kanada",
+    "crime": false
+  },
+  {
+    "tag": "Albtraum",
+    "crime": false
+  },
+  {
+    "tag": "Trauer",
+    "crime": false
+  },
+  {
+    "tag": "Herzklopfen",
+    "crime": false
+  },
+  {
+    "tag": "Festnetz",
+    "crime": false
+  },
+  {
+    "tag": "Beruf",
+    "crime": false
+  },
+  {
+    "tag": "Lichthupe",
+    "crime": false
+  },
+  {
+    "tag": "Drängler",
+    "crime": true
+  },
+  {
+    "tag": "Bürgeramt",
+    "crime": false
+  },
+  {
+    "tag": "Starthilfe",
+    "crime": false
+  },
+  {
+    "tag": "Motorsense",
+    "crime": false
+  },
+  {
+    "tag": "Quote",
+    "crime": false
+  },
+  {
+    "tag": "Handtaschendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "1. FC Union Berlin",
+    "crime": false
+  },
+  {
+    "tag": "Lastschrift",
+    "crime": false
+  },
+  {
+    "tag": "Baumarkt",
+    "crime": false
+  },
+  {
+    "tag": "Fahreignungsregister",
+    "crime": false
+  },
+  {
+    "tag": "Simulation",
+    "crime": false
+  },
+  {
+    "tag": "Undercut",
+    "crime": false
+  },
+  {
+    "tag": "Linkshänder",
+    "crime": false
+  },
+  {
+    "tag": "Klimaschutz",
+    "crime": false
+  },
+  {
+    "tag": "Klima",
+    "crime": false
+  },
+  {
+    "tag": "Oberbank",
+    "crime": false
+  },
+  {
+    "tag": "Klimaveränderung",
+    "crime": false
+  },
+  {
+    "tag": "Fundstück",
+    "crime": false
+  },
+  {
+    "tag": "Unfalltod",
+    "crime": false
+  },
+  {
+    "tag": "Straßenverkehrsgesetz",
+    "crime": false
+  },
+  {
+    "tag": "Völkermord",
+    "crime": true
+  },
+  {
+    "tag": "Islamischer Staat",
+    "crime": false
+  },
+  {
+    "tag": "Boxen",
+    "crime": false
+  },
+  {
+    "tag": "Camper",
+    "crime": false
+  },
+  {
+    "tag": "Club",
+    "crime": false
+  },
+  {
+    "tag": "Dunkelheit",
+    "crime": false
+  },
+  {
+    "tag": "Ordnung",
+    "crime": false
+  },
+  {
+    "tag": "Kirchdorf",
+    "crime": false
+  },
+  {
+    "tag": "Weihnachtsgeschichte",
+    "crime": false
+  },
+  {
+    "tag": "Schienenverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Kroatien",
+    "crime": false
+  },
+  {
+    "tag": "Drogenvortest",
+    "crime": false
+  },
+  {
+    "tag": "Telegram",
+    "crime": false
+  },
+  {
+    "tag": "Radikalismus",
+    "crime": false
+  },
+  {
+    "tag": "REWE",
+    "crime": false
+  },
+  {
+    "tag": "Zahnarztpraxis",
+    "crime": false
+  },
+  {
+    "tag": "Datenmenge",
+    "crime": false
+  },
+  {
+    "tag": "Künstliche Intelligenz",
+    "crime": false
+  },
+  {
+    "tag": "Wohnungsdurchsuchungen",
+    "crime": false
+  },
+  {
+    "tag": "Mitarbeitenden",
+    "crime": false
+  },
+  {
+    "tag": "Preußen Münster",
+    "crime": false
+  },
+  {
+    "tag": "Waschmaschine",
+    "crime": false
+  },
+  {
+    "tag": "Frauenhaus",
+    "crime": false
+  },
+  {
+    "tag": "Telearbeit",
+    "crime": false
+  },
+  {
+    "tag": "Beratungsbedarf",
+    "crime": false
+  },
+  {
+    "tag": "Beratung",
+    "crime": false
+  },
+  {
+    "tag": "Autokauf",
+    "crime": false
+  },
+  {
+    "tag": "Präventionsarbeit",
+    "crime": false
+  },
+  {
+    "tag": "Intensivstation",
+    "crime": false
+  },
+  {
+    "tag": "Apotheken",
+    "crime": false
+  },
+  {
+    "tag": "Apotheker",
+    "crime": false
+  },
+  {
+    "tag": "Silvesterbilanz",
+    "crime": false
+  },
+  {
+    "tag": "Schlüsseldienst",
+    "crime": false
+  },
+  {
+    "tag": "Krankentransport",
+    "crime": false
+  },
+  {
+    "tag": "Pflegeheim",
+    "crime": false
+  },
+  {
+    "tag": "Krankheitsprävention",
+    "crime": false
+  },
+  {
+    "tag": "Krankenkasse",
+    "crime": false
+  },
+  {
+    "tag": "VfL Osnabrück",
+    "crime": false
+  },
+  {
+    "tag": "Netzwerke",
+    "crime": false
+  },
+  {
+    "tag": "FC Augsburg",
+    "crime": false
+  },
+  {
+    "tag": "Pedelecs",
+    "crime": false
+  },
+  {
+    "tag": "Comedian",
+    "crime": false
+  },
+  {
+    "tag": "Cannabisplantage",
+    "crime": true
+  },
+  {
+    "tag": "Botanik",
+    "crime": false
+  },
+  {
+    "tag": "Reisewarnung",
+    "crime": false
+  },
+  {
+    "tag": "Auswärtiges Amt",
+    "crime": false
+  },
+  {
+    "tag": "Ferienzeit",
+    "crime": false
+  },
+  {
+    "tag": "Lockerungen",
+    "crime": false
+  },
+  {
+    "tag": "Schuhe",
+    "crime": false
+  },
+  {
+    "tag": "Fahrverbote",
+    "crime": false
+  },
+  {
+    "tag": "Eifel",
+    "crime": false
+  },
+  {
+    "tag": "Presse",
+    "crime": false
+  },
+  {
+    "tag": "Spürhund",
+    "crime": false
+  },
+  {
+    "tag": "Gewitter",
+    "crime": false
+  },
+  {
+    "tag": "Burger",
+    "crime": false
+  },
+  {
+    "tag": "Immobilienwirtschaft",
+    "crime": false
+  },
+  {
+    "tag": "Schlaf",
+    "crime": false
+  },
+  {
+    "tag": "Blut",
+    "crime": false
+  },
+  {
+    "tag": "Elektroauto",
+    "crime": false
+  },
+  {
+    "tag": "ADAC",
+    "crime": false
+  },
+  {
+    "tag": "Kühlschränke",
+    "crime": false
+  },
+  {
+    "tag": "Freibad",
+    "crime": false
+  },
+  {
+    "tag": "Fraktion",
+    "crime": false
+  },
+  {
+    "tag": "Stiftung",
+    "crime": false
+  },
+  {
+    "tag": "Bulli",
+    "crime": false
+  },
+  {
+    "tag": "Leute",
+    "crime": false
+  },
+  {
+    "tag": "Pistolen",
+    "crime": false
+  },
+  {
+    "tag": "Berufskolleg",
+    "crime": false
+  },
+  {
+    "tag": "Süßigkeiten",
+    "crime": false
+  },
+  {
+    "tag": "Bilder",
+    "crime": false
+  },
+  {
+    "tag": "Kuwait",
+    "crime": false
+  },
+  {
+    "tag": "Marihuana-Fund",
+    "crime": true
+  },
+  {
+    "tag": "Raumklima",
+    "crime": false
+  },
+  {
+    "tag": "Schulanfänger",
+    "crime": false
+  },
+  {
+    "tag": "Schock",
+    "crime": false
+  },
+  {
+    "tag": "Staatsanwaltschaft Bochum",
+    "crime": false
+  },
+  {
+    "tag": "Kirmes",
+    "crime": false
+  },
+  {
+    "tag": "Hochwasser",
+    "crime": false
+  },
+  {
+    "tag": "Naturkatastrophe",
+    "crime": false
+  },
+  {
+    "tag": "Schlaganfall",
+    "crime": false
+  },
+  {
+    "tag": "Cloud Computing",
+    "crime": false
+  },
+  {
+    "tag": "Rasen",
+    "crime": false
+  },
+  {
+    "tag": "Hand",
+    "crime": false
+  },
+  {
+    "tag": "A43",
+    "crime": false
+  },
+  {
+    "tag": "Räumung",
+    "crime": false
+  },
+  {
+    "tag": "Bedrohungslage",
+    "crime": false
+  },
+  {
+    "tag": "Buttersäure",
+    "crime": false
+  },
+  {
+    "tag": "Gesundheitszentrum",
+    "crime": false
+  },
+  {
+    "tag": "Laer",
+    "crime": false
+  },
+  {
+    "tag": "Nissan Micra",
+    "crime": false
+  },
+  {
+    "tag": "Sexuelle Gewalt",
+    "crime": true
+  },
+  {
+    "tag": "Teilhabe",
+    "crime": false
+  },
+  {
+    "tag": "Apple",
+    "crime": false
+  },
+  {
+    "tag": "Samsung",
+    "crime": false
+  },
+  {
+    "tag": "Hetze",
+    "crime": true
+  },
+  {
+    "tag": "Konzepte",
+    "crime": false
+  },
+  {
+    "tag": "VfL Bochum",
+    "crime": false
+  },
+  {
+    "tag": "SC Freiburg",
+    "crime": false
+  },
+  {
+    "tag": "Bundesligasaison",
+    "crime": false
+  },
+  {
+    "tag": "Runder Tisch",
+    "crime": false
+  },
+  {
+    "tag": "Fahren ohne Führerschein",
+    "crime": true
+  },
+  {
+    "tag": "Literatur",
+    "crime": false
+  },
+  {
+    "tag": "Abfallrecht",
+    "crime": false
+  },
+  {
+    "tag": "Waschbecken",
+    "crime": false
+  },
+  {
+    "tag": "Muslim",
+    "crime": false
+  },
+  {
+    "tag": "Bankschließfach",
+    "crime": false
+  },
+  {
+    "tag": "Firmenwagen",
+    "crime": false
+  },
+  {
+    "tag": "Kiez",
+    "crime": false
+  },
+  {
+    "tag": "Angestellte",
+    "crime": false
+  },
+  {
+    "tag": "Arbeitnehmer",
+    "crime": false
+  },
+  {
+    "tag": "Herd",
+    "crime": false
+  },
+  {
+    "tag": "Witten-Herbede",
+    "crime": false
+  },
+  {
+    "tag": "Unglücksfall",
+    "crime": false
+  },
+  {
+    "tag": "Wohnhauses",
+    "crime": false
+  },
+  {
+    "tag": "Sexualdelikte",
+    "crime": true
+  },
+  {
+    "tag": "Staatsanwaltschaft Hannover",
+    "crime": false
+  },
+  {
+    "tag": "Fundbüro",
+    "crime": false
+  },
+  {
+    "tag": "Fahrzeugwaage",
+    "crime": false
+  },
+  {
+    "tag": "Mittelkonsole",
+    "crime": false
+  },
+  {
+    "tag": "Sexting",
+    "crime": false
+  },
+  {
+    "tag": "Sex",
+    "crime": false
+  },
+  {
+    "tag": "Lernen",
+    "crime": false
+  },
+  {
+    "tag": "Nachrichten",
+    "crime": false
+  },
+  {
+    "tag": "Sexualität",
+    "crime": false
+  },
+  {
+    "tag": "Trampen",
+    "crime": false
+  },
+  {
+    "tag": "Kühlschrank",
+    "crime": false
+  },
+  {
+    "tag": "Bankkonto",
+    "crime": false
+  },
+  {
+    "tag": "Banken",
+    "crime": false
+  },
+  {
+    "tag": "Umweltschutz",
+    "crime": false
+  },
+  {
+    "tag": "Anmeldungen",
+    "crime": false
+  },
+  {
+    "tag": "Workshop",
+    "crime": false
+  },
+  {
+    "tag": "CDU",
+    "crime": false
+  },
+  {
+    "tag": "Telefonanlage",
+    "crime": false
+  },
+  {
+    "tag": "Parkschein",
+    "crime": false
+  },
+  {
+    "tag": "Solarium",
+    "crime": false
+  },
+  {
+    "tag": "Zweirad",
+    "crime": false
+  },
+  {
+    "tag": "Sammelkarten",
+    "crime": false
+  },
+  {
+    "tag": "Abstandsregeln",
+    "crime": false
+  },
+  {
+    "tag": "Gewerkschaften",
+    "crime": false
+  },
+  {
+    "tag": "Straßenbahnverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Eigenbedarf",
+    "crime": false
+  },
+  {
+    "tag": "Schulkantine",
+    "crime": false
+  },
+  {
+    "tag": "Berufsschule",
+    "crime": false
+  },
+  {
+    "tag": "Hausmeister",
+    "crime": false
+  },
+  {
+    "tag": "Stromausfall",
+    "crime": false
+  },
+  {
+    "tag": "Strom",
+    "crime": false
+  },
+  {
+    "tag": "Gehirn",
+    "crime": false
+  },
+  {
+    "tag": "Gaststättenkontrolle",
+    "crime": false
+  },
+  {
+    "tag": "Corona",
+    "crime": false
+  },
+  {
+    "tag": "Polizeiruf 110",
+    "crime": false
+  },
+  {
+    "tag": "Eilpe",
+    "crime": false
+  },
+  {
+    "tag": "Ausschreibung",
+    "crime": false
+  },
+  {
+    "tag": "Vergabeverfahren",
+    "crime": false
+  },
+  {
+    "tag": "Autoscheiben",
+    "crime": false
+  },
+  {
+    "tag": "Medienhaus",
+    "crime": false
+  },
+  {
+    "tag": "Wald",
+    "crime": false
+  },
+  {
+    "tag": "Abrechnungsbetrug",
+    "crime": true
+  },
+  {
+    "tag": "Scheune",
+    "crime": false
+  },
+  {
+    "tag": "Videospiel",
+    "crime": false
+  },
+  {
+    "tag": "Kurzfilm",
+    "crime": false
+  },
+  {
+    "tag": "Filmprojekt",
+    "crime": false
+  },
+  {
+    "tag": "Perspektivwechsel",
+    "crime": false
+  },
+  {
+    "tag": "Piercing",
+    "crime": false
+  },
+  {
+    "tag": "Eintrittskarte",
+    "crime": false
+  },
+  {
+    "tag": "Aktionswoche",
+    "crime": false
+  },
+  {
+    "tag": "Buch",
+    "crime": false
+  },
+  {
+    "tag": "Lüftungsanlage",
+    "crime": false
+  },
+  {
+    "tag": "Leichtflugzeug",
+    "crime": false
+  },
+  {
+    "tag": "Bluttransfusion",
+    "crime": false
+  },
+  {
+    "tag": "Pokal",
+    "crime": false
+  },
+  {
+    "tag": "DFB",
+    "crime": false
+  },
+  {
+    "tag": "Lehrer",
+    "crime": false
+  },
+  {
+    "tag": "Verkehrsregeln",
+    "crime": false
+  },
+  {
+    "tag": "Katwarn",
+    "crime": false
+  },
+  {
+    "tag": "Einbruchszahlen",
+    "crime": false
+  },
+  {
+    "tag": "Kindergärten",
+    "crime": false
+  },
+  {
+    "tag": "Eppendorf",
+    "crime": false
+  },
+  {
+    "tag": "Abstand",
+    "crime": false
+  },
+  {
+    "tag": "Schleimhaut",
+    "crime": false
+  },
+  {
+    "tag": "Stromleitung",
+    "crime": false
+  },
+  {
+    "tag": "Wildwechsel",
+    "crime": false
+  },
+  {
+    "tag": "Motorradfahren",
+    "crime": false
+  },
+  {
+    "tag": "Kohlekraftwerk",
+    "crime": false
+  },
+  {
+    "tag": "Bevölkerung",
+    "crime": false
+  },
+  {
+    "tag": "Reifendiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Europäischer Haftbefehl",
+    "crime": false
+  },
+  {
+    "tag": "Baden",
+    "crime": false
+  },
+  {
+    "tag": "Neonazis",
+    "crime": false
+  },
+  {
+    "tag": "Faustschlag",
+    "crime": true
+  },
+  {
+    "tag": "Audi Q2",
+    "crime": false
+  },
+  {
+    "tag": "Letzte Generation",
+    "crime": false
+  },
+  {
+    "tag": "Westentor",
+    "crime": false
+  },
+  {
+    "tag": "Burger King",
+    "crime": false
+  },
+  {
+    "tag": "Starbucks",
+    "crime": false
+  },
+  {
+    "tag": "Video",
+    "crime": false
+  },
+  {
+    "tag": "Sicherheitskultur",
+    "crime": false
+  },
+  {
+    "tag": "Öffentliche Verwaltung",
+    "crime": false
+  },
+  {
+    "tag": "Forschung",
+    "crime": false
+  },
+  {
+    "tag": "Universität Osnabrück",
+    "crime": false
+  },
+  {
+    "tag": "Heimat",
+    "crime": false
+  },
+  {
+    "tag": "Wahlergebnis",
+    "crime": false
+  },
+  {
+    "tag": "Schlangen",
+    "crime": false
+  },
+  {
+    "tag": "Flashmob",
+    "crime": false
+  },
+  {
+    "tag": "Füße",
+    "crime": false
+  },
+  {
+    "tag": "Hände",
+    "crime": false
+  },
+  {
+    "tag": "Kaffeemaschine",
+    "crime": false
+  },
+  {
+    "tag": "Gesamtschaden",
+    "crime": false
+  },
+  {
+    "tag": "Niere",
+    "crime": false
+  },
+  {
+    "tag": "Kindergeld",
+    "crime": false
+  },
+  {
+    "tag": "Eurojust",
+    "crime": false
+  },
+  {
+    "tag": "Harz",
+    "crime": false
+  },
+  {
+    "tag": "Bundesverwaltungsgericht",
+    "crime": false
+  },
+  {
+    "tag": "Untersuchung",
+    "crime": false
+  },
+  {
+    "tag": "Rollerunfall",
+    "crime": false
+  },
+  {
+    "tag": "Laubenbrand",
+    "crime": true
+  },
+  {
+    "tag": "Außer Atem",
+    "crime": false
+  },
+  {
+    "tag": "Kunde",
+    "crime": false
+  },
+  {
+    "tag": "Erwachsene",
+    "crime": false
+  },
+  {
+    "tag": "Spendensammler",
+    "crime": false
+  },
+  {
+    "tag": "Tesla",
+    "crime": false
+  },
+  {
+    "tag": "Verbrennung",
+    "crime": false
+  },
+  {
+    "tag": "Schufa",
+    "crime": false
+  },
+  {
+    "tag": "Mobilfunktarif",
+    "crime": false
+  },
+  {
+    "tag": "Kampfmittelräumdienst",
+    "crime": false
+  },
+  {
+    "tag": "Autobahnkreuz Breitscheid",
+    "crime": false
+  },
+  {
+    "tag": "Theologie",
+    "crime": false
+  },
+  {
+    "tag": "Begrüßung",
+    "crime": false
+  },
+  {
+    "tag": "Seelsorge",
+    "crime": false
+  },
+  {
+    "tag": "Konsistorium",
+    "crime": false
+  },
+  {
+    "tag": "Beirat",
+    "crime": false
+  },
+  {
+    "tag": "Vorsitz",
+    "crime": false
+  },
+  {
+    "tag": "Camping",
+    "crime": false
+  },
+  {
+    "tag": "Nachtcafé",
+    "crime": false
+  },
+  {
+    "tag": "Kraftfahrzeughersteller",
+    "crime": false
+  },
+  {
+    "tag": "Einbruchdiebstahl",
+    "crime": true
+  },
+  {
+    "tag": "Schienenersatzverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Altkleidersammlung",
+    "crime": false
+  },
+  {
+    "tag": "Jogging",
+    "crime": false
+  },
+  {
+    "tag": "Dortmund-Ems-Kanal",
+    "crime": false
+  },
+  {
+    "tag": "Karte",
+    "crime": false
+  },
+  {
+    "tag": "Fernverkehr",
+    "crime": false
+  },
+  {
+    "tag": "Kartenspiel",
+    "crime": false
+  }
+]
