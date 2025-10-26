@@ -2,47 +2,40 @@ package il.tutorials.truegotham.service
 
 import il.tutorials.truegotham.model.entity.District
 import il.tutorials.truegotham.repository.DistrictRepository
-import il.tutorials.truegotham.utils.ByteUtils
+import il.tutorials.truegotham.utils.ValueContent
 import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
 class DistrictService(
     val districtRepository: DistrictRepository,
-    val aiService: AIService
+    val aiService: AIService,
 ) {
-    fun getDistrict(city:String, name:String) : District {
 
-        val desc = aiService.prompt("gib mir eine Beschreibung des stadtteils $name in der stadt $city")
+    @ValueContent("classpath:prompts/district.image.city.txt")
+    lateinit var DISTRICT_IMAGE_PROMPT: String
 
-        return District(
-            UUID.randomUUID(),
-            "Gotham",
-            name,
-            desc)
+    fun getDistrict(city:String, name:String) : District? {
+        var district = districtRepository.findByCityAndName(city, name)
+        if (district == null) {
+            val desc = aiService.prompt("gib mir eine Beschreibung des Stadtteils $name in der stadt $city")
+            val img = generateDistrictImage(name)
 
-        //districtRepository.findByName(name)
+            district = District(
+                UUID.randomUUID(),
+                city,
+                name,
+                desc,
+                img
+            )
+
+            districtRepository.save(district)
+        }
+
+        return district;
     }
 
-    fun generateDistrictImage(district: String): String? {
-        val prompt = """ 
-Erstelle eine Photorealistische Schwarz/Weiß-Illustration im düsteren Batman-Cartoon-/Comic-Stil (ohne Panels oder Sprechblasen, nur der Zeichenstil).
+    fun generateDistrictImage(district: String) =
+            aiService.generateImage(DISTRICT_IMAGE_PROMPT)
 
-Wichtige Vorgaben:
-
-- Schwarz/Weiß-Stil, starke Kontraste, dramatische Schatten.
-- Photorealistischer Look
-- Batman darf in der szene nicht vorkommen!
-- Die Szenen sollen möglichst realistisch sein, also keine fiktiven Handlungen, Carachtere oder Gegenstände enthalten.
-
-
-Hier ist die Szene:
-
-Inhalt: Szene in Dortmund Hohensyburg mit dem Casino auf dem Berg. Der Blick vom Hengstersee auf das Leuchtende Casino auf dem Berg von Hohensyburg. Im Vordergrund ist ein düsterer See mit gruselligen Bäumen und im Hintegrund der Berg mit dem Leutenden Casino oben drauf. 
-
-Das Casino gebäude sollte möglichst so aussehen wie auf dem Bild. Die Perspektive sollte so sein wie in der Beschreibung!            
-        """.trimIndent();
-
-        return ByteUtils.toDataUrl(aiService.generateImage(prompt), "image/jpeg")
-    }
 }

@@ -2,7 +2,7 @@
 @import url('../charts/charts.css');
 @import url('../dashboard/dashboard.css');
 @import url('../dashboard/crime.details.css');
-@import url('../dashboard/district.details.css');
+@import url('../districts/districts.css');
 @import url('../common/errors/errors.css');
 @import url('flipper.css');
 @import url('police.lights.css');

@@ -226,52 +226,6 @@ const DASHBOARD = {
     await TRANSLATION.resolve();
   },
 
-  // card interactions
-  showDistrictImage: async (district) => {
-    let $card = DASHBOARD.cards.topright();
-    await DASHBOARD.flipDetails($card);
-  },
-  hideDistrictImage: async () => {
-    let $card = DASHBOARD.cards.topright();
-    await DASHBOARD.unflipDetails($card);
-  },
-  showDistrictDescription: async (district) => {
-
-    let $distDesc = $('#districtDescription');
-    $distDesc.addClass('active');
-    $distDesc.parent().find('.metric').css('display', 'none');
-    $('#suspiciousPersonProfile').css('display', 'none');
-
-
-
-    $distDesc.find('.card-title').text(district);
-    let desc = $distDesc.find('.district-description');
-    desc.html('');
-
-
-    let $card = DASHBOARD.cards.bottomright();
-    await DASHBOARD.flipDetails($card);
-
-    let districtDetails = await API.district('Dortmund', district);
-    desc.html(
-        districtDetails.description.trim()
-          .split('\n\n')
-        .map( p => `<p>${p}</p>`).join('')
-    );
-
-  },
-  hideDistrictDescription: async () => {
-    let $card = DASHBOARD.cards.bottomright();
-    await DASHBOARD.unflipDetails($card);
-
-    await delay(300);
-
-    let $distDesc = $('#districtDescription');
-    $distDesc.removeClass('active');
-    $distDesc.parent().find('.metric').css('display', 'block');
-    $distDesc.find('.district-description').html('');
-    $('#suspiciousPersonProfile').css('display', 'table');
-  },
   flipDetails: async ($card) => {
     $card.addClass('details');
     $card.removeClass('info');

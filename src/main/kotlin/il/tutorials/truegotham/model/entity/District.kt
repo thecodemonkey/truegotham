@@ -11,9 +11,12 @@ class District(
 
     val city: String? = null,
     val name: String? = null,
+
+    @Column(columnDefinition = "TEXT")
     val description: String? = null,
 
     @Lob
+    @Basic(fetch = FetchType.LAZY)
     @Column(columnDefinition = "BLOB")
     val image: ByteArray? = null
 )

@@ -4,7 +4,6 @@ const API = {
   insights: async () => {
     return await API.get("/insights");
   },
-  // insights total statistics: 'http://localhost:7171/api/insights/total?districts=mitte&districts=dorstfeld'
   insightsTotals: async (districts) => {
     let districtParams = (districts && districts.length > 0) ?
         '?' + districts.map(d => `districts=${encodeURIComponent(d)}`).join('&') : '';
@@ -13,9 +12,11 @@ const API = {
   districts: async (limit) => {
     return await API.get(`/insights/districts${(limit ? `?limit=${limit}` : '')}`);
   },
-  // load district details "/api/districts/{city}/{name}"
   district: async (city, name) => {
     return await API.get(`/districts/${encodeURIComponent(city)}/${encodeURIComponent(name)}`);
+  },
+  districtImage: async (id) => {
+    return await API.get(`/districts/${id}/image`);
   },
   statementsLatest: async (limit) => {
     return await API.get(`/statements/latest?limit=${limit}`);

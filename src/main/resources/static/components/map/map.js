@@ -445,9 +445,8 @@ const MAP = {
     let distInsights = await API.insightsTotals([bezirksname]);
     await CHARTS.updateCrimesTimelineChart(distInsights.data, distInsights.labels);
 
-    await DASHBOARD.showDistrictImage(bezirksname)
-    await delay(100);
-    await DASHBOARD.showDistrictDescription(bezirksname);
+    await DISTRICTS.showDetails(bezirksname);
+
   },
   closeDistrictMode: async (e) => {
     if(SELECTED_DISTRICT) {
@@ -478,9 +477,7 @@ const MAP = {
       LIST_FILTER.page = 0
       await STMTS_LIST.callSearch(LIST_FILTER);
 
-      await DASHBOARD.hideDistrictImage();
-      await delay(100);
-      await DASHBOARD.hideDistrictDescription();
+      await DISTRICTS.hideDetails();
     }
   },
   getSelectedFeature: () => {
