@@ -7,4 +7,5 @@ import java.util.*
 interface DistrictRepository : JpaRepository<District, UUID> {
     fun findByName(name: String): District?
     fun findByCityAndName(city: String, name: String): District?
+    fun findFirsByCityAndName(city: String, name: String): District?
 }

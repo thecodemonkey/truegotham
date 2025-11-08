@@ -1,10 +1,10 @@
 package il.tutorials.truegotham.service
 
 import il.tutorials.truegotham.model.*
+import il.tutorials.truegotham.model.entity.RawStatement
 import il.tutorials.truegotham.model.entity.Statement
 import il.tutorials.truegotham.repository.StatementRepository
 import il.tutorials.truegotham.repository.StatementSpecs
-import il.tutorials.truegotham.utils.DateUtils
 import il.tutorials.truegotham.utils.FileUtils
 import il.tutorials.truegotham.utils.JsonUtils
 import org.springframework.data.domain.Page
@@ -13,7 +13,6 @@ import org.springframework.data.domain.Pageable
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import java.util.*
-import java.util.UUID.*
 
 @Service
 class StatementService(val db: StatementRepository) {
@@ -36,11 +35,8 @@ class StatementService(val db: StatementRepository) {
 
 
 
-
     fun load() =
         JsonUtils.fromJSONResource<List<Statement>>("data/current.statements.json")
-
-
 
     fun filterNotCrimes() =
         JsonUtils.fromJSONResource<List<Statement>>("data/raw/classified.result.json")
@@ -63,12 +59,12 @@ class StatementService(val db: StatementRepository) {
     }
 
 
-    fun loadAllPressReleases(): List<PressRelease> {
+    fun loadAllPressReleases(): List<RawStatement> {
         val dir = FileUtils.getTmpPath("press");
         val jsons = FileUtils.readAllTextFilesInDir(dir)
 
         return jsons.flatMap {
-            JsonUtils.fromJSON<List<PressRelease>>(it)
+            JsonUtils.fromJSON<List<RawStatement>>(it)
         }
     }
 
@@ -143,7 +139,7 @@ class StatementService(val db: StatementRepository) {
         JsonUtils.toJSONFile(statements, FileUtils.getTmpPath("press", "statements.json"))
     }
 
-    private fun convertPressreleasesToStatements(){
+/*    private fun convertPressreleasesToStatements(){
         val files = FileUtils.readAllTextFilesInDir(FileUtils.getTmpPath("press"))
         val statements = files.flatMap { JsonUtils.fromJSON<List<PressRelease>>(it) }
             .map { Statement(
@@ -151,11 +147,13 @@ class StatementService(val db: StatementRepository) {
                 unixts = DateUtils.toUnixts(it.timestamp)!!,
                 url = it.url,
                 content = it.content,
-                title = it.title
+                //title = it.title
             ) }
 
         JsonUtils.toJSONFile(statements, FileUtils.getTmpPath("press", "statements.json"))
-    }
+    }*/
+
+
 
 
 }

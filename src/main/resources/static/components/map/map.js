@@ -1,7 +1,6 @@
 let MAP_INSTANCE = null;
 let GEO_JSON_LAYER = null;
 let {lat, lon} = { lat: 0, lon: 0};
-let SELECTED_DISTRICT = null;
 let MARKER_ON_MAP = [];
 let MAP_VISIBLE = false;
 
@@ -200,6 +199,8 @@ const MAP = {
           fillOpacity: 0
         },
         onEachFeature: (feature, layer) => {
+          layer._districtLabel = MAP.createDistrictLabel(feature, layer);
+
           // Speichere den initialen Style für diesen Layer
           layer._originalStyle = {...defaultStyle};
 
@@ -229,6 +230,7 @@ const MAP = {
               hoveredLayer.setStyle(hstyle);
               hoveredLayer.bringToFront();
 
+              MAP.selectDistrictLabel(hoveredLayer);
             },
             mouseout: (e) => {
               if (SELECTED_DISTRICT === feature.properties?.statistischer_bezirk) {
@@ -251,6 +253,8 @@ const MAP = {
                 MAP_INSTANCE.removeLayer(nameTooltip);
                 nameTooltip = null;
               }
+
+              MAP.unselectDistrictLabel(hoveredLayer);
             },
             click: async (e) => {
               e.originalEvent.preventDefault();
@@ -310,21 +314,38 @@ const MAP = {
       alert("Adresse nicht gefunden");
     }
   },
+
+  createHotSpotMarker: async (coords) => {
+
+    const msg = 'In der Nacht zu Freitag (26. September) fiel der Fahrer eines Mercedes am Ostwall in Dortmund durch sein rasantes und riskantes Fahrverhalten auf. Ein aufmerksamer Zeuge alarmierte die Polizei und verhinderte so möglicherweise einen schweren Verkehrsunfall. Bei der anschließenden Kontrolle des Fahrzeugs kam Überraschendes ans Licht.';
+    const customIcon = L.divIcon({
+      className: '',
+      html: `<div class="point-marker red"></div>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+
+    return L.marker(coords, {icon: customIcon})
+            .bindTooltip(msg, {direction: 'auto', className: 'custom-tooltip', offset: [0, 0]  })
+            .addTo(MAP_INSTANCE);
+  },
   flyOUT: async() => {
     MAP_INSTANCE.flyTo([lat, lon], 12, {
       animate: true,
       duration: 2
     });
   },
-  flyIN: async(coords, zoomLevel) => {
+  flyIN: async(coords, zoomLevel, speed) => {
     MAP_INSTANCE.flyTo(coords, zoomLevel, {
       animate: true,
-      duration: 2 // Dauer in Sekunden
+      duration: speed || 2 // Dauer in Sekunden
     });
   },
-  flyToBounds: async(bounds) => {
+  flyToBounds: async(bounds, zoom) => {
 
-    MAP_INSTANCE.setView(bounds.getCenter(), MAP_INSTANCE.getZoom(), {
+    const z = zoom? zoom : MAP_INSTANCE.getZoom();
+
+    MAP_INSTANCE.setView(bounds.getCenter(), z, {
       animate: true,
       duration: 1
     });
@@ -335,6 +356,25 @@ const MAP = {
         duration: 1
       });
     //}, 100)
+  },
+  flyToRegionInit: async() => {
+    try {
+      await MAP.flyIN(GEO_JSON_LAYER.getBounds().getCenter(), 12, 0.5)
+    } catch (e) {
+      // ignore
+    }
+  },
+  restoreRegionInitView: async () => {
+    await MAP.flyToRegionInit();
+    await MAP.restoreAllDistricts();
+  },
+  restorePreviousDistrictView: async (district) => {
+    if (district) {
+      await MAP.selectDistrict(district)
+    } else {
+      await MAP.restoreRegionInitView();
+    }
+    await MAP.removeAllMarkers();
   },
   updateDistrict: (districtName, level, i) => {
     if (!GEO_JSON_LAYER) {
@@ -394,7 +434,18 @@ const MAP = {
         }
       }
     }
+
+    MAP.resetDistrictLabels();
   },
+
+  removeAllMarkers: async () => {
+    if(MARKER_ON_MAP) {
+      MARKER_ON_MAP.forEach(marker => {
+        MAP_INSTANCE.removeLayer(marker);
+      });
+    }
+  },
+
   onDistrictClick: async (e, feature) => {
     if (DETAILS_MODE === true) return;
 
@@ -402,6 +453,9 @@ const MAP = {
     const bezirksname = feature.properties?.statistischer_bezirk;
 
     if (SELECTED_DISTRICT === bezirksname) return;
+
+    MAP.resetDistrictLabels(clickedLayer);
+
 
     // Hier kannst du definieren, was beim Klick passieren soll
     console.log('Bezirk geklickt:', bezirksname);
@@ -434,6 +488,9 @@ const MAP = {
       previousFeature.setStyle(previousFeature._originalStyle);
     }
 
+
+    //TODO: nees to be extracted to components...
+
     LIST_FILTER.districts = [bezirksname];
     LIST_FILTER.page = 0
     await STMTS_LIST.callSearch(LIST_FILTER);
@@ -448,38 +505,58 @@ const MAP = {
     await DISTRICTS.showDetails(bezirksname);
 
   },
+  selectDistrict: async (district) => {
+    const layer = await MAP.getSelectedFeature();
+
+    const bounds = layer.getBounds();
+    const center = bounds.getCenter();
+
+    MAP_INSTANCE.flyTo(center, 12, {
+      animate: true,
+      duration: 0.5
+    });
+
+    await MAP.restoreAllDistricts();
+    MAP.resetDistrictLabels(layer);
+
+    layer.setStyle({
+      color: '#ff435f',
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 0.2
+    });
+    layer.bringToFront();
+  },
   closeDistrictMode: async (e) => {
-    if(SELECTED_DISTRICT) {
+    if(!SELECTED_DISTRICT) return;
 
-      let insideLayers = await MAP.getLayersByCoords([[e.latlng.lng, e.latlng.lat]]);
-      if (insideLayers.length > 0) {
-        console.log('[map] clicked inside a district, not closing district mode');
-        return;
-      }
+    let insideLayers = (e?.latlng) ? await MAP.getLayersByCoords([[e.latlng.lng, e.latlng.lat]]) : null;
+    if (insideLayers?.length > 0) {
+      console.log('[map] clicked inside a district, not closing district mode');
+      return;
+    }
 
-      SELECTED_DISTRICT = null;
-      console.log('[map] clicked OUTSIDE a district, closing district mode!');
+    console.log('[map] clicked OUTSIDE a district, closing district mode!');
 
 
-      await MAP.restoreAllDistricts();
-      await MAP.flyOUT();
+    await MAP.restoreAllDistricts();
+    await MAP.flyOUT();
 
-      // update charts
-      $('.titleTotalDistrict').text(``);
+    DISTRICTS.unselectDistrict();
+    await DETAILS.close();
+
+/*      // update charts
       $('.titleListDistrict').text(``);
 
+      $('.titleTotalDistrict').text(``);
       if (INSIGHTS?.totalCrimes){
         await CHARTS.updateCrimesTimelineChart(INSIGHTS.totalCrimes.data, INSIGHTS.totalCrimes.labels);
       }
-
-      // reset statements list filter
-      LIST_FILTER.districts = [];
-      LIST_FILTER.page = 0
-      await STMTS_LIST.callSearch(LIST_FILTER);
-
-      await DISTRICTS.hideDetails();
-    }
+*/
+//    }
   },
+
+
   getSelectedFeature: () => {
     return GEO_JSON_LAYER ? GEO_JSON_LAYER.getLayers().find(layer => {
       return layer.feature?.properties?.statistischer_bezirk === SELECTED_DISTRICT;
@@ -504,6 +581,33 @@ const MAP = {
 
     return layers;
   },
+  getLayerByDistrictName: (districtName) => {
+    return GEO_JSON_LAYER ? GEO_JSON_LAYER.getLayers().find(layer => {
+      return layer.feature?.properties?.statistischer_bezirk === districtName;
+    }) : null;
+  },
+
+  showCrimeDistrict: async (districName) => {
+    const layer = MAP.getLayerByDistrictName(districName);
+    await MAP.resetAllDistricts();
+
+    layer.setStyle({
+      color: '#ff435f',
+      opacity: 1,
+      weight: 1,
+      fillOpacity: 0.05,
+      fillColor: '#ff435f'
+    });
+
+    await MAP.flyToBounds(layer.getBounds());
+
+    const point = UTILS.randomPointInsidePolygon(layer);
+
+    const m = await MAP.createHotSpotMarker(point);
+    await MAP.flyIN(point, 16, .5);
+    MARKER_ON_MAP.push(m)
+  },
+
   showCrimeDetails: async (loc, address) => {
     await MAP.resetAllDistricts();
     const coords = await MAP.zoomToAddress(address);
@@ -526,7 +630,6 @@ const MAP = {
 
     await MAP.restoreAllDistricts();
 
-
     const layer = MAP.getSelectedFeature();
     if (!layer) await MAP.flyOUT();
     await MAP.setLayerStyleSelected(layer);
@@ -541,6 +644,38 @@ const MAP = {
       });
       layer.bringToFront();
       await MAP.flyToBounds(layer.getBounds());
+    }
+  },
+
+  // district labels
+  createDistrictLabel: (feature, layer) => {
+    const center = layer.getBounds().getCenter();
+    const label = L.divIcon({
+      className: 'district-label',
+      html: `<span>${feature.properties.statistischer_bezirk}</span>`,
+      iconSize: null, // passt sich automatisch an,
+      iconAnchor: [20, 10]
+    });
+
+    return L.marker(center, { icon: label, interactive: false }).addTo(MAP_INSTANCE);
+  },
+  resetDistrictLabels: (selected) => {
+    GEO_JSON_LAYER?.getLayers().forEach(layer => {
+      MAP.unselectDistrictLabel(layer);
+    });
+
+    if (selected) MAP.selectDistrictLabel(selected);
+  },
+  unselectDistrictLabel: (layer) => {
+    if (layer._districtLabel) {
+      const lblClass =  layer._districtLabel._icon.classList;
+      if (lblClass.contains('active')) lblClass.remove('active');
+    }
+  },
+  selectDistrictLabel: (layer) => {
+    if (layer._districtLabel) {
+      const lblClass =  layer._districtLabel._icon.classList;
+      if (!lblClass.contains('active')) lblClass.add('active');
     }
   }
 }

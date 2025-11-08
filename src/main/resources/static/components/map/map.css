@@ -1,3 +1,13 @@
+#mapCard {
+  border: 1px solid #3d4446;
+
+  &:hover{
+    border: 1px solid #ff60606b;
+    box-shadow: 2px 2px 26px rgb(255 79 79 / 20%);
+  }
+
+}
+
 #map {
   opacity: 0;
   position: relative;
@@ -48,11 +58,13 @@
 
 
 .point-marker {
-  width: 6px;
-  height: 6px;
-  background: #51cbff;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #ff0000a0;
+  box-sizing: border-box;
+  background: #ff000020!important;
   border-radius: 50%;
-  box-sizing: content-box;
+  /*box-sizing: content-box;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +74,23 @@
 
 }
 
+.district-label {
+  color: #a7d8da;
+  font-size: .9rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px black;
+  pointer-events: none;
+  text-align: center;
+  opacity: .5;
+  transition: font-size .2s, color .2s, opacity .2s;
+
+  &.active {
+    font-size: 1.1rem;
+    color: #9afaff;
+    opacity: 1;
+  }
+}
 
 .bezirk-label {
   background: rgba(0, 0, 0, 0.8);

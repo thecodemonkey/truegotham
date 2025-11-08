@@ -3,6 +3,7 @@ package il.tutorials.truegotham.service
 
 import com.openai.client.OpenAIClient
 import com.openai.core.JsonSchemaLocalValidation
+import com.openai.core.JsonValue
 import com.openai.models.ChatModel
 import com.openai.models.Reasoning
 import com.openai.models.ReasoningEffort
@@ -84,16 +85,11 @@ class AIService(
 
             val img = response.data().get()[0];
 
-
-            //val imageBytes = openAIClient.httpClient().get(imageUrl).body().readAllBytes()
-
             return Base64.getDecoder().decode(img.b64Json().get())
-
         } catch (e: Exception) {
             println { "Error generating image" }
             throw RuntimeException("Failed to generate image: ${e.message}", e)
         }
-
     }
 
     fun <T : Any> prompt(promptRequest: PromptRequest<T>): T {
@@ -124,21 +120,36 @@ class AIService(
 
     private fun <T : Any> structuredResponseCreateParams(promptRequest: PromptRequest<T>): StructuredResponseCreateParams<T> =
         ResponseCreateParams.builder()
-            .model(ChatModel.GPT_5_NANO)
+            .model(promptRequest.model ?: ChatModel.GPT_5_NANO)
             .prompt(
                 ResponsePrompt.builder()
                     .id(promptRequest.getPromptID())
                     .version(promptRequest.getPromptVersion())
+                    .variables(
+                        promptRequest.variables?.mapValues { JsonValue.from(it.value) }?.let {
+                            ResponsePrompt.Variables.builder()
+                                .putAllAdditionalProperties(it)
+                                .build()
+                        }
+                    )
                     .build()
             )
             .store(false)
             .reasoning(
-                Reasoning.builder()
-                    .summary(null)
-                    .effort(ReasoningEffort.LOW)
-                    .build()
+                if (promptRequest.model != ChatModel.GPT_4_1)
+                    Reasoning.builder()
+                        .summary(null)
+                        .effort(ReasoningEffort.LOW)
+                        .build()
+                else null
             )
-            .text(promptRequest.responseClass, JsonSchemaLocalValidation.YES)
+            .text(promptRequest.responseClass,
+                // no local validation for string responses
+                if (promptRequest.responseClass == String::class.java)
+                    JsonSchemaLocalValidation.NO
+                else
+                    JsonSchemaLocalValidation.YES
+            )
             .input(promptRequest.content.trimIndent())
             .build()
 

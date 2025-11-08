@@ -1,0 +1,30 @@
+#overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000060;
+  backdrop-filter: blur(50px);
+  z-index: 999;
+
+  transition: all .5s;
+
+  &.hidden {
+    opacity: 0;
+    top: -110%;
+    bottom: 110%;
+  }
+
+  .main-overlay {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #303739;
+    box-shadow: 10px 10px 25px 0 #000000f0;
+    border: 1px solid #ffffff20;
+    border-radius: 10px;
+  }
+}

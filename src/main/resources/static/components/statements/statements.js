@@ -17,8 +17,19 @@ const STMTS_LIST = {
     $('#list-ahead').off().on('click', STMTS_LIST.onListPageAhead);
 
     await STMTS_LIST.loadInitialStatements();
+    await STMTS_LIST.initFilter();
 
     return this;
+  },
+  isVisible: async () => {
+    return await DETAILS.areLeftStatementsDetailsFlipped();
+  },
+  closeIfVisible: async () => {
+    if (await STMTS_LIST.isVisible()) {
+      await DETAILS.unflipLeftStatements();
+/*      await delay(300);
+      await DISTRICTS.hideDescription(false);*/
+    }
   },
   loadInitialStatements: async () => {
     const result = await API.search(LIST_FILTER);
@@ -75,7 +86,7 @@ const STMTS_LIST = {
       const $e = $(e.currentTarget);
       $e.parent().find('li').removeClass('active');
       $e.addClass('active');
-      await DASHBOARD.showCrimeDetails($e.data('id'));
+      await DETAILS.show($e.data('id'));
   },
   onListPageBack: async (e) => {
       e.preventDefault();
@@ -102,6 +113,18 @@ const STMTS_LIST = {
     const result = await API.search(filter);
     await STMTS_LIST.updateSearchResults(result);
   },
+  initLatestStatements: async () => {
+    await STMTS_LIST.updateStatementsList(STATEMENTS);
 
+    $('#closeDetails').off().on('click', await DETAILS.close);
+  },
+  initFilter: async () => {
+    let options = ['all', 'violence', 'traffic', 'theft', 'robbery', 'arson_damage', 'drugs', 'fraud', 'homicide', 'threats', 'public_trespassing', 'political', 'sexual', 'organised', 'cyber']
 
+    let optionsHtml = options.map(o => `
+      <option value="${o === 'all'? '' : o}" data-trans="crime_type_${o}">${0}</option>
+    `);
+
+    $('#crimeTypeFilter').html(optionsHtml);
+  }
 }

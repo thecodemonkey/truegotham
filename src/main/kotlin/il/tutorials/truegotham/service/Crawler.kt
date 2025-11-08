@@ -2,21 +2,24 @@ package il.tutorials.truegotham.service
 
 import com.microsoft.playwright.*
 import com.microsoft.playwright.options.WaitUntilState
-import il.tutorials.truegotham.model.PressRelease
+import il.tutorials.truegotham.model.ImportStatus
+import il.tutorials.truegotham.model.entity.RawStatement
 import il.tutorials.truegotham.model.dto.CrawlerOptions
+import il.tutorials.truegotham.utils.CommonUtils
 import il.tutorials.truegotham.utils.DateUtils
 import il.tutorials.truegotham.utils.FileUtils
 import il.tutorials.truegotham.utils.JsonUtils
 import org.springframework.stereotype.Service
 import java.nio.file.Paths
+import java.util.*
 
 
 @Service
 class Crawler {
     private val url = "https://www.presseportal.de/blaulicht/nr/"
 
-    fun crawl(cityID: String, startDate: String, endDate: String): List<PressRelease> {
-        val allReleases = mutableListOf<PressRelease>()
+    fun crawl(cityID: String, startDate: String, endDate: String): List<RawStatement> {
+        val allReleases = mutableListOf<RawStatement>()
         val baseUrl = "${url}${cityID}"
         var pageUrl = "$baseUrl?startDate=$startDate&endDate=$endDate"
 
@@ -61,7 +64,7 @@ class Crawler {
                     println("Gefunden: ${articleLinks.size} Artikel auf Seite $currentPage")
 
 
-                    val pageReleases = mutableListOf<PressRelease>()
+                    val pageReleases = mutableListOf<RawStatement>()
 
                     // Crawle jeden Artikel
                     articleLinks.forEach { articleUrl ->
@@ -69,7 +72,7 @@ class Crawler {
                             val release = crawlArticle(page, articleUrl)
                             allReleases.add(release)
                             pageReleases.add(release)
-                            println("✓ Erfolgreich: ${release.lfd_nr} - ${release.title.take(50)}...")
+                            println("✓ Erfolgreich: ${release.lfd_nr} - ${release.title?.take(50)}...")
                         } catch (e: Exception) {
                             println("✗ Fehler bei $articleUrl: ${e.message}")
                         }
@@ -100,18 +103,17 @@ class Crawler {
                     }
 
 
-                    val json = JsonUtils.toJSON(pageReleases);
-                    val fileName = "page_${pageReleases.last().timestamp}.json".replace(":", "_").replace("-", "_").replace(" ", "")
-                    val tmpFileName = Paths.get(System.getProperty("java.io.tmpdir"), "press", fileName).toString()
-                    FileUtils.saveTextFile(json, tmpFileName);
+//                    save to file
+//                    val json = JsonUtils.toJSON(pageReleases);
+//                    val fileName = "page_${pageReleases.last().timestamp}.json".replace(":", "_").replace("-", "_").replace(" ", "")
+//                    val tmpFileName = Paths.get(System.getProperty("java.io.tmpdir"), "press", fileName).toString()
+//                    FileUtils.saveTextFile(json, tmpFileName);
 
 
                     if (hasMorePages) {
                         currentPage++
                         Thread.sleep(1000) // Pause zwischen Seiten
                     }
-
-
                 }
 
                 println("\nCrawling abgeschlossen! ${allReleases.size} Pressemitteilungen gesammelt.")
@@ -124,7 +126,7 @@ class Crawler {
         return allReleases
     }
 
-    private fun crawlArticle(page: Page, url: String): PressRelease {
+    private fun crawlArticle(page: Page, url: String): RawStatement {
         page.navigate(
             url, Page.NavigateOptions()
                 .setWaitUntil(WaitUntilState.NETWORKIDLE)
@@ -178,23 +180,27 @@ class Crawler {
             emptyList()
         }
 
-        return PressRelease(
-            timestamp = timestamp,
+        return RawStatement(
+            id = UUID.randomUUID(),
+            hash = CommonUtils.hashString(timestamp + lfdNr),
+            unixts = DateUtils.fromRawToUnix(timestamp),
+            //timestamp = timestamp,
             title = title,
             content = contentParagraphs,
-            lfd_nr = lfdNr,
+            lfd_nr = lfdNr.toInt(),
             url = url,
-            topics = topics
+            topics = topics,
+            status = ImportStatus.IMPORTED
         )
     }
 
-    fun continueCrawling(cityID: String): List<PressRelease> {
-        val tmpPath = Paths.get(System.getProperty("java.io.tmpdir"), "press").toString();
+    fun continueCrawling(cityID: String): List<RawStatement> {
+        val tmpPath = Paths.get(System.getProperty("java.io.tmpdir"), "press").toString()
         val json = FileUtils.getLastModifiedFileText(tmpPath)
 
         if (json != null) {
-            val statements: List<PressRelease> = JsonUtils.fromJSON(json);
-            val dt = DateUtils.convertDate(statements.last().timestamp);
+            val statements: List<RawStatement> = JsonUtils.fromJSON(json)
+            val dt = ""//DateUtils.convertDate(statements.last().timestamp);
 
             if (dt != null) {
                 val options = CrawlerOptions(

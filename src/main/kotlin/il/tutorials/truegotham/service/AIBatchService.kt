@@ -75,7 +75,7 @@ class AIBatchService(
         statements.forEach {
             val i = result.find { r -> r!!.id == it.id.toString() }
             if (i != null) {
-                it.crime = i.result?.crime;
+                it.crime = i.result?.crime!!;
                 println("item ${it.id} has categories: ${it.crime} ")
             } else {
                 println("ERROR: no item ${it.id} in result found!")
@@ -91,7 +91,7 @@ class AIBatchService(
         //val statements = JsonUtils.fromJSONResource<List<Statement>>("data/raw/statements.json")
         val statements = statementsRepo.findAll()
 
-        val requests = statements?.map {
+        val requests = statements.map {
             PromptRequest(
                 custom_id = it.id.toString(),
                 responseClass = cls,

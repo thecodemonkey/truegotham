@@ -31,5 +31,25 @@ const UTILS = {
 
   delay: async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
+  },
+
+  randomPointInsidePolygon: (layer) => {
+    let geojson;
+
+    if (layer.toGeoJSON) {
+      geojson = layer.toGeoJSON();
+    } else {
+      geojson = layer;
+    }
+
+    const bbox = turf.bbox(geojson);
+
+    let point;
+    do {
+      point = turf.randomPoint(1, { bbox }).features[0];
+    } while (!turf.booleanPointInPolygon(point, geojson));
+
+    const [lng, lat] = point.geometry.coordinates;
+    return [lat, lng];
   }
 }

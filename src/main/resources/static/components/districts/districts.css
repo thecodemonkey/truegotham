@@ -3,30 +3,142 @@
   opacity: 0;
   z-index: 0;
 
+  position: absolute;
+  bottom: 2rem;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  padding-bottom: 2rem;
+
   &.active {
     visibility: visible;
     opacity: 1;
     z-index: 9;
   }
 
-
-  .card-title{
+  .card-title {
     color: #88b1b1;
     text-shadow: 1px 1px 15px #00fffbab;
+    padding-left: 25px;
   }
 
-  .district-description{
+  .details-tab2 {
+    border-bottom: 1px solid #000;
+    padding-left: 25px;
+    margin-top: 2rem;
+
+    span {
+      border: 1px solid #000;
+      border-bottom: none;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 8px 15px;
+      margin-right: 5px;
+      display: inline-block;
+      background-color: #606e71;
+      color: #000;
+      cursor: pointer;
+      transition: all .3s;
+
+      &.active{
+        background-color: #959786;
+        border-bottom: 1px solid #959786;
+        margin-bottom: -1px;
+        cursor: default;
+        box-shadow: 2px -2px 25px 0 #00000050;
+      }
+
+      &:hover {
+        background-color: #959786;
+      }
+    }
+  }
+
+  .horizontal-slider2 {
+    position: relative;
+    overflow: hidden;
+    background-color: #959786;
+    height: 100%;
+
+    .sliding-item2 {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      left: 110%;
+      overflow: hidden;
+      top: 0;
+      bottom: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 2rem;
+      transition: left .5s, opacity .5s;
+
+
+      &.out {
+        left: -110%;
+        opacity: 0;
+      }
+
+      &.in {
+        left: 0;
+        opacity: 1;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .district-description {
     font-size: 1.1rem;
     line-height: 1.4rem;
     height: 100%;
     vertical-align: middle;
     display: flex;
     flex-direction: column;
-    color: #949898;
+    color: #000;
     font-weight: 300;
     font-family: sans-serif;
     overflow: auto;
-    text-align: left;
+    text-align: justify;
     gap: 2rem;
+    padding-right: 25px;
+    padding-bottom: 50px;
+  }
+
+  #districtFacts {
+    padding-left: 0;
+    padding-right: 0;
+    color: #111;
+
+    table {
+      margin-left: 0!important;
+      margin-right: 0!important;
+      margin-top: 0!important;
+
+      tr {
+
+        &:nth-child(odd) {
+          background-color: transparent!important;
+        }
+
+        &:nth-child(even) {
+          background-color: #ffffff0a!important;
+        }
+
+
+        td{
+          padding: 10px 20px!important;
+        }
+
+        td:nth-child(1) {
+          width: 30%;
+          overflow-x: hidden;
+          /*word-break: break-word;*/
+        }
+
+        td:nth-child(2) {
+          width: 70%;
+        }
+      }
+    }
   }
 }

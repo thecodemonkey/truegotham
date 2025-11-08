@@ -3,6 +3,12 @@
   "nav_about": "About",
   "nav_github": "GitHub",
 
+  "tab_facts": "facts",
+  "tab_description": "about",
+
+  "tab_summary": "summary",
+  "tab_original": "original statement",
+
   "title_current_statements": "current statements",
   "title_total_crimes": "Total number of crimes",
   "title_types_of_crimes": "types of crimes",
@@ -33,5 +39,21 @@
   "gender_female": "female",
   "gender_unknown": "unknown",
 
-  "link_original_statement": "to the original press release"
+  "link_original_statement": "to the original press release",
+
+  "crime_type_all": "all",
+  "crime_type_violence": "Violent offences",
+  "crime_type_traffic": "Traffic offences",
+  "crime_type_theft": "Theft",
+  "crime_type_robbery": "Robbery",
+  "crime_type_arson_damage": "Arson/criminal damage",
+  "crime_type_drugs": "Drug offences",
+  "crime_type_fraud": "Fraud",
+  "crime_type_homicide": "Homicide",
+  "crime_type_threats": "Threats/intimidation",
+  "crime_type_public_trespassing": "Public order offences/trespassing",
+  "crime_type_political": "Politically motivated acts",
+  "crime_type_sexual": "Sexual offences",
+  "crime_type_organised": "Organised crime",
+  "crime_type_cyber": "Cybercrime"
 }

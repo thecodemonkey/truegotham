@@ -1,0 +1,31 @@
+.close-info,
+.open-info {
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ffffff20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: background-color .25s;
+  color: #000;
+  font-family: monospace;
+
+  &:hover {
+    background-color: #ffffff40;
+  }
+}
+.open-info {
+  right: 25px;
+  top: 25px;
+  font-family: "Times New Roman", serif;
+  text-transform: lowercase;
+  font-weight: 500;
+}

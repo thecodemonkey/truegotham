@@ -15,10 +15,8 @@ class District(
     @Column(columnDefinition = "TEXT")
     val description: String? = null,
 
-    @Lob
-    @Basic(fetch = FetchType.LAZY)
-    @Column(columnDefinition = "BLOB")
-    val image: ByteArray? = null
+    @Column(name = "image_id")
+    val imageId: UUID? = null
 )
 {
     constructor() : this(UUID.randomUUID())

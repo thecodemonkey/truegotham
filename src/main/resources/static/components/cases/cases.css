@@ -1,0 +1,71 @@
+#districtsCard {
+
+  .horizontal-slider {
+    position: relative;
+    overflow: hidden;
+    flex: auto;
+    margin-left: -25px;
+    margin-right: -35px;
+
+    .sliding-item {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      left: 110%;
+      overflow-y: auto;
+      top: 0;
+      bottom: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+      transition: left .5s, opacity .5s;
+
+
+      &.out {
+        left: -110%;
+        opacity: 0;
+      }
+
+      &.in {
+        left: 0;
+        opacity: 1;
+      }
+    }
+
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
+  #case_title {
+    transition: opacity .3s;
+    opacity: 1;
+
+    &.hide {
+      opacity: 0;
+    }
+  }
+
+  table{
+    .light{
+      opacity: .5;
+      font-style: italic;
+    }
+  }
+
+  .table-ul {
+    list-style: square !important;
+    margin-top: 0 !important;
+    padding-left: 25px !important;
+
+    li {
+      padding: 5px 25px 5px 5px !important;
+      display: list-item !important;
+      font-family: "Arial", serif !important;
+      font-size: 1rem !important;
+      font-weight: 100 !important;
+    }
+  }
+
+}

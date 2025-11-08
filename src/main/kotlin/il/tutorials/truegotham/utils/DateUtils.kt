@@ -1,23 +1,10 @@
 package il.tutorials.truegotham.utils
 
-import java.time.Instant
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.ZoneId
+import java.time.*
 import java.time.format.DateTimeFormatter
 import java.util.*
 
 object DateUtils {
-    fun formatUnixTs(unixTimestampMillis: Long): String? {
-        return try {
-            val instant = Instant.ofEpochMilli(unixTimestampMillis)
-            val date = LocalDate.ofInstant(instant, ZoneId.systemDefault())
-            val formatterOut = DateTimeFormatter.ISO_LOCAL_DATE
-            date.format(formatterOut)
-        } catch (e: Exception) {
-            null
-        }
-    }
 
     fun convertDate(input: String): String? {
         return try {
@@ -38,5 +25,20 @@ object DateUtils {
         } catch (e: Exception) {
             null
         }
+    }
+
+    fun fromRawToUnix(input: String): Long {
+        val inputFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy – HH:mm")
+
+        val zone = ZoneId.of("Europe/Berlin")
+        val dateTime = LocalDateTime.parse(input, inputFormatter)
+        return dateTime.atZone(zone).toEpochSecond()
+    }
+
+    fun formatUnixTimestamp(unixTimestamp: Long): String {
+        val instant = Instant.ofEpochSecond(unixTimestamp)
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+            .withZone(ZoneId.of("Europe/Berlin"))
+        return formatter.format(instant)
     }
 }

@@ -2,6 +2,7 @@ package il.tutorials.truegotham.controller
 
 import il.tutorials.truegotham.repository.StatementRepository
 import il.tutorials.truegotham.service.StatementService
+import io.swagger.v3.oas.annotations.Parameter
 import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

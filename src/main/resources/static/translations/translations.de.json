@@ -3,6 +3,12 @@
   "nav_about": "Über",
   "nav_github": "GitHub",
 
+  "tab_facts": "Fakten",
+  "tab_description": "Über",
+
+  "tab_summary": "Zusammenfassung",
+  "tab_original": "originale Pressemitteilung",
+
   "title_current_statements": "Aktuelle Meldungen",
   "title_total_crimes": "Gesamtzahl der Straftaten",
   "title_types_of_crimes": "Arten von Straftaten",
@@ -33,5 +39,21 @@
   "gender_female": "weiblich",
   "gender_unknown": "unbekannt",
 
-  "link_original_statement": "zur originalen Pressemitteilung"
+  "link_original_statement": "zur originalen Pressemitteilung",
+
+  "crime_type_all": "all",
+  "crime_type_violence": "Gewalt-Delikte",
+  "crime_type_traffic": "Straßenverkehrsdelikte",
+  "crime_type_theft": "Diebstahl",
+  "crime_type_robbery": "Raub",
+  "crime_type_arson_damage": "Brand-/Sachbeschädigung",
+  "crime_type_drugs": "Drogen-Delikte",
+  "crime_type_fraud": "Betrug",
+  "crime_type_homicide": "Tötungsdelikt",
+  "crime_type_threats": "Bedrohung / Einschüchterung",
+  "crime_type_public_trespassing": "Ordnungs-/Hausfriedensdelikte",
+  "crime_type_political": "Politisch motivierte Taten",
+  "crime_type_sexual": "Sexualdelikte",
+  "crime_type_organised": "Organisiertes Verbrechen",
+  "crime_type_cyber": "Cyberkriminalität"
 }

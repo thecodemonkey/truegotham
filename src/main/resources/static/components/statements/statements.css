@@ -53,6 +53,11 @@
   }
 }
 
+.list-title{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .titleListDistrict.metric{
   margin-right: 25px!important;
   text-shadow: 0 0 25px #000000!important;

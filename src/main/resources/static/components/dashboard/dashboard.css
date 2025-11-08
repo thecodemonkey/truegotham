@@ -115,7 +115,7 @@
           }
 
           td, th {
-            padding: 10px 25px;
+            padding: 15px 25px;
 
             &.number{
               text-align: right;
@@ -133,7 +133,7 @@
           }
         }
 
-        tr:nth-child(even) {
+        tr:nth-child(odd) {
           background-color: #ffffff0a;
         }
       }
@@ -248,6 +248,7 @@
 .card-top-right {
   grid-column: 11 / 13;
   grid-row: 3 / 7;
+  z-index: 9;
 }
 
 .card-bottom-left {
@@ -271,6 +272,7 @@
 
   .card-title {
     color: #111!important;
+
   }
 }
 
@@ -340,69 +342,11 @@
 
 
 
-.card-description{
-  font-size: 1.1rem;
-  line-height: 1.4rem;
-  height: 100%;
-  vertical-align: middle;
-  display: flex;
-  flex-direction: column;
-  color: #000;
-  font-weight: 300;
-  font-family: sans-serif;
 
-  overflow: auto;
-  text-align: justify;
-  gap: 2rem;
-  padding-right: 20px;
-  margin-right: -20px;
-
-  p {
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    text-align: left;
-    color: #000;
-  }
-
-  .text-time{
-    color: rgb(0 0 0 / 38%);
-    font-weight: 100;
-    font-style: italic;
-    margin-bottom: -1rem;
-  }
-
-  a{
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    padding-left: 0;
-    transition: letter-spacing .2s;
-
-    &:hover{
-      letter-spacing: 1px;
-    }
-  }
-}
 
 
 #crimesListCard.details.top {
   margin-top: -100px;
-}
-
-.table-ul {
-  list-style: square!important;
-  margin-top: 0!important;
-  padding-left: 25px!important;
-
-  li {
-    padding: 5px 25px 5px 5px!important;
-    display: list-item!important;
-    font-family: "Arial", serif!important;
-    font-size: 1rem!important;
-    font-weight: 100!important;
-  }
 }
 
 .dashboard-card {
@@ -460,17 +404,12 @@
       .info-description {
         opacity: 1;
       }
+
+      .metric{
+        opacity: 0!important;
+      }
     }
   }
 
 }
 
-#mapCard {
-  border: 1px solid #3d4446;
-
-  &:hover{
-    border: 1px solid #ff60606b;
-    box-shadow: 2px 2px 26px rgb(255 79 79 / 20%);
-  }
-
-}

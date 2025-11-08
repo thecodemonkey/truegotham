@@ -1,14 +1,25 @@
 @import url('../../lib/leaflet/leaflet.css');
+
 @import url('../charts/charts.css');
 @import url('../dashboard/dashboard.css');
-@import url('../dashboard/crime.details.css');
+@import url('../dashboard/dashboard.info.css');
 @import url('../districts/districts.css');
+@import url('../details/details.css');
+@import url('../breadcrumb/breadcrumb.css');
+@import url('../navigation/navigation.css');
+@import url('../overlay/overlay.css');
+
 @import url('../common/errors/errors.css');
+@import url('../common/spinner/spinner.css');
+@import url('../statements/statements.css');
+@import url('../cases/cases.css');
+@import url('../statements/details/statement.details.css');
+
 @import url('flipper.css');
 @import url('police.lights.css');
 @import url('tooltip.css');
 @import url('cockpit.nav.css');
-@import url('../statements/statements.css');
+
 
 
 * {
