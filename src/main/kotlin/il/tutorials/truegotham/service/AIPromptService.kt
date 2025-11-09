@@ -1,6 +1,7 @@
 package il.tutorials.truegotham.service
 
 import com.openai.models.ChatModel
+import com.openai.models.ReasoningEffort
 import il.tutorials.truegotham.model.ai.PromptInfo
 import il.tutorials.truegotham.model.ai.PromptRequest
 import il.tutorials.truegotham.model.ai.promptRequest
@@ -51,6 +52,16 @@ class AIPromptService(val oai: AIService) {
 
     fun generateStatementCoverImage(description: String) =
         oai.generateImage(STATEMENT_COVER_PROMPT.replace("[IMG_DESC]", description))
+
+
+    fun extractIncidentLocations(description: String) =
+        oai.prompt(
+            promptRequest<IncidentEventsResult>(
+                content = "Extrahiere Standortinformationen: \n\n$description",
+                model = ChatModel.GPT_5,
+                reasoning = ReasoningEffort.MEDIUM)
+    )
+
 
 // district stuff
     fun generateDistrictRawDescription(city: String, district: String) = oai.prompt(

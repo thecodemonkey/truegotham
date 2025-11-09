@@ -1,6 +1,13 @@
 package il.tutorials.truegotham.model
 
+import jakarta.persistence.Embeddable
+
+@Embeddable
 data class Geocoordinates(
-    val lat: Double,
-    val lon: Double
-)
+    var lat: Double,
+    var lon: Double
+) {
+    constructor() : this(0.0, 0.0) {
+
+    }
+}

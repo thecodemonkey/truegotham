@@ -104,6 +104,9 @@ class ImportService(
             println("result of statement cover image: $imgDataURL");
 
 //5.1 address
+            println("start extracting locations...")
+            val locationsResult = ai.extractIncidentLocations(statement.content)
+            println("result of location extraction: $locationsResult");
 
             statement.district = "City";
 

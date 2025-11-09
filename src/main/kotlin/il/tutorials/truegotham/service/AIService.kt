@@ -139,7 +139,7 @@ class AIService(
                 if (promptRequest.model != ChatModel.GPT_4_1)
                     Reasoning.builder()
                         .summary(null)
-                        .effort(ReasoningEffort.LOW)
+                        .effort(promptRequest.reasoning ?: ReasoningEffort.LOW)
                         .build()
                 else null
             )

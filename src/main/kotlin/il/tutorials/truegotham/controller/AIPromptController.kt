@@ -36,6 +36,11 @@ class AIPromptController(
         @RequestBody message: String) =
             prompt.genericPrompt("pmpt_68ed348c3694819680edbf87fa1be4da0de4233a0ac3aee2", message)
 
+    @PostMapping("/api/prompt/location/extract")
+    fun extractIncidentLocation(
+        @RequestBody message: String) =
+        prompt.extractIncidentLocations(message)
+
 
     @PostMapping("/api/prompt/{promptID}")
     fun prompt(
