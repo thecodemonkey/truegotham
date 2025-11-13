@@ -45,26 +45,63 @@ const CHARTS = {
   updateCrimeDetailsTimelineChart: async (locations) => {
 
     if (locations && locations.length > 0) {
-      CHARTS.all.crimes.data.datasets[0].data = locations.map((l, i) =>  {
-        let d = new Date(l.unixts);
-        let h = d.getHours();
-        let m = d.getMinutes();
-        let mr = Math.round(100/60*m) * 0.1;
-        let tm = h + mr;
+      let prevDT = 0;
+      let min = 12;
+      let max = 12;
+      let alltimes = [];
 
-        let ys = [0.5, 1, 1.9]
+      let ran = (min, max) => Math.random() * (max - min) + min;
+      let round = (value) => Math.round(value * 2) / 2;
+
+
+      locations.sort((a, b) => b.unixts - a.unixts );
+
+      CHARTS.all.crimes.data.datasets[0].data = locations.map((l, i) =>  {
+        let tm = CHARTS.calcTime(l.unixts);
+
+        if (tm === prevDT) {
+          tm += ran(0.2, 0.9);
+        } else if (tm < prevDT) {
+          tm = prevDT + ran(0.2, 0.9);
+        }
+
+        alltimes.push(tm);
+
+        prevDT = tm;
+
+        let ys = [0.75, 1.5]
+        //let ys = [0.3, 0.5, 0.9, 1.2, 1.5, 1.8]
 
         return {
-        x: tm,
-        y: ys[i % 3],
-        r: 30,
-        number: 1,
-        msg: l.title
-      }});
+          x: tm,
+          y: ys[i % 2],
+          r: 30,
+          number: 1,
+          msg: l.title
+        }
+      });
+
+      alltimes.sort()
+      min = alltimes[0]
+      max = alltimes[alltimes.length -1 ]
+
+      min = min - 0.5;
+      max = max + 0.5;
+
+      CHARTS.all.crimes.options.scales.x.min = round(min);
+      CHARTS.all.crimes.options.scales.x.max = round(max);
+
 
       CHARTS.all.crimes.update();
     }
 
   },
+  calcTime: (timestamp) => {
+    let d = new Date(timestamp * 1000);
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let mr = Math.round(100/60*m) * 0.1;
+    return (h + mr);
+  }
 
 }

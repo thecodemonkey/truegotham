@@ -172,10 +172,18 @@ function createTimelineChart(ctx, data) {
       plugins: {
         legend: {display: false},
         tooltip: {
-          enabled: false,
+          enabled: true,
+          displayColors: false,
+          padding: 15,
+          titleFont: {
+            size: 16            // Größe des Titels
+          },
+          bodyFont: {
+            size: 14            // Größe der Body-Texte
+          },
           callbacks: {
-            label: function (context) {
-              return 'hellloollll lllladskfjklasf';
+            label:  (cntx) => {
+              return cntx.raw.msg; //'hellloollll lllladskfjklasf';
             }
           }
         }
@@ -227,16 +235,16 @@ function createTimelineChart(ctx, data) {
       id: 'customCirclesWithLines',
       afterDatasetsDraw(chart) {
         const {ctx, chartArea: {bottom}, scales: {x, y}} = chart;
-        chart.data.datasets[0].data.forEach(point => {
+        chart.data.datasets[0].data.forEach((point, i) => {
           const xPos = x.getPixelForValue(point.x);
           const yPos = y.getPixelForValue(point.y);
 
           const offset = 15;
 
           // Text in Kästchen
-          const text = point.label || point.msg;
+          const text = `${i+1}`//point.label || point.msg;
           //'Ein Zeuge beobachtet den Mercedes...'; //point.label || point.number.toString(); // Text aus Daten
-          ctx.font = '1.1rem Arial';
+          ctx.font = '1.2rem Arial';
           const textMetrics = ctx.measureText(text);
           const textWidth = textMetrics.width;
           const textHeight = 20; // Höhe des Textes/Kästchens
@@ -246,29 +254,30 @@ function createTimelineChart(ctx, data) {
           const boxHeight = textHeight + padding;
 
           // Rechteck zeichnen
-          ctx.fillStyle = '#182223'; // Hintergrundfarbe des Kästchens
-          ctx.beginPath();
-          ctx.roundRect(
-              xPos - boxWidth / 2,
-              yPos - boxHeight / 2,
-              boxWidth,
-              boxHeight,
-              8
-          );
-          ctx.fill();
+          // ctx.fillStyle = '#182223'; // Hintergrundfarbe des Kästchens
+          // ctx.beginPath();
+          // ctx.roundRect(
+          //     xPos - boxWidth / 2,
+          //     yPos - boxHeight / 2,
+          //     boxWidth,
+          //     boxHeight,
+          //     8
+          // );
+          // ctx.fill();
 
           ctx.save();
+
           ctx.beginPath();
           ctx.setLineDash([5, 5]);
           ctx.moveTo(xPos, yPos + point.r / 2 + offset);
           ctx.lineTo(xPos, bottom);
-          ctx.strokeStyle = '#72fbffA0';
+          ctx.strokeStyle = 'rgba(255,127,127,0.9)';
           ctx.lineWidth = 1;
           ctx.stroke();
           ctx.restore();
 
-          ctx.fillStyle = 'rgba(182,207,210,0.63)';
-          ctx.font = '.9rem Arial';
+          ctx.fillStyle = 'rgba(255,127,127,0.76)';
+          ctx.font = '1.2rem Arial';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           //ctx.fillText(point.number, xPos, yPos+2);
