@@ -31,7 +31,12 @@ class StatementService(val db: StatementRepository) {
         districts: List<String>?,
         pageable: Pageable
     ): Page<Statement> =
-        db.findAll(StatementSpecs.filter(search, categories, districts), pageable)
+        db.findAll(StatementSpecs.filter(
+            search,
+            CrimeTypes.mapCrimes(categories),
+            districts,
+            true),  // active only
+            pageable)
 
 
 
@@ -41,8 +46,7 @@ class StatementService(val db: StatementRepository) {
     fun filterNotCrimes() =
         JsonUtils.fromJSONResource<List<Statement>>("data/raw/classified.result.json")
             .filter {
-                (it.categories?.size == 1 && NOT_CRIME_CATEGORIES.contains(it.categories?.first()))
-                || it.crime == false
+                (it.categories?.size == 1 && NOT_CRIME_CATEGORIES.contains(it.categories?.first())) || !it.crime
             }
 
     fun filterCrimesOnly(): List<Statement> {

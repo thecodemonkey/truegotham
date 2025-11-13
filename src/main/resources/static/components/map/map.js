@@ -315,9 +315,8 @@ const MAP = {
     }
   },
 
-  createHotSpotMarker: async (coords) => {
-
-    const msg = 'In der Nacht zu Freitag (26. September) fiel der Fahrer eines Mercedes am Ostwall in Dortmund durch sein rasantes und riskantes Fahrverhalten auf. Ein aufmerksamer Zeuge alarmierte die Polizei und verhinderte so möglicherweise einen schweren Verkehrsunfall. Bei der anschließenden Kontrolle des Fahrzeugs kam Überraschendes ans Licht.';
+  createHotSpotMarker: async (coords, description) => {
+    const msg = description || 'In der Nacht zu Freitag (26. September) fiel der Fahrer eines Mercedes am Ostwall in Dortmund durch sein rasantes und riskantes Fahrverhalten auf. Ein aufmerksamer Zeuge alarmierte die Polizei und verhinderte so möglicherweise einen schweren Verkehrsunfall. Bei der anschließenden Kontrolle des Fahrzeugs kam Überraschendes ans Licht.';
     const customIcon = L.divIcon({
       className: '',
       html: `<div class="point-marker red"></div>`,
@@ -345,15 +344,22 @@ const MAP = {
 
     const z = zoom? zoom : MAP_INSTANCE.getZoom();
 
-    MAP_INSTANCE.setView(bounds.getCenter(), z, {
+    MAP_INSTANCE.flyTo(bounds.getCenter(), z, {
       animate: true,
-      duration: 1
+      duration: 2
     });
+
+    //await delay(2000)
+/*    MAP_INSTANCE.setView(bounds.getCenter(), z, {
+      animate: true,
+      duration: 1.5
+    });*/
 
     //setTimeout(() => {
       MAP_INSTANCE.fitBounds(bounds, {
+        padding: [100, 100],
         animate: true,
-        duration: 1
+        duration: 2
       });
     //}, 100)
   },
@@ -587,25 +593,46 @@ const MAP = {
     }) : null;
   },
 
-  showCrimeDistrict: async (districName) => {
+  showCrimeDistrict: async (districName, districZoom = false) => {
     const layer = MAP.getLayerByDistrictName(districName);
     await MAP.resetAllDistricts();
 
-    layer.setStyle({
-      color: '#ff435f',
-      opacity: 1,
-      weight: 1,
-      fillOpacity: 0.05,
-      fillColor: '#ff435f'
-    });
+    if (districZoom) {
+      layer.setStyle({
+        color: '#ff435f',
+        opacity: 1,
+        weight: 1,
+        fillOpacity: 0.05,
+        fillColor: '#ff435f'
+      });
 
-    await MAP.flyToBounds(layer.getBounds());
+      await MAP.flyToBounds(layer.getBounds());
+    }
+  },
 
-    const point = UTILS.randomPointInsidePolygon(layer);
+  updateIncidentHotspots: async (locations) => {
 
-    const m = await MAP.createHotSpotMarker(point);
-    await MAP.flyIN(point, 16, .5);
-    MARKER_ON_MAP.push(m)
+    if (locations && locations.length > 0) {
+      let coords = [];
+
+      for(let l of locations) {
+        if (l.coordinates && l.coordinates.lat && l.coordinates.lon) {
+          let c = [l.coordinates.lat, l.coordinates.lon];
+          coords.push(c)
+          const m = await MAP.createHotSpotMarker(c, l.description);
+          MARKER_ON_MAP.push(m)
+        }
+      }
+
+      if (coords.length === 1) {
+        // show single hotspot
+        await MAP.flyIN(coords[0], MAP_INSTANCE.getZoom() + 5, 2);
+      } else {
+        // show multiple hotstops
+        const bounds = L.latLngBounds(coords);
+        await MAP.flyToBounds(bounds);
+      }
+    }
   },
 
   showCrimeDetails: async (loc, address) => {

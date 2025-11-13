@@ -30,9 +30,11 @@ data class RawStatement(
     @Convert(converter = StringListConverter::class)
     val topics: List<String>? = mutableListOf(),
 
+    @Enumerated(EnumType.STRING)
     var status: ImportStatus? = null,
 
-
+    var errored: Boolean? = false,
+    var error: String? = null
 ) {
     constructor() : this(UUID.randomUUID(), "")
 }

@@ -16,6 +16,12 @@ class AIPromptService(val oai: AIService) {
     @ValueContent("classpath:prompts/statement.cover.prompt.txt")
     lateinit var STATEMENT_COVER_PROMPT: String
 
+    @ValueContent("classpath:prompts/offender.profile.single.txt")
+    lateinit var OFFENDER_PROFILE_SINGLE: String
+
+    @ValueContent("classpath:prompts/offender.profile.multiple.txt")
+    lateinit var OFFENDER_PROFILE_MULTIPLE: String
+
     val promptClasses: List<KClass<out Any>> = listOf(
         CrimeClassificationResult::class,
         CrimeIsCrimeResult::class,
@@ -39,6 +45,16 @@ class AIPromptService(val oai: AIService) {
         )
     )
 
+    fun generateIncidentMotivation(description: String) = oai.prompt(
+        promptRequest<SimpleResult>(
+            content = "Folgend Pressemitteilung: \n\n${description}",
+            id = "pmpt_691581dd5bb48195af6689db8ad13ab6058da14cad1190aa",
+            model = ChatModel.GPT_5_MINI,
+            reasoning = ReasoningEffort.LOW
+        )
+    )
+
+
     fun generateStatementImageDescription(description: String) = oai.prompt(
         promptRequest<SimpleResult>(
             content = "Erstelle eine Beschreibung",
@@ -53,7 +69,6 @@ class AIPromptService(val oai: AIService) {
     fun generateStatementCoverImage(description: String) =
         oai.generateImage(STATEMENT_COVER_PROMPT.replace("[IMG_DESC]", description))
 
-
     fun extractIncidentLocations(description: String) =
         oai.prompt(
             promptRequest<IncidentEventsResult>(
@@ -61,6 +76,47 @@ class AIPromptService(val oai: AIService) {
                 model = ChatModel.GPT_5,
                 reasoning = ReasoningEffort.MEDIUM)
     )
+
+    fun extractOffenderProfiles(description: String) = oai.prompt(
+        promptRequest<OffenderProfileResults>(
+            content = "Erstelle Täterprofile",
+            variables = mapOf(
+                "description" to description
+            ),
+            model = ChatModel.GPT_5_MINI,
+            reasoning = ReasoningEffort.MEDIUM
+        )
+    )
+
+    fun extractCriminalOffences(description: String) = oai.prompt(
+        promptRequest<CriminalOffenceResult>(
+            content = "Extrahiere informationen zur Straftaten: ",
+            variables = mapOf(
+                "description" to description
+            ),
+            model = ChatModel.GPT_5_MINI,
+            reasoning = ReasoningEffort.MEDIUM
+        )
+    )
+
+    fun extractEvidenceAndTools(description: String) = oai.prompt(
+        promptRequest<EvidenceAndWeaponsResult>(
+            content = "Extrahiere Tatwerkzeuge und Beweisinformationen: ",
+            variables = mapOf(
+                "description" to description
+            ),
+            model = ChatModel.GPT_5_MINI,
+            reasoning = ReasoningEffort.MEDIUM
+        )
+    )
+
+    fun generateOffenderImage(description: String, multiple: Boolean): ByteArray {
+        val prompt = if (multiple)  OFFENDER_PROFILE_MULTIPLE else OFFENDER_PROFILE_SINGLE
+
+        return oai.generateImage(
+            prompt.replace("[PROFILES]", description)
+        )
+    }
 
 
 // district stuff

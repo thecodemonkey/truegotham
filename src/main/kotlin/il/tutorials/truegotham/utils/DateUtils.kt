@@ -17,6 +17,16 @@ object DateUtils {
         }
     }
 
+    fun toUnixtsTime(input: String): Long? {
+        return try {
+            val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm", Locale.GERMAN)
+            val localDateTime = LocalDateTime.parse(input, formatter)
+            localDateTime.atZone(ZoneId.systemDefault()).toEpochSecond()
+        } catch (e: Exception) {
+            null
+        }
+    }
+
     fun toUnixts(input: String): Long? {
         return try {
             val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy – HH:mm", Locale.GERMAN)
@@ -41,4 +51,15 @@ object DateUtils {
             .withZone(ZoneId.of("Europe/Berlin"))
         return formatter.format(instant)
     }
+
+    fun duration(start: Long) = System.currentTimeMillis() - start
+
+    fun elapsedFormatted(start: Long) = formatDuration(duration(start))
+
+    fun formatDuration(ms: Long) =  when {
+            ms < 1_000 -> "$ms ms"
+            ms < 60_000 -> String.format("%.2f s", ms / 1000.0)
+            else -> String.format("%.2f min", ms / 60_000.0)
+        }
+
 }

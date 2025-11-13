@@ -9,9 +9,14 @@ object StatementSpecs {
     fun filter(
         search: String?,
         categories: List<String>?,
-        districts: List<String>?
+        districts: List<String>?,
+        active: Boolean? = null
     ): Specification<Statement> = Specification { root, query, cb ->
         val predicates = mutableListOf<Predicate>()
+
+        active?.let {
+            predicates += cb.equal(root.get<Boolean>("active"), it)
+        }
 
         // Volltextsuche
         search?.takeIf { it.isNotBlank() }?.let {

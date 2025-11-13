@@ -12,8 +12,7 @@ import java.util.*
 
 @RestController
 class StatementController(
-    val statementService: StatementService,
-    val statementRepository: StatementRepository) {
+    val statementService: StatementService) {
 
     @GetMapping("/api/statements/latest")
     fun loadLatest(@RequestParam  limit: Int) =

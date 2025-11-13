@@ -27,8 +27,8 @@ const API = {
   statement: async (id) => {
     return await API.get(`/statements/${id}`);
   },
-  case: async (id) => {
-    return await API.get(`/cases/${id}`);
+  incident: async (id) => {
+    return await API.get(`/incident/${id}`);
   },
 
   /**

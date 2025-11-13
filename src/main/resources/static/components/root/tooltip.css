@@ -36,14 +36,14 @@
   box-shadow: 8px 8px 25px 0 rgba(0, 0, 0, 1);
   font-family: "Courier New", serif;
   color: #ffa3a3;
-  padding: 40px;
+  padding: 25px;
   border-radius: 10px;
   font-size: 1.1rem;
   border: none;
   white-space: break-spaces;
 
-  max-width: 600px;
-  min-width: 400px;
+  max-width: 300px;
+  min-width: 200px;
   width: max-content;
 }
 

@@ -20,4 +20,10 @@ class ImportController(
 
     @PostMapping("/api/import/process/next")
     fun processNextItem() = importService.processNext()
+
+    @PostMapping("/api/import/process/next/single")
+    fun processNextItemSingleStep() = importService.processNextSingle()
+
+    @PostMapping("/api/import/process/next/incident")
+    fun processIncidentItem() = importService.processIncidentItem()
 }

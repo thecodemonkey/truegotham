@@ -35,4 +35,5 @@ data class Statement(
     var active: Boolean = false
 ){
     constructor() : this(UUID.randomUUID(), 0, "")
+    constructor(id: UUID, unixts: Long) : this(id, unixts, "")
 }

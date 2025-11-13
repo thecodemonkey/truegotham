@@ -7,7 +7,7 @@ const DASHBOARD = {
             .replace('[BREADCRUMB]', await BREADCRUMB.view())
             .replace('[NAVIGATION]', await NAVIGATION.view())
             .replace('[STATEMET_DETAILS]', await STATEMENT_DETAILS.view())
-            .replace('[CASE_DETAILS]', await CASE_DETAILS.view())
+            .replace('[INCIDENTS]', await INCIDENTS.view())
             .replace('[DISTRICT_DESCRIPTION]', await DISTRICTS.view());
 
   },

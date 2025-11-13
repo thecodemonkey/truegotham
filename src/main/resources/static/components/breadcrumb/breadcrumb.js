@@ -34,12 +34,12 @@ const BREADCRUMB = {
         <span class="item subactive">root</span>
         <span class="separator">&RightAngleBracket;</span>
         
-        <span class="item dist collapsed">district</span>
+        <span class="item dist collapsed" data-trans="bread_district">district</span>
         <span class="separator dist collapsed">&RightAngleBracket;</span>
         <span class="item dist subactive collapsed itm"></span>
         <span class="separator dist collapsed last">&RightAngleBracket;</span>
         
-        <span class="item stmt collapsed">statement</span>
+        <span class="item stmt collapsed" data-trans="bread_statement">statement</span>
         <span class="separator stmt collapsed">&RightAngleBracket;</span>
         <span class="item active stmt collapsed itm"></span>                
     `;

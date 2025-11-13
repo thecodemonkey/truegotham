@@ -1,0 +1,22 @@
+Erstelle ein fotorealistische Schwarz/Weiß-Portrait im epischen SinCity/Batman Stil eines Täters.
+
+
+Wichtige Vorgaben:
+
+- Schwarz/Weiß-Stil, starke Kontraste, dramatische Schatten.
+- fotorealistischer ultradetailreicher Bleistift Zeichen Look
+- Batman darf in der Szene nicht vorkommen!
+- keine Panels und keine Sprechblasen
+- Die Szenen sollen möglichst realistisch sein, also keine fiktiven Handlungen, Charaktere oder Gegenstände enthalten.
+- keine Beschriftungen, Plakate oder Schilder enthalten
+- Im Bild dürfen keine Gegenstände und keine Waffen enthalten sein
+- Kein Messer
+- Im Bild soll nur der im Profil beschriebene Täter abgebildet werden
+- Im Hintergrund sollen keine weiteren Personen erscheinen
+- Kein schönling, das Gesicht sollte nicht schön sein
+
+
+Hier ist das Täterprofil:
+
+[PROFILES]
+

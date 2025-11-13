@@ -1,8 +1,8 @@
-let SELECTED_CASE_DETAIL = null;
+let SELECTED_INCIDENT_DETAIL = null;
 
-const CASE_DETAILS = {
+const INCIDENTS = {
   view: async () => {
-    return await loadHTML('cases');
+    return await loadHTML('incidents');
   },
   init: async () => {
     return this;
@@ -11,12 +11,12 @@ const CASE_DETAILS = {
     $('#districtsCard .horizontal-slider').removeClass('hidden');
   },
   closeIfVisible: async () => {
-    if (await CASE_DETAILS.isVisible()) {
+    if (await INCIDENTS.isVisible()) {
       await DETAILS.unflipRightDetails();
       await delay(300);
     }
 
-    await CASE_DETAILS.close();
+    await INCIDENTS.close();
   },
   isVisible: async () => {
     return DETAILS.areRightDetailsFlipped();
@@ -27,25 +27,33 @@ const CASE_DETAILS = {
   },
   update: async (cs) => {
 
-    if (!await CASE_DETAILS.isVisible()){
-      await CASE_DETAILS.show();
+    if (!await INCIDENTS.isVisible()){
+      await INCIDENTS.show();
     }
 
-    await CASE_DETAILS.updateProfileData(cs.suspicious);
-    await CASE_DETAILS.updateEvidence(cs);
-    await CASE_DETAILS.updateOffenses(cs);
-    await CASE_DETAILS.updateMotive(cs);
+    await INCIDENTS.updateProfileData(cs.offenderProfiles);
+    await INCIDENTS.updateEvidence(cs);
+    await INCIDENTS.updateOffenses(cs);
+    await INCIDENTS.updateMotive(cs);
 
     await TRANSLATION.resolve();
     await delay(100);
 
-    await MAP.showCrimeDistrict(CURRENT_STATEMENT.district);
+    if (cs.locations && cs.locations.filter(l => l.coordinates?.lat).length > 0) {
+      await MAP.showCrimeDistrict(CURRENT_STATEMENT.district);
+      await MAP.updateIncidentHotspots(cs.locations)
+    } else {
+      await MAP.showCrimeDistrict(CURRENT_STATEMENT.district, true);
+    }
+
+    await CHARTS.updateCrimeDetailsTimelineChart(cs.locations);
+
     //await MAP.showCrimeDetails(CURRENT_STATEMENT.location, 'Dortmund Kampstraße');
   },
   updateProfileData: async (profiles) => {
     const person = profiles[0];
 
-    await DISTRICTS.showProfileImage('/img/mug.shot.front2.jpeg')
+    await DISTRICTS.showProfileImage(`/api/districts/${person.imageId}/image`)
 
     let html = `
             <tr>
@@ -60,25 +68,23 @@ const CASE_DETAILS = {
               <td data-trans="profile_gender">Geschlecht</td>
               <td data-trans="gender_${person.gender.toLowerCase()}">${TRANSLATION.translate(`gender_${person.gender}`)}</td>
             </tr>
-            <tr>
-              <td data-trans="profile_hair">Haare</td>
-              <td>${person.hair}</td>
-            </tr>
-            <tr>
-              <td data-trans="profile_behaviour">Verhalten</td>
-              <td>${person.behaviour}</td>
-            </tr>
+              ${person.hair ?  `<tr><td data-trans="profile_hair">Haare</td><td>${person.hair}</td></tr>` : ''}
             <tr>
               <td data-trans="profile_drugs_and_alcohol">Drogen/Alkohol Test</td>
               <td>${person.drugTest}/${person.alcoholTest}</td>
             </tr>
+            ${person.look ?  `<tr><td data-trans="profile_look">Aussehen</td><td>${person.look}</td></tr>` : ''}
+            <tr>
+              <td data-trans="profile_behaviour">Verhalten</td>
+              <td>${person.summary}</td>
+            </tr>            
     `;
 
     $('#profileData').html(html);
   },
   updateEvidence: async (cs) => {
     let data =
-        cs.tools.map(t => `
+        cs.tools?.map(t => `
            <tr>
             <td colSpan="2">${t}</td>
           </tr>
@@ -96,7 +102,7 @@ const CASE_DETAILS = {
   updateOffenses: async (cs) => {
 
     let data =
-        cs.violations.map(t => `
+        cs?.offences?.map(t => `
            <tr>
             <td>${t.text}</td>
             <td><span class="light">${t.paragraph || ''}</span></td>
@@ -106,23 +112,20 @@ const CASE_DETAILS = {
     $('#offensesData').html(data);
   },
   updateMotive: async (cs) => {
-    const data = `
-    <tr>
-      <td colSpan="2">
-        Der Täter hatte ein Motiv, aber wir wissen nicht genau, welches.
-      </td>
-    </tr>`.trim();
+    const data = cs.motive ? `<p> 
+          ${cs.motive?.split('\n\n').join('</p><p>')}
+       </p>`.trim() : '';
 
     $('#motiveData').html(data);
   },
   onMenueItemClick: async (e) => {
     const $e = $(e.currentTarget);
-    SELECTED_CASE_DETAIL = $e.data('item')
+    SELECTED_INCIDENT_DETAIL = $e.data('item')
 
-    await CASE_DETAILS.updateTitle(SELECTED_CASE_DETAIL);
+    await INCIDENTS.updateTitle(SELECTED_INCIDENT_DETAIL);
 
     const currentActive = $(`#districtsCard .horizontal-slider .sliding-item.in`);
-    const nextActive = $(`#case_${SELECTED_CASE_DETAIL}`);
+    const nextActive = $(`#case_${SELECTED_INCIDENT_DETAIL}`);
 
     if (nextActive.hasClass('out')) { // from left to right =>
       nextActive.removeClass('out')

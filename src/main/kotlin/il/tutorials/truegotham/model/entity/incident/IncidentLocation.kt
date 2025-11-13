@@ -1,10 +1,8 @@
 package il.tutorials.truegotham.model.entity.incident
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import il.tutorials.truegotham.model.Geocoordinates
-import jakarta.persistence.Column
-import jakarta.persistence.Embedded
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import java.util.*
 
 @Entity
@@ -14,13 +12,16 @@ class IncidentLocation(
 
     val unixts: Long,
 
-    val statementID: UUID? = null,
-
     @Column(columnDefinition = "TEXT")
     var address: String? = null,
 
     @Column(columnDefinition = "TEXT")
     var addressFormal: String? = null,
+
+    var city: String? = null,
+    var street: String? = null,
+    var street2: String? = null,
+    var place: String? = null,
 
     @Embedded
     val coordinates: Geocoordinates? = null,
@@ -32,8 +33,9 @@ class IncidentLocation(
 
     @Column(columnDefinition = "TEXT")
     var description: String? = null,
-) {
-    constructor() : this(UUID.randomUUID(), 0) {
 
-    }
-}
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "incident_id", nullable = false)
+    @JsonIgnore
+    val incident: Incident
+)

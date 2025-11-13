@@ -67,14 +67,14 @@ class AIService(
     }
 
     //generate image via gpt-image-1-mini
-    fun generateImage(prompt: String): ByteArray {
+    fun generateImage(prompt: String, model: String = "gpt-image-1-mini"): ByteArray {
 
         try {
 
             val response: ImagesResponse = openAIClient.images()
                 .generate(
                     ImageGenerateParams.builder()
-                        .model("gpt-image-1-mini")
+                        .model(model)
                         .prompt(prompt)
                         .n(1)
                         .outputFormat(ImageGenerateParams.OutputFormat.JPEG)

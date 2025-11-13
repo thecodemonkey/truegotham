@@ -12,7 +12,7 @@
 @import url('../common/errors/errors.css');
 @import url('../common/spinner/spinner.css');
 @import url('../statements/statements.css');
-@import url('../cases/cases.css');
+@import url('../incidents/incidents.css');
 @import url('../statements/details/statement.details.css');
 
 @import url('flipper.css');

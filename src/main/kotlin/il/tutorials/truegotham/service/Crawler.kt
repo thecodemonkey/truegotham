@@ -202,14 +202,14 @@ class Crawler {
             val statements: List<RawStatement> = JsonUtils.fromJSON(json)
             val dt = ""//DateUtils.convertDate(statements.last().timestamp);
 
-            if (dt != null) {
+            //if (dt != null) {
                 val options = CrawlerOptions(
                     cityID,
                     startDate = "2015-01-01",
                     endDate = dt
                 )
                 return crawl(cityID, options.startDate, options.endDate)
-            }
+            //}
         }
 
         throw Exception("cant read new file..");

@@ -6,6 +6,7 @@
     flex: auto;
     margin-left: -25px;
     margin-right: -35px;
+    z-index: 9;
 
     .sliding-item {
       position: absolute;
@@ -19,7 +20,6 @@
       padding-right: 25px;
       transition: left .5s, opacity .5s;
 
-
       &.out {
         left: -110%;
         opacity: 0;
@@ -28,6 +28,25 @@
       &.in {
         left: 0;
         opacity: 1;
+      }
+
+      > div {
+        margin-top: 2rem;
+        text-align: justify;
+        padding-right: 15px;
+        font-size: 1.1rem;
+        overflow-y: auto;
+        position: absolute;
+        left: 25px;
+        right: 15px;
+        bottom: 0;
+        top: 0;
+        scrollbar-color: #444d4d transparent!important;
+      }
+
+      p {
+        margin-bottom: 2rem;
+        line-height: 1.4rem;
       }
     }
 
@@ -46,6 +65,12 @@
       opacity: 0;
     }
   }
+
+  #evidenceData{
+    position: absolute;
+    width: 100%;
+  }
+
 
   table{
     .light{

@@ -41,6 +41,13 @@ class AIPromptController(
         @RequestBody message: String) =
         prompt.extractIncidentLocations(message)
 
+    @PostMapping("/api/prompt/profiles/extract")
+    fun extractOffenderProfiles(
+        @RequestBody message: String) =
+        prompt.extractOffenderProfiles(message)
+
+
+
 
     @PostMapping("/api/prompt/{promptID}")
     fun prompt(

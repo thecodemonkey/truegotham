@@ -41,6 +41,30 @@ const CHARTS = {
             {x: 18, y: 1, r: 30, number: 3, msg: '00:40 Festnahme durch Polizei...'},
           ]
         );
-  }
+  },
+  updateCrimeDetailsTimelineChart: async (locations) => {
+
+    if (locations && locations.length > 0) {
+      CHARTS.all.crimes.data.datasets[0].data = locations.map((l, i) =>  {
+        let d = new Date(l.unixts);
+        let h = d.getHours();
+        let m = d.getMinutes();
+        let mr = Math.round(100/60*m) * 0.1;
+        let tm = h + mr;
+
+        let ys = [0.5, 1, 1.9]
+
+        return {
+        x: tm,
+        y: ys[i % 3],
+        r: 30,
+        number: 1,
+        msg: l.title
+      }});
+
+      CHARTS.all.crimes.update();
+    }
+
+  },
 
 }

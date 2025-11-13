@@ -3,11 +3,16 @@
   "nav_about": "Über",
   "nav_github": "GitHub",
 
+  "nav_profile": "Profil",
+  "nav_evidence": "Beweise",
+  "nav_offenses": "Vergehen",
+  "nav_motive": "Motiv",
+
   "tab_facts": "Fakten",
   "tab_description": "Über",
 
   "tab_summary": "Zusammenfassung",
-  "tab_original": "originale Pressemitteilung",
+  "tab_original": "originale Mitteilung",
 
   "title_current_statements": "Aktuelle Meldungen",
   "title_total_crimes": "Gesamtzahl der Straftaten",
@@ -23,8 +28,9 @@
   "profile_location": "Wohnort",
   "profile_gender": "Geschlecht",
   "profile_hair": "Haare",
-  "profile_behaviour": "Verhalten",
+  "profile_behaviour": "psychologische Analyse",
   "profile_drugs_and_alcohol": "Drogen/Alkohol Test",
+  "profile_look": "Aussehen",
 
   "start_title": "Das Verbrechen lauert im Schatten, unsichtbar und doch spürbar in jeder Straße und an jeder Ecke der Stadt. Es hinterlässt Spuren, die nur diejenigen erkennen können, die genau hinschauen.",
   "start_subtitle": "Das Projekt TRUE GOTHAM bringt diese verborgenen Taten ans Licht. Mithilfe künstlicher Intelligenz werden Aussagen aus der Online-Presse der öffentlichen Polizei analysiert, oberflächliche Beschreibungen in klare Fakten umgewandelt und die dunkle Realität der Stadt offenbart.",
@@ -39,7 +45,12 @@
   "gender_female": "weiblich",
   "gender_unknown": "unbekannt",
 
-  "link_original_statement": "zur originalen Pressemitteilung",
+  "search_found": "Gefunden",
+
+  "link_original_statement": "original Pressemitteilung",
+
+  "bread_district":  "Bezirk",
+  "bread_statement" : "Mitteilung",
 
   "crime_type_all": "all",
   "crime_type_violence": "Gewalt-Delikte",
@@ -56,4 +67,5 @@
   "crime_type_sexual": "Sexualdelikte",
   "crime_type_organised": "Organisiertes Verbrechen",
   "crime_type_cyber": "Cyberkriminalität"
+
 }

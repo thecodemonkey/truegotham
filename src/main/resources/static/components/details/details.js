@@ -1,5 +1,5 @@
 let CURRENT_STATEMENT = null;
-let CURRENT_CASE = null;
+let CURRENT_INCIDENT = null;
 let DETAILS_MODE = false;
 
 const DETAILS = {
@@ -18,11 +18,11 @@ const DETAILS = {
     await DISTRICTS.closeIfVisible();
 
     CURRENT_STATEMENT = await API.statement(id);
-    CURRENT_CASE = await API.case('08badf0e-4e50-4bcb-999b-cdfaa2777e7e'); //CURRENT_STATEMENT.caseId
+    CURRENT_INCIDENT = await API.incident(id); //CURRENT_STATEMENT.caseId //'08badf0e-4e50-4bcb-999b-cdfaa2777e7e'
 
     await STATEMENT_DETAILS.update(CURRENT_STATEMENT);
 
-    await CASE_DETAILS.update(CURRENT_CASE);
+    await INCIDENTS.update(CURRENT_INCIDENT);
 
     await DETAILS.flipRightDetails();
     await delay(50);
@@ -60,7 +60,7 @@ const DETAILS = {
     await DETAILS.unflipTotalChartDetails();
 
     await DISTRICTS.closeIfVisible();
-    await CASE_DETAILS.closeIfVisible();
+    await INCIDENTS.closeIfVisible();
     await STMTS_LIST.closeIfVisible();
 
     await MAP.restorePreviousDistrictView(SELECTED_DISTRICT);

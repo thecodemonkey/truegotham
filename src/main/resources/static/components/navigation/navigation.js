@@ -19,6 +19,6 @@ const NAVIGATION = {
 
     $(e.currentTarget).addClass('active');
 
-    await CASE_DETAILS.onMenueItemClick(e);
+    await INCIDENTS.onMenueItemClick(e);
   }
 }
