@@ -46,6 +46,7 @@ const CHARTS = {
 
     if (locations && locations.length > 0) {
       let prevDT = 0;
+      let prevUNIX = 0;
       let min = 12;
       let max = 12;
       let alltimes = [];
@@ -61,13 +62,16 @@ const CHARTS = {
 
         if (tm === prevDT) {
           tm += ran(0.2, 0.9);
+          l.unixts = l.unixts + (30 * 60);
         } else if (tm < prevDT) {
           tm = prevDT + ran(0.2, 0.9);
+          l.unixts = prevUNIX + (30 * 60);
         }
 
         alltimes.push(tm);
 
         prevDT = tm;
+        prevUNIX = l.unixts;
 
         let ys = [0.75, 1.5]
         //let ys = [0.3, 0.5, 0.9, 1.2, 1.5, 1.8]
@@ -75,8 +79,9 @@ const CHARTS = {
         return {
           x: tm,
           y: ys[i % 2],
-          r: 30,
+          r: 25,
           number: 1,
+          time: (new Date(l.unixts * 1000)).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }),
           msg: l.title
         }
       });

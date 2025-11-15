@@ -315,15 +315,16 @@ const MAP = {
     }
   },
 
-  createHotSpotMarker: async (coords, description) => {
+  createHotSpotMarker: async (coords, description, index) => {
     const msg = description || 'In der Nacht zu Freitag (26. September) fiel der Fahrer eines Mercedes am Ostwall in Dortmund durch sein rasantes und riskantes Fahrverhalten auf. Ein aufmerksamer Zeuge alarmierte die Polizei und verhinderte so möglicherweise einen schweren Verkehrsunfall. Bei der anschließenden Kontrolle des Fahrzeugs kam Überraschendes ans Licht.';
     const customIcon = L.divIcon({
       className: '',
-      html: `<div class="point-marker red"></div>`,
+      html: `<div class="point-marker red">${index}</div>`,
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });
 
+    await delay(100)
     return L.marker(coords, {icon: customIcon})
             .bindTooltip(msg, {direction: 'auto', className: 'custom-tooltip', offset: [0, 0]  })
             .addTo(MAP_INSTANCE);
@@ -619,7 +620,7 @@ const MAP = {
         if (l.coordinates && l.coordinates.lat && l.coordinates.lon) {
           let c = [l.coordinates.lat, l.coordinates.lon];
           coords.push(c)
-          const m = await MAP.createHotSpotMarker(c, l.description);
+          const m = await MAP.createHotSpotMarker(c, l.description, locations.indexOf(l)+1);
           MARKER_ON_MAP.push(m)
         }
       }

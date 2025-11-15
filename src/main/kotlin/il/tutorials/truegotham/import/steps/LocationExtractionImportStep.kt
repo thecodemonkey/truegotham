@@ -6,6 +6,7 @@ import il.tutorials.truegotham.model.ai.structured.IncidentLocationResult
 import il.tutorials.truegotham.model.entity.incident.IncidentLocation
 import il.tutorials.truegotham.repository.IncidentRepository
 import il.tutorials.truegotham.service.AIPromptService
+import il.tutorials.truegotham.service.GeocodingService
 import il.tutorials.truegotham.utils.DateUtils
 import org.springframework.stereotype.Component
 import java.util.*
@@ -13,7 +14,8 @@ import java.util.*
 @Component
 class LocationExtractionImportStep(
     val ai: AIPromptService,
-    val incidentRepo: IncidentRepository
+    val incidentRepo: IncidentRepository,
+    val geocodingService: GeocodingService
 ) : ImportStepBase() {
     override fun status() = ImportStatus.LOCATION_EXTRACTION
 
@@ -29,12 +31,17 @@ class LocationExtractionImportStep(
                 if (current == null) current = if (prevDT == null) 0 else prevDT ;
                 if (current != null) prevDT = current;
 
+                var address = combineFormalAddress(l)
+                val coordinates = geocodingService.geocode(address)
+
                 context.incident.locations.add(
                     IncidentLocation(
                         id = UUID.randomUUID(),
                         unixts = current!!,
                         address = l.address,
-                        addressFormal = combineFormalAddress(l),
+                        addressFormal = address,
+
+                        coordinates = coordinates,
 
                         city = l.city,
                         street = l.street,
@@ -53,13 +60,10 @@ class LocationExtractionImportStep(
         context.incident.locations.firstOrNull()?.let {
             context.statement.city = it.city
         }
-
         context.statement.district = "City" //append default district
-
 
         incidentRepo.save(context.incident)
     }
-
 
     private fun combineFormalAddress(result: IncidentLocationResult): String {
         var address = "";

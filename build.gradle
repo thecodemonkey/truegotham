@@ -69,3 +69,7 @@ tasks.register('generateJsClient', Exec) {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.named("bootJar") {
+    archiveFileName.set("true-gotham.jar")
+}

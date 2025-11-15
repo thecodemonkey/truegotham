@@ -58,19 +58,20 @@
 
 
 .point-marker {
-  width: 26px;
-  height: 26px;
-  border: 2px solid #ff0000a0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ff000080;
   box-sizing: border-box;
-  background: #ff000020!important;
+  background: #141b1e !important;
   border-radius: 50%;
+  color: rgba(255,127,127,0.9);
   /*box-sizing: content-box;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 25px 0 rgba(0, 234, 255, 0.1);
-  animation: glowPulse 2s infinite ease-in-out;
+  animation: glowPulse 3s infinite ease-in-out;
 
 }
 
@@ -110,25 +111,25 @@
 
 @keyframes glowPulse {
   0% {
-    box-shadow: 0 0 5px 5px rgba(255,0,0,0.8), 0 0 25px 8px rgba(255,0,0,0.6);
-    background: #51cbff;
+    box-shadow: 0 0 5px 5px rgba(255,0,0,0.3), 0 0 25px 8px rgba(255,0,0,0.1);
+    /*background: #51cbff;*/
 
   }
   25% {
-    box-shadow: 0 0 25px 6px rgba(96, 250, 255, 1), 0 0 15px 4px rgba(96, 250, 255, 0.7);
-    background: #f00
+    box-shadow: 0 0 25px 6px rgba(96, 250, 255, .5), 0 0 15px 4px rgba(96, 250, 255, 0.15);
+    /*background: #f00*/
   }
   50% {
-    box-shadow: 0 0 40px 8px rgba(255,0,0,1), 0 0 40px 8px rgba(255,0,0,0.5);
-    background: #51cbff;
+    box-shadow: 0 0 40px 8px rgba(255,0,0,.5), 0 0 40px 8px rgba(255,0,0,0.1);
+    /*background: #51cbff;*/
   }
   75% {
-    box-shadow: 0 0 25px 7px rgba(96, 250, 255, 1), 0 0 15px 3px rgba(96, 250, 255, 0.7);
-    background: #f00
+    box-shadow: 0 0 25px 7px rgba(96, 250, 255, .5), 0 0 15px 3px rgba(96, 250, 255, 0.42);
+    /*background: #f00*/
   }
   100% {
-    box-shadow: 0 0 5px 4px rgba(255,0,0,0.1), 0 0 20px 8px rgba(255,0,0,0.8);
-    background: #51cbff;
+    box-shadow: 0 0 5px 4px rgba(255,0,0,0.1), 0 0 20px 8px rgba(255,0,0,0.3);
+    /*background: #51cbff;*/
   }
 }
 

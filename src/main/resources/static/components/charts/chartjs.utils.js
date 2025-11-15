@@ -154,10 +154,10 @@ function createTimelineChart(ctx, data) {
     type: 'bubble',
     data: {
       datasets: [{
-        label: 'Uhrzeit',
+        //label: '',
         data: data,
-        borderColor: '#ff000000',
-        backgroundColor: '#00000020',
+        borderColor: 'rgba(255,127,127,0.3)',
+        backgroundColor: '#00000050',
       }]
     },
     options: {
@@ -170,17 +170,23 @@ function createTimelineChart(ctx, data) {
         }
       },
       plugins: {
-        legend: {display: false},
+        legend: {
+          display: false
+        },
         tooltip: {
           enabled: true,
           displayColors: false,
-          padding: 15,
+          padding: { top: 15, right: 25, bottom: 15, left: 25 },
+          caretPadding: 20,
           titleFont: {
             size: 16            // Größe des Titels
           },
           bodyFont: {
-            size: 14            // Größe der Body-Texte
+            size: 16            // Größe der Body-Texte
           },
+          backgroundColor: "rgb(15,17,17)",
+          titleColor: "#ffffff",
+          bodyColor: "#9bbec4",
           callbacks: {
             label:  (cntx) => {
               return cntx.raw.msg; //'hellloollll lllladskfjklasf';
@@ -192,10 +198,10 @@ function createTimelineChart(ctx, data) {
         x: {
           type: 'linear', min: 0, max: 23,
           ticks: {
-            stepSize: 1,
+            stepSize: .5,
             color: chartColors.xAxisLabel,
             callback: function (value) {
-              return value.toString().padStart(2, '0') + ':00';
+              return ''; //value.toString().padStart(2, '0') + ':00';
             }
           },
           grid: {
@@ -213,6 +219,7 @@ function createTimelineChart(ctx, data) {
           title: {
             display: true,
             text: 'Uhrzeit', // oder ein anderer Titel
+            align: 'start',
             color: chartColors.xAxisLabel,
             font: {
               size: 14
@@ -239,19 +246,21 @@ function createTimelineChart(ctx, data) {
           const xPos = x.getPixelForValue(point.x);
           const yPos = y.getPixelForValue(point.y);
 
+
+
           const offset = 15;
 
           // Text in Kästchen
           const text = `${i+1}`//point.label || point.msg;
           //'Ein Zeuge beobachtet den Mercedes...'; //point.label || point.number.toString(); // Text aus Daten
-          ctx.font = '1.2rem Arial';
+/*          ctx.font = '1.2rem Arial';
           const textMetrics = ctx.measureText(text);
           const textWidth = textMetrics.width;
           const textHeight = 20; // Höhe des Textes/Kästchens
 
-          const padding = 15; // Padding innerhalb des Kästchens
-          const boxWidth = textWidth + padding;
-          const boxHeight = textHeight + padding;
+          const padding = 15; // Padding innerhalb des Kästchens*/
+          // const boxWidth = textWidth + padding;
+          // const boxHeight = textHeight + padding;
 
           // Rechteck zeichnen
           // ctx.fillStyle = '#182223'; // Hintergrundfarbe des Kästchens
@@ -277,13 +286,18 @@ function createTimelineChart(ctx, data) {
           ctx.restore();
 
           ctx.fillStyle = 'rgba(255,127,127,0.76)';
-          ctx.font = '1.2rem Arial';
+          ctx.font = '1.1rem Arial';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           //ctx.fillText(point.number, xPos, yPos+2);
           ctx.fillText(text, xPos, yPos);
 
+
+          ctx.fillStyle = 'rgba(136,156,159, 0.75)';
+          ctx.font = '1rem Arial';
+          ctx.fillText(point.time, xPos, bottom + 25);
         });
+
       }
     }]
   });
