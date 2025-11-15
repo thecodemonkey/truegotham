@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21.0.9_10-jdk-ubi10-minimal
 LABEL authors="TheCodemonkey"
 
 WORKDIR /app
