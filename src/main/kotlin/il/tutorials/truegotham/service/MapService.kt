@@ -1,11 +1,14 @@
 package il.tutorials.truegotham.service
 
+import il.tutorials.truegotham.config.AppConfig
 import il.tutorials.truegotham.utils.FileUtils
 import il.tutorials.truegotham.utils.HttpUtils
 import org.springframework.stereotype.Service
 
 @Service
-class MapService {
+class MapService(
+    val config: AppConfig
+) {
     var allImages: List<ByteArray>? = null;
 
     //@PostConstruct
@@ -19,22 +22,26 @@ class MapService {
         val tileName = "$z/$x/$y.png";
         val tilePath = "${tmp}tiles/${tileName.replace("/", "_")}"
 
-        if (FileUtils.exists(tilePath))  return FileUtils.read(tilePath)
+        if (config.map.caching && FileUtils.exists(tilePath))  return FileUtils.read(tilePath)
 
         val img = HttpUtils.fetchTile("https://tiles.stadiamaps.com/tiles/stamen_toner/$tileName")
 
-        println("tile loaded, cache it: $tileName")
-        img?.let {
-
-            allImages?.forEach {
-                val res = FileUtils.imagesAreEqual(img, it)
-                if (res) {
-                    println("same image: $tileName")
-                }
-            };
 
 
-            FileUtils.save(img, tilePath)
+        if (config.map.caching) {
+            println("tile loaded, cache it: $tileName")
+            img?.let {
+
+                allImages?.forEach {
+                    val res = FileUtils.imagesAreEqual(img, it)
+                    if (res) {
+                        println("same image: $tileName")
+                    }
+                };
+
+
+                FileUtils.save(img, tilePath)
+            }
         }
 
         return img
