@@ -3,8 +3,15 @@ package il.tutorials.truegotham.service
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import il.tutorials.truegotham.model.GeoJson
 import il.tutorials.truegotham.model.Geocoordinates
 import il.tutorials.truegotham.model.NominatimResponse
+import il.tutorials.truegotham.utils.ValueContent
+import jakarta.annotation.PostConstruct
+import org.geojson.FeatureCollection
+import org.locationtech.jts.geom.Geometry
+import org.locationtech.jts.geom.GeometryFactory
+import org.locationtech.jts.io.geojson.GeoJsonReader
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
 import java.net.HttpURLConnection
@@ -20,12 +27,28 @@ data class Way(val geometry: List<Node>)
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class OverpassResponse(val elements: List<Way>)
 
+data class Zone( val name: String, val geometry: Geometry)
+
 @Service
 class GeocodingService {
+
+    private lateinit var zoneGeometries: List<Zone>
+    private val gf = GeometryFactory()
+    private val reader = GeoJsonReader(gf)
 
     private val restTemplate = RestTemplate()
     private val objectMapper = jacksonObjectMapper()
 
+    @PostConstruct
+    fun init() {
+
+        zoneGeometries = GeoJson.features.map { feature ->
+            val geomJson = objectMapper.writeValueAsString(feature.geometry)
+            val geom = reader.read(geomJson)
+            val name = feature.getProperty("statistischer_bezirk") ?: "unbekannt"
+            Zone(name, geom)
+        }
+    }
 
     fun geocode(address: String): Geocoordinates? {
         val url = "https://nominatim.openstreetmap.org/search?format=json&q=$address"
@@ -44,6 +67,11 @@ class GeocodingService {
             e.printStackTrace()
             null
         }
+    }
+
+    fun findDistrictByCoords(coordinates: Geocoordinates): String? {
+        val point = gf.createPoint(org.locationtech.jts.geom.Coordinate(coordinates.lon, coordinates.lat))
+        return zoneGeometries.firstOrNull { it.geometry.contains(point) }?.name
     }
 
     // Kreuzung berechnen
@@ -71,9 +99,6 @@ class GeocodingService {
         }
         return intersections
     }
-
-
-
 
     // Schnittpunkt zweier Liniensegmente berechnen
     private fun lineIntersection(a1: LatLon, a2: LatLon, b1: LatLon, b2: LatLon): LatLon? {
