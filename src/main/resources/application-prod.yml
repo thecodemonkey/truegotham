@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:/app/data/demo-db;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE
+app:
+  map:
+    caching: false

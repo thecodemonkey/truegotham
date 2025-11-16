@@ -1,7 +1,10 @@
 let INSIGHTS = null;
+let SETTINGS = null;
 
 async function init(){
   console.log('loaded...');
+
+  SETTINGS = await API.settings();
 
   $('root').append(await loadHTML('root'))
            .append(await DASHBOARD.view())
@@ -43,7 +46,6 @@ async function start(){
 
   await BREADCRUMB.show();
   await MAP.show();
-
   await DASHBOARD.show();
 }
 

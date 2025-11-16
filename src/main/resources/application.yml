@@ -17,6 +17,8 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  profiles:
+    active: dev
 app:
   map:
     caching: true

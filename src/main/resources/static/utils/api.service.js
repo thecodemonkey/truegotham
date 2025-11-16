@@ -30,6 +30,9 @@ const API = {
   incident: async (id) => {
     return await API.get(`/incident/${id}`);
   },
+  settings: async () => {
+    return await API.get(`/settings`);
+  },
 
   /**
    * 🔎 Filtered + paginated search for statements

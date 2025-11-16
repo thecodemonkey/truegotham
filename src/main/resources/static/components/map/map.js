@@ -51,7 +51,7 @@ const MAP = {
       }
     }
 
-    let tileLayer = L.tileLayer(MAP.THEMES[theme].url, {
+    let tileLayer = L.tileLayer(MAP.THEMES[theme].url(), {
       attribution: MAP.THEMES[theme].attribution,
       maxZoom: MAP.THEMES[theme].maxZoom ?? 19,
       // pass through optional className so tile <img> gets it
@@ -65,7 +65,7 @@ const MAP = {
         } catch (e) { /* ignore */
         }
       }
-      tileLayer = L.tileLayer(MAP.THEMES[newTheme].url, {
+      tileLayer = L.tileLayer(MAP.THEMES[newTheme].url(), {
         attribution: MAP.THEMES[newTheme].attribution,
         maxZoom: MAP.THEMES[newTheme].maxZoom ?? 19
       }).addTo(MAP_INSTANCE);
@@ -130,7 +130,7 @@ const MAP = {
     },
     // Stamen Toner: high-contrast black & white
     'stamen-toner': {
-      url: 'http://localhost:7171/api/map/tiles/{z}/{x}/{y}.png',
+      url: () => (SETTINGS?.mapTilesCaching === true) ?  'http://localhost:7171/api/map/tiles/{z}/{x}/{y}.png' : 'https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png',
       //url: 'https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png',
       //url: 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under CC BY 3.0. Data by <a href="http://openstreetmap.org">OpenStreetMap</a> contributors.',
