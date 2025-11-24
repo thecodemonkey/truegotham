@@ -37,6 +37,7 @@ const DETAILS = {
   },
   close: async (e) => {
     DETAILS_MODE = false;
+    SELECTED_DISTRICT_LIST = [];
 
     await NAVIGATION.close();
 
@@ -48,7 +49,7 @@ const DETAILS = {
 
     if (!SELECTED_DISTRICT) {
       LIST_FILTER.districts = [];
-      LIST_FILTER.page = 0
+      //LIST_FILTER.page = 0
       await STMTS_LIST.callSearch(LIST_FILTER);
     }
 

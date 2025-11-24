@@ -2,6 +2,10 @@ const CHARTS = {
   all: {},
   initCrimesChart: async () => {
     const ctx = $('#crimesChart').get(0).getContext('2d');
+
+    INSIGHTS.typesOfCrime.data = INSIGHTS.typesOfCrime.data.slice(0, 10);
+    INSIGHTS.typesOfCrime.labels = INSIGHTS.typesOfCrime.labels.slice(0, 10);
+
     CHARTS.all.crimes = createBarChart(ctx, INSIGHTS.typesOfCrime, 'crimes', true);
   },
   initCrimesTimelineChart: async () => {
@@ -18,6 +22,8 @@ const CHARTS = {
       return {
         ...CHARTS.all.crimesTimeLine.data.datasets[i],
         borderColor: col || '#000',
+        borderWidth: .5,
+        tension: 0.3,
         label: ds.label,
         data: ds.data
     }});
@@ -80,7 +86,7 @@ const CHARTS = {
           x: tm,
           y: ys[i % 2],
           r: 25,
-          number: 1,
+          number: i+1,
           time: (new Date(l.unixts * 1000)).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }),
           msg: l.title
         }
@@ -107,6 +113,14 @@ const CHARTS = {
     let m = d.getMinutes();
     let mr = Math.round(100/60*m) * 0.1;
     return (h + mr);
+  },
+  actionBubbleHovered: async (bubble) => {
+    await MAP.hoverHotspot(bubble);
+  },
+  actionBubbleUnHovered: async () => {
+    await MAP.unhoverHotspot();
+  },
+  actionBubbleClicked: async (bubble) => {
+    await MAP.zoomToHotspot(bubble);
   }
-
 }

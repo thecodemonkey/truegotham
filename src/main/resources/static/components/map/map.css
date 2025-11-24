@@ -73,11 +73,15 @@
   box-shadow: 0 0 25px 0 rgba(0, 234, 255, 0.1);
   animation: glowPulse 3s infinite ease-in-out;
 
+  &.hovered {
+    background-color: #ff000080!important;
+    color: #ffb9b9;
+  }
 }
 
 .district-label {
-  color: #a7d8da;
-  font-size: .9rem;
+  color: #8ab8b9;
+  font-size: .8rem;
   font-weight: 100;
   letter-spacing: 1px;
   text-shadow: 0 0 3px black;
@@ -87,7 +91,7 @@
   transition: font-size .2s, color .2s, opacity .2s;
 
   &.active {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #9afaff;
     opacity: 1;
   }

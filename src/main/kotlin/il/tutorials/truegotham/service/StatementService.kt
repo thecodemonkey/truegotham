@@ -15,7 +15,10 @@ import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
-class StatementService(val db: StatementRepository) {
+class StatementService(
+    val db: StatementRepository,
+    val geocodingService: GeocodingService
+) {
 
     val NOT_CRIME_CATEGORIES = listOf("sonstiges", "Unfall", "Informationsmitteilung")
 
@@ -39,6 +42,25 @@ class StatementService(val db: StatementRepository) {
             pageable)
 
 
+    fun reGeocodeAllDistricts() {
+        db.findAllByActive(false).forEach { statement ->
+
+            val street = statement.address ?: statement.addressVerbose
+
+            if (!street.isNullOrBlank()) {
+                Thread.sleep(500)
+                geocodingService.geocode("$street, ${statement.city}")?.let {
+                    println("address '$street, ${statement.city}' successfully geocoded.")
+                    statement.district = geocodingService.findDistrictByCoords(it)
+                    println("district of '$street, ${statement.city}' is: ${statement.district}")
+                    db.save(statement)
+                }
+            }
+
+
+        }
+
+    }
 
     fun load() =
         JsonUtils.fromJSONResource<List<Statement>>("data/current.statements.json")

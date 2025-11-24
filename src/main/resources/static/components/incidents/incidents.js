@@ -39,14 +39,30 @@ const INCIDENTS = {
     await TRANSLATION.resolve();
     await delay(100);
 
-    if (cs.locations && cs.locations.filter(l => l.coordinates?.lat).length > 0) {
-      await MAP.showCrimeDistrict(CURRENT_STATEMENT.district);
-      await MAP.updateIncidentHotspots(cs.locations)
+
+
+    cs.locations?.filter(l => !l.coordinates && !l.district)?.forEach(l => {
+      const d = KNOWN_DISTRICTS.find(
+          kd => l.address.toLowerCase().indexOf(kd) > -1);
+      if (d) {
+        l.district = d;
+
+        const coords = MAP.getCoordsByDistrictName(d);
+        if (coords) {
+          l.coordinates = {lat: coords.lat, lon: coords.lng}
+        }
+      }
+    });
+
+    const locations = cs.locations ? cs.locations.filter(l => l.coordinates?.lat && l.coordinates?.lon) : [];
+
+    if (locations.length > 0) {
+      await MAP.updateIncidentHotspots(locations)
     } else {
-      await MAP.showCrimeDistrict(CURRENT_STATEMENT.district, true);
+      await MAP.showCrimeDistrict([CURRENT_STATEMENT.district], true);
     }
 
-    await CHARTS.updateCrimeDetailsTimelineChart(cs.locations);
+    await CHARTS.updateCrimeDetailsTimelineChart(locations);
 
     //await MAP.showCrimeDetails(CURRENT_STATEMENT.location, 'Dortmund Kampstraße');
   },

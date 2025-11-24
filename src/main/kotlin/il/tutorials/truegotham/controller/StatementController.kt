@@ -30,4 +30,8 @@ class StatementController(
         pageable: Pageable
     ) = statementService.getFiltered(search, categories, districts, pageable)
 
+
+    @GetMapping("/api/statements/updatealldistricts")
+    fun loadStatement() =
+        statementService.reGeocodeAllDistricts()
 }

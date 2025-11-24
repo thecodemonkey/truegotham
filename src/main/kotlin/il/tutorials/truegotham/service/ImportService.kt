@@ -63,7 +63,13 @@ class ImportService(
     }
 
     fun processNextSingle() {
-        importProcessor.runSingleStep();
+        importProcessor.runSingleStep(
+            importRepo.findTopByOrderByUnixtsAsc()
+        );
+    }
+
+    fun processNextFrom(unixts: Long) {
+        importProcessor.runNextFrom(unixts);
     }
 
     fun _processNext() {
@@ -228,5 +234,7 @@ class ImportService(
 
         }
     }
+
+
 
 }

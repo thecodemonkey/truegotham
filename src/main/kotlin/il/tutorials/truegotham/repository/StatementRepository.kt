@@ -8,4 +8,6 @@ import java.util.UUID
 
 interface StatementRepository : JpaRepository<Statement, UUID>, JpaSpecificationExecutor<Statement> {
     fun findAllByOrderByUnixtsDesc(pageable: Pageable): List<Statement>
+
+    fun findAllByActive(boolean: Boolean) : List<Statement>
 }

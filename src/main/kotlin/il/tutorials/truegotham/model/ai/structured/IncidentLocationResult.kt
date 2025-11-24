@@ -17,6 +17,7 @@ data class IncidentLocationResult(
     val city: String,
     val street: String,
     val street2: String,
+    val district: String,
     val place: String,
 
     val main: Boolean,

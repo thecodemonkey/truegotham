@@ -67,7 +67,7 @@
     }
   }
 
-  #evidenceData{
+  #evidenceData, #offensesData{
     position: absolute;
     width: 100%;
   }

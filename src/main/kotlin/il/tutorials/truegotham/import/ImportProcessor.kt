@@ -2,6 +2,7 @@ package il.tutorials.truegotham.import
 
 import il.tutorials.truegotham.import.steps.ImportStepBase
 import il.tutorials.truegotham.model.ImportStatus
+import il.tutorials.truegotham.model.entity.RawStatement
 import il.tutorials.truegotham.model.entity.Statement
 import il.tutorials.truegotham.model.entity.incident.Incident
 import il.tutorials.truegotham.repository.ImportRepository
@@ -25,23 +26,22 @@ class ImportProcessor(
 
         var status: ImportStatus? = ImportStatus.IMPORTED;
 
-        println("START WHOLE IMPORT...")
+        println("IMPORT STARTED...")
 
         while (status != null && status != ImportStatus.FINISHED) {
-            status = runSingleStep()
+            val nextRawStatement = importRepo.findTopByOrderByUnixtsAsc();
+            status = runSingleStep(nextRawStatement)
         }
 
         if (status == null) {
-            println("FINISHED WHOLE IMPORT WITH ERRORS: ${elapsedFormatted(start)}")
+            println("IMPORT ERRORED:     ${elapsedFormatted(start)}")
         } else {
-            println("FINISHED SUCCESSFUL THE WHOLE IMPORT: ${elapsedFormatted(start)}")
+            println("IMPORT FINISHED:    ${elapsedFormatted(start)}")
         }
     }
 
-    fun runSingleStep(): ImportStatus? {
+    fun runSingleStep(nextRawStatement: RawStatement?): ImportStatus? {
         var lastStatus: ImportStatus? = null;
-
-        val nextRawStatement = importRepo.findTopByOrderByUnixtsAsc();
 
         nextRawStatement?.let {
             val nextStep = flow.getStep(it.status!!)
@@ -61,12 +61,12 @@ class ImportProcessor(
     }
 
     private fun runStep(step: ImportStepBase, context: ImportContext): ImportStatus? {
-        println("step started:  ${step.status()}")
+        println("step started:                   ${step.status()}")
         val start = System.currentTimeMillis()
         try {
 
             step.run(context);
-            println("step finished: ${step.status()} in ${elapsedFormatted(start)}")
+            println("step finished:      ${elapsedFormatted(start).padEnd(10)}  ${step.status()} ")
 
             if (context.rawStatement.status == ImportStatus.REMOVE_IRRELEVANT) {
                 println("irrelevant statement recognized. remove it.")
@@ -91,6 +91,36 @@ class ImportProcessor(
             importRepo.save(context.rawStatement)
             return null
         }
+    }
+
+    fun runNextFrom(unixts: Long) {
+
+        println("START BATCH IMPORT FROM ${DateUtils.formatUnixTimestamp(unixts)}")
+        val statements = importRepo.findAllByUnixtsGreaterThan(unixts)
+        println("BATCH ITEMS FOUND: ${statements.size}")
+
+        statements.forEach { nextRaw ->
+
+
+            val start = System.currentTimeMillis()
+
+            var status: ImportStatus? = ImportStatus.IMPORTED;
+
+            println("START WHOLE IMPORT OF SINGLE ITEM: ${nextRaw.title}  ...")
+
+            while (status != null && status != ImportStatus.FINISHED) {
+                status = runSingleStep(nextRaw)
+            }
+
+            if (status == null) {
+                println("FINISHED WHOLE IMPORT WITH ERRORS: ${elapsedFormatted(start)}")
+            } else {
+                println("FINISHED SUCCESSFUL THE WHOLE IMPORT: ${elapsedFormatted(start)}")
+            }
+
+        }
+
+        println("FINISh BATCH IMPORT FROM.")
     }
 
 }

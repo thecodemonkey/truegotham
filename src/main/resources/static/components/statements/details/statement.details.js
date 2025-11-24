@@ -43,7 +43,6 @@ const STATEMENT_DETAILS = {
       $('#crimesListCard .details-head img').attr('src', `/img/sample5.jpeg`);
     }
 
-
     await BREADCRUMB.update(ttl, SELECTED_DISTRICT);
 
     $('#statementContent').html(`
@@ -51,7 +50,9 @@ const STATEMENT_DETAILS = {
           ${statement.content.replaceAll("\n\n", "</p><p>")}
         </p>
       `.trim()
-    );
+    ).prepend(`<div class="incident-kinds">
+          ${statement.categories.map(m => `<span class="chip-kind">${m}</span>`).join(' ')}
+               </div>`);
 
     if (statement.summary) {
       $('#statementSummaryContent').html(`
@@ -59,10 +60,8 @@ const STATEMENT_DETAILS = {
           ${statement.summary.replaceAll("\n\n", "</p><p>")}
         </p>
       `.trim()
-      );
+      )
     }
-
-
 
 
     $('#crimesListCard').addClass('top');

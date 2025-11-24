@@ -1,6 +1,6 @@
 #navigation {
   padding: 0 !important;
-  grid-column: 9 / 11;
+  grid-column: 8 / 10;
   grid-row: 3 / 5;
   overflow: hidden;
   grid-template-rows: auto 1fr;

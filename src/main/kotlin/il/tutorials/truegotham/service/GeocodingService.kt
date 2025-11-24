@@ -6,9 +6,11 @@ import com.fasterxml.jackson.module.kotlin.readValue
 import il.tutorials.truegotham.model.GeoJson
 import il.tutorials.truegotham.model.Geocoordinates
 import il.tutorials.truegotham.model.NominatimResponse
-import il.tutorials.truegotham.utils.ValueContent
+import il.tutorials.truegotham.model.ai.structured.IncidentLocationResult
+import il.tutorials.truegotham.model.entity.GeocodingCacheItem
+import il.tutorials.truegotham.repository.GeocodingCacheRepository
+import il.tutorials.truegotham.repository.IncidentRepository
 import jakarta.annotation.PostConstruct
-import org.geojson.FeatureCollection
 import org.locationtech.jts.geom.Geometry
 import org.locationtech.jts.geom.GeometryFactory
 import org.locationtech.jts.io.geojson.GeoJsonReader
@@ -20,17 +22,22 @@ import java.net.URLEncoder
 
 data class LatLon(val lat: Double, val lon: Double)
 typealias Line = List<LatLon>
-data class Node(val lat: Double, val lon: Double)
+data class Node(val id: Long, val lat: Double, val lon: Double)
 @JsonIgnoreProperties(ignoreUnknown = true)
-data class Way(val geometry: List<Node>)
+data class Way(val id: Long, val name: String, val nodeIds: List<Long>, val geometry: List<Node>)
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class OverpassResponse(val elements: List<Way>)
-
 data class Zone( val name: String, val geometry: Geometry)
+data class GeocodedAddress(val coordinates: Geocoordinates?, val address: String)
 
 @Service
-class GeocodingService {
+class GeocodingService(
+    val cache: GeocodingCacheRepository,
+    val incidentRepo: IncidentRepository,
+    val addressNormalizer: AddressNormalizer,
+    val intersectionService: GeocodingIntersectionService
+) {
 
     private lateinit var zoneGeometries: List<Zone>
     private val gf = GeometryFactory()
@@ -50,7 +57,66 @@ class GeocodingService {
         }
     }
 
-    fun geocode(address: String): Geocoordinates? {
+    fun geocodeLocationResult(location: IncidentLocationResult): GeocodedAddress {
+        var coordinates: Geocoordinates? = null
+        var address = ""
+
+        val isIntersection =
+            !location.street.isNullOrBlank() &&
+            !location.street2.isNullOrBlank() &&
+            location.street != location.street2
+
+        if (isIntersection) {
+            address = "${location.street} / ${location.street2}, ${location.city}"
+            coordinates = geocodeIntersections(location.street, location.street2)
+        }
+
+        if (coordinates == null) {
+            address = addressNormalizer.combineAddress(
+                street = location.street,
+                district = null, //todo: append district
+                city = location.city,
+                houseNumber = null, //todo: append houseno
+                place = location.place,
+                normalize = false
+            )
+
+            val addressCacheKey = addressNormalizer.combineAddress(
+                street = location.street,
+                district = null, //todo: append district
+                city = location.city,
+                houseNumber = null, //todo: append houseno
+                place = location.place,
+                normalize = true
+            )
+
+            coordinates = geocode(address, addressCacheKey)
+        }
+
+        //fallback to district if exists
+        if (coordinates == null && location.district.isNotBlank()) {
+            val distaddr = "${location.district}, ${location.city}"
+
+            coordinates = geocode(distaddr, distaddr.lowercase().trim())
+        }
+
+        return GeocodedAddress(
+            coordinates,
+            address
+        )
+    }
+
+    fun geocode(address: String, cacheKey: String? =  null): Geocoordinates? {
+        cacheKey?.let {
+            val existing = loadFromCache(cacheKey)
+            if (existing != null) {
+                println("Cache Treffer für Adresse: $cacheKey -> $existing")
+                return existing
+            }
+        }
+
+
+        println("try geocoding address: $address")
         val url = "https://nominatim.openstreetmap.org/search?format=json&q=$address"
 
         return try {
@@ -60,7 +126,9 @@ class GeocodingService {
             println("Response: $response")
 
             results.firstOrNull()?.let {
-                Geocoordinates(it.lat.toDouble(), it.lon.toDouble())
+                val coords = Geocoordinates(it.lat.toDouble(), it.lon.toDouble())
+                putToCache(cacheKey ?: addressNormalizer.normalize(address), coords)
+                coords
             }
         } catch (e: Exception) {
             println("Fehler: ${e.message}")
@@ -74,30 +142,77 @@ class GeocodingService {
         return zoneGeometries.firstOrNull { it.geometry.contains(point) }?.name
     }
 
-    // Kreuzung berechnen
-    fun geocodeIntersections(street1: String, street2: String): List<LatLon> {
-        val city = "Dortmund"
+    fun loadFromCache(address: String): Geocoordinates? {
+        val item:Geocoordinates? = null
 
-        val bbox = listOf(
-            51.5139021889297, 7.454399557183694,
-            51.51732058926283, 7.462038641327812
-        )
+        cache.findById(address.lowercase().trim()).ifPresent {
+            println("address: '$address' found in cache...")
+            Geocoordinates(it.latitude, it.longitude)
+        }
 
-        val street1Lines = fetchStreetLines(street1, city, bbox)
-        val street2Lines = fetchStreetLines(street2, city, bbox)
-        val intersections = mutableListOf<LatLon>()
+        return item
+    }
 
-        for(l1 in street1Lines) {
-            for(l2 in street2Lines) {
-                for(i in 0 until l1.size-1) {
-                    for(j in 0 until l2.size-1) {
-                        val p = lineIntersection(l1[i], l1[i+1], l2[j], l2[j+1])
-                        if(p != null) intersections.add(p)
-                    }
+    fun putToCache(address: String, coordinates: Geocoordinates) {
+        val item = GeocodingCacheItem(address.lowercase().trim(), coordinates.lat, coordinates.lon)
+        if (cache.findById(address.lowercase().trim()).isPresent) return
+        cache.save(item)
+    }
+
+    fun updateGeocodingCache() {
+        incidentRepo.findAll().forEachIndexed{ i, incident ->
+            incident.locations.filter {
+                it.coordinates != null &&
+                it.city?.lowercase() == "dortmund" &&
+                it.street != null
+            }.
+            forEach{ location ->
+                val address = addressNormalizer.combineAddress(
+                    street = location.street,
+                    district = null,
+                    city = location.city,
+                    houseNumber = null,
+                    place = location.place,
+                    normalize = true
+                )
+
+                if(address.isNotBlank()) {
+                    println("${i.toString().padEnd(3)} Geocoding address: ${address.padEnd(40)}  - ${location.coordinates}" )
+                    putToCache(address, location.coordinates!!)
                 }
             }
         }
-        return intersections
+    }
+
+    // Kreuzung berechnen
+    fun geocodeIntersections(street1: String, street2: String): Geocoordinates? {
+        println("try geocoding intersection: $street1 / $street2")
+
+        val intersectionAddress = "${addressNormalizer.normalize(street1)} / ${addressNormalizer.normalize(street2)}, dortmund"
+        val intersectionAddress2 = "${addressNormalizer.normalize(street2)} / ${addressNormalizer.normalize(street1)}, dortmund"
+
+        var result = loadFromCache(intersectionAddress);
+        if (result != null) return result
+
+        result = loadFromCache(intersectionAddress2);
+        if (result != null) return result
+
+        result = intersectionService.geocode("$street1 / $street2")?.let {
+            val coords = Geocoordinates(it.first, it.second)
+            putToCache(intersectionAddress, coords)
+            coords
+        }
+
+        // fallback with reversed intersection
+        if (result == null) {
+            result = intersectionService.geocode("$street2 / $street1")?.let {
+                val coords = Geocoordinates(it.first, it.second)
+                putToCache(intersectionAddress2, coords)
+                coords
+            }
+        }
+
+        return result
     }
 
     // Schnittpunkt zweier Liniensegmente berechnen

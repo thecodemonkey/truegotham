@@ -11,6 +11,8 @@ interface ImportRepository : JpaRepository<RawStatement, UUID> {
 
     fun findTopByStatusOrderByUnixtsAsc(status: ImportStatus): RawStatement?
 
+    fun findAllByUnixtsGreaterThan(unixts: Long): List<RawStatement>
+
     // find first element where the status IS NOT equal to the passed status
     fun findTopByStatusNotOrderByUnixtsAsc(status: ImportStatus): RawStatement?
 }

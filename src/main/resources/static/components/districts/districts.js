@@ -1,4 +1,5 @@
 let SELECTED_DISTRICT = null;
+let SELECTED_DISTRICT_LIST = null;
 
 const DISTRICTS = {
   view: async () => {

@@ -19,6 +19,7 @@ const CHART_LINE_COLORS = [
   '#1abc9c'  // Türkis
 ];
 
+let lastHoveredBubbleIndex = null;
 
 function createBarChart(ctx, dataSet, label, isHorizontal) {
   const bgColors = dataSet.data.map((_, index) => index < 1 ? '#ff4f4f' : chartColors.barBackground);
@@ -105,7 +106,7 @@ function createLineChart(ctx, dataSets, labels) {
           data: ds.data,
           borderColor: col || '#000',
           backgroundColor: ds.backgroundColor || 'transparent',
-          borderWidth: 1,
+          borderWidth: .5,
           fill: false,
           tension: 0.3,
           pointRadius: 2,
@@ -163,10 +164,26 @@ function createTimelineChart(ctx, data) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      onClick: (event, activeElements) => {
-        if (activeElements.length > 0) {
-          const clickedPoint = event.chart.data.datasets[activeElements[0].datasetIndex].data[activeElements[0].index];
-          console.log('Bubble geklickt:', clickedPoint);
+      onClick: async (event, elements) => {
+        if (elements.length > 0) {
+          //const clickedPoint = event.chart.data.datasets[activeElements[0].datasetIndex].data[activeElements[0].index];
+          //console.log('Bubble geklickt:', clickedPoint);
+          const bubbleData = event.chart.data.datasets[elements[0].datasetIndex].data[elements[0].index];
+
+          await CHARTS.actionBubbleClicked(bubbleData);
+        }
+      },
+      onHover: async (event, elements) => {
+        if (elements.length) {
+          const index = elements[0].index;
+          if (index !== lastHoveredIndex) {
+            lastHoveredIndex = index;
+            const bubbleData = event.chart.data.datasets[elements[0].datasetIndex].data[index];
+            await CHARTS.actionBubbleHovered(bubbleData)
+          }
+        } else {
+          lastHoveredIndex = null;
+          await CHARTS.actionBubbleUnHovered();
         }
       },
       plugins: {

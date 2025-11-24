@@ -9,6 +9,12 @@
   margin-top: 25px;
   font-family: "Courier New", serif;
 
+  a.navi-item {
+    font-family: "Courier New", serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
   .navi-item {
     cursor: pointer;
     letter-spacing: 2px;
@@ -17,6 +23,8 @@
     &:hover{
       color: #ff6868;
     }
+
+
   }
 
   .lang {

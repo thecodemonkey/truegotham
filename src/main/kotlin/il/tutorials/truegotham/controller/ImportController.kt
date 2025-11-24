@@ -1,6 +1,7 @@
 package il.tutorials.truegotham.controller
 
 import il.tutorials.truegotham.service.ImportService
+import il.tutorials.truegotham.utils.DateUtils
 import io.swagger.v3.oas.annotations.Parameter
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -26,4 +27,10 @@ class ImportController(
 
     @PostMapping("/api/import/process/next/incident")
     fun processIncidentItem() = importService.processIncidentItem()
+
+    @PostMapping("/api/import/process/from/{date}")
+    fun processFromDate(
+        @Parameter( example = "10.11.2025 – 00:00" )
+        @PathVariable date: String)
+        = importService.processNextFrom(DateUtils.toUnixts(date)!!)
 }

@@ -185,3 +185,21 @@
     }
   }
 }
+
+.incident-kinds {
+  margin-top: -1rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+
+  .chip-kind {
+    background-color: #0000002e;
+    color: #b1b1b1;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: .8rem;
+    letter-spacing: 1px;
+  }
+}

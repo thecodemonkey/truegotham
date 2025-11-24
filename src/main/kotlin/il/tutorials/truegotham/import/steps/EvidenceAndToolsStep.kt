@@ -22,7 +22,14 @@ class EvidenceAndToolsStep(
         val res = ai.extractEvidenceAndTools(context.rawStatement.content!!)
 
         if(res.weapons.isNotEmpty())  context.incident.tools.addAll(res.weapons);
-        if(res.evidence.isNotEmpty())  context.incident.evidence.addAll(res.evidence);
+        if(res.evidence.isNotEmpty()) {
+            val str = res.evidence.joinToString(", ")
+            res.evidence = if (str.length > 250)
+                str.substring(0, 200).split(",")
+            else
+                res.evidence
+            context.incident.evidence.addAll(res.evidence);
+        }
 
         incidentRepo.save(context.incident)
     }

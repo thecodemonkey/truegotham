@@ -21,6 +21,7 @@ class IncidentLocation(
     var city: String? = null,
     var street: String? = null,
     var street2: String? = null,
+    var district: String? = null,
     var place: String? = null,
 
     @Embedded

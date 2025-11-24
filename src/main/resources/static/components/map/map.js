@@ -3,6 +3,7 @@ let GEO_JSON_LAYER = null;
 let {lat, lon} = { lat: 0, lon: 0};
 let MARKER_ON_MAP = [];
 let MAP_VISIBLE = false;
+let KNOWN_DISTRICTS = [];
 
 const MAP = {
   view: async () => {
@@ -75,7 +76,10 @@ const MAP = {
 
     // Zoom Event Listener hinzufügen
     MAP_INSTANCE.on('zoomend', () => {
-      if (DETAILS_MODE === true || !MAP_VISIBLE) return;
+
+      MAP.updateDistrictLabelOpacity()
+
+      //if (DETAILS_MODE === true || !MAP_VISIBLE) return;
 
       const zoom = MAP_INSTANCE.getZoom();
 
@@ -95,7 +99,8 @@ const MAP = {
       // Aktualisiere alle Layer
       if (GEO_JSON_LAYER) {
         GEO_JSON_LAYER.eachLayer((layer) => {
-          if (SELECTED_DISTRICT === layer.feature.properties?.statistischer_bezirk) {
+          if (SELECTED_DISTRICT === layer.feature.properties?.statistischer_bezirk ||
+              (SELECTED_DISTRICT_LIST && SELECTED_DISTRICT_LIST.indexOf(layer.feature.properties?.statistischer_bezirk) > -1 )) {
             layer.bringToFront();
             return;
           }
@@ -268,6 +273,9 @@ const MAP = {
 
       GEO_JSON_LAYER = layer;
 
+      KNOWN_DISTRICTS = GEO_JSON_LAYER.getLayers()
+            .map(l => l.feature?.properties?.statistischer_bezirk?.toLowerCase());
+
       try {
         const bounds = layer.getBounds();
         if (bounds.isValid && !bounds.isEmpty()) {
@@ -319,15 +327,19 @@ const MAP = {
     const msg = description || 'In der Nacht zu Freitag (26. September) fiel der Fahrer eines Mercedes am Ostwall in Dortmund durch sein rasantes und riskantes Fahrverhalten auf. Ein aufmerksamer Zeuge alarmierte die Polizei und verhinderte so möglicherweise einen schweren Verkehrsunfall. Bei der anschließenden Kontrolle des Fahrzeugs kam Überraschendes ans Licht.';
     const customIcon = L.divIcon({
       className: '',
-      html: `<div class="point-marker red">${index}</div>`,
+      html: `<div class="point-marker red" id="hotspoMarker${index}">${index}</div>`,
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });
 
     await delay(100)
-    return L.marker(coords, {icon: customIcon})
+    const marker =  L.marker(coords, {icon: customIcon})
             .bindTooltip(msg, {direction: 'auto', className: 'custom-tooltip', offset: [0, 0]  })
             .addTo(MAP_INSTANCE);
+
+    marker.mid = `marker_${index}`;
+
+    return marker;
   },
   flyOUT: async() => {
     MAP_INSTANCE.flyTo([lat, lon], 12, {
@@ -391,18 +403,30 @@ const MAP = {
 
     //console.log(`[MAP] updateDistrict ${districtName} -> level ${level}`);
 
+    const calculateColor = (value, startHex, endHex, power = 0.4) => {
+      const t = Math.pow(value / 100, power); // 0.4 stärker boosten
+      const s = parseInt(startHex.slice(1), 16);
+      const e = parseInt(endHex.slice(1), 16);
 
-    let col = ['#1c4249', '#1f3c41',  '#283439',  '#2b2f33', '#2f2b2e', '#33282a', '#392122', '#3a1f20', '#3e1c1c', '#3f1a1a'];
+      const r = Math.round(((s >> 16) & 255) + (((e >> 16) & 255) - ((s >> 16) & 255)) * t);
+      const g = Math.round(((s >> 8) & 255) + (((e >> 8) & 255) - ((s >> 8) & 255)) * t);
+      const b = Math.round((s & 255) + ((e & 255) - (s & 255)) * t);
+
+      return "#" + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1);
+    }
+
+    //let col = ['#1c4249', '#1f3c41',  '#283439',  '#2b2f33', '#2f2b2e', '#33282a', '#392122', '#3a1f20', '#3e1c1c', '#3f1a1a'];
+    let col = calculateColor(level, '#1e434a', '#731818', 0.5);
 
     //const color = level < 1 ? '#1b4249' : '#3f1a1a';
     const strokeColor = level < 1 ? '#000' : '#000';
 
-    let lwl = Math.round(level / 10);
-    if (lwl > col.length-1) lwl = col.length-1;
+/*    let lwl = Math.round(level / 10);
+    if (lwl > col.length-1) lwl = col.length-1;*/
 
-    console.log(`[MAP] updateDistrict ${districtName} -> level ${lwl}`);
+    console.log(`[MAP] ${i} updateDistrict ${districtName} -> level ${level} - ${col}`);
 
-    const strokeWeight = lwl > 8 ? 1 : 0.5;
+    //const strokeWeight = lwl > 8 ? 1 : 0.5;
 
     // Durchsuche alle Layer und aktualisiere den passenden Bezirk
     GEO_JSON_LAYER.eachLayer((layer) => {
@@ -410,7 +434,7 @@ const MAP = {
       if (properties?.statistischer_bezirk === districtName) {
         const style = {
           color: strokeColor,
-          fillColor: col[lwl],
+          fillColor: col,
           weight: 1,
           fillOpacity: 1
         };
@@ -423,13 +447,19 @@ const MAP = {
 
     //MAP.flyOUT({lat, lon}, 10);
   },
-  resetAllDistricts: async () => {
+  resetAllDistricts: async (exceptDistricts) => {
     if(GEO_JSON_LAYER?.getLayers()) {
       for(const layer of GEO_JSON_LAYER.getLayers()){
-        layer.setStyle({
-          fillOpacity: 0,
-          opacity: 0
-        });
+
+        const isExceptedDistrict = exceptDistricts.indexOf(layer.feature?.properties?.statistischer_bezirk) > -1;
+
+        if (!exceptDistricts || isExceptedDistrict) {
+          layer.setStyle({
+            fillOpacity: 0,
+            opacity: 0
+          });
+        }
+
       }
     }
   },
@@ -450,6 +480,8 @@ const MAP = {
       MARKER_ON_MAP.forEach(marker => {
         MAP_INSTANCE.removeLayer(marker);
       });
+
+      MARKER_ON_MAP = [];
     }
   },
 
@@ -590,40 +622,60 @@ const MAP = {
   },
   getLayerByDistrictName: (districtName) => {
     return GEO_JSON_LAYER ? GEO_JSON_LAYER.getLayers().find(layer => {
-      return layer.feature?.properties?.statistischer_bezirk === districtName;
+      return layer.feature?.properties?.statistischer_bezirk?.toLowerCase() === districtName.toLowerCase();
     }) : null;
   },
+  getCoordsByDistrictName: (districtName) => {
+    const distLayer = MAP.getLayerByDistrictName(districtName);
 
-  showCrimeDistrict: async (districName, districZoom = false) => {
-    const layer = MAP.getLayerByDistrictName(districName);
-    await MAP.resetAllDistricts();
+    return distLayer?.getCenter();
+  },
 
-    if (districZoom) {
-      layer.setStyle({
-        color: '#ff435f',
-        opacity: 1,
-        weight: 1,
-        fillOpacity: 0.05,
-        fillColor: '#ff435f'
-      });
+  showCrimeDistrict: async (districts, districZoom = false) => {
+    SELECTED_DISTRICT_LIST = districts;
 
-      await MAP.flyToBounds(layer.getBounds());
+    const isSingle = districts && districts.length === 1;
+    await MAP.resetAllDistricts(districts);
+
+    for(const districtName of districts) {
+
+      const layer = MAP.getLayerByDistrictName(districtName);
+
+
+      if (districZoom) {
+        layer.setStyle({
+          color: '#ff435f',
+          opacity: 1,
+          weight: 1,
+          fillOpacity: 0.05,
+          fillColor: '#ff435f'
+        });
+
+        if (isSingle) await MAP.flyToBounds(layer.getBounds());
+      }
     }
   },
 
   updateIncidentHotspots: async (locations) => {
+    await MAP.removeAllMarkers();
 
     if (locations && locations.length > 0) {
       let coords = [];
+      let districts = [];
+      districts.push(CURRENT_STATEMENT.district);
 
       for(let l of locations) {
         if (l.coordinates && l.coordinates.lat && l.coordinates.lon) {
           let c = [l.coordinates.lat, l.coordinates.lon];
           coords.push(c)
+          const dist = await MAP.getDistrictNameByCoordinates(c);
+          if (dist) districts.push(dist)
           const m = await MAP.createHotSpotMarker(c, l.description, locations.indexOf(l)+1);
           MARKER_ON_MAP.push(m)
         }
       }
+
+      await MAP.showCrimeDistrict(districts);
 
       if (coords.length === 1) {
         // show single hotspot
@@ -633,7 +685,28 @@ const MAP = {
         const bounds = L.latLngBounds(coords);
         await MAP.flyToBounds(bounds);
       }
+    } else {
+      await MAP.showCrimeDistrict([CURRENT_STATEMENT.district]);
     }
+  },
+
+  hoverHotspot: async (bubble) => {
+    $(`#hotspoMarker${bubble.number}`).addClass('hovered');
+  },
+  unhoverHotspot: async (bubble) => {
+    $(`.point-marker`).removeClass('hovered');
+  },
+
+  zoomToHotspot: async (bubble) => {
+    const marker = MARKER_ON_MAP.filter(m => m.mid === `marker_${bubble.number}`)
+
+    const coords = marker && marker.length > 0? marker[0]._latlng : null;
+
+    if (coords) {
+      console.log('marker geklickt:', marker);
+      await MAP.flyIN([coords.lat, coords.lng], 16, 2);
+    }
+
   },
 
   showCrimeDetails: async (loc, address) => {
@@ -676,6 +749,11 @@ const MAP = {
   },
 
   // district labels
+  getDistrictNameByCoordinates: async (coords) => {
+    const layers = await MAP.getLayersByCoords([[coords[1], coords[0]]]);
+
+    return layers && layers.length > 0 ? layers[0].feature?.properties?.statistischer_bezirk : null;
+  },
   createDistrictLabel: (feature, layer) => {
     const center = layer.getBounds().getCenter();
     const label = L.divIcon({
@@ -705,5 +783,12 @@ const MAP = {
       const lblClass =  layer._districtLabel._icon.classList;
       if (!lblClass.contains('active')) lblClass.add('active');
     }
+  },
+  updateDistrictLabelOpacity: () => {
+    const z = MAP_INSTANCE.getZoom();
+    const visible = z >= 11 && z <= 14;
+
+    $('.district-label').css('opacity', visible ? '1' : '0');
+
   }
 }

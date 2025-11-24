@@ -26,9 +26,9 @@ class ImportFlow (
     fun init() {
         steps.add(initialStep)
         steps.add(crimeClassificationStep)
+        steps.add(locationsStep)
         steps.add(summaryStep)
         steps.add(coverImageStep)
-        steps.add(locationsStep)
         steps.add(offenderProfileStep)
         steps.add(offenderProfileImageStep)
         steps.add(offencesStep)
