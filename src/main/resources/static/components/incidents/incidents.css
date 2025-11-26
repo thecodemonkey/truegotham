@@ -29,6 +29,7 @@
       &.in {
         left: 0;
         opacity: 1;
+        z-index: 99;
       }
 
       > div {
@@ -91,6 +92,29 @@
       font-family: "Arial", serif !important;
       font-size: 1rem !important;
       font-weight: 100 !important;
+    }
+  }
+
+  .next-profile-btn {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ff4f4f;
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+    width: 35px;
+    display: inline-block;
+
+    &:hover{
+      background-color: #00000020;
+    }
+
+    &.active {
+      text-decoration: none;
+      cursor: default;
+      background-color: #00000040;
     }
   }
 

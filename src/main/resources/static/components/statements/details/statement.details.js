@@ -6,6 +6,8 @@ const STATEMENT_DETAILS = {
   init: async () => {
 
     $('.details-tab span').off().on('click', STATEMENT_DETAILS.onTabClick)
+    $('.details-cockpit .back-btn').off().on('click', DETAILS.close)
+
 
     return this;
   },

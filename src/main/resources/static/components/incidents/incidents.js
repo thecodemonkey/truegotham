@@ -5,6 +5,11 @@ const INCIDENTS = {
     return await loadHTML('incidents');
   },
   init: async () => {
+    $('#districtsCard').off().on('click', '.next-profile-btn',
+         async (e) => await INCIDENTS.onMenueItemClick(e)
+    );
+
+
     return this;
   },
   show: async () => {
@@ -67,11 +72,22 @@ const INCIDENTS = {
     //await MAP.showCrimeDetails(CURRENT_STATEMENT.location, 'Dortmund Kampstraße');
   },
   updateProfileData: async (profiles) => {
-    const person = profiles[0];
 
-    await DISTRICTS.showProfileImage(`/api/districts/${person.imageId}/image`)
+    await DISTRICTS.showProfileImage(`/api/districts/${profiles[0].imageId}/image`)
 
-    let html = `
+    for(const person of profiles) {
+      const pos = profiles.indexOf(person);
+
+      let html = `
+            <tr>
+                <td colspan="2">
+                ${profiles.map((p, i) =>
+          `<span class="next-profile-btn ${(pos === i)? 'active': ''}" data-item="profile${i}">${i + 1}</span>`
+      )
+                .join(' ')
+                }
+                </td>
+            </tr>
             <tr>
               <td data-trans="profile_age">Alter</td>
               <td>${person.age}</td>
@@ -82,21 +98,27 @@ const INCIDENTS = {
             </tr>
             <tr>
               <td data-trans="profile_gender">Geschlecht</td>
-              <td data-trans="gender_${person.gender.toLowerCase()}">${TRANSLATION.translate(`gender_${person.gender}`)}</td>
+              <td data-trans="gender_${person.gender.toLowerCase()}">${TRANSLATION.translate(
+          `gender_${person.gender}`)}</td>
             </tr>
-              ${person.hair ?  `<tr><td data-trans="profile_hair">Haare</td><td>${person.hair}</td></tr>` : ''}
+              ${person.hair
+          ? `<tr><td data-trans="profile_hair">Haare</td><td>${person.hair}</td></tr>`
+          : ''}
             <tr>
               <td data-trans="profile_drugs_and_alcohol">Drogen/Alkohol Test</td>
               <td>${person.drugTest}/${person.alcoholTest}</td>
             </tr>
-            ${person.look ?  `<tr><td data-trans="profile_look">Aussehen</td><td>${person.look}</td></tr>` : ''}
+            ${person.look
+          ? `<tr><td data-trans="profile_look">Aussehen</td><td>${person.look}</td></tr>`
+          : ''}
             <tr>
               <td data-trans="profile_behaviour">Verhalten</td>
               <td>${person.summary}</td>
             </tr>            
     `;
 
-    $('#profileData').html(html);
+      $('#profileData' + pos).html(html);
+    }
   },
   updateEvidence: async (cs) => {
     let data =
@@ -160,8 +182,20 @@ const INCIDENTS = {
     $e.addClass('hide');
 
     await delay(300);
-    $e.text(title);
+
+    if (title.startsWith('profile')) {
+      $e.text(INCIDENTS.getProfileTitle(title));
+    } else {
+      $e.text(title);
+    }
+
+
 
     $e.removeClass('hide');
+  },
+  getProfileTitle: (title) => {
+    const i = parseInt(title.replace('profile', ''));
+
+    return `${i+1}'er Verdächtiger`;
   }
 }

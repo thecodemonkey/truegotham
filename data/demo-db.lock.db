@@ -1,6 +1,0 @@
-#FileLock
-#Mon Nov 24 13:20:12 CET 2025
-hostName=host.docker.internal
-id=19ab5ceade00853bd621eb711cc2ea28c2f092230f1
-method=file
-server=192.168.0.42\:64270
