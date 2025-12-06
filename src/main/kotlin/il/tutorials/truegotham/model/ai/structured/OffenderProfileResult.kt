@@ -7,14 +7,13 @@ data class OffenderProfileResults(
     val profiles: List<OffenderProfileResult>
 )
 
-
-
 data class OffenderProfileResult(
     val age: Int?,
     val housing_situation: String?,
     val gender: String?,
     val hair: String?,
     val look: String?,
+    val origin: String?,
     val drugTest: Boolean?,
     val alkoholTest: Boolean?,
     val psychological_assessment: String?

@@ -92,12 +92,19 @@ const CHARTS = {
         }
       });
 
-      alltimes.sort()
+      // alltimes.sort()
+      alltimes.sort((a, b) => a - b)
       min = alltimes[0]
       max = alltimes[alltimes.length -1 ]
 
       min = min - 0.5;
       max = max + 0.5;
+
+      if (min > max) {
+        const m = max;
+        max = min;
+        min = m;
+      }
 
       CHARTS.all.crimes.options.scales.x.min = round(min);
       CHARTS.all.crimes.options.scales.x.max = round(max);

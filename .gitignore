@@ -5,6 +5,10 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+
+
+
+
 ### STS ###
 .apt_generated
 .classpath
@@ -67,3 +71,8 @@ replay_pid*
 node_modules
 backup
 .idea
+data/demo-db.mv.db
+/data
+/data/**
+demo-db.mv.db
+*.db

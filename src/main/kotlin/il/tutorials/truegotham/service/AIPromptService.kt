@@ -22,6 +22,9 @@ class AIPromptService(val oai: AIService) {
     @ValueContent("classpath:prompts/offender.profile.multiple.txt")
     lateinit var OFFENDER_PROFILE_MULTIPLE: String
 
+    @ValueContent("classpath:prompts/offender.profile.multiple2.txt")
+    lateinit var OFFENDER_PROFILES_PROMPT: String
+
     val promptClasses: List<KClass<out Any>> = listOf(
         CrimeClassificationResult::class,
         CrimeIsCrimeResult::class,
@@ -109,6 +112,12 @@ class AIPromptService(val oai: AIService) {
             reasoning = ReasoningEffort.MEDIUM
         )
     )
+
+    fun generateOffenderImage(descriptions: List<String>) = oai.generateImage(
+            OFFENDER_PROFILES_PROMPT.replace("[PROFILES]", descriptions.joinToString("\n\n"))
+                  .replace("[AMOUNT]", descriptions.size.toString())
+        )
+
 
     fun generateOffenderImage(description: String, multiple: Boolean): ByteArray {
         val prompt = if (multiple)  OFFENDER_PROFILE_MULTIPLE else OFFENDER_PROFILE_SINGLE

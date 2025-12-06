@@ -25,7 +25,8 @@ class OffenderProfileStep(
                     id = UUID.randomUUID(),
                     age = l.age ?: -1,
                     location = l.housing_situation ?: "",
-                    gender = Gender.MALE, //if (l.gender.isNullOrBlank()) Gender.MALE else Gender.FEMALE,
+                    gender = runCatching { Gender.valueOf(l.gender?.uppercase() ?: "") }
+                              .getOrElse { Gender.UNKNOWN },
                     hair = l.hair ?: "",
                     behaviour = "",
                     drugTest = l.drugTest ?: false,
@@ -33,6 +34,7 @@ class OffenderProfileStep(
                     summary = l.psychological_assessment ?: "",
                     motive = "",
                     look = l.look ?: "",
+                    origin = l.origin ?: "",
                     incident = context.incident
                 )
             )

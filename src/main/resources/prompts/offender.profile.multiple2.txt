@@ -1,0 +1,25 @@
+Erstelle ein fotorealistisches Schwarz/Weiß-Portrait im epischen SinCity/Batman Stil von einem oder mehreren Tätern.
+
+
+Wichtige Vorgaben:
+
+- Schwarz/Weiß-Stil, starke Kontraste, dramatische Schatten.
+- fotorealistischer ultradetailreicher rauer Zeichen Comic Look
+- Batman darf in der Szene nicht vorkommen!
+- keine Panels und keine Sprechblasen
+- Die Szenen sollen möglichst realistisch sein, also keine fiktiven Handlungen, Charaktere oder Gegenstände enthalten.
+- keine Beschriftungen, Plakate oder Schilder enthalten
+- im Bild sollen keine Gegenstände erscheinen, nur die Gesichter der Täter
+- Im Bild soll die exakte Anzahl der Täter abgebildet werden
+- Im Hintergrund sollen keine weiteren Personen erscheinen
+- Keine schönlinge, die Gesichter sollten nicht schön sein
+- Es müssen exakt [AMOUNT] Personen abgebildet werden
+- Der Täter soll vom Kopf bis zur Brust abgebildet sein
+- Die Gesichter sollen unterschiedliche Gesichtsausdrücke zeigen (z.B. Wut, Trauer, Angst, Verachtung, etc.)
+
+
+
+Hier sind die Täterprofile:
+
+[PROFILES]
+

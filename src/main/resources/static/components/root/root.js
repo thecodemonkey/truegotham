@@ -1,5 +1,6 @@
 let INSIGHTS = null;
 let SETTINGS = null;
+let STARTED = false;
 
 async function init(){
   console.log('loaded...');
@@ -54,8 +55,10 @@ function isValidScreenSize() {
           <h1 class="glitch" data-text="True Gotham">True Gotham</h1>
           <br/>
           <p>
-Nur auf großen Monitoren entfaltet sich das wahre Gesicht dieser Seite. 
-Öffne sie erneut auf Desktop oder verliere dich in der Dunkelheit.
+            Diese Stadt zeigt nicht jedem ihr wahres Gesicht. 
+            Nur mit schwerem Gerät öffnest du ihre Tore. 
+            Lass deine Spielzeugpistole fallen und komm mit einem ordentlichen Desktop 
+            ab 1280×720px Auflösung zurück oder verstumme in der Finsternis!
           </p>
           </div>
         </div>
@@ -70,6 +73,9 @@ Nur auf großen Monitoren entfaltet sich das wahre Gesicht dieser Seite.
 }
 
 function collapseRootClaim(expand){
+
+  if (STARTED) return;
+
   if (expand === true)
     $('.root-claim').removeClass('off');
   else
@@ -78,6 +84,7 @@ function collapseRootClaim(expand){
 
 async function start(){
 
+  STARTED = true;
   INSIGHTS = await API.insights();
 
 

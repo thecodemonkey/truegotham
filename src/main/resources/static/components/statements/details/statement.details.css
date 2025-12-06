@@ -212,6 +212,8 @@
   }
 
   #closeDetails {
+    opacity: 0;
+
     width: 30px;
     height: 30px;
     font-size: 1.2rem;

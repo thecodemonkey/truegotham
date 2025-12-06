@@ -95,14 +95,25 @@
     }
   }
 
+  #profile_navi {
+    z-index: 9;
+    opacity: 1;
+    transition: opacity .25s, height .25s;
+    margin: .5rem 0;
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
   .next-profile-btn {
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 100;
+    font-size: 1rem;
     color: #ff4f4f;
     text-decoration: underline;
     text-align: center;
-    padding: 5px;
+    padding: 7px 5px;
     border-radius: 25px;
     width: 35px;
     display: inline-block;

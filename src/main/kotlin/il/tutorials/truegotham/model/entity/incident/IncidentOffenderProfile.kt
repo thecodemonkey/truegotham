@@ -29,6 +29,8 @@ data class IncidentOffenderProfile(
     @Column(columnDefinition = "TEXT")
     val look: String,
 
+    @Column(columnDefinition = "TEXT")
+    val origin: String,
 
     @Column(columnDefinition = "TEXT")
     val summary: String,

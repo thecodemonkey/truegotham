@@ -6,7 +6,9 @@ const INCIDENTS = {
   },
   init: async () => {
     $('#districtsCard').off().on('click', '.next-profile-btn',
-         async (e) => await INCIDENTS.onMenueItemClick(e)
+         async (e) => {
+           await INCIDENTS.onMenueItemClick(e)
+         }
     );
 
 
@@ -29,6 +31,7 @@ const INCIDENTS = {
   },
   close: async () => {
     $('#districtsCard .horizontal-slider').addClass('hidden');
+    $('#profile_navi').addClass('hidden');
   },
   update: async (cs) => {
 
@@ -75,49 +78,60 @@ const INCIDENTS = {
 
     await DISTRICTS.showProfileImage(`/api/districts/${profiles[0].imageId}/image`)
 
-    for(const person of profiles) {
+    await INCIDENTS.updateProfileNavi(profiles);
+
+    const row = (field, value) => {
+      if (!value || value.toString()
+                         .toLowerCase()
+                         .trim()
+                         .replace('null', '')
+                         .replace('0', '')
+                         .length < 1)
+        return '';
+
+      return `<tr>
+        <td data-trans="profile_${field}"></td>
+        <td>${value}</td>
+      </tr>`
+    }
+
+    for (const person of profiles) {
       const pos = profiles.indexOf(person);
 
       let html = `
-            <tr>
-                <td colspan="2">
-                ${profiles.map((p, i) =>
-          `<span class="next-profile-btn ${(pos === i)? 'active': ''}" data-item="profile${i}">${i + 1}</span>`
-      )
-                .join(' ')
-                }
-                </td>
-            </tr>
-            <tr>
-              <td data-trans="profile_age">Alter</td>
-              <td>${person.age}</td>
-            </tr>
-            <tr>
-              <td data-trans="profile_location">Wohnort</td>
-              <td>${person.location}</td>
-            </tr>
+            ${row('age', person.age)}
+            ${row('location', person.location)}
             <tr>
               <td data-trans="profile_gender">Geschlecht</td>
               <td data-trans="gender_${person.gender.toLowerCase()}">${TRANSLATION.translate(
           `gender_${person.gender}`)}</td>
             </tr>
-              ${person.hair
-          ? `<tr><td data-trans="profile_hair">Haare</td><td>${person.hair}</td></tr>`
-          : ''}
-            <tr>
-              <td data-trans="profile_drugs_and_alcohol">Drogen/Alkohol Test</td>
-              <td>${person.drugTest}/${person.alcoholTest}</td>
-            </tr>
-            ${person.look
-          ? `<tr><td data-trans="profile_look">Aussehen</td><td>${person.look}</td></tr>`
-          : ''}
-            <tr>
-              <td data-trans="profile_behaviour">Verhalten</td>
-              <td>${person.summary}</td>
-            </tr>            
+            ${row('hair', person.hair)}
+            ${row('drugs_and_alcohol', person.drugTest + '/' + person.alcoholTest)}
+            ${row('look', person.look)}
+            ${row('behaviour', person.summary)}
     `;
 
       $('#profileData' + pos).html(html);
+    }
+  },
+  updateProfileNavi: async (profiles) => {
+    const isMultiple = profiles.length > 1;
+    const $nav = $('#profile_navi')
+
+    if (isMultiple) {
+      $nav.removeClass('hidden');
+
+      const html = profiles.slice(0, 4)
+                           .map((p, i) =>
+                            `<span class="next-profile-btn ${i < 1 ? 'active' : '' }" data-item="profile${i}">${i + 1}</span>`
+                           )
+                           .join('\n');
+      $nav.html(html);
+
+    } else {
+      $nav.addClass('hidden');
+      $nav.html('');
     }
   },
   updateEvidence: async (cs) => {
@@ -158,7 +172,17 @@ const INCIDENTS = {
   },
   onMenueItemClick: async (e) => {
     const $e = $(e.currentTarget);
+    const $nav = $('#profile_navi');
     SELECTED_INCIDENT_DETAIL = $e.data('item')
+
+    if (SELECTED_INCIDENT_DETAIL.startsWith('profile')){
+      $('.next-profile-btn[data-item^="profile"]').removeClass('active');
+      $(`.next-profile-btn[data-item="${SELECTED_INCIDENT_DETAIL}"]`).addClass('active');
+
+      if ($nav.hasClass('hidden')) $nav.removeClass('hidden');
+    } else {
+      $nav.addClass('hidden');
+    }
 
     await INCIDENTS.updateTitle(SELECTED_INCIDENT_DETAIL);
 

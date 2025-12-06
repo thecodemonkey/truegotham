@@ -20,7 +20,7 @@ class OffenderProfileImageStep(
     override fun status() = ImportStatus.OFFENDER_PROFILE_IMAGE_GENERATION
 
     override fun run(context: ImportContext) {
-        var profiles: List<OffenderProfileResult> =
+        val profiles: List<OffenderProfileResult> =
                 context.incident.offenderProfiles.map {
                     OffenderProfileResult(
                         age = it.age,
@@ -28,6 +28,7 @@ class OffenderProfileImageStep(
                         gender = it.gender.toString(),
                         hair = it.hair,
                         look = it.look,
+                        origin = it.origin,
                         drugTest = it.drugTest,
                         alkoholTest = it.alcoholTest,
                         psychological_assessment = it.summary
@@ -40,7 +41,13 @@ class OffenderProfileImageStep(
             if (multiple) profiles else profiles.first()
         )
 
-        val primgbtarray = ai.generateOffenderImage(profilesJSON, multiple)
+
+        val profileDescriptions = createProfileDescriptions(profiles);
+        println("\n\n" + profileDescriptions.joinToString(separator = "\n\n") + "\n\n")
+
+
+        val primgbtarray = ai.generateOffenderImage(profileDescriptions)
+            //ai.generateOffenderImage(profilesJSON, multiple)
 
         val imgProfileEntity = imageRepository.save(
             Image(UUID.randomUUID(), "image/jpeg", primgbtarray)
@@ -53,5 +60,33 @@ class OffenderProfileImageStep(
         incidentRepo.save(context.incident)
     }
 
+    fun createProfileDescriptions(profiles: List<OffenderProfileResult>) =
+            profiles.mapIndexed { index, profile ->
+                buildString {
+                    append("Profil des ${index + 1}. Täters:\n\n")
 
+                    if (hasNoValue(profile.look) && (profile.age == null || profile.age == 0) ) {
+                        append("Gesicht mit Anonymous Maske")
+                    } else {
+                        profile.age?.takeIf { it > 0 }?.let { append("$it Jahre alt. ") }
+                        profile.gender?.takeIf { hasValue(it) }?.let { append("${resolveGender(it)} ") }
+                        profile.hair?.takeIf { hasValue(it) }?.let { append("$it Haare. ") }
+                        profile.look?.takeIf { hasValue(it) }?.let { append("$it. ") }
+                        profile.origin?.takeIf { hasValue(it) }?.let { append("Herkunft: $it. ") }
+                    }
+                }
+            }
+
+    fun resolveGender(gender: String) =
+        if (gender.lowercase() == "male") " männlich, "
+            else
+                if (gender.lowercase() == "female") " weiblich, " else " "
+
+    fun clear(value: String) =
+        value.lowercase().replace("null", "").trim()
+
+    fun hasValue(value: String) = clear(value).isNotBlank()
+
+    fun hasNoValue(value: String?) =
+        value.isNullOrBlank() || clear(value).isBlank()
 }

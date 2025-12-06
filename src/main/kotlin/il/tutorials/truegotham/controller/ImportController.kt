@@ -25,8 +25,8 @@ class ImportController(
     @PostMapping("/api/import/process/next/single")
     fun processNextItemSingleStep() = importService.processNextSingle()
 
-    @PostMapping("/api/import/process/next/incident")
-    fun processIncidentItem() = importService.processIncidentItem()
+/*    @PostMapping("/api/import/process/next/incident")
+    fun processIncidentItem() = importService.processIncidentItem()*/
 
     @PostMapping("/api/import/process/from/{date}")
     fun processFromDate(
