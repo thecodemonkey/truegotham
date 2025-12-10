@@ -3,7 +3,7 @@ const OVERLAY = {
     return await loadHTML('overlay');
   },
   init: async () => {
-    $('#overlay').off().on('click', async (e) => {
+    $('#overlay .close-overlay-btn').off().on('click', async (e) => {
         await OVERLAY.close();
     });
 

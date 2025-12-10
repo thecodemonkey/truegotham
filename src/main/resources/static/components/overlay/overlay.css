@@ -26,5 +26,85 @@
     box-shadow: 10px 10px 25px 0 #000000f0;
     border: 1px solid #ffffff20;
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 45px 90px 45px 45px;
+
+    #overlay-navi {
+      flex: .1;
+
+      ul {
+        list-style: none;
+
+        li {
+          font-size: 1.2rem;
+          padding: 5px 0;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #overlay-content {
+      flex: .9;
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      font-family: "Courier New", sans-serif;
+      overflow: auto;
+      padding-right: 25px;
+
+      h2, h3 {
+        font-weight: bold;
+        text-align: left;
+        color: #ff4f4f;
+        text-shadow: 0 0 25px #ff4f4fA0;
+      }
+
+      h3{
+        margin-top: 4rem;
+        font-weight: bold;
+      }
+
+      .content-multi {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4rem;
+
+        p {
+          flex: .5;
+          font-size: 1.4rem;
+        }
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .close-overlay-btn {
+      rotate: 90deg;
+      width: 34px;
+      height: 34px;
+      background-color: #aaaaaa30;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      border-radius: 25px;
+      padding-bottom: 2px;
+
+      cursor: pointer;
+      transition: background-color .3s;
+
+      &:hover{
+        background-color: #aaaaaa80;
+      }
+    }
   }
 }
