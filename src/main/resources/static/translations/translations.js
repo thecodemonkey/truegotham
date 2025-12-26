@@ -1,9 +1,12 @@
 let CURRENT_TRANSLATIONS = null;
+let CURRENT_LANGUAGE = '';
 
 const TRANSLATION = {
   init: async () => {
     let lng = TRANSLATION.getBrowserLang();
     if (!lng) lng = 'en';
+
+    CURRENT_LANGUAGE = lng;
 
     let e = $(`.lang .lng:contains(${lng})`).get();
     if (!e) e = $(".lang .lng:contains('en')").get();
@@ -42,6 +45,7 @@ const TRANSLATION = {
     const lng = $e.text();
     $e.addClass('active');
     await TRANSLATION.resolveTranslations(lng);
+    CURRENT_LANGUAGE = lng;
   },
   loadTranslations: async (lang) => {
     try {
@@ -58,5 +62,30 @@ const TRANSLATION = {
   getBrowserLang: () => {
     const lang = navigator.language || navigator.userLanguage;
     return lang.substring(0, 2).toLowerCase();
+  },
+  loadDynamicScript: async (path)  => {
+    $('script[data-dyn]').remove();
+
+    console.log('load script: ' + path)
+
+    return new Promise((resolve, reject) => {
+      $('<script>', { src: path, 'data-dyn': '' })
+      .appendTo('head')
+      .on('load', () => {
+        console.log(path + ' geladen');
+        resolve();
+      })
+      .on('error', (e) => {
+          console.log('error on loading script: ', e);
+          reject(new Error(path + ' konnte nicht geladen werden'))
+      }
+      );
+    });
+  },
+  loadAbout: async () => {
+    const module = await import(`/translations/about.${CURRENT_LANGUAGE}.js?ts='${Date.now()}`);
+    //await TRANSLATION.loadDynamicScript(`/translations/about.${CURRENT_LANGUAGE}.js`);
+    //await UTILS.delay(1000);
+    return module.ABOUT_CNT;
   }
 }
