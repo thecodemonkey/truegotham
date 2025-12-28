@@ -1,37 +1,35 @@
 package il.tutorials.truegotham.controller
 
-import il.tutorials.truegotham.repository.StatementRepository
 import il.tutorials.truegotham.service.StatementService
-import io.swagger.v3.oas.annotations.Parameter
+import java.util.*
 import org.springframework.data.domain.Pageable
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import java.util.*
 
 @RestController
-class StatementController(
-    val statementService: StatementService) {
+class StatementController(val statementService: StatementService) {
 
     @GetMapping("/api/statements/latest")
-    fun loadLatest(@RequestParam  limit: Int) =
-        statementService.latest(limit)
+    fun loadLatest(@RequestParam limit: Int) = statementService.latest(limit)
 
     @GetMapping("/api/statements/{id}")
-    fun loadStatement(@PathVariable id: UUID) =
-        statementService.loadOriginal(id)
+    fun loadStatement(@PathVariable id: UUID) = statementService.loadOriginal(id)
 
     @GetMapping("/api/statements/search")
     fun getStatements(
-        @RequestParam(required = false) search: String?,
-        @RequestParam(required = false) categories: List<String>?,
-        @RequestParam(required = false) districts: List<String>?,
-        pageable: Pageable
-    ) = statementService.getFiltered(search, categories, districts, pageable)
-
+            @RequestParam(required = false) search: String?,
+            @RequestParam(required = false) categories: List<String>?,
+            @RequestParam(required = false) districts: List<String>?,
+            pageable: Pageable
+    ): Any {
+        if (search != null && search.length > 100) {
+            throw IllegalArgumentException("Search query too long")
+        }
+        return statementService.getFiltered(search, categories, districts, pageable)
+    }
 
     @GetMapping("/api/statements/updatealldistricts")
-    fun loadStatement() =
-        statementService.reGeocodeAllDistricts()
+    fun loadStatement() = statementService.reGeocodeAllDistricts()
 }
