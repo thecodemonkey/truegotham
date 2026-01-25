@@ -7,6 +7,7 @@ https://truegotham.thecodemonkey.de/
 ## Table of Contents
 
 * [Motivation](#motivation)
+* [Quickstart](#quickstart)
 * [How it works](#how-it-works)
   * [Data Processing Flow](#data-processing-flow)
   * [Crawler](#crawler)
@@ -16,13 +17,43 @@ https://truegotham.thecodemonkey.de/
 * [TechStack](#techstack)
 
 
+<br/><br/>
+
 ## Motivation
 
 As a fan of true crime and "Tatort", I wanted to combine interest with practice and deepen my AI skills through a real-world project. This project serves as a playground for me to experiment with approaches like advanced prompt engineering, image generation, and agentic AI in a practical setting. It allows me to explore new models and test various GenAI methods using a real-world scenario. Ultimately, it’s a straightforward way for me to stay up-to-date technically while building something I'm personally interested in.
 
+<br/><br/>
+
+## Quickstart
+
+### Prerequisites
+
+*   **Java 21**: You need JDK 21 installed.
+*   **OpenAI API Key**: The application requires an OpenAI API key to function. Set the environment variable `AI_API_KEY` to your key.
+
+### Start
+
+1. Clone the GitHub repository:
+   ```bash
+   git clone https://github.com/thecodemonkey/truegotham.git
+   cd truegotham
+   ```
+2. Start the application:
+   ```bash
+   ./gradlew bootRun
+   ```
+3. Open the dashboard in your browser:
+   [http://localhost:7171](http://localhost:7171)
+
+
+<br/><br/>
+
 ## How it works
 
 truegotham reads the current crimes from the [police press releases](https://www.presseportal.de/blaulicht/nr/4971), analyzes them using AI and displays them on a dashboard. Due to the enormity of data and the associated costs, only press releases from the Dortmund region are used at the moment.
+
+<br/><br/>
 
 ### Data Processing Flow
 
@@ -86,10 +117,13 @@ graph TD
     IncidentDB -->|visualize| Frontend
 ```
 
+<br/><br/>
 
 ### Crawler
 
 The crawler is a Service that uses Playwright to crawl the police press releases from https://presseportal.de/blaulicht/ and stores the raw data in a database.
+
+<br/><br/>
 
 ### Import Pipeline
 
@@ -107,7 +141,7 @@ The pipeline is a series of steps that process the data and store it in a databa
 10. Motivation Analysis
 11. Finalization
 
-
+<br/><br/>
 
 ## Frontend Stack
 
@@ -119,6 +153,7 @@ Additionally, this architecture eliminates the need for a separate frontend proj
 
 > **Note:** While I still prefer the Vanilla stack, I am increasingly moving towards augmenting it with standard **WebComponents** and **Lit**. `truegotham` has not yet been refactored, but I may do so in the future. This combination has personally emerged as the "ultimate" frontend stack for simple projects, especially when combined with AI coding agents.
 
+<br/><br/>
 
 ## Project Structure
 
@@ -143,6 +178,8 @@ truegotham/
 ├── Dockerfile           # Environment setup for deployment (Docker/K8s)
 └── build.gradle         # Dependency management (Kotlin/Spring Boot)
 ```
+
+<br/><br/>
 
 ## TechStack
 

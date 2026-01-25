@@ -21,29 +21,34 @@ const STATEMENT_DETAILS = {
 
     if (isSummary) {
       $('#statementSummaryContent').removeClass('out')
-                                   .addClass('in');
+        .addClass('in');
 
       $('#statementContent').removeClass('in')
     } else {
       $('#statementContent').addClass('in');
       $('#statementSummaryContent').removeClass('in')
-                                   .addClass('out')
+        .addClass('out')
     }
 
 
   },
-  update: async (statement) => {
+  update: async (statement, incident) => {
     let ttl = statement.title?.replace(/pol-do:/i, '').trim();
     $('#statementTime').text(UTILS.formatDate(statement.unixts));
     $('#statementTitle').text(ttl);
 
     $('#statementURL').attr('href', statement.url);
 
-    if (statement.imageId){
+    if (statement.imageId) {
       $('#crimesListCard .details-head img').attr('src', `/api/districts/${statement.imageId}/image`);
     } else {
       $('#crimesListCard .details-head img').attr('src', `/img/sample5.jpeg`);
     }
+
+    $('#crimesListCard .details-head img')
+      .attr('alt', statement.summary || statement.title)
+      .data('title', ttl)
+      .data('description', statement.summary || statement.title || '');
 
     await BREADCRUMB.update(ttl, SELECTED_DISTRICT);
 

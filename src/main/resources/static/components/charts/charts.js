@@ -11,8 +11,8 @@ const CHARTS = {
   initCrimesTimelineChart: async () => {
     const ctx = $('#crimesTimelineChart').get(0).getContext('2d');
     CHARTS.all.crimesTimeLine = createLineChart(ctx,
-        INSIGHTS.totalCrimes.data,
-        INSIGHTS.totalCrimes.labels);
+      INSIGHTS.totalCrimes.data,
+      INSIGHTS.totalCrimes.labels);
   },
   updateCrimesTimelineChart: async (newData, newLabels) => {
     CHARTS.all.crimesTimeLine.data.labels = newLabels;
@@ -26,7 +26,8 @@ const CHARTS = {
         tension: 0.3,
         label: ds.label,
         data: ds.data
-    }});
+      }
+    });
 
     CHARTS.all.crimesTimeLine.update();
   },
@@ -41,12 +42,14 @@ const CHARTS = {
   initCrimeDetailsTimelineChart: async () => {
     const ctx = $('#crimeDetailsTimelineChart').get(0).getContext('2d');
 
-    CHARTS.all.crimes = createTimelineChart(ctx,  [
-            {x: 2, y: 1.2, r: 30, number: 1, msg: '00:20 ein Zeuge beobachtet..'},
-            {x: 10.5, y: 1.6, r: 30, number: 2, msg: '00:30  ein weiterer Zeuge meldet..'},
-            {x: 18, y: 1, r: 30, number: 3, msg: '00:40 Festnahme durch Polizei...'},
-          ]
-        );
+    const r = window.innerWidth < 1920 ? 20 : 30;
+
+    CHARTS.all.crimes = createTimelineChart(ctx, [
+      { x: 2, y: 1.2, r: r, number: 1, msg: '00:20 ein Zeuge beobachtet..' },
+      { x: 10.5, y: 1.6, r: r, number: 2, msg: '00:30  ein weiterer Zeuge meldet..' },
+      { x: 18, y: 1, r: r, number: 3, msg: '00:40 Festnahme durch Polizei...' },
+    ]
+    );
   },
   updateCrimeDetailsTimelineChart: async (locations) => {
 
@@ -61,9 +64,9 @@ const CHARTS = {
       let round = (value) => Math.round(value * 2) / 2;
 
 
-      locations.sort((a, b) => b.unixts - a.unixts );
+      locations.sort((a, b) => b.unixts - a.unixts);
 
-      CHARTS.all.crimes.data.datasets[0].data = locations.map((l, i) =>  {
+      CHARTS.all.crimes.data.datasets[0].data = locations.map((l, i) => {
         let tm = CHARTS.calcTime(l.unixts);
 
         if (tm === prevDT) {
@@ -85,8 +88,10 @@ const CHARTS = {
         return {
           x: tm,
           y: ys[i % 2],
-          r: 25,
-          number: i+1,
+          x: tm,
+          y: ys[i % 2],
+          r: window.innerWidth < 1920 ? 15 : 25,
+          number: i + 1,
           time: (new Date(l.unixts * 1000)).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }),
           msg: l.title
         }
@@ -95,7 +100,7 @@ const CHARTS = {
       // alltimes.sort()
       alltimes.sort((a, b) => a - b)
       min = alltimes[0]
-      max = alltimes[alltimes.length -1 ]
+      max = alltimes[alltimes.length - 1]
 
       min = min - 0.5;
       max = max + 0.5;
@@ -118,7 +123,7 @@ const CHARTS = {
     let d = new Date(timestamp * 1000);
     let h = d.getHours();
     let m = d.getMinutes();
-    let mr = Math.round(100/60*m) * 0.1;
+    let mr = Math.round(100 / 60 * m) * 0.1;
     return (h + mr);
   },
   actionBubbleHovered: async (bubble) => {

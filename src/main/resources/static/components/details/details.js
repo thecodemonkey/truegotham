@@ -20,7 +20,7 @@ const DETAILS = {
     CURRENT_STATEMENT = await API.statement(id);
     CURRENT_INCIDENT = await API.incident(id); //CURRENT_STATEMENT.caseId //'08badf0e-4e50-4bcb-999b-cdfaa2777e7e'
 
-    await STATEMENT_DETAILS.update(CURRENT_STATEMENT);
+    await STATEMENT_DETAILS.update(CURRENT_STATEMENT, CURRENT_INCIDENT);
 
     await INCIDENTS.update(CURRENT_INCIDENT);
 
@@ -55,7 +55,7 @@ const DETAILS = {
 
 
     $('.titleTotalDistrict').text(``);
-    if (INSIGHTS?.totalCrimes){
+    if (INSIGHTS?.totalCrimes) {
       await CHARTS.updateCrimesTimelineChart(INSIGHTS.totalCrimes.data, INSIGHTS.totalCrimes.labels);
     }
     await DETAILS.unflipTotalChartDetails();
@@ -85,12 +85,12 @@ const DETAILS = {
   areRightDetailsFlipped: async () => {
     return await DETAILS.isFlipped(DASHBOARD.cards.bottomright())
   },
-  flipRightDetails: async() => {
+  flipRightDetails: async () => {
     await DETAILS.flipDetails(DASHBOARD.cards.bottomright());
     await delay(100);
     await DETAILS.flipDetails(DASHBOARD.cards.topright());
   },
-  unflipRightDetails: async() => {
+  unflipRightDetails: async () => {
     await DETAILS.unflipDetails(DASHBOARD.cards.bottomright());
     await delay(100);
     await DETAILS.unflipDetails(DASHBOARD.cards.topright());

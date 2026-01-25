@@ -1,0 +1,154 @@
+#lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 20000;
+    background-color: #00000060;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s;
+    visibility: visible;
+}
+
+#lightbox-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.lightbox-content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color: #303739;
+    box-shadow: 10px 10px 25px 0 #000000f0;
+    border: 1px solid #ffffff20;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#lightbox-overlay.hidden .lightbox-content {
+    transform: scale(0.9);
+}
+
+/* Image Area */
+.lightbox-image-container {
+    flex: 2;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+#lightbox-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+    border-radius: 4px;
+}
+
+/* Details Area */
+.lightbox-details {
+    flex: 0.8;
+    padding: 2.5rem;
+    font-family: "Courier New", sans-serif;
+    color: var(--text-primary, #ddd);
+    border-left: 1px solid #ffffff20;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    min-width: 300px;
+}
+
+.lightbox-details h3 {
+    font-weight: bold;
+    text-align: left;
+    color: #ff4f4f;
+    text-shadow: 0 0 25px #ff4f4fA0;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.lightbox-details p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    white-space: pre-wrap;
+    /* Damit Zeilenumbrüche erhalten bleiben */
+}
+
+/* Close Button based on overlay.css */
+.lightbox-content .close-btn {
+    rotate: 90deg;
+    width: 34px;
+    height: 34px;
+    background-color: #aaaaaa30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border-radius: 25px;
+    padding-bottom: 2px;
+    border: none;
+    color: #fff;
+    /* Default icon color if not specified in overlay.css, assuming white/light */
+    font-size: 1.5rem;
+    /* Ajusted size for the X char */
+    line-height: 1;
+
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color .3s;
+}
+
+.lightbox-content .close-btn:hover {
+    background-color: #aaaaaa80;
+    color: #fff;
+    transform: none;
+    /* Override previous scale transform */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .lightbox-content {
+        flex-direction: column;
+        left: 20px;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .lightbox-image-container {
+        flex: 1.5;
+        padding: 10px;
+    }
+
+    .lightbox-details {
+        flex: 1;
+        min-width: auto;
+        padding: 1.5rem;
+        border-left: none;
+        border-top: 1px solid #ffffff20;
+    }
+}

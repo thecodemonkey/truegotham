@@ -41,12 +41,12 @@ function createBarChart(ctx, dataSet, label, isHorizontal) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: {display: false},
-        title: {display: false}
+        legend: { display: false },
+        title: { display: false }
       },
       scales: {
         x: {
-          ticks: {color: chartColors.xAxisLabel}, grid: {
+          ticks: { color: chartColors.xAxisLabel }, grid: {
             display: isHorizontal,
             color: chartColors.grid
           }
@@ -84,8 +84,8 @@ function createDoughnutChart(ctx, dataSet, label) {
       responsive: true,
       maintainAspectRatio: true,
       plugins: {
-        legend: {display: false},
-        title: {display: false}
+        legend: { display: false },
+        title: { display: false }
       }
     }
   });
@@ -133,17 +133,17 @@ function createLineChart(ctx, dataSets, labels) {
             borderRadius: 0
           }
         },
-        title: {display: false}
+        title: { display: false }
       },
       scales: {
         x: {
-          ticks: {color: chartColors.xAxisLabel},
-          grid: {display: false}
+          ticks: { color: chartColors.xAxisLabel },
+          grid: { display: false }
         },
         y: {
           beginAtZero: true,
-          ticks: {color: chartColors.yAxisLabel},
-          grid: {color: chartColors.grid}
+          ticks: { color: chartColors.yAxisLabel },
+          grid: { color: chartColors.grid }
         }
       }
     }
@@ -205,7 +205,7 @@ function createTimelineChart(ctx, data) {
           titleColor: "#ffffff",
           bodyColor: "#9bbec4",
           callbacks: {
-            label:  (cntx) => {
+            label: (cntx) => {
               return cntx.raw.msg; //'hellloollll lllladskfjklasf';
             }
           }
@@ -251,14 +251,14 @@ function createTimelineChart(ctx, data) {
             display: false
           },
           //ticks: {color: chartColors.yAxisLabel},
-          grid: {color: chartColors.grid}
+          grid: { color: chartColors.grid }
         }
       }
     },
     plugins: [{
       id: 'customCirclesWithLines',
       afterDatasetsDraw(chart) {
-        const {ctx, chartArea: {bottom}, scales: {x, y}} = chart;
+        const { ctx, chartArea: { bottom }, scales: { x, y } } = chart;
         chart.data.datasets[0].data.forEach((point, i) => {
           const xPos = x.getPixelForValue(point.x);
           const yPos = y.getPixelForValue(point.y);
@@ -268,14 +268,14 @@ function createTimelineChart(ctx, data) {
           const offset = 15;
 
           // Text in Kästchen
-          const text = `${i+1}`//point.label || point.msg;
+          const text = `${i + 1}`//point.label || point.msg;
           //'Ein Zeuge beobachtet den Mercedes...'; //point.label || point.number.toString(); // Text aus Daten
-/*          ctx.font = '1.2rem Arial';
-          const textMetrics = ctx.measureText(text);
-          const textWidth = textMetrics.width;
-          const textHeight = 20; // Höhe des Textes/Kästchens
-
-          const padding = 15; // Padding innerhalb des Kästchens*/
+          /*          ctx.font = '1.2rem Arial';
+                    const textMetrics = ctx.measureText(text);
+                    const textWidth = textMetrics.width;
+                    const textHeight = 20; // Höhe des Textes/Kästchens
+          
+                    const padding = 15; // Padding innerhalb des Kästchens*/
           // const boxWidth = textWidth + padding;
           // const boxHeight = textHeight + padding;
 
@@ -303,7 +303,7 @@ function createTimelineChart(ctx, data) {
           ctx.restore();
 
           ctx.fillStyle = 'rgba(255,127,127,0.76)';
-          ctx.font = '1.1rem Arial';
+          ctx.font = window.innerWidth < 1920 ? '0.9rem Arial' : '1.1rem Arial';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           //ctx.fillText(point.number, xPos, yPos+2);

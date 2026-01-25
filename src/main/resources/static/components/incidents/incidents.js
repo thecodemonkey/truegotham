@@ -6,9 +6,9 @@ const INCIDENTS = {
   },
   init: async () => {
     $('#districtsCard').off().on('click', '.next-profile-btn',
-         async (e) => {
-           await INCIDENTS.onMenueItemClick(e)
-         }
+      async (e) => {
+        await INCIDENTS.onMenueItemClick(e)
+      }
     );
 
 
@@ -35,11 +35,11 @@ const INCIDENTS = {
   },
   update: async (cs) => {
 
-    if (!await INCIDENTS.isVisible()){
+    if (!await INCIDENTS.isVisible()) {
       await INCIDENTS.show();
     }
 
-    await INCIDENTS.updateProfileData(cs.offenderProfiles);
+    await INCIDENTS.updateProfileData(cs.offenderProfiles, cs);
     await INCIDENTS.updateEvidence(cs);
     await INCIDENTS.updateOffenses(cs);
     await INCIDENTS.updateMotive(cs);
@@ -51,13 +51,13 @@ const INCIDENTS = {
 
     cs.locations?.filter(l => !l.coordinates && !l.district)?.forEach(l => {
       const d = KNOWN_DISTRICTS.find(
-          kd => l.address.toLowerCase().indexOf(kd) > -1);
+        kd => l.address.toLowerCase().indexOf(kd) > -1);
       if (d) {
         l.district = d;
 
         const coords = MAP.getCoordsByDistrictName(d);
         if (coords) {
-          l.coordinates = {lat: coords.lat, lon: coords.lng}
+          l.coordinates = { lat: coords.lat, lon: coords.lng }
         }
       }
     });
@@ -74,19 +74,25 @@ const INCIDENTS = {
 
     //await MAP.showCrimeDetails(CURRENT_STATEMENT.location, 'Dortmund Kampstraße');
   },
-  updateProfileData: async (profiles) => {
+  updateProfileData: async (profiles, cs) => {
 
-    await DISTRICTS.showProfileImage(`/api/districts/${profiles[0].imageId}/image`)
+    const title = profiles.map(p => {
+      if (!p.age) return '';
+      const gender = TRANSLATION.translate(`gender_${p.gender}`);
+      return `${p.age}, ${gender}`;
+    }).filter(t => t.length > 0).join(" | ");
+
+    await DISTRICTS.showProfileImage(`/api/districts/${profiles[0].imageId}/image`, cs.motive, title)
 
     await INCIDENTS.updateProfileNavi(profiles);
 
     const row = (field, value) => {
       if (!value || value.toString()
-                         .toLowerCase()
-                         .trim()
-                         .replace('null', '')
-                         .replace('0', '')
-                         .length < 1)
+        .toLowerCase()
+        .trim()
+        .replace('null', '')
+        .replace('0', '')
+        .length < 1)
         return '';
 
       return `<tr>
@@ -104,7 +110,7 @@ const INCIDENTS = {
             <tr>
               <td data-trans="profile_gender">Geschlecht</td>
               <td data-trans="gender_${person.gender.toLowerCase()}">${TRANSLATION.translate(
-          `gender_${person.gender}`)}</td>
+        `gender_${person.gender}`)}</td>
             </tr>
             ${row('hair', person.hair)}
             ${row('drugs_and_alcohol', person.drugTest + '/' + person.alcoholTest)}
@@ -123,10 +129,10 @@ const INCIDENTS = {
       $nav.removeClass('hidden');
 
       const html = profiles.slice(0, 4)
-                           .map((p, i) =>
-                            `<span class="next-profile-btn ${i < 1 ? 'active' : '' }" data-item="profile${i}">${i + 1}</span>`
-                           )
-                           .join('\n');
+        .map((p, i) =>
+          `<span class="next-profile-btn ${i < 1 ? 'active' : ''}" data-item="profile${i}">${i + 1}</span>`
+        )
+        .join('\n');
       $nav.html(html);
 
     } else {
@@ -136,14 +142,14 @@ const INCIDENTS = {
   },
   updateEvidence: async (cs) => {
     let data =
-        cs.tools?.map(t => `
+      cs.tools?.map(t => `
            <tr>
             <td colSpan="2">${t}</td>
           </tr>
         `).join('').trim();
 
     data +=
-        cs.evidence.map(t => `
+      cs.evidence.map(t => `
            <tr>
             <td colSpan="2">${t}</td>
           </tr>
@@ -154,7 +160,7 @@ const INCIDENTS = {
   updateOffenses: async (cs) => {
 
     let data =
-        cs?.offences?.map(t => `
+      cs?.offences?.map(t => `
            <tr>
             <td>${t.text}</td>
             <td><span class="light">${t.paragraph || ''}</span></td>
@@ -175,7 +181,7 @@ const INCIDENTS = {
     const $nav = $('#profile_navi');
     SELECTED_INCIDENT_DETAIL = $e.data('item')
 
-    if (SELECTED_INCIDENT_DETAIL.startsWith('profile')){
+    if (SELECTED_INCIDENT_DETAIL.startsWith('profile')) {
       $('.next-profile-btn[data-item^="profile"]').removeClass('active');
       $(`.next-profile-btn[data-item="${SELECTED_INCIDENT_DETAIL}"]`).addClass('active');
 
@@ -191,12 +197,12 @@ const INCIDENTS = {
 
     if (nextActive.hasClass('out')) { // from left to right =>
       nextActive.removeClass('out')
-      .addClass('in')
+        .addClass('in')
       currentActive.removeClass('in')
     } else {                                 //from right to left <=
       nextActive.addClass('in');
       currentActive.removeClass('in')
-      .addClass('out');
+        .addClass('out');
     }
 
   },
@@ -220,6 +226,6 @@ const INCIDENTS = {
   getProfileTitle: (title) => {
     const i = parseInt(title.replace('profile', ''));
 
-    return `${i+1}'er Verdächtiger`;
+    return `${i + 1}'er Verdächtiger`;
   }
 }

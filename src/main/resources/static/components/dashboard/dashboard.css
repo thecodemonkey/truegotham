@@ -49,8 +49,8 @@
       background-color: rgba(0, 0, 0, 0.5);
       opacity: 1;
 
-      &.hidden{
-        opacity:  0;
+      &.hidden {
+        opacity: 0;
       }
 
       &:hover {
@@ -71,14 +71,15 @@
         justify-content: space-between;
         align-items: center;
 
-        .info{
+        .info {
           font-size: 1.2rem;
           cursor: pointer;
         }
       }
 
       .number {
-        color: #ff6060;  /*var(--accent-primary);*/
+        color: #ff6060;
+        /*var(--accent-primary);*/
       }
 
       .metric {
@@ -109,19 +110,20 @@
             border-bottom: 1px solid #444;
             text-align: left;
 
-            &.number{
+            &.number {
               text-align: right;
             }
           }
 
-          td, th {
+          td,
+          th {
             padding: 15px 25px;
 
-            &.number{
+            &.number {
               text-align: right;
             }
-            
-            h3{
+
+            h3 {
               font-weight: 100;
               letter-spacing: 1px;
               font-family: "Courier New", serif;
@@ -159,12 +161,12 @@
             background-color: #00000010;
           }
 
-          &.active{
+          &.active {
             border-left: 4px solid var(--accent-primary);
             background-color: #00000020;
           }
 
-          .time{
+          .time {
             color: #000;
             font-size: 1rem;
             font-style: italic;
@@ -179,7 +181,7 @@
       }
 
 
-      .card-group-description{
+      .card-group-description {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -201,24 +203,24 @@
             opacity: 1;
           }
 
-          h3{
+          h3 {
             font-weight: 100;
             font-family: "Courier New", serif;
             margin-bottom: 25px;
             font-size: 1rem;
           }
 
-          ul{
-            list-style: circle!important;
-            margin-top: 0!important;
-            overflow-y: visible!important;
-            margin-left: 0!important;
-            padding-left: 15px!important;
+          ul {
+            list-style: circle !important;
+            margin-top: 0 !important;
+            overflow-y: visible !important;
+            margin-left: 0 !important;
+            padding-left: 15px !important;
 
             li {
-              padding: 5px!important;
-              font-family: monospace!important;
-              font-size: 1rem!important;
+              padding: 5px !important;
+              font-family: monospace !important;
+              font-size: 1rem !important;
               display: list-item;
             }
           }
@@ -231,13 +233,14 @@
 
 
 .card-main {
-  padding: 0!important;
+  padding: 0 !important;
   grid-column: 4 / 10;
   grid-row: 1 / 5;
   /* ensure the main card doesn't show scrollbars and the map can fill it */
   overflow: hidden;
   display: grid;
-  grid-template-rows: auto 1fr; /* title (auto) + content (fills remaining) */
+  grid-template-rows: auto 1fr;
+  /* title (auto) + content (fills remaining) */
 }
 
 .card-top-left {
@@ -256,10 +259,10 @@
   grid-row: 1 / 7;
 
   .front {
-    backdrop-filter: blur(30px)!important;
-    background-color:  rgb(205 207 182 / 65%) !important;
+    backdrop-filter: blur(30px) !important;
+    background-color: rgb(205 207 182 / 65%) !important;
 
-    padding-right: 5px!important;
+    padding-right: 5px !important;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -271,7 +274,7 @@
   }
 
   .card-title {
-    color: #111!important;
+    color: #111 !important;
 
   }
 }
@@ -374,30 +377,44 @@
     }
   }
 
-  img, #suspiciousPersonProfile {
+  img,
+  #suspiciousPersonProfile {
     opacity: 0;
     transition: all .5s;
   }
 
   &.details {
     .back {
-      img, #suspiciousPersonProfile, .metric, .chart-container {
+
+      img,
+      #suspiciousPersonProfile,
+      .metric,
+      .chart-container {
         opacity: 1;
       }
 
       .info-description {
         opacity: 0;
       }
+
+      img {
+        z-index: 2;
+        cursor: pointer;
+      }
     }
   }
 
   &.info {
     .back {
-      img, #suspiciousPersonProfile, .metric, .chart-container {
+
+      img,
+      #suspiciousPersonProfile,
+      .metric,
+      .chart-container {
         opacity: 0;
       }
 
-      #suspiciousPersonProfile{
+      #suspiciousPersonProfile {
         visibility: collapse;
       }
 
@@ -405,11 +422,10 @@
         opacity: 1;
       }
 
-      .metric{
-        opacity: 0!important;
+      .metric {
+        opacity: 0 !important;
       }
     }
   }
 
 }
-

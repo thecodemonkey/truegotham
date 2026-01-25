@@ -28,9 +28,9 @@ const DISTRICTS = {
     await DETAILS.unflipRightDetails();
 
     await DISTRICTS.cleanDistrictAreas()
-//TODO: spinner shoult be part of flipped card...
-/*    await SPINNER.showImageSpinner();
-    await SPINNER.showRightSpinner();*/
+    //TODO: spinner shoult be part of flipped card...
+    /*    await SPINNER.showImageSpinner();
+        await SPINNER.showRightSpinner();*/
 
     let district = await API.district('Dortmund', districtName);
     await delay(500); // simulates delay of the server load..
@@ -41,8 +41,8 @@ const DISTRICTS = {
     await delay(100);
 
     //TODO: spinner shoult be part of flipped card...
-/*    await SPINNER.hideImageSpinner();
-    await SPINNER.hideRightSpinner();*/
+    /*    await SPINNER.hideImageSpinner();
+        await SPINNER.hideRightSpinner();*/
 
     await DETAILS.flipRightDetails();
 
@@ -56,10 +56,14 @@ const DISTRICTS = {
   showImage: async (district) => {
 
     $('#typesCard .desc-img').attr('src',
-        `/api/districts/${district.imageId}/image`);
+      `/api/districts/${district.imageId}/image`)
+      .data('description', district.description || '')
+      .data('title', district.name || '');
   },
-  showProfileImage: async (url) => {
-    $('#typesCard .desc-img').attr('src',url);
+  showProfileImage: async (url, desc, title) => {
+    $('#typesCard .desc-img').attr('src', url)
+      .data('description', desc || '')
+      .data('title', title || '');
   },
   hideImage: async () => {
     let $card = DASHBOARD.cards.topright();
@@ -72,15 +76,15 @@ const DISTRICTS = {
 
 
     desc.html(
-        district.description.trim()
+      district.description.trim()
         .split('\n\n')
-        .map( p => `<p>${p}</p>`).join('')
+        .map(p => `<p>${p}</p>`).join('')
     );
 
     await DISTRICTS.updateFacts({});
   },
   hideDescription: async (flip = true) => {
-    if(flip) {
+    if (flip) {
       let $card = DASHBOARD.cards.bottomright();
       await DETAILS.unflipDetails($card);
       await delay(300);
@@ -93,13 +97,13 @@ const DISTRICTS = {
     $('#suspiciousPersonProfile').css('display', 'table');
   },
   initDistrictTable: async () => {
-    const total = INSIGHTS.districts.reduce( (a,b) => a + b.data, 0);
-    const districts = INSIGHTS.districts.map( d =>
-        ({
-          label: d.label,
-          data: d.data,
-          percentage: ((d.data / total) * 100).toFixed(1)
-        }));
+    const total = INSIGHTS.districts.reduce((a, b) => a + b.data, 0);
+    const districts = INSIGHTS.districts.map(d =>
+    ({
+      label: d.label,
+      data: d.data,
+      percentage: ((d.data / total) * 100).toFixed(1)
+    }));
 
     const html = `
       <tr><th>district</th><th class="number"></th></tr>
@@ -112,14 +116,14 @@ const DISTRICTS = {
 
 
     const alldistricts = await API.districts();
-    const t = alldistricts.reduce( (a,b) => a + b.data, 0);
+    const t = alldistricts.reduce((a, b) => a + b.data, 0);
     const allpercentages = UTILS.normalizeToMaxPercent(alldistricts.map(d => d.data));
 
     await MAP.flyIN([lat, lon], 12);
 
     await UTILS.delay(500);
 
-    for(const d of alldistricts) {
+    for (const d of alldistricts) {
       const i = alldistricts.indexOf(d);
       await UTILS.delay(30);
       let p = allpercentages[i];
@@ -138,7 +142,7 @@ const DISTRICTS = {
 
     // transparent pixel
     $('#typesCard .desc-img').attr('src',
-        `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=`);
+      `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=`);
   },
   onTabClick: async (e) => {
     const $e = $(e.currentTarget);
@@ -150,13 +154,13 @@ const DISTRICTS = {
 
     if (isDescriptioin) {
       $('#districtDesc').removeClass('out')
-      .addClass('in');
+        .addClass('in');
 
       $('#districtFacts').removeClass('in')
     } else {
       $('#districtFacts').addClass('in');
       $('#districtDesc').removeClass('in')
-      .addClass('out')
+        .addClass('out')
     }
   },
   updateFacts: async (facts) => {

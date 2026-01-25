@@ -2,7 +2,7 @@ let INSIGHTS = null;
 let SETTINGS = null;
 let STARTED = false;
 
-async function init(){
+async function init() {
   console.log('loaded...');
   $(window).on("resize", isValidScreenSize);
 
@@ -11,11 +11,13 @@ async function init(){
   SETTINGS = await API.settings();
 
   $('root').append(await loadHTML('root'))
-           .append(await DASHBOARD.view())
-           .append(await ERRORS.view())
-           .append(await OVERLAY.view());
+    .append(await DASHBOARD.view())
+    .append(await ERRORS.view())
+    .append(await OVERLAY.view())
+    .append(await LIGHTBOX.view());
 
   await OVERLAY.init();
+  await LIGHTBOX.init();
   await BREADCRUMB.init();
   await ERRORS.init();
   await MAP.init();
@@ -72,7 +74,7 @@ function isValidScreenSize() {
   }
 }
 
-function collapseRootClaim(expand){
+function collapseRootClaim(expand) {
 
   if (STARTED) return;
 
@@ -82,7 +84,7 @@ function collapseRootClaim(expand){
     $('.root-claim').addClass('off');
 }
 
-async function start(){
+async function start() {
 
   STARTED = true;
   INSIGHTS = await API.insights();
@@ -103,14 +105,14 @@ async function loadComponentHTML(url) {
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`Fehler beim Laden von ${url}`);
-    return  await response.text();
+    return await response.text();
 
   } catch (err) {
     console.error(err);
   }
 }
 
-async function delay(ms){
+async function delay(ms) {
   return new Promise((res, rej) => {
     setTimeout(async () => {
       res();
@@ -119,6 +121,6 @@ async function delay(ms){
 
 }
 
-$( async () => {
+$(async () => {
   await init();
 });
