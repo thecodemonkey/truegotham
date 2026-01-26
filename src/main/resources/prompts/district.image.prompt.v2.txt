@@ -1,0 +1,41 @@
+Erstelle eine fotorealistische Schwarz/Weiß-Illustration im epischen SinCity/Batman Stil
+
+Wichtige Vorgaben:
+
+- Schwarz/Weiß-Stil, starke Kontraste, dramatische, aber klar erkennbare Schatten mit gut sichtbaren Details in dunklen Bereichen
+- fotorealistischer ultradetailreicher rauer Comic Look
+- 4K UHD
+- Die Szenen sollen möglichst realistisch sein, also keine fiktiven Handlungen, Charaktere oder Gegenstände enthalten.
+- Die Szene findet in Deutschland bzw. Europa statt und sollte möglichst authentisch sein
+- Achte darauf, dass das Bild nicht zu dunkel wirkt.
+- high-key lighting, balanced exposure, visible midtones, no crushed blacks
+- Die Spannung entsteht durch Licht, Schatten, Architektur und Körpersprache, nicht durch Handlung oder Konflikt.
+
+
+Hier ist die detaillierte Beschreibung der Szene:
+
+[IMG_DESC]
+
+
+HINWEISE:
+- Falls ein Bild Referenzbild zur Verfügung steht, benutze es als Inspiration für die Gebäude und die Umgebung, aber nicht für Charaktere oder Handlungen.
+- Versuche die im Referenzbild abgegildete Gebäude möglichst authentisch in dem generiertem Bild abzubilden, also nur die Gebäude nicht die Szene!
+- Achte auf die Atmosphere und Stimmung der Szene. Düstere Atmosphäre sollen eher nächtliche Szenen darstellen, während hellere Szenen tagsüber stattfinden.
+
+
+NEGATIV: 
+- keine Gewalt, keine Waffen, keine Verfolgung, keine körperlichen Konflikte, kein Blut, keine aggressiven Gesten, keine Bedrohung zwischen Personen
+- underexposed, low visibility, crushed blacks, extreme darkness, silhouette-only lighting
+- Die Szene soll keine Tat zeigen
+- Die Szene soll nicht die Festnahme zeigen
+- Die Uniformen, Fahrzeuge und Umgebung sollten nicht übermäßig Amerikanisch wirken
+- keine Beschriftungen, Plakate oder Schilder enthalten
+- Batman darf in der Szene nicht vorkommen!
+- keine Panels und keine Sprechblasen
+- keine fiktiven Handlungen 
+- keine fiktiven Charaktere
+- keine fiktiven Gegenstände
+- Das Bild soll soll keine Gewaltszenen enthalten. 
+- Das Bild soll nicht zu dunkel sein
+
+
