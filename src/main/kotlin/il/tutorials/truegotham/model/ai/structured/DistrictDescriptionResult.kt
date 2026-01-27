@@ -6,11 +6,12 @@ import il.tutorials.truegotham.model.ai.PromptInfo
 data class DistrictDescriptionResult(
     var location: String,
     var atmosphere: String,
-    var population: String,
+    var population: Int,
     var migration_background: String,
     var social_structure: String,
     var sense_of_security: String,
-    var special_features_of_the_district: String
+    var special_features_of_the_district: String,
+    var ageStructure: String
 ) {
     //override to string
     override fun toString(): String {
@@ -21,6 +22,7 @@ data class DistrictDescriptionResult(
             Migration Background: $migration_background
             Social Structure: $social_structure
             Sense of Security: $sense_of_security
+            Age Structure: $ageStructure
             Special Features of the District: $special_features_of_the_district"""
             .trimMargin()
     }

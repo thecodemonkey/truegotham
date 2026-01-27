@@ -81,7 +81,7 @@ const DISTRICTS = {
         .map(p => `<p>${p}</p>`).join('')
     );
 
-    await DISTRICTS.updateFacts({});
+    await DISTRICTS.updateFacts(district);
   },
   hideDescription: async (flip = true) => {
     if (flip) {
@@ -163,41 +163,31 @@ const DISTRICTS = {
         .addClass('out')
     }
   },
-  updateFacts: async (facts) => {
-
-    facts = {
-      population: 20000,
-      location: 'Wohn- und Mischgebiet mit traditionellen Arbeitersiedlungen sowie neueren Wohn- und Gewerbeparks.',
-      social_structure: 'mittleres bis eher niedrigeres Einkommensniveau',
-      sense_of_security: 'mittleres wahrgenommenes Sicherheitsniveau',
-      migration_background: '30%',
-      age_structure: 'vielfältig, älteren Menschen über Familien bis hin zu Studierenden.'
-    }
-
+  updateFacts: async (district) => {
     let html = `
             <tr>
-              <td>Einwohnerzahl</td>
-              <td>${facts.population}</td>
+              <td data-trans="district_population">Einwohnerzahl</td>
+              <td>${district.population?.toLocaleString()}</td>
             </tr>
             <tr>
-              <td>Wohnort</td>
-              <td>${facts.location}</td>
+              <td data-trans="district_location">Lage</td>
+              <td>${district.location}</td>
             </tr>
             <tr>
-              <td>Altersstruktur</td>
-              <td>${facts.age_structure}</td>
+              <td data-trans="district_age_structure">Altersstruktur</td>
+              <td>${district.ageStructure}</td>
             </tr>            
             <tr>
-              <td>Soziale Strukture</td>
-              <td>${facts.social_structure}</td>
+              <td data-trans="district_social_structure">Soziale Strukture</td>
+              <td>${district.socialStructure}</td>
             </tr>
             <tr>
-              <td>Anteil mit Migrationshintergrund</td>
-              <td>${facts.migration_background}</td>
+              <td data-trans="district_migration_background">Kulturelle Vielfalt</td>
+              <td>${district.migrationBackground}</td>
             </tr>
             <tr>
-              <td>Sicherheitslage</td>
-              <td>${facts.sense_of_security}</td>
+              <td data-trans="district_sense_of_security">Sicherheitslage</td>
+              <td>${district.senseOfSecurity}</td>
             </tr>
     `;
 

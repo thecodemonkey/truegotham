@@ -13,11 +13,20 @@ class CrawlerController(val crawler: Crawler) {
 
     @PostMapping("/api/crawl")
     fun crawl(@RequestBody options: CrawlerOptions) =
-        crawler.crawl(options.cityID, options.startDate, options.endDate)
+            crawler.crawl(options.cityID, options.startDate, options.endDate)
 
     @PostMapping("/api/crawl/continue/{cityID}")
-    fun continueCrawling(
-        @Parameter( example = "4971" )
-        @PathVariable cityID: String ) =
+    fun continueCrawling(@Parameter(example = "4971") @PathVariable cityID: String) =
             crawler.continueCrawling(cityID)
+
+    @PostMapping("/api/crawl/{cityID}/{year}/{month}")
+    fun crawlMonth(
+            @Parameter(example = "4971") @PathVariable cityID: String,
+            @PathVariable year: Int,
+            @PathVariable month: Int
+    ) {
+        val startDate = java.time.LocalDate.of(year, month, 1)
+        val endDate = startDate.with(java.time.temporal.TemporalAdjusters.lastDayOfMonth())
+        crawler.crawl(cityID, startDate.toString(), endDate.toString())
+    }
 }

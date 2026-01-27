@@ -32,6 +32,13 @@
   "profile_drugs_and_alcohol": "Drogen/Alkohol Test",
   "profile_look": "Aussehen",
 
+  "district_population": "Einwohnerzahl",
+  "district_location": "Lage",
+  "district_age_structure": "Altersstruktur",
+  "district_social_structure": "Sozialstruktur",
+  "district_migration_background": "Kulturelle Vielfalt",
+  "district_sense_of_security": "Sicherheitsgefühl",
+
   "start_title": "Das Verbrechen lauert im Schatten, unsichtbar und doch spürbar in jeder Straße und an jeder Ecke der Stadt. Es hinterlässt Spuren, die nur diejenigen erkennen können, die genau hinschauen.",
   "start_subtitle": "Das Projekt TRUE GOTHAM bringt diese verborgenen Taten ans Licht. Mithilfe künstlicher Intelligenz werden Aussagen aus der Online-Presse der öffentlichen Polizei analysiert, oberflächliche Beschreibungen in klare Fakten umgewandelt und die dunkle Realität der Stadt offenbart.",
   "start_btn": "öffne die Akte...",

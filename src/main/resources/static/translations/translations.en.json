@@ -32,6 +32,13 @@
   "profile_drugs_and_alcohol": "drug/alcohol testing",
   "profile_look": "look",
 
+  "district_population": "population",
+  "district_location": "location",
+  "district_age_structure": "age structure",
+  "district_social_structure": "social structure",
+  "district_migration_background": "migration background",
+  "district_sense_of_security": "sense of security",
+
   "start_title": "Crime lurks in the shadows, invisible yet palpable in every street and corner of the city. It leaves traces that only those who look closely can discern.",
   "start_subtitle": "The project True Gotham brings these hidden acts to light. Using artificial intelligence, statements from the public police online press are analyzed, turning superficial descriptions into clear facts, revealing the dark reality of the city.",
   "start_btn": "open the file...",

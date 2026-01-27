@@ -23,12 +23,46 @@ class DistrictService(
     lateinit var DISTRICT_IMAGE_PROMPT: String
 
     fun getDistrict(city: String, name: String): District? {
-        var district = districtRepository.findFirsByCityAndName(city, name)
+        val district = districtRepository.findFirstByCityIgnoreCaseAndNameIgnoreCase(city, name)
         if (district == null) {
-            district = createDistrictImage(city, name)
+            throw ResponseStatusException(HttpStatus.NOT_FOUND, "District not found")
         }
 
         return district
+    }
+
+    fun updateDistrictFacts(city: String, name: String): District {
+        val district =
+                districtRepository.findFirstByCityIgnoreCaseAndNameIgnoreCase(city, name)
+                        ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "District not found")
+
+        val raw = ai.generateDistrictRawDescription(city, name)
+
+        // Mapping AI Result to District Entity
+        district.location = raw.location
+        district.migrationBackground = raw.migration_background
+        district.socialStructure = raw.social_structure
+        district.senseOfSecurity = raw.sense_of_security
+        district.ageStructure = raw.ageStructure
+        district.population = raw.population
+
+        return districtRepository.save(district)
+    }
+
+    fun updateAllMissingDistrictFacts(): List<District> {
+        val allDistricts = districtRepository.findAll()
+        val toUpdate =
+                allDistricts.filter {
+                    it.location.isNullOrBlank() || it.socialStructure.isNullOrBlank()
+                }
+
+        return toUpdate.map { district ->
+            runCatching { updateDistrictFacts(district.city ?: "Dortmund", district.name ?: "") }
+                    .getOrElse {
+                        println("Failed to update facts for ${district.name}: ${it.message}")
+                        district
+                    }
+        }
     }
 
     fun createDistrictImage(city: String, name: String): District {

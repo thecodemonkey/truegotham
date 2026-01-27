@@ -9,28 +9,28 @@ import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class ImportController(
-    val importService: ImportService
-) {
+class ImportController(val importService: ImportService) {
 
     @GetMapping("/api/import/{cityID}")
-    fun importNewStatements(
-        @Parameter( example = "4971" )
-        @PathVariable cityID: String) = importService.import(cityID)
+    fun importNewStatements(@Parameter(example = "4971") @PathVariable cityID: String) =
+            importService.import(cityID)
 
-
-    @PostMapping("/api/import/process/next")
-    fun processNextItem() = importService.processNext()
+    @PostMapping("/api/import/process/next") fun processNextItem() = importService.processNext()
 
     @PostMapping("/api/import/process/next/single")
     fun processNextItemSingleStep() = importService.processNextSingle()
 
-/*    @PostMapping("/api/import/process/next/incident")
+    /*    @PostMapping("/api/import/process/next/incident")
     fun processIncidentItem() = importService.processIncidentItem()*/
 
     @PostMapping("/api/import/process/from/{date}")
-    fun processFromDate(
-        @Parameter( example = "10.11.2025 – 00:00" )
-        @PathVariable date: String)
-        = importService.processNextFrom(DateUtils.toUnixts(date)!!)
+    fun processFromDate(@Parameter(example = "10.11.2025 – 00:00") @PathVariable date: String) =
+            importService.processNextFrom(DateUtils.toUnixts(date)!!)
+
+    @PostMapping("/api/import/{cityID}/{year}/{month}")
+    fun importMonth(
+            @Parameter(example = "4971") @PathVariable cityID: String,
+            @PathVariable year: Int,
+            @PathVariable month: Int
+    ) = importService.importMonth(cityID, year, month)
 }

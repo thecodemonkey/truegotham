@@ -40,7 +40,7 @@
       cursor: pointer;
       transition: all .3s;
 
-      &.active{
+      &.active {
         background-color: #959786;
         border-bottom: 1px solid #959786;
         margin-bottom: -1px;
@@ -110,23 +110,24 @@
     color: #111;
 
     table {
-      margin-left: 0!important;
-      margin-right: 0!important;
-      margin-top: 0!important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 25px !important;
 
       tr {
 
         &:nth-child(odd) {
-          background-color: transparent!important;
+          background-color: transparent !important;
         }
 
         &:nth-child(even) {
-          background-color: #ffffff0a!important;
+          background-color: #ffffff0a !important;
         }
 
 
-        td{
-          padding: 10px 20px!important;
+        td {
+          padding: 10px 20px !important;
         }
 
         td:nth-child(1) {

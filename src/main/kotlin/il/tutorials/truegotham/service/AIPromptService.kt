@@ -136,7 +136,7 @@ class AIPromptService(val oai: AIService) {
                 "city" to city,
                 "district" to district
             ),
-            model = ChatModel.GPT_4_1)
+            model = ChatModel.GPT_5_2)
     )
 
     fun generateDistrictDescription(city: String, description: String) = oai.prompt(
